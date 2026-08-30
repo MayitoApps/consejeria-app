@@ -1,0 +1,61 @@
+{
+  "mcpServers": {
+    "21st-magic-ui": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@21st-dev/cli@latest",
+        "mcp"
+      ]
+    },
+    "shadcn-ui": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@sherifbutt/shadcn-ui-mcp-server@latest"
+      ]
+    },
+    "unsplash-media": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "unsplash-mcp@latest"
+      ]
+    },
+    "fontawesome-icons": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-universal-icons@latest"
+      ]
+    },
+    "chrome-devtools-lighthouse": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "chrome-devtools-mcp@latest"
+      ]
+    },
+    "animotion": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "animotion-mcp"
+      ]
+    },
+    "animejs": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@animejs/anime-js-mcp-server"
+      ]
+    },
+    "framer-motion": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@motion-dev/mcp-server"
+      ]
+    }
+  }
+}
