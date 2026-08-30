@@ -106,19 +106,19 @@ export const NewSessionModal: React.FC<NewSessionModalProps> = ({
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-md animate-fade-in">
-      <div className="relative w-full max-w-3xl max-h-[92vh] flex flex-col glass-card rounded-3xl p-6 sm:p-8 border border-amber-500/30 shadow-navy-lg animate-slide-up">
+      <div className="relative w-full max-w-2xl max-h-[90vh] flex flex-col glass-card rounded-2xl p-5 sm:p-7 border border-white/[0.08] shadow-navy-lg animate-slide-up">
         
         {/* Header */}
-        <div className="flex items-center justify-between pb-4 mb-5 border-b border-amber-500/20">
-          <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 rounded-xl bg-amber-500/15 border border-amber-500/30 flex items-center justify-center text-amber-400">
-              <CalendarPlus className="w-5 h-5" />
+        <div className="flex items-center justify-between pb-3 mb-4 border-b border-white/[0.06]">
+          <div className="flex items-center space-x-2.5">
+            <div className="w-8 h-8 rounded-lg bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400">
+              <CalendarPlus className="w-4 h-4" />
             </div>
             <div>
-              <h3 className="font-serif text-xl sm:text-2xl font-bold text-white">
+              <h3 className="font-serif text-lg sm:text-xl font-bold text-white">
                 Documentar Sesión #{sessionNumber}
               </h3>
-              <p className="text-xs text-slate-400">
+              <p className="text-[11px] text-slate-400">
                 Aconsejado: <strong className="text-amber-300">{advisee.fullName}</strong>
               </p>
             </div>
@@ -126,67 +126,67 @@ export const NewSessionModal: React.FC<NewSessionModalProps> = ({
 
           <button
             onClick={onClose}
-            className="p-2 rounded-xl text-slate-400 hover:text-white bg-slate-900 border border-slate-800"
+            className="p-1.5 rounded-lg text-slate-400 hover:text-white bg-slate-900/80 border border-white/[0.06]"
           >
-            <X className="w-5 h-5" />
+            <X className="w-4 h-4" />
           </button>
         </div>
 
         {/* Scrollable Form */}
-        <form onSubmit={handleSubmit} className="overflow-y-auto pr-2 space-y-6 flex-1 text-xs sm:text-sm">
+        <form onSubmit={handleSubmit} className="overflow-y-auto pr-1.5 space-y-4 flex-1 text-xs">
           
           {/* General Session Info */}
-          <div className="grid sm:grid-cols-3 gap-4">
+          <div className="grid sm:grid-cols-3 gap-3">
             <div>
-              <label className="block text-slate-300 font-semibold mb-1">Fecha de Sesión *</label>
+              <label className="block text-[11px] font-medium text-slate-300 mb-1">Fecha de Sesión *</label>
               <input
                 type="date"
                 required
                 value={date}
                 onChange={(e) => setDate(e.target.value)}
-                className="w-full px-3.5 py-2.5 bg-slate-900 border border-slate-700 rounded-xl text-slate-100 focus:outline-none focus:border-amber-500"
+                className="w-full px-3 py-2 bg-slate-900/90 border border-white/[0.08] rounded-lg text-slate-100 text-xs focus:outline-none focus:border-amber-500"
               />
             </div>
             <div>
-              <label className="block text-slate-300 font-semibold mb-1">Hora</label>
+              <label className="block text-[11px] font-medium text-slate-300 mb-1">Hora</label>
               <input
                 type="time"
                 value={time}
                 onChange={(e) => setTime(e.target.value)}
-                className="w-full px-3.5 py-2.5 bg-slate-900 border border-slate-700 rounded-xl text-slate-100 focus:outline-none focus:border-amber-500"
+                className="w-full px-3 py-2 bg-slate-900/90 border border-white/[0.08] rounded-lg text-slate-100 text-xs focus:outline-none focus:border-amber-500"
               />
             </div>
             <div>
-              <label className="block text-slate-300 font-semibold mb-1">Tema Principal *</label>
+              <label className="block text-[11px] font-medium text-slate-300 mb-1">Tema Principal *</label>
               <input
                 type="text"
                 required
                 value={theme}
                 onChange={(e) => setTheme(e.target.value)}
                 placeholder="Ej: Ídolos del corazón / Perdón"
-                className="w-full px-3.5 py-2.5 bg-slate-900 border border-slate-700 rounded-xl text-slate-100 focus:outline-none focus:border-amber-500"
+                className="w-full px-3 py-2 bg-slate-900/90 border border-white/[0.08] rounded-lg text-slate-100 placeholder-slate-500 text-xs focus:outline-none focus:border-amber-500"
               />
             </div>
           </div>
 
           {/* 1. Revision of previous tasks */}
           {tasksReview.length > 0 && (
-            <div className="p-4 rounded-2xl bg-slate-900/80 border border-amber-500/20 space-y-3">
-              <h4 className="text-xs uppercase font-bold text-amber-400 tracking-wider">
+            <div className="p-3.5 rounded-xl bg-slate-900/70 border border-white/[0.06] space-y-2.5">
+              <h4 className="text-[11px] uppercase font-semibold text-amber-400 tracking-wider">
                 1. Revisión de Tareas de la Sesión Pasada
               </h4>
-              <div className="space-y-3">
+              <div className="space-y-2">
                 {tasksReview.map((item, idx) => (
-                  <div key={idx} className="p-3 rounded-xl bg-slate-950/70 border border-slate-800 space-y-2">
+                  <div key={idx} className="p-2.5 rounded-lg bg-slate-950/60 border border-white/[0.05] space-y-1.5">
                     <div className="flex flex-wrap items-center justify-between gap-2">
-                      <span className="font-semibold text-slate-200">{item.description}</span>
+                      <span className="font-medium text-slate-200 text-xs">{item.description}</span>
                       <div className="flex items-center space-x-1">
                         {(['Completada', 'Parcial', 'No Realizada'] as const).map((st) => (
                           <button
                             key={st}
                             type="button"
                             onClick={() => handleStatusChange(idx, st)}
-                            className={`px-2 py-1 rounded-lg text-[10px] font-bold uppercase transition-all ${
+                            className={`px-2 py-0.5 rounded text-[9px] font-semibold uppercase transition-all ${
                               item.status === st
                                 ? st === 'Completada'
                                   ? 'bg-emerald-600 text-white'
@@ -206,7 +206,7 @@ export const NewSessionModal: React.FC<NewSessionModalProps> = ({
                       value={item.feedback}
                       onChange={(e) => handleFeedbackChange(idx, e.target.value)}
                       placeholder="Observación o retroalimentación sobre la tarea..."
-                      className="w-full px-3 py-1.5 bg-slate-900 border border-slate-700/60 rounded-lg text-slate-300 text-xs focus:outline-none focus:border-amber-500"
+                      className="w-full px-2.5 py-1 bg-slate-900 border border-white/[0.06] rounded-md text-slate-300 text-xs focus:outline-none focus:border-amber-500"
                     />
                   </div>
                 ))}
@@ -216,31 +216,31 @@ export const NewSessionModal: React.FC<NewSessionModalProps> = ({
 
           {/* 2. General Notes & Counseling Documentation */}
           <div>
-            <label className="block text-slate-300 font-semibold mb-1">
+            <label className="block text-[11px] font-medium text-slate-300 mb-1">
               Notas y Documentación de la Sesión *
             </label>
             <textarea
               required
-              rows={5}
+              rows={4}
               value={generalNotes}
               onChange={(e) => setGeneralNotes(e.target.value)}
               placeholder="Escribe los aspectos tratados, confesiones, respuestas del aconsejado, pasajes bíblicos confrontados y acuerdos de la sesión..."
-              className="w-full px-3.5 py-2.5 bg-slate-900 border border-slate-700 rounded-xl text-slate-100 focus:outline-none focus:border-amber-500 leading-relaxed text-xs sm:text-sm"
+              className="w-full px-3 py-2 bg-slate-900/90 border border-white/[0.08] rounded-lg text-slate-100 placeholder-slate-500 focus:outline-none focus:border-amber-500 leading-relaxed text-xs"
             />
           </div>
 
           {/* 3. Assign New Tasks */}
-          <div className="p-4 rounded-2xl bg-slate-900/80 border border-slate-800 space-y-3">
-            <h4 className="text-xs uppercase font-bold text-amber-400 tracking-wider">
+          <div className="p-3.5 rounded-xl bg-slate-900/70 border border-white/[0.06] space-y-2.5">
+            <h4 className="text-[11px] uppercase font-semibold text-amber-400 tracking-wider">
               3. Asignar Nuevas Tareas para la Próxima Semana
             </h4>
 
             {newTasks.length > 0 && (
-              <div className="space-y-2 mb-3">
+              <div className="space-y-1.5 mb-2">
                 {newTasks.map((t) => (
-                  <div key={t.id} className="flex items-center justify-between p-2.5 rounded-xl bg-slate-950 border border-slate-800">
+                  <div key={t.id} className="flex items-center justify-between p-2 rounded-lg bg-slate-950 border border-white/[0.05]">
                     <div>
-                      <p className="text-slate-200 text-xs font-semibold">{t.description}</p>
+                      <p className="text-slate-200 text-xs font-medium">{t.description}</p>
                       {t.biblicalReference && (
                         <p className="text-[11px] text-amber-400 font-serif">{t.biblicalReference}</p>
                       )}
@@ -263,7 +263,7 @@ export const NewSessionModal: React.FC<NewSessionModalProps> = ({
                 value={newTaskDesc}
                 onChange={(e) => setNewTaskDesc(e.target.value)}
                 placeholder="Nueva tarea (ej: Escribir carta de confesión bíblica)..."
-                className="w-full px-3 py-2 bg-slate-950 border border-slate-700 rounded-xl text-slate-100 text-xs focus:outline-none focus:border-amber-500"
+                className="w-full px-2.5 py-1.5 bg-slate-950 border border-white/[0.06] rounded-lg text-slate-100 placeholder-slate-500 text-xs focus:outline-none focus:border-amber-500"
               />
               <div className="flex gap-2">
                 <input
@@ -271,12 +271,12 @@ export const NewSessionModal: React.FC<NewSessionModalProps> = ({
                   value={newTaskRef}
                   onChange={(e) => setNewTaskRef(e.target.value)}
                   placeholder="Cita Bíblica (ej: Salmo 51)"
-                  className="flex-1 px-3 py-2 bg-slate-950 border border-slate-700 rounded-xl text-slate-100 text-xs focus:outline-none focus:border-amber-500"
+                  className="flex-1 px-2.5 py-1.5 bg-slate-950 border border-white/[0.06] rounded-lg text-slate-100 placeholder-slate-500 text-xs focus:outline-none focus:border-amber-500"
                 />
                 <button
                   type="button"
                   onClick={handleAddNewTask}
-                  className="px-4 py-2 bg-amber-600 hover:bg-amber-500 text-white rounded-xl text-xs font-semibold flex items-center space-x-1"
+                  className="px-3 py-1.5 bg-amber-600 hover:bg-amber-500 text-white rounded-lg text-xs font-semibold flex items-center space-x-1"
                 >
                   <Plus className="w-3.5 h-3.5" />
                   <span>Agregar</span>
@@ -286,43 +286,43 @@ export const NewSessionModal: React.FC<NewSessionModalProps> = ({
           </div>
 
           {/* 4. Next Appointment */}
-          <div className="grid sm:grid-cols-2 gap-4">
+          <div className="grid sm:grid-cols-2 gap-3">
             <div>
-              <label className="block text-slate-300 font-semibold mb-1">Próxima Cita (Fecha)</label>
+              <label className="block text-[11px] font-medium text-slate-300 mb-1">Próxima Cita (Fecha)</label>
               <input
                 type="date"
                 value={nextAppointmentDate}
                 onChange={(e) => setNextAppointmentDate(e.target.value)}
-                className="w-full px-3.5 py-2.5 bg-slate-900 border border-slate-700 rounded-xl text-slate-100 focus:outline-none focus:border-amber-500"
+                className="w-full px-3 py-2 bg-slate-900/90 border border-white/[0.08] rounded-lg text-slate-100 text-xs focus:outline-none focus:border-amber-500"
               />
             </div>
             <div>
-              <label className="block text-slate-300 font-semibold mb-1">Próxima Cita (Hora)</label>
+              <label className="block text-[11px] font-medium text-slate-300 mb-1">Próxima Cita (Hora)</label>
               <input
                 type="time"
                 value={nextAppointmentTime}
                 onChange={(e) => setNextAppointmentTime(e.target.value)}
-                className="w-full px-3.5 py-2.5 bg-slate-900 border border-slate-700 rounded-xl text-slate-100 focus:outline-none focus:border-amber-500"
+                className="w-full px-3 py-2 bg-slate-900/90 border border-white/[0.08] rounded-lg text-slate-100 text-xs focus:outline-none focus:border-amber-500"
               />
             </div>
           </div>
 
           {/* Actions */}
-          <div className="pt-4 border-t border-slate-800 flex justify-end space-x-3">
+          <div className="pt-3 border-t border-white/[0.06] flex justify-end space-x-2.5">
             <button
               type="button"
               onClick={onClose}
-              className="px-5 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 font-semibold"
+              className="px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 font-semibold text-xs"
             >
               Cancelar
             </button>
             <button
               type="submit"
               disabled={isSaving}
-              className="gold-button px-6 py-2.5 font-semibold flex items-center space-x-2 disabled:opacity-50"
+              className="gold-button px-5 py-2 font-semibold flex items-center space-x-1.5 text-xs disabled:opacity-50"
             >
-              <Save className="w-4 h-4" />
-              <span>{isSaving ? 'Guardando...' : 'Guardar y Cerrar Sesión'}</span>
+              <Save className="w-3.5 h-3.5" />
+              <span>{isSaving ? 'Guardando...' : 'Guardar Sesión'}</span>
             </button>
           </div>
 

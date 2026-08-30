@@ -90,22 +90,22 @@ export const AppContent: React.FC = () => {
       </main>
 
       {/* Footer a pantalla completa */}
-      <footer className="hidden md:block bg-[#05080e] border-t border-amber-500/10 py-6 text-center text-xs text-slate-500">
+      <footer className="hidden md:block bg-[#05080e]/90 border-t border-white/[0.05] py-4 text-center text-[11px] text-slate-500">
         <div className="w-full px-4 sm:px-8 lg:px-12 xl:px-16 flex items-center justify-between">
-          <div className="flex items-center space-x-3">
-            <Anchor className="w-4 h-4 text-amber-500" />
-            <span className="font-serif font-bold text-slate-300 text-sm">Ancla Consejería Bíblica</span>
+          <div className="flex items-center space-x-2.5">
+            <Anchor className="w-3.5 h-3.5 text-amber-500/80" />
+            <span className="font-serif font-semibold text-slate-300 text-xs">Ancla Consejería Bíblica</span>
             <span className="text-slate-700">|</span>
-            <span className="text-slate-400 italic text-xs">"Firmeza en la Verdad, Gracia en el Corazón"</span>
+            <span className="text-slate-400 italic text-[11px]">"Firmeza en la Verdad, Gracia en el Corazón"</span>
           </div>
 
-          <div className="flex items-center space-x-6 text-xs text-slate-400">
+          <div className="flex items-center space-x-5 text-[11px] text-slate-400">
             <span className="flex items-center space-x-1.5">
-              <Shield className="w-3.5 h-3.5 text-amber-400" />
+              <Shield className="w-3 h-3 text-amber-400/80" />
               <span>Confidencialidad Pastoral</span>
             </span>
             <span className="flex items-center space-x-1.5">
-              <BookOpen className="w-3.5 h-3.5 text-amber-400" />
+              <BookOpen className="w-3 h-3 text-amber-400/80" />
               <span>Sola Scriptura</span>
             </span>
           </div>

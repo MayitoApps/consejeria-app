@@ -16,7 +16,7 @@ export const MobileNav: React.FC<MobileNavProps> = ({ activeTab, setActiveTab })
   ];
 
   return (
-    <div className="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-[#0b0f19]/95 backdrop-blur-lg border-t border-amber-500/20 px-2 py-1.5 shadow-navy-lg">
+    <div className="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-[#070a11]/95 backdrop-blur-lg border-t border-white/[0.08] px-2 py-1 shadow-navy-lg">
       <div className="grid grid-cols-4 gap-1">
         {navItems.map((item) => {
           const Icon = item.icon;
@@ -26,14 +26,14 @@ export const MobileNav: React.FC<MobileNavProps> = ({ activeTab, setActiveTab })
             <button
               key={item.id}
               onClick={() => setActiveTab(item.id)}
-              className={`flex flex-col items-center justify-center py-1 px-1 rounded-lg transition-all ${
+              className={`flex flex-col items-center justify-center py-1.5 px-1 rounded-xl transition-all ${
                 isActive 
-                  ? 'text-amber-400 bg-amber-500/10 font-bold' 
+                  ? 'text-amber-400 bg-amber-500/10 font-semibold' 
                   : 'text-slate-400 hover:text-slate-200'
               }`}
             >
-              <Icon className={`w-4 h-4 ${isActive ? 'text-amber-400 scale-105' : 'text-slate-400'}`} />
-              <span className="text-[10px] mt-0.5 truncate">{item.label}</span>
+              <Icon className={`w-4 h-4 ${isActive ? 'text-amber-400' : 'text-slate-400'}`} />
+              <span className="text-[10px] mt-0.5 tracking-tight truncate">{item.label}</span>
             </button>
           );
         })}

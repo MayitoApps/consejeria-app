@@ -18,39 +18,39 @@ export const AuthScreen: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#0b0f19] flex items-center justify-center p-4 selection:bg-amber-500/30 selection:text-amber-200">
-      <div className="w-full max-w-md glass-card rounded-2xl p-6 sm:p-8 border border-amber-500/25 shadow-navy-lg animate-fade-in relative overflow-hidden">
+    <div className="min-h-screen bg-[#070a11] flex items-center justify-center p-4 selection:bg-amber-500/30 selection:text-amber-200">
+      <div className="w-full max-w-sm glass-card rounded-2xl p-6 sm:p-7 border border-white/[0.08] shadow-navy-lg animate-fade-in relative overflow-hidden">
         
         {/* Subtle glow background */}
-        <div className="absolute -top-16 -right-16 w-48 h-48 bg-amber-500/10 rounded-full blur-2xl pointer-events-none"></div>
+        <div className="absolute -top-16 -right-16 w-40 h-40 bg-amber-500/10 rounded-full blur-2xl pointer-events-none"></div>
 
         {/* Logo and Branding */}
-        <div className="text-center mb-6 relative z-10">
-          <div className="w-12 h-12 mx-auto mb-3 rounded-xl bg-gradient-to-br from-amber-500 to-amber-700 p-0.5 shadow-gold-sm flex items-center justify-center">
+        <div className="text-center mb-5 relative z-10">
+          <div className="w-10 h-10 mx-auto mb-2.5 rounded-xl bg-gradient-to-br from-amber-500 to-amber-700 p-0.5 shadow-gold-sm flex items-center justify-center">
             <div className="w-full h-full bg-[#0f172a] rounded-[10px] flex items-center justify-center">
-              <Anchor className="w-6 h-6 text-amber-400" />
+              <Anchor className="w-5 h-5 text-amber-400" />
             </div>
           </div>
-          <h1 className="font-serif text-2xl font-bold tracking-tight gold-gradient-text">
+          <h1 className="font-serif text-xl font-bold tracking-tight gold-gradient-text">
             ANCLA
           </h1>
-          <span className="text-[10px] uppercase tracking-widest text-slate-400 font-semibold block -mt-0.5">
+          <span className="text-[9px] uppercase tracking-widest text-slate-400 font-semibold block mt-0.5">
             Consejería Bíblica
           </span>
-          <p className="text-xs text-slate-400 mt-2.5 leading-relaxed">
+          <p className="text-xs text-slate-400 mt-2 leading-relaxed">
             Plataforma pastoral para estudios bíblicos, metodología y gestión privada de expedientes.
           </p>
         </div>
 
         {/* Error Alert */}
         {authError && (
-          <div className="mb-4 p-3 rounded-xl bg-rose-950/60 border border-rose-500/40 text-rose-200 text-xs flex items-start space-x-2">
-            <AlertCircle className="w-4 h-4 text-rose-400 flex-shrink-0 mt-0.5" />
+          <div className="mb-4 p-2.5 rounded-xl bg-rose-950/60 border border-rose-500/30 text-rose-200 text-xs flex items-start space-x-2">
+            <AlertCircle className="w-3.5 h-3.5 text-rose-400 flex-shrink-0 mt-0.5" />
             <div className="flex-1">
               <span>{authError}</span>
               <button 
                 onClick={clearAuthError}
-                className="block text-[11px] text-rose-300 underline font-semibold mt-1"
+                className="block text-[10px] text-rose-300 underline font-semibold mt-0.5"
               >
                 Cerrar
               </button>
@@ -59,11 +59,11 @@ export const AuthScreen: React.FC = () => {
         )}
 
         {/* Mandatory Sign In Button */}
-        <div className="space-y-3 relative z-10">
+        <div className="space-y-2.5 relative z-10">
           <button
             onClick={handleGoogleSignIn}
             disabled={isSubmitting}
-            className="w-full flex items-center justify-center space-x-3 py-3 px-4 rounded-xl bg-white text-slate-900 font-semibold text-xs sm:text-sm hover:bg-slate-100 transition-all shadow-md active:scale-[0.99] disabled:opacity-50"
+            className="w-full flex items-center justify-center space-x-2.5 py-2.5 px-3.5 rounded-xl bg-white text-slate-900 font-semibold text-xs hover:bg-slate-100 transition-all shadow-md active:scale-[0.99] disabled:opacity-50"
           >
             <svg className="w-4 h-4" viewBox="0 0 24 24">
               <path
@@ -88,13 +88,13 @@ export const AuthScreen: React.FC = () => {
         </div>
 
         {/* Security & Confidentiality Badges */}
-        <div className="mt-6 pt-5 border-t border-slate-800 space-y-2 text-[11px] text-slate-400">
+        <div className="mt-5 pt-4 border-t border-white/[0.06] space-y-1.5 text-[10px] text-slate-400">
           <div className="flex items-center space-x-2">
-            <Lock className="w-3.5 h-3.5 text-amber-400 flex-shrink-0" />
+            <Lock className="w-3 h-3 text-amber-400 flex-shrink-0" />
             <span>Acceso restringido exclusivamente a consejeros bíblicos.</span>
           </div>
           <div className="flex items-center space-x-2">
-            <ShieldCheck className="w-3.5 h-3.5 text-emerald-400 flex-shrink-0" />
+            <ShieldCheck className="w-3 h-3 text-emerald-400 flex-shrink-0" />
             <span>Tus datos y expedientes se sincronizan de forma privada.</span>
           </div>
         </div>
