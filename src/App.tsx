@@ -18,6 +18,7 @@ export const AppContent: React.FC = () => {
   const { user, loading } = useAuth();
   const [activeTab, setActiveTab] = useState<NavTab>('studies');
   const [selectedStudy, setSelectedStudy] = useState<BibleStudy | null>(null);
+  const [glossaryTarget, setGlossaryTarget] = useState<{ topicId: string; bookId?: string } | null>(null);
   const [advisees, setAdvisees] = useState<Advisee[]>([]);
 
   // Cada que se cambia de pestaña o vista, desplazarse automáticamente hasta arriba
@@ -52,6 +53,16 @@ export const AppContent: React.FC = () => {
     if (tab !== 'studies') {
       setSelectedStudy(null);
     }
+    if (tab !== 'glossary') {
+      setGlossaryTarget(null);
+    }
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+  };
+
+  const handleNavigateToGlossary = (topicId: string, bookId?: string) => {
+    setGlossaryTarget({ topicId, bookId });
+    setActiveTab('glossary');
+    setSelectedStudy(null);
     window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
   };
 
@@ -95,6 +106,7 @@ export const AppContent: React.FC = () => {
                 setSelectedStudy(null);
                 window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
               }} 
+              onNavigateToGlossary={handleNavigateToGlossary}
             />
           ) : (
             <StudiesList 
@@ -107,7 +119,10 @@ export const AppContent: React.FC = () => {
         )}
 
         {activeTab === 'glossary' && (
-          <GlossaryView />
+          <GlossaryView 
+            initialTopicId={glossaryTarget?.topicId}
+            initialBookId={glossaryTarget?.bookId}
+          />
         )}
 
         {activeTab === 'methodology' && (

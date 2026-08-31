@@ -3,168 +3,328 @@ import { GlossaryTopic } from '../types';
 export const GLOSSARY_TOPICS: GlossaryTopic[] = [
   {
     id: 'inmoralidad-sexual',
-    title: 'Inmoralidad Sexual y Codicia',
-    shortDescription: 'Fornicación, adulterio, pornografía y la recuperación del diseño santo del cuerpo.',
+    title: 'Inmoralidad sexual',
+    shortDescription:
+      'Fornicación, adulterio, homosexualidad, codicia del corazón, salvaguardas éticas en consejería y restauración en Cristo.',
     iconName: 'Flame',
     categoryColor: 'from-amber-600 to-rose-700',
     books: [
       {
-        id: 'final-pureza',
-        title: 'Por Fin Libre: Luchando por la Pureza con el Poder de la Gracia',
-        author: 'Heath Lambert',
-        publisher: 'Editorial B&H',
-        year: '2015',
+        id: 'comentario-1-2-tesalonicenses',
+        title: 'Comentario Exegético al Texto Griego: 1a y 2a Tesalonicenses',
+        author: 'Samuel Pérez Millos',
+        publisher: 'Editorial CLIE (Viladecavalls, Barcelona)',
+        year: '2014',
         coverGradient: 'from-slate-900 via-amber-950 to-slate-900',
-        coverIcon: 'ShieldAlert',
-        summary: 'Una guía bíblica magistral y profundamente pastoral que enseña cómo usar las armas de la gracia en lugar de tácticas meramente conductuales para vencer la pornografía y el deseo inmoral.',
+        coverIcon: 'BookOpenCheck',
+        logosUrl: 'https://ref.ly/logosres/ctgdnt12tslncns?ref=Page.p+239',
+        summary:
+          'Análisis exegético de las epístolas a los tesalonicenses: la santificación como voluntad soberana de Dios, el alcance genérico de la fornicación (porneia) y la necesidad de poseer el cuerpo en honor y santidad.',
         passages: [
           {
-            id: 'fl-cap-1',
-            bookTitle: 'Por Fin Libre',
-            author: 'Heath Lambert',
-            chapter: 'Capítulo 3: La Gracia que Transforma',
-            pages: 'Páginas 45-52',
-            passageTitle: 'El Error del Moralismo y el Poder del Evangelio',
-            excerpt: 'El moralismo dice: "Esfuérzate más, ponte más filtros y resiste con tu fuerza". El evangelio dice: "Cristo ya pagó tu condena y Su Espíritu te da un amor superior por la santidad"...',
-            fullText: `El gran error en el que caen innumerables hombres y mujeres cristianos al luchar contra la inmoralidad sexual es recurrir a tácticas de fuerza de voluntad sin transformar los afectos del corazón. 
+            id: 'ts-pasaje-1',
+            bookTitle: 'Comentario Exegético: 1a y 2a Tesalonicenses',
+            author: 'Samuel Pérez Millos',
+            chapter: 'Capítulo 4: La Vida Santa como Voluntad de Dios',
+            pages: 'Página 239',
+            passageTitle: 'El Alcance Genérico de la Fornicación y la Vida Santa',
+            logosUrl: 'https://ref.ly/logosres/ctgdnt12tslncns?ref=Page.p+239',
+            excerpt:
+              'Él nos llamó a santidad y no a inmoralidad. La fornicación abarca una extensión genérica superior al adulterio, comprendiendo todo aquello moralmente reprobable en las relaciones de intimidad sexual...',
+            fullText: `Él nos llamó a santidad y no a inmoralidad. De otro modo, la vida santa es la voluntad de Dios (1 Ts. 4:3-7). La fornicación alcanza una extensión genérica superior al adulterio y abarca más allá de la práctica de relaciones entre solteros. Fornicación tiene que ver con los aspectos y pecados que contaminan las relaciones íntimas entre personas.
 
-Cuando intentas derrotar un deseo pecaminoso simplemente prohibiéndotelo a ti mismo, estás utilizando una estrategia que Pablo describe en Colosenses 2:23 como una que "no tiene valor alguno contra los apetitos de la carne". La única manera de vencer un placer destructor es conociendo y experimentando un placer inmensamente superior: el gozo de conocer y agradar a Cristo.
+Ambas cosas, adulterio y fornicación caben perfectamente en el significado de fornicación. Esta palabra tiene un amplio alcance que comprende todo aquello que es moralmente reprobable y pecaminoso en las relaciones de intimidad sexual. Este pecado puede comprender aspectos como la prostitución y, en general, cualquier actividad carnal ilegítima.
 
-La gracia de Dios no es una red de seguridad para cuando falles; es la dinamita espiritual que destruye el poder del pecado en tu vida diaria. Cuando comprendes que tu cuerpo fue comprado en la cruz y que el Espíritu Santo habita en ti, la pornografía deja de ser una tentación atractiva para convertirse en un insulto a Aquel que dio Su vida por ti.`,
-            biblicalReferences: ['Colosenses 2:23', 'Tito 2:11-14', '1 Corintios 6:19-20'],
-            keyTakeaway: 'La victoria sobre la impureza no es la ausencia de deseo, sino la presencia de un afecto supremo por la majestad de Dios que desplaza al pecado.'
-          },
-          {
-            id: 'fl-cap-5',
-            bookTitle: 'Por Fin Libre',
-            author: 'Heath Lambert',
-            chapter: 'Capítulo 7: La Radicalidad Bíblica',
-            pages: 'Páginas 112-118',
-            passageTitle: 'Cortando con los Puentes de la Tentación',
-            excerpt: 'Jesús no sugirió dialogar con la tentación visual; ordenó cortar de raíz todo acceso que sirva de tropiezo a la carne...',
-            fullText: `En Mateo 5:29-30, Jesús utiliza un lenguaje hiperbólico impactante: "Si tu ojo derecho te es ocasión de caer, sácalo, y échalo de ti". Cristo no está llamando a la automutilación física, sino a una determinación implacable contra los canales por los que el pecado entra al alma.
+La fornicación es contraria a la vida santa y tiene sobre el que la practica el juicio divino (He. 13:4). El adulterio es también una manifestación de perversidad en relaciones íntimas contrarias a la voluntad de Dios, manifestando la gravedad del quebrantamiento del pacto sagrado del matrimonio e incurriendo en perjurio delante de Dios, ya que el matrimonio es considerado como un pacto hecho ante Él (Pr. 2:17). Hay un juicio sobre las situaciones de fornicación y adulterio. La fornicación en general afecta directamente a la santidad que requiere el templo de Dios que somos los creyentes (1 Co. 6:19).
 
-En la era digital contemporánea, esto significa:
-1. Eliminar redes sociales o navegadores no filtrados en teléfonos personales.
-2. Trasladar las computadoras a áreas públicas y transitadas del hogar.
-3. Establecer una confesión inmediata y sin dilación con un mentor espiritual en cuanto surja una tentación.
-
-Cualquier costo en conveniencia terrenal o entretenimiento es infinitamente inferior al costo de perder la comunión con Dios y manchar el templo del Espíritu.`,
-            biblicalReferences: ['Mateo 5:29-30', 'Romanos 13:14', 'Job 31:1'],
-            keyTakeaway: 'La santidad requiere medidas prácticas drásticas contra los detonantes ambientales de pecado.'
+Las prácticas sexuales condenadas por la Escritura eran prácticas habituales en el mundo greco-romano, hasta el punto que no se consideraba como un vicio reprensible, salvo que se cometieran excesos o aberraciones.`,
+            biblicalReferences: [
+              '1 Tesalonicenses 4:3-7',
+              'Hebreos 13:4',
+              'Proverbios 2:17',
+              '1 Corintios 6:19'
+            ],
+            keyTakeaway:
+              'La santidad corporal es el mandato soberano de Dios; la fornicación abarca toda impureza íntima y profana el templo del Espíritu Santo.'
           }
         ]
       },
       {
-        id: 'dinamica-corazon',
-        title: 'La Dinámica del Corazón en la Vida Cotidiana',
-        author: 'David Powlison',
-        publisher: 'CCEF / Publicaciones Cristianas',
-        year: '2010',
+        id: 'comentario-mateo',
+        title: 'Comentario Exegético al Texto Griego: Mateo',
+        author: 'Samuel Pérez Millos',
+        publisher: 'Editorial CLIE (Viladecavalls, Barcelona)',
+        year: '2009',
         coverGradient: 'from-amber-950 via-slate-900 to-amber-900',
+        coverIcon: 'Flame',
+        logosUrl: 'https://ref.ly/logosres/LLS:CTGDNTMT?pos=res%2fLLS%3aCTGDNTMT%2f2015-05-22T18%3a29%3a13Z%2f2922961',
+        summary:
+          'Tratado exegético sobre el Evangelio de Mateo: el origen del pecado sexual en el corazón caído, los malos pensamientos (dialogismoi poneroi) y el adulterio en la volición según el Sermón del Monte.',
+        passages: [
+          {
+            id: 'mt-pasaje-1',
+            bookTitle: 'Comentario Exegético: Mateo',
+            author: 'Samuel Pérez Millos',
+            chapter: 'Capítulo 15: Lo que Sale del Corazón',
+            pages: 'Páginas 1036–1037',
+            passageTitle: 'Los Malos Pensamientos (Dialogismoi Poneroi) y la Raíz del Pecado Sexual',
+            logosUrl: 'https://ref.ly/logosres/LLS:CTGDNTMT?pos=res%2fLLS%3aCTGDNTMT%2f2015-05-22T18%3a29%3a13Z%2f2922961',
+            excerpt:
+              'Los malos pensamientos son un diálogo íntimo que conduce a reflexiones pecaminosas planeadas. El pecado de adulterio está no sólo en el hecho de comisión sino en el deseo de volición...',
+            fullText: `El Señor menciona el pecado de πορνεῖαι (fornicación), que abarca un amplio espectro de pecados de inmoralidad o perversión sexual. Incluye, además de las relaciones ilícitas entre solteros, el adulterio en sus diversas formas, el incesto, inclusive la homosexualidad y otros.
+
+Sigue luego una referencia al pecado de μοιχεῖαι (adulterio). Un pecado que evidencia la suciedad del corazón, en un deseo perverso hacia la mujer del prójimo, que quebranta el mandamiento de no cometer adulterio (Éx. 20:14) y el de no codiciar la mujer del prójimo (Éx. 20:17). El Señor enseñó también en el Sermón del Monte que el pecado de adulterio no está sólo en el hecho de comisión, sino también en el deseo de volición (Mt. 5:28).
+
+El primer pecado es el de διαλογισμοὶ πονηροί (pensamientos malvados; propios del maligno). La palabra usada para referirse a διαλογισμοὶ tiene que ver con diálogo; un diálogo íntimo que conduce a reflexiones pecaminosas planeadas que pueden llevarse a cabo o quedar en el deseo personal, pero que son igualmente perversas.
+
+La lista concluye con las βλασφημίαι (blasfemias), expresión que se refiere a hablar mal y que puede comprender tanto a hablar mal de Dios como de los hombres. Es la expresión propia de un corazón lleno de resentimiento y de amargura (He. 12:15).`,
+            biblicalReferences: [
+              'Mateo 15:19',
+              'Mateo 5:28',
+              'Éxodo 20:14',
+              'Éxodo 20:17',
+              'Hebreos 12:15'
+            ],
+            keyTakeaway:
+              'El adulterio se consuma en la volición del corazón antes del acto físico; los malos pensamientos son diálogos internos planeados que ofenden la santidad divina.'
+          }
+        ]
+      },
+      {
+        id: 'comentario-apocalipsis',
+        title: 'Comentario Exegético al Texto Griego: Apocalipsis',
+        author: 'Samuel Pérez Millos',
+        publisher: 'Editorial CLIE (Viladecavalls, Barcelona)',
+        year: '2010',
+        coverGradient: 'from-rose-950 via-slate-900 to-amber-950',
+        coverIcon: 'ShieldAlert',
+        logosUrl: 'https://ref.ly/logosres/LLS:CTGDNTAPCSS?pos=res%2fLLS%3aCTGDNTAPCSS%2f2015-05-22T18%3a28%3a36Z%2f1870103',
+        summary:
+          'Exposición del juicio divino sobre las prácticas inmorales y la homosexualidad, destacando que la práctica impenitente evidencia falta de nuevo nacimiento, pero proclamando la gracia restauradora.',
+        passages: [
+          {
+            id: 'ap-pasaje-1',
+            bookTitle: 'Comentario Exegético: Apocalipsis',
+            author: 'Samuel Pérez Millos',
+            chapter: 'Capítulo 21: La Condenación de la Impenitencia y la Gracia del Perdón',
+            pages: 'Página 639',
+            passageTitle: 'El Pecado de la Homosexualidad y la Restauración por Confesión',
+            logosUrl: 'https://ref.ly/logosres/LLS:CTGDNTAPCSS?pos=res%2fLLS%3aCTGDNTAPCSS%2f2015-05-22T18%3a28%3a36Z%2f1870103',
+            excerpt:
+              'La práctica de la homosexualidad evidencia que no se ha producido el nuevo nacimiento; sin embargo, la gracia divina concede siempre tiempo para el arrepentimiento...',
+            fullText: `La fornicación se manifiesta en cualquier relación ilícita entre personas. Comprende los pecados de comisión como la fornicación, el adulterio, y cualquier otra práctica sexual ilícita.
+
+El pecado de la homosexualidad, tanto entre hombres como entre mujeres, no sólo está condenado por la Biblia, sino que su práctica pone en evidencia que no se ha producido el nuevo nacimiento, por tanto, quienes practican este pecado, no heredarán el reino de Dios (1 Co. 6:9). El hurto y el pecado sexual nacen de un corazón codicioso por lo ajeno.
+
+La primera enseñanza que surge del texto bíblico es la actuación divina contra el pecado, que obliga a actuar a Dios a causa de su justicia. Sin embargo, la gracia se manifiesta aún en los momentos de mayor pecaminosidad, concediendo siempre tiempo para el arrepentimiento, "no queriendo que ninguno perezca, sino que todos procedan al arrepentimiento" (2 P. 3:9). 
+
+Cuando hay pecado sin confesar en la vida cristiana, se produce la interrupción de la comunión con Dios, que se restaura por confesión (1 Jn. 1:9).`,
+            biblicalReferences: [
+              '1 Corintios 6:9',
+              '2 Pedro 3:9',
+              '1 Juan 1:9'
+            ],
+            keyTakeaway:
+              'La práctica impenitente de la inmoralidad excluye del reino divino; no obstante, la gracia concede arrepentimiento y restaura la comunión rota mediante la confesión.'
+          }
+        ]
+      },
+      {
+        id: 'comentario-colosenses',
+        title: 'Comentario Exegético al Texto Griego: Colosenses',
+        author: 'Samuel Pérez Millos',
+        publisher: 'Editorial CLIE (Viladecavalls, Barcelona)',
+        year: '2015',
+        coverGradient: 'from-slate-900 via-indigo-950 to-slate-900',
+        coverIcon: 'Bookmark',
+        logosUrl: 'https://ref.ly/logosres/LLS:CTGDNTCLSNS?pos=res%2fLLS%3aCTGDNTCLSNS%2f2017-01-16T20%3a15%3a34Z%2f707663',
+        summary:
+          'Estudio exegético sobre la mortificación de la carne en Colosenses 3:5: la fornicación, las desviaciones sexuales, el pacto matrimonial y la condena del deseo codicioso.',
+        passages: [
+          {
+            id: 'col-pasaje-1',
+            bookTitle: 'Comentario Exegético: Colosenses',
+            author: 'Samuel Pérez Millos',
+            chapter: 'Capítulo 3: Haced Morir lo Terrenal',
+            pages: 'Páginas 707–709',
+            passageTitle: 'Haced Morir la Fornicación y la Preservación del Pacto',
+            logosUrl: 'https://ref.ly/logosres/LLS:CTGDNTCLSNS?pos=res%2fLLS%3aCTGDNTCLSNS%2f2017-01-16T20%3a15%3a34Z%2f707663',
+            excerpt:
+              'Fornicación tiene que ver con inmoralidad sexual, incluyendo desviaciones y adulterio. Jesús condenaba el pensamiento que orientaba en esa dirección...',
+            fullText: `Comienza por el pecado de fornicación. Tiene que ver con inmoralidad sexual. El término incluye también a las desviaciones sexuales e incluso, en ocasiones al adulterio. Se usa para señalar a uniones ilícitas y perversas que Dios condena (1 Co. 5:1 ss.).
+
+Este pecado es también una manifestación de perversidad en relaciones íntimas contrarias a la voluntad de Dios, manifestando la gravedad del quebrantamiento del pacto sagrado del matrimonio e incurriendo en perjurio delante de Él, ya que el matrimonio es considerado como un pacto hecho delante de Dios (Pr. 2:17).
+
+Los cristianos de las iglesias fundadas en el mundo gentil vivían antes en un ambiente propicio para la práctica de este pecado, al que se le daba connotación de virilidad. Aunque la conversión transformaba las vidas y las conducía por sendas rectas conforme a Dios, el pecado se manifestaba ocasionalmente entre los cristianos (cf. 1 Co. 5:1), algunos de cuyos casos revestían una tremenda gravedad.
+
+Jesús condenaba también el pensamiento que orientaba en esa dirección: "Pero yo os digo que cualquiera que mira a una mujer para codiciarla, ya adulteró con ella en su corazón" (Mt. 5:27-28).`,
+            biblicalReferences: [
+              'Colosenses 3:5',
+              '1 Corintios 5:1',
+              'Proverbios 2:17',
+              'Mateo 5:27-28'
+            ],
+            keyTakeaway:
+              'El creyente está llamado a mortificar resueltamente la fornicación y las fantasías de codicia, honrando el matrimonio como pacto sagrado ante Dios.'
+          }
+        ]
+      },
+      {
+        id: 'comentario-hebreos',
+        title: 'Comentario Exegético al Texto Griego: Hebreos',
+        author: 'Samuel Pérez Millos',
+        publisher: 'Editorial CLIE (Viladecavalls, Barcelona)',
+        year: '2009',
+        coverGradient: 'from-slate-900 via-emerald-950 to-slate-900',
+        coverIcon: 'Zap',
+        logosUrl: 'https://ref.ly/logosres/LLS:CTGDNTHBRS?pos=res%2fLLS%3aCTGDNTHBRS%2f2015-05-22T18%3a28%3a18Z%2f2169109',
+        summary:
+          'Exposición sobre la raíz de amargura (He. 12:15) y la santidad del matrimonio (He. 13:4): cómo el pecado no resuelto y el resentimiento contaminan a la comunidad entera.',
+        passages: [
+          {
+            id: 'hb-pasaje-1',
+            bookTitle: 'Comentario Exegético: Hebreos',
+            author: 'Samuel Pérez Millos',
+            chapter: 'Capítulo 12: La Advertencia contra la Amargura',
+            pages: 'Páginas 752–753',
+            passageTitle: 'La Contaminación Colectiva de la Amargura en la Iglesia',
+            logosUrl: 'https://ref.ly/logosres/LLS:CTGDNTHBRS?pos=res%2fLLS%3aCTGDNTHBRS%2f2015-05-22T18%3a28%3a18Z%2f2169109',
+            excerpt:
+              'La amargura fructifica en el corazón donde brota y se extiende como planta venenosa contaminando a otros. Un cristiano amargado es amargura para el resto...',
+            fullText: `La amargura fructifica en el corazón donde brota. La contaminación comienza amargando al creyente, pero no queda solo en él, sino que se extiende como planta venenosa contaminando a otros. Un pecado íntimo y personal se extiende luego a la congregación afectando a muchos (He. 12:15).
+
+Un cristiano amargado es amargura para el resto de hermanos. La influencia perniciosa ocasiona desaliento y desánimo en quienes están en contacto con él, transmitiéndoles en palabras y acciones la amargura que brotó en el corazón.
+
+El matrimonio debe ser honroso en todos y el lecho matrimonial sin mancilla, pues Dios juzgará a los inmorales y adúlteros (He. 13:4). La amargura derivada de la infidelidad o de la falta de perdón destruye la comunión espiritual del hogar y del cuerpo de Cristo.`,
+            biblicalReferences: [
+              'Hebreos 12:15',
+              'Hebreos 13:4'
+            ],
+            keyTakeaway:
+              'Los pecados sexuales y las heridas de amargura no tratadas se propagan como veneno contagioso, dañando a familias y congregaciones.'
+          }
+        ]
+      },
+      {
+        id: 'adulterio-swindoll',
+        title: 'Adulterio: Sanando un Matrimonio que ha Sufrido el Trauma de las Decisiones Inmorales',
+        author: 'Charles Swindoll',
+        publisher: 'Visión Para Vivir (Frisco, TX)',
+        year: '2015',
+        coverGradient: 'from-amber-950 via-rose-950 to-slate-900',
         coverIcon: 'HeartPulse',
-        summary: 'Exposición clásica de la psicología bíblica: cómo los deseos desordenados se convierten en demandas idolátricas y cómo el agua viva de Cristo purifica el manantial del alma.',
+        logosUrl: 'https://ref.ly/logosres/LLS:DLTRSNDDLCNMRLS?pos=res%2fLLS%3aDLTRSNDDLCNMRLS%2f2015-08-18T21%3a59%3a51Z%2f8114',
+        summary:
+          'Guía fundamental de consejería matrimonial y pureza: la conexión directa entre adulterio y codicia, el mandato de huir de la fornicación como José, y la necesidad de disciplina eclesiástica ante la impenitencia.',
         passages: [
           {
-            id: 'dc-cap-2',
-            bookTitle: 'La Dinámica del Corazón en la Vida Cotidiana',
-            author: 'David Powlison',
-            chapter: 'Capítulo 2: El Modelo del Árbol y los Frutos',
-            pages: 'Páginas 24-33',
-            passageTitle: 'La Raíz del Deseo Sexual Idolátrico',
-            excerpt: 'Detrás de la fantasía sexual casi siempre se esconde el anhelo de aliviar la soledad, el dolor o la falta de sentido personal...',
-            fullText: `El corazón humano nunca peca en el vacío. Cuando una persona acude a la inmoralidad sexual, lo hace creyendo una promesa mentirosa: que ese acto le proporcionará refugio, afirmación, escape o consuelo.
+            id: 'sw-pasaje-1',
+            bookTitle: 'Adulterio: Sanando un Matrimonio',
+            author: 'Charles Swindoll',
+            chapter: 'Perspectivas para Aconsejar: Matrimonio',
+            pages: 'Páginas 8–11 (1:3)',
+            passageTitle: 'La Raíz de Codicia y la Estrategia Práctica de Huir',
+            logosUrl: 'https://ref.ly/logosres/LLS:DLTRSNDDLCNMRLS?pos=res%2fLLS%3aDLTRSNDDLCNMRLS%2f2015-08-18T21%3a59%3a51Z%2f8114',
+            excerpt:
+              'El adulterio es un acto de arrogancia impulsado por la codicia. Huir significa escapar, rehusar, mantener distancia segura y guardar el templo...',
+            fullText: `Sea el matrimonio honroso en todos, y el lecho matrimonial sin mancilla, porque a los inmorales y a los adúlteros los juzgará Dios (Hebreos 13:4).
 
-En términos de Jeremías 2:13, el aconsejado está cometiendo dos males:
-1. Ha dejado a Dios, la fuente de agua viva.
-2. Ha cavado para sí cisternas rotas que no retienen agua.
+Dos de los Diez Mandamientos incluyen la prohibición divina del adulterio. Al obvio: "No cometerás adulterio", le sigue: "No codiciarás la mujer de tu prójimo" (Éxodo 20:14, 17). La conexión entre el adulterio y la codicia no es accidental. El adulterio es un acto de arrogancia, que se justifica por desear (codiciar) a una persona en particular o desear satisfacción sexual, independientemente de quién sea la otra persona. La razón para querer a otra persona tan intensamente varía, pero todos los adúlteros tienen esto en común: el deseo los ciega al punto de codicia. Esto los lleva a justificar su pecado, y a pisotear otras relaciones personales y compromisos.
 
-El papel del consejero bíblico consiste en ayudar al aconsejado a conectar su conducta externa con las raíces subterráneas de su corazón: ¿Qué estabas anhelando cuando recurriste a la pantalla? ¿Qué dolor o frustración intentabas adormecer? Al llevar esas necesidades a Cristo, el ídolo pierde su poder de seducción.`,
-            biblicalReferences: ['Jeremías 2:13', 'Santiago 4:1-3', 'Salmo 42:1-2'],
-            keyTakeaway: 'Identificar el ídolo funcional que compite con Dios en el corazón es el primer paso para la sanidad profunda.'
+Pasajes bíblicos relativos al adulterio: Proverbios 5–7, Mateo 19:3–10, 1 Corintios 6:9–20.
+
+Evite la Inmoralidad Sexual: "Huid de la fornicación. Todos los demás pecados que un hombre comete están fuera del cuerpo, pero el fornicario peca contra su propio cuerpo. ¿O no sabéis que vuestro cuerpo es templo del Espíritu Santo...? Pues por precio habéis sido comprados; por tanto, glorificad a Dios en vuestro cuerpo y en vuestro espíritu, los cuales son de Dios" (1 Corintios 6:18–20).
+
+"Huir quiere decir eso. ¡Escápese! Rehúse. Mantenga una distancia segura. Detenga todo avance hacia la lujuria. ¡Guarde el templo! Como José, aléjese y escápese como venado en dirección opuesta. No se permita que lo acorralen. Contrarreste esos lugares débiles y vulnerables en su psiquis dando pasos prácticos de resistencia. Eso incluye ser severo consigo mismo y evitar toda apariencia de mal."
+
+Numerosos pasajes indican la profunda preocupación de Dios en cuanto al adulterio y su impacto en el matrimonio. El mandamiento "No cometerás adulterio" se repite cinco veces en el Nuevo Testamento (cf. 1 Ts. 4:3–7). Si el adúltero es creyente y se niega a arrepentirse, la disciplina eclesiástica es esencial, por amor a los individuos que pecan, así como también por el bienestar espiritual de la iglesia.`,
+            biblicalReferences: [
+              'Hebreos 13:4',
+              'Éxodo 20:14',
+              'Éxodo 20:17',
+              '1 Corintios 6:18-20',
+              '1 Tesalonicenses 4:3-7',
+              'Proverbios 5-7',
+              'Mateo 19:3-10'
+            ],
+            keyTakeaway:
+              'El adulterio es un acto de soberbia alimentado por la codicia; la victoria exige una huida activa y radical (como José) y la firmeza de la disciplina espiritual.'
           }
         ]
-      }
-    ]
-  },
-  {
-    id: 'ira-amargura',
-    title: 'Ira, Conflicto y Amargura',
-    shortDescription: 'Sanando las relaciones rotas mediante la resolución bíblica y el perdón cruciforme.',
-    iconName: 'Zap',
-    categoryColor: 'from-orange-600 to-amber-700',
-    books: [
+      },
       {
-        id: 'pacificadores',
-        title: 'El Pacificador: Guía Bíblica para la Resolución de Conflictos',
-        author: 'Ken Sande',
-        publisher: 'Editorial Portavoz',
-        year: '2004',
-        coverGradient: 'from-slate-900 via-amber-950 to-orange-950',
+        id: 'teologia-consejeria-lambert',
+        title: 'Teología de la Consejería Bíblica: Las Bases Doctrinales del Ministerio',
+        author: 'Heath Lambert',
+        publisher: 'Editorial Bautista Independiente (Sebring, FL)',
+        year: '2020',
+        coverGradient: 'from-slate-900 via-amber-950 to-blue-950',
         coverIcon: 'Users',
-        summary: 'La obra cumbre sobre la resolución de conflictos interpersonales, examinando la pendiente del conflicto (escape vs ataque vs pacificación) y los principios de restauración.',
+        logosUrl: 'https://ref.ly/logosres/LLS:TLGDLCNSJRBBLC?pos=res%2fLLS%3aTLGDLCNSJRBBLC%2f2020-10-16T01%3a14%3a37Z%2f375218',
+        summary:
+          'Bases teológicas para la consejería pastoral: la confrontación compasiva centrada en la sangre purificadora de Cristo en lugar del ataque cruel, y las directrices éticas estrictas para aconsejar al sexo opuesto.',
         passages: [
           {
-            id: 'pac-cap-4',
-            bookTitle: 'El Pacificador',
-            author: 'Ken Sande',
-            chapter: 'Capítulo 4: Sacando la Viga de tu Propio Ojo',
-            pages: 'Páginas 81-94',
-            passageTitle: 'Los Siete Elementos de la Confesión Bíblica',
-            excerpt: 'Una confesión sincera desarma el conflicto y abre la puerta a la reconciliación verdadera...',
-            fullText: `Jesús en Mateo 7:3-5 nos manda a ocuparnos primero de la viga en nuestro propio ojo antes de intentar sacar la brizna del ojo de nuestro hermano. Para una restauración genuina, debemos practicar los Siete Elementos de la Confesión Bíblica:
+            id: 'hl-pasaje-1',
+            bookTitle: 'Teología de la Consejería Bíblica',
+            author: 'Heath Lambert',
+            chapter: 'Capítulo: Doctrinas de la Persona y Obra de Cristo en la Consejería',
+            pages: 'Páginas 106–107, 151',
+            passageTitle: 'Confrontación Compasiva en Cristo y Salvaguardas Éticas con el Sexo Opuesto',
+            logosUrl: 'https://ref.ly/logosres/LLS:TLGDLCNSJRBBLC?pos=res%2fLLS%3aTLGDLCNSJRBBLC%2f2020-10-16T01%3a14%3a37Z%2f375218',
+            excerpt:
+              'Nunca confrontamos con un ataque cruel, sino con la sangre de Cristo que quita los pecados. Asimismo, evitamos aconsejar continuamente a miembros del sexo opuesto para evitar toda apariencia de mal...',
+            fullText: `Todo ser humano necesita el perdón de Dios, porque todo ser humano es culpable de pecado. Todo aconsejado necesita el perdón de Dios de sus pecados. La Biblia enseña que el problema fundamental con todo ser humano es nuestro pecado. Es este pecado el que ocasiona la necesidad de Cristo. Ocultar esta realidad del pecado en la consejería, o en cualquier otro aspecto, es ocultar el problema central que Jesús vino a resolver con su persona y su obra.
 
-1. Habla a todos los involucrados (a quienes afectó tu pecado).
-2. Reconoce el daño causado y cómo tus acciones hirieron a la otra persona.
-3. Admite que estuviste equivocado ("Hice mal en actuar así", no "Siento si te molestó").
-4. Acepta las consecuencias y repara el daño si es posible.
-5. Cambia tu conducta con la ayuda de Dios.
-6. Pide perdón explícitamente: "¿Me perdonas por favor?".
-7. Da tiempo a la otra persona para sanar y procesar.
+Las doctrinas de la persona y la obra de Jesús cambian la manera en que confrontamos el pecado: pues en lugar de un ataque cruel contra el pecador, le ofrecemos un cuidado profundamente amoroso. Nunca confrontamos simplemente a las personas con sus pecados, sino también con la obra de Jesucristo para que quite esos pecados con su propia sangre. Cuando confrontamos al pecado siempre debemos hacerlo con compasión, cuidado y esperanza, y siempre con la promesa del perdón de Cristo cuando la confrontación encuentra el arrepentimiento del aconsejado.
 
-El perdón no es un sentimiento efímero; es una promesa deliberada de gracia que modela la cruz de Cristo.`,
-            biblicalReferences: ['Mateo 7:3-5', 'Proverbios 28:13', 'Efesios 4:32'],
-            keyTakeaway: 'El consejero debe enseñar al ofensor a confesar su culpa al 100% sin condicionarla a la respuesta de la otra parte.'
+La instrucción de Pablo a los efesios de que la fornicación, la inmundicia y la avaricia "ni aun se nombre entre vosotros, como conviene a santos" (Ef. 5:3) es relevante para la consejería. Este pasaje nos hace, como cristianos, responsables de la apariencia que damos en nuestras relaciones con el sexo opuesto. No es suficiente que los cristianos por individual busquen la pureza en sus propias relaciones ante Dios. También deben mostrar que están buscando la pureza en sus relaciones con otras personas.
+
+El llamado a evitar cualquier apariencia de inmoralidad sexual significa que, en la mayoría de las circunstancias normales, es incorrecto aconsejar a los miembros del sexo opuesto de manera continua. Los hombres no deben aconsejar a las mujeres de manera continua, no porque sea incorrecto instruir a una mujer en la consejería, sino porque el hombre debe evitar cualquier apariencia de pecado. Las mujeres no deben aconsejar a los hombres, no solo para evitar enseñarles a los hombres la doctrina, sino también para evitar una apariencia de incorrección al encontrarse ambos de manera constante y en solitario sin sus cónyuges.`,
+            biblicalReferences: [
+              'Efesios 5:3',
+              '1 Juan 1:9',
+              'Romanos 5:8-9'
+            ],
+            keyTakeaway:
+              'La consejería bíblica confronta el pecado con amor y esperanza en la sangre de Cristo; y establece límites claros evitando que hombres y mujeres se aconsejen a solas de manera continua.'
           }
         ]
-      }
-    ]
-  },
-  {
-    id: 'ansiedad-temor',
-    title: 'Ansiedad, Pánico y Depresión',
-    shortDescription: 'Encontrando la paz que sobrepasa el entendimiento en el cuidado soberano del Padre.',
-    iconName: 'Wind',
-    categoryColor: 'from-teal-600 to-sky-800',
-    books: [
+      },
       {
-        id: 'manual-consejero',
-        title: 'Manual del Consejero Cristiano',
-        author: 'Jay E. Adams',
-        publisher: 'Editorial CLIE',
-        year: '1984',
-        coverGradient: 'from-slate-900 via-sky-950 to-slate-900',
-        coverIcon: 'BookOpenCheck',
-        summary: 'Fundamento clásico de la consejería noutética y bíblica: directrices para confrontar en amor, estructurar planes de tareas y guiar al aconsejado a la obediencia práctica.',
+        id: 'consejeria-cristo-centrica',
+        title: 'Consejería Bíblica Cristo-Céntrica',
+        author: 'Robert Jones y Brad Hambrick (Ed. James MacDonald)',
+        publisher: 'Editorial Bautista Independiente (Sebring, FL)',
+        year: '2018',
+        coverGradient: 'from-amber-950 via-slate-900 to-rose-950',
+        coverIcon: 'Sparkles',
+        logosUrl: 'https://ref.ly/logosres/LLS:CNSJRBCRSTCNTRC?pos=res%2fLLS%3aCNSJRBCRSTCNTRC%2f2020-10-13T15%3a35%3a22Z%2f331994',
+        summary:
+          'Tratado fundamental sobre el problema del pecado: el sufrimiento derivado de cosechar sus consecuencias y el deber de ministrar el pleno impacto redentor del evangelio sobre la vida del aconsejado.',
         passages: [
           {
-            id: 'mc-cap-12',
-            bookTitle: 'Manual del Consejero Cristiano',
-            author: 'Jay E. Adams',
-            chapter: 'Capítulo 14: La Ansiedad y el Plan de Tareas',
-            pages: 'Páginas 215-228',
-            passageTitle: 'Venciendo la Pasividad mediante la Acción Bíblica',
-            excerpt: 'La preocupación excesiva paraliza; la obediencia activa a las responsabilidades presentes devuelve el orden al alma...',
-            fullText: `La ansiedad a menudo alimenta una espiral de inacción y catastrofismo. El aconsejado gasta tanta energía emocional anticipando futuros hipotéticos que descuida las tareas concretas que Dios le ha encomendado para el día de hoy.
+            id: 'jh-pasaje-1',
+            bookTitle: 'Consejería Bíblica Cristo-Céntrica',
+            author: 'Robert Jones y Brad Hambrick',
+            chapter: 'Capítulo: «El Problema del Pecado»',
+            pages: 'Página 102',
+            passageTitle: 'El Sufrimiento Consecuente del Pecado y el Impacto Redentor del Evangelio',
+            logosUrl: 'https://ref.ly/logosres/LLS:CNSJRBCRSTCNTRC?pos=res%2fLLS%3aCNSJRBCRSTCNTRC%2f2020-10-13T15%3a35%3a22Z%2f331994',
+            excerpt:
+              'No sólo pecamos; sufrimos las consecuencias de pecar. La consejería incluye ministrar el pleno impacto redentor del evangelio sobre los efectos personales, sociales, físicos y culturales del pecado...',
+            fullText: `La influencia del pecado es mucho más amplia que la directa consecuencia del pecado personal. No sólo pecamos; sufrimos las consecuencias de pecar. Cosechamos las consecuencias de nuestro propio pecado. Tal vez sea el hombre que enfrenta una soltería no deseada después de pecar por divorciarse de su esposa, el alcohólico cuya borrachera le llevó a que perdiera su empleo o la mujer sola con lengua cáustica que aleja a las amistades. Los efectos prolongados del pecado personal son una forma de sufrimiento.
 
-El Señor Jesús enseñó en Mateo 6:34: "No os afanéis por el día de mañana, porque el día de mañana traerá su afán. Basta a cada día su propio mal".
+Cuando catalogamos el sufrimiento bajo los efectos del pecado, confirmamos nuestra tesis: el problema central que todo aconsejado siempre enfrenta es el pecado.
 
-En la sesión de consejería, el siervo de Dios debe:
-- Ayudar al aconsejado a desglosar su problema abrumador en pasos pequeños y manejables.
-- Asignarle tareas específicas y medibles para cumplir durante la semana (lectura bíblica con preguntas, conversaciones pospuestas, restablecimiento de rutinas de descanso y trabajo).
-- Recordarle que Dios da la gracia por porciones diarias, como el maná en el desierto.`,
-            biblicalReferences: ['Mateo 6:34', 'Éxodo 16:4', 'Filipenses 4:8-9'],
-            keyTakeaway: 'La estructura y las tareas bíblicas devuelven al aconsejado de la ilusión paralizante a la realidad de la fe activa.'
+La consejería incluye más que meramente llamar a las personas a que se arrepientan de pecados específicos y proveer exigencia de cuentas y guía práctica para la vida santa. Incluye ministrar el pleno impacto redentor del evangelio sobre los efectos personales, sociales, físicos y culturales del pecado. Todo aconsejado necesita el perdón de Dios de sus pecados. Los aconsejados luchan con otros problemas además de su propio pecado, por lo que el pecado no será lo único ni lo primero que se aborde.`,
+            biblicalReferences: [
+              'Gálatas 6:7-8',
+              'Salmo 32:3-5',
+              'Romanos 8:1-2'
+            ],
+            keyTakeaway:
+              'El consejero debe diagnosticar el pecado central y su sufrimiento derivado, ministrando la plenitud del Evangelio para restaurar la vida personal, familiar y social del aconsejado.'
           }
         ]
       }

@@ -2,156 +2,231 @@ import { BibleStudy } from '../types';
 
 export const BIBLE_STUDIES: BibleStudy[] = [
   {
-    id: 'icv-mcb-inmoralidad-sexual',
-    title: 'ICV MCB Inmoralidad sexual',
-    subtitle: 'Inmoralidad sexual · Iniquidad · lascivia · lujuria · idolatría',
+    id: 'inmoralidad-sexual',
+    title: 'Inmoralidad sexual',
+    subtitle: 'Fornicación · Adulterio · Homosexualidad · Santificación · Consejería Cristo-Céntrica',
     category: 'Pureza & Santidad',
-    tags: ['Inmoralidad sexual', 'Iniquidad', 'Lascivia', 'Lujuria', 'Idolatría', 'Santificación'],
-    readTime: '15 min de estudio pastoral',
-    summary: 'El estudio aborda la inmoralidad sexual desde una perspectiva bíblica reformada, identificando su raíz en el corazón corrompido del ser humano, donde los pensamientos pecaminosos preceden al acto, conforme a la enseñanza de Jesús. Los pasajes centrales incluyen 1 Corintios 6:18, que manda huir continuamente del pecado sexual como acción permanente, no ocasional; Romanos 12:1, que llama a la entrega del cuerpo como respuesta de gratitud a las misericordias de Dios; y el Salmo 51, modelo de arrepentimiento genuino. El enfoque práctico para la consejería es integral: no basta corregir la conducta sexual aisladamente, sino reestructurar toda la vida —relaciones, descanso, hábitos, oración, estudio bíblico— conforme a principios divinos. La esperanza descansa en que el creyente ya fue lavado, santificado y justificado en Cristo, y que el Espíritu Santo capacita para resistir la tentación y avanzar genuinamente en santificación.',
+    tags: [
+      'Inmoralidad sexual',
+      'Fornicación',
+      'Adulterio',
+      'Homosexualidad',
+      'Pureza',
+      'Santificación',
+      'Consejería Bíblica',
+      'Dominio Propio'
+    ],
+    readTime: '20 min de estudio pastoral',
+    summary:
+      'Este estudio aborda la inmoralidad sexual desde el fundamento de la exégesis bíblica reformada y la consejería pastoral (Samuel Pérez Millos, Charles Swindoll, Heath Lambert, Robert Jones y Brad Hambrick). La santidad constituye la voluntad explícita de Dios, quien nos llama a vivir apartados del pecado moral. La fornicación (porneia) abarca un amplio espectro de transgresiones íntimas ilícitas: relaciones prematrimoniales, adulterio, incesto y homosexualidad. El análisis diagnostica que la raíz no radica en meros impulsos físicos o determinismos biológicos, sino en los malos pensamientos (dialogismoi poneroi), la codicia idolátrica y la arrogancia que ciega al pecador para justificar su transgresión y pisotear pactos sagrados. La metodología pastoral rechaza el ataque cruel o legalista para abrazar una confrontación compasiva centrada en la obra redentora y la sangre purificadora de Cristo. El plan de acción prescribe una huida activa y radical de la lujuria (como José), la amputación de tentaciones, el cuidado ético estricto en la consejería entre sexos opuestos para evitar toda apariencia de mal, y un seguimiento integral que ministre el impacto redentor del evangelio sobre el corazón, el matrimonio, la vida comunitaria y la santificación progresiva.',
     sections: {
       verses: [
         {
-          reference: '1 Corintios 6:18',
-          text: '18 ¡Huyan del pecado sexual! Ningún otro pecado afecta tanto el cuerpo como éste, porque la inmoralidad sexual es un pecado contra el propio cuerpo.\n\n¡Huyan del pecado sexual! Es un mandamiento, no una sugerencia, es el mandato de nuestro Dios protegiéndonos del pecado sexual y de sus consecuencias. El verbo huir en tiempo presente indica una acción continua, lo que da a entender una vigilancia especial que los creyentes debían practicar día a día, no ocasionalmente, como debemos nosotros en la sociedad corrompida actual. La inmoralidad sexual es profundamente destructiva contra nosotros mismos, uniéndonos a otro(a) pecaminosamente.',
-          version: 'NTV / RVR1960',
-          exegesis: {
-            originalTerms: 'En griego: "Pheugete ten porneian" (φεύγετε τὴν πορνείαν). El verbo "pheugete" es un imperativo en tiempo presente activo que indica una acción continua y permanente: huir día a día con vigilancia especial y constante, no una retirada ocasional. El término "porneia" abarca todo acto o práctica sexual ilícita fuera del pacto matrimonial bíblico.',
-            historicalContext: 'En la sociedad corrompida de la antigua Corinto, la prostitución ritual y la promiscuidad estaban normalizadas. Pablo instruye a los creyentes a protegerse del pecado sexual y de sus consecuencias destructivas, recordándoles que el cuerpo pertenece al Señor.',
-            theologicalPrinciple: 'La inmoralidad sexual es un mandamiento explícito de huida, no una sugerencia. Es profundamente destructiva contra nosotros mismos al unir pecaminosamente el cuerpo —redimido por Cristo— a otro ser fuera del orden y pacto divino.',
-            pastoralApplication: 'En la consejería bíblica, el consejero debe enfatizar que no se dialoga ni se negocia con la tentación sexual; se practica una huida activa y radical en la vida diaria, cerrando canales de acceso a la impureza.'
-          }
-        },
-        {
-          reference: 'Romanos 12:1',
-          text: '1 Por lo tanto, amados hermanos, les ruego que entreguen su cuerpo a Dios por todo lo que él ha hecho a favor de ustedes. Que sea un sacrificio vivo y santo, la clase de sacrificio que a él le agrada. Esa es la verdadera forma de adorarlo.\n\nLa entrega incondicional de la vida solo es posible cuando se comprenden las misericordias de Dios hacia nosotros, lo que ocurre al contemplar la Cruz donde Jesús dio su vida por nosotros, su vida y obra la observamos en todo el consejo de Dios revelado en las Escrituras, transformando la orientación de la existencia. No se trata simplemente de una obligación religiosa, sino de una respuesta de gratitud que nace de la experiencia de la vida de Dios, el amor divino, el gobierno del Espíritu y la convicción de un corazón y espíritu humano que esta siendo renovado por Dios conforme el creyente entiende, obedece y vive la Palabra de Dios.',
-          version: 'NTV / RVR1960',
-          exegesis: {
-            originalTerms: 'En griego: "Parastesai ta somata hymon" (παραστῆσαι τὰ σώματα ὑμῶν - poner a disposición definitiva de Dios sus cuerpos), "Thysian zosan hagian" (θυσίαν ζῶσαν ἁγίαν - sacrificio vivo y santo) y "Logiken latreian" (λογικὴν λατρείαν - adoración racional, congruente y espiritual).',
-            historicalContext: 'Frente a los antiguos sacrificios de animales muertos en el altar, el apóstol Pablo llama a la iglesia en Roma a consagrar sus vidas corporales completas en respuesta de gratitud a las infinitas misericordias de Dios reveladas en la Cruz.',
-            theologicalPrinciple: 'La entrega incondicional de la vida solo es posible cuando se comprenden las misericordias de Dios. No se trata de una obligación religiosa legalista, sino de una respuesta de amor y gratitud que nace de la vida de Dios y del gobierno del Espíritu Santo.',
-            pastoralApplication: 'El consejero debe guiar al aconsejado a contemplar la Cruz y el consejo de Dios en las Escrituras, renovando su corazón y espíritu para que su pureza corporal sea una expresión gozosa de adoración viva.'
-          }
-        },
-        {
-          reference: '1 Tesalonicenses 5:24',
-          text: '24 Fiel es el que os llama, el cual también lo hará.',
-          version: 'RVR1960',
-          exegesis: {
-            originalTerms: 'En griego: "Pistos ho kalon hymas, hos kai poiesei" (Πιστὸς ὁ καλῶν ὑμᾶς, ὃς καὶ ποιήσει). "Pistos" denota la fidelidad perfecta, digna de confianza e inmutable del Dios del pacto.',
-            historicalContext: 'Pablo anima a los creyentes en Tesalónica en medio de aflicciones y tentaciones del entorno pagano, garantizándoles que su santificación integral será preservada por el llamado soberano de Dios.',
-            theologicalPrinciple: 'La santificación y perseverancia del creyente descansan primordialmente en la fidelidad divina, no en la autosuficiencia humana.',
-            pastoralApplication: 'Infundir certidumbre y esperanza viva al aconsejado: el Dios fiel que lo llamó al arrepentimiento es quien obrará el poder para vencer la tentación y llevar a cabo su transformación.'
-          }
-        },
-        {
-          reference: '1 Pedro 1:13',
-          text: '13 Así que piensen con claridad y ejerciten el control propio. Pongan su esperanza en la salvación inmerecida que recibirán cuando Jesucristo sea revelado al mundo.',
-          version: 'NTV / RVR1960',
-          exegesis: {
-            originalTerms: 'En griego: "Anazosamenoi tas osphyas tes dianoias hymon" (ceñid los lomos de vuestro entendimiento / piensen con claridad) y "nephontes" (νήφοντες - sobrios, en autocontrol y dominio propio).',
-            historicalContext: 'Pedro exhorta a los creyentes perseguidos en Asia Menor a vivir en santa disciplina mental, despojándose de las pasiones que antes tenían en su ignorancia.',
-            theologicalPrinciple: 'El autodominio y la pureza de conducta se originan en una mente sobria y disciplinada, anclada en la esperanza de la salvación inmerecida en Cristo.',
-            pastoralApplication: 'Enseñar al aconsejado a vigilar su mente y pensamiento crítico espiritual, impidiendo que los pensamientos vagabundos e impuros tomen el control de sus emociones.'
-          }
-        },
-        {
-          reference: 'Salmo 51:10',
-          text: '10 Crea en mí, oh Dios, un corazón limpio y renueva un espíritu fiel dentro de mí.',
-          version: 'NTV / RVR1960',
-          exegesis: {
-            originalTerms: 'En hebreo: "Bara-li lev tahor Elohim" (בְּרָא־לִי לֵב טָהוֹר אֱלֹהִים). El verbo "bara" se reserva exclusivamente para la creación soberana de Dios de la nada, y "lev tahor" es un corazón puro y sin mezcla de idolatría.',
-            historicalContext: 'Oración de David tras ser confrontado por el profeta Natán después de su pecado de adulterio con Betsabé y el homicidio de Urías.',
-            theologicalPrinciple: 'La restauración tras la inmoralidad sexual requiere una recreación interior y una renovación espiritual que solo el poder de Dios puede operar.',
-            pastoralApplication: 'Conducir al aconsejado a reconocer su incapacidad de limpiarse a sí mismo por mero esfuerzo humano, clamando a Dios por una transformación soberana de su corazón y sus deseos.'
-          }
-        },
-        {
-          reference: 'Filipenses 4:19',
-          text: '19 Y mi Dios proveerá a todas vuestras necesidades, conforme a sus riquezas en gloria en Cristo Jesús.',
-          version: 'RVR1960',
-          exegesis: {
-            originalTerms: 'En griego: "Plerosei pasan chreian hymon" (suplirá y colmará plenamente toda necesidad vuestra) "kata to ploutos autou en doxe" (según Sus inagotables riquezas en gloria).',
-            historicalContext: 'Pablo escribe desde la prisión romana elogiando la generosidad de los filipenses y recordándoles la fidelidad providencial inagotable del Padre.',
-            theologicalPrinciple: 'Dios promete saciar y proveer no solo lo material, sino la fuerza, gracia y plenitud afectiva y espiritual para que Sus hijos no busquen satisfacer sus necesidades en el pecado.',
-            pastoralApplication: 'Ayudar al aconsejado a descansar en que Dios es suficiente y tiene provisión de gracia para sostenerlo en momentos de debilidad o soledad.'
-          }
-        },
-        {
-          reference: 'Salmo 51:1–4',
-          text: '1 Ten misericordia de mí, oh Dios, debido a tu amor inagotable; a causa de tu gran compasión, borra la mancha de mis pecados. 2 Lávame de la culpa hasta que quede limpio y purifícame de mis pecados. 3 Pues reconozco mis rebeliones; día y noche me persiguen. 4 Contra ti y sólo contra ti he pecado; he hecho lo que es malo ante tus ojos. Quedará demostrado que tienes razón en lo que dices y que tu juicio contra mí es justo.',
-          version: 'NTV / RVR1960',
-          exegesis: {
-            originalTerms: 'En hebreo: "Choneni" (ten gracia de mí), "Chesed" (amor pactual constante e inagotable), "Rahamim" (tiernas compasiones). Describe el mal como "pesha" (rebelión), "avon" (iniquidad o culpa torcida) y "chataah" (errar el blanco).',
-            historicalContext: 'El modelo supremo de confesión y arrepentimiento sincero de las Escrituras tras la caída moral del rey David.',
-            theologicalPrinciple: 'Todo pecado sexual, aunque afecte a otras personas y al propio cuerpo, es primordialmente una ofensa directa contra la santidad y justicia de Dios.',
-            pastoralApplication: 'Guiar al aconsejado a no excusar su culpa ni minimizar su responsabilidad, sino a confesar con dolor piadoso que ha pecado contra Dios, implorando el perdón basado en la misericordia divina.'
-          }
-        },
-        {
-          reference: 'Romanos 1:27',
-          text: 'Y de igual modo también los hombres, dejando el uso natural de la mujer, se encendieron en su lascivia unos con otros, cometiendo hechos vergonzosos hombres con hombres, y recibiendo en sí mismos la retribución debida a su extravío.',
-          version: 'RVR1960',
-          exegesis: {
-            originalTerms: 'En griego: "Aphentes ten physiken chresin" (abandonando el uso/diseño natural de la creación) y "exekauthesan en te orexei" (se encendieron en su pasión desordenada).',
-            historicalContext: 'Pablo diagnostica el colapso moral del mundo pagano como consecuencia judicial del abandono del Creador y la adoración de la criatura.',
-            theologicalPrinciple: 'Las prácticas sexuales contrarias al diseño creacional representan una transgresión contra el orden natural establecido por Dios, trayendo juicio y consecuencias destructivas al ser humano.',
-            pastoralApplication: 'Abordar con fidelidad doctrinal y compasión pastoral la raíz idolátrica de las pasiones desordenadas, mostrando la responsabilidad personal y la posibilidad de redención en Cristo.'
-          }
-        },
-        {
-          reference: '1 Corintios 6:9–10',
-          text: '9 ¿No se dan cuenta de que los que hacen lo malo no heredarán el reino de Dios? No se engañen a sí mismos. Los que se entregan al pecado sexual o rinden culto a ídolos o cometen adulterio o son prostitutos o practican la homosexualidad 10 o son ladrones o avaros o borrachos o insultan o estafan a la gente: ninguno de ésos heredará el reino de Dios.',
-          version: 'NTV / RVR1960',
-          exegesis: {
-            originalTerms: 'En griego: "Pornoi" (inmorales sexuales), "Eidololatres" (idólatras), "Moichoi" (adúlteros), "Malakoi" (afeminados/lascivos), "Arsenokoitai" (quienes practican actos homosexuales).',
-            historicalContext: 'Pablo advierte a los corintios contra el autoengaño de pensar que se puede vivir en impenitencia y participar de las promesas del reino de Dios.',
-            theologicalPrinciple: 'La impenitencia en la inmoralidad sexual excluye del reino divino; sin embargo, el versículo 11 proclama la gloriosa justificación y santificación en el Señor Jesús para los que se arrepienten.',
-            pastoralApplication: 'Confrontar el pecado con la gravedad de la Palabra, asegurando a la vez que ningún pecado está fuera del poder purificador de la sangre de Cristo.'
-          }
-        },
-        {
-          reference: '1 Timoteo 1:9–10',
-          text: 'Reconociendo esto: que la ley no ha sido instituida para el justo, sino para los transgresores y rebeldes, para los impíos y pecadores, para los irreverentes y profanos, para los parricidas y matricidas, para los homicidas, para los inmorales, homosexuales, secuestradores, mentirosos, perjuros, y para cualquier otra cosa que es contraria a la sana doctrina.',
+          reference: 'Hebreos 13:4',
+          text:
+            '4 Honroso sea en todos el matrimonio, y el lecho sin mancilla; pero a los fornicarios y a los adúlteros los juzgará Dios.',
           version: 'RVR1960 / LBLA',
           exegesis: {
-            originalTerms: 'En griego: "Antikeitai te hygiainouse didaskalia" (se opone a la doctrina sana, pura y saludable).',
-            historicalContext: 'Instrucción pastoral de Pablo a Timoteo sobre el propósito de la Ley para exponer la rebeldía y dirigir al pecador al Evangelio.',
-            theologicalPrinciple: 'La Ley de Dios define con claridad lo que es pecado y condena las transgresiones que atentan contra la santidad y el diseño divino.',
-            pastoralApplication: 'Usar la Ley de Dios como espejo para que el aconsejado reconozca su condición y abrace la sana doctrina que transforma la vida.'
+            originalTerms:
+              'En griego: "Timios ho gamos en pasin kai he koite amiantos" (τίμιος ὁ γάμος ἐν πᾶσιν καὶ ἡ κοίτη ἀμίαντος). "Timios" (adjetivo que denota algo de inestimable valor, digno de honor y reverencia suprema). "Koite" (lecho conyugal, metonimia de la intimidad sexual en el pacto matrimonial). "Amiantos" (adjetivo compuesto de la privativa "a-" y "miaino" [manchar]: puro, incontaminado, sin profanación moral). "Pornous gar kai moichous krinei ho Theos" (πόρνους γὰρ καὶ μοιχοὺς κρινεῖ ὁ Θεός): Dios ejecutará Su juicio activo y retributivo sobre los fornicarios y adúlteros impenitentes.',
+            historicalContext:
+              'Escrito a creyentes hebreos que enfrentaban dos influencias extremas en el mundo grecorromano: por un lado, sectas ascéticas dualistas que menospreciaban el matrimonio como algo inferior; por el otro, la decadencia moral pagana que normalizaba el concubinato, la prostitución en los templos y la infidelidad marital.',
+            theologicalPrinciple:
+              'El matrimonio es una institución sagrada de la creación de Dios dotada de supremo honor. La intimidad sexual es bendita y santa exclusivamente dentro del pacto conyugal; fuera de este santuario, cualquier relación íntima constituye una profanación que coloca al infractor bajo el juicio inminente de la justicia divina.',
+            pastoralApplication:
+              'En la consejería bíblica, el consejero debe reafirmar la santidad y honor del matrimonio. Cuando se atiende el adulterio o la fornicación, se debe confrontar la falta con la solemnidad del juicio divino, guiando al aconsejado al arrepentimiento genuino y a la reconsagración del pacto conyugal.'
           }
         },
         {
-          reference: 'Mateo 5:29',
-          text: 'Y si tu ojo derecho te es ocasión de pecar, arráncalo y échalo de ti; porque te es mejor que se pierda uno de tus miembros, y no que todo tu cuerpo sea arrojado al infierno.',
+          reference: 'Éxodo 20:14, 17',
+          text:
+            '14 No cometerás adulterio.\n\n17 No codiciarás la casa de tu prójimo, no codiciarás la mujer de tu prójimo, ni su siervo, ni su criada, ni su buey, ni su asno, ni cosa alguna de tu prójimo.',
           version: 'RVR1960',
           exegesis: {
-            originalTerms: 'En griego: "Skandalizei se" (te hace tropezar o caer en pecado), "Exele auton kai bale apo sou" (arráncalo y arrójalo lejos de ti). Hipérbole semítica de extrema urgencia y radicalidad.',
-            historicalContext: 'Jesús en el Sermón del Monte enseña que la santidad exige medidas decisivas para cortar cualquier estímulo que induzca al adulterio en el corazón.',
-            theologicalPrinciple: 'La mortificación del pecado requiere medidas radicales de prevención para cortar de raíz los accesos de la concupiscencia visual y mental.',
-            pastoralApplication: 'Establecer en la consejería acciones concretas de amputación: eliminar redes, contactos o aplicaciones que sirvan de tropiezo hacia la impureza.'
+            originalTerms:
+              'En hebreo: "Lo tin\'af" (לֹ֣א תִּֿנְאָ֑ף - Séptimo Mandamiento: prohibición categórica del adulterio) y "Lo tachmod eshet re\'echa" (לֹ֥א תַחְמֹ֖ד אֵ֣שֶׁת רֵעֶ֑ךָ - Décimo Mandamiento). El verbo "chamad" (חָמַד) significa desear con anhelo egoísta y posesivo lo que pertenece a otro. En el análisis pastoral de Swindoll, la codicia constituye la matriz interior de la cual brota inevitablemente el adulterio.',
+            historicalContext:
+              'El Decálogo fue entregado por Dios a Israel en el Sinaí como cimiento del orden ético, social y espiritual del pueblo del pacto, protegiendo la sacralidad de la familia frente a las costumbres licenciosas de Egipto y Canaán.',
+            theologicalPrinciple:
+              'La conexión entre el adulterio y la codicia es íntima y causal. El adulterio no es un accidente biológico, sino un acto de arrogancia y codicia idolátrica donde el deseo ciego lleva al individuo a pisotear compromisos sagrados para satisfacer su propio placer.',
+            pastoralApplication:
+              'Ayudar al aconsejado a descender hasta la raíz idolátrica de su corazón: desarmar las justificaciones del adúltero ("mi cónyuge no me comprende", "siento una conexión especial") para exponer la soberbia y la codicia que desafían la soberanía de Dios.'
           }
         },
         {
-          reference: 'Levítico 20:13',
-          text: 'Si alguno se acuesta con varón como los que se acuestan con mujer, los dos han cometido abominación; ciertamente han de morir. Su culpa de sangre sea sobre ellos.',
+          reference: '1 Corintios 6:18–20',
+          text:
+            '18 Huid de la fornicación. Todos los demás pecados que un hombre comete están fuera del cuerpo; pero el fornicario peca contra su propio cuerpo. 19 ¿O no sabéis que vuestro cuerpo es templo del Espíritu Santo, que está en vosotros, el cual tenéis de Dios, y que no sois vuestros? 20 Pues por precio habéis sido comprados; por tanto, glorificad a Dios en vuestro cuerpo y en vuestro espíritu, los cuales son de Dios.',
+          version: 'RVR1960 / LBLA',
+          exegesis: {
+            originalTerms:
+              'En griego: "Pheugete ten porneian" (φεύγετε τὴν πορνείαν). "Pheugete" es un imperativo en tiempo presente activo que demanda un escape incesante, vigilante y permanente. "Porneia" (πορνεία) abarca todo acto sexual ilícito. "Naos tou en hymin hagiou pneumatos" (ναὸς τοῦ ἐν ὑμῖν ἁγίου πνεύματος): el cuerpo como morada sagrada y santuario del Espíritu Santo. "Egorasthete gar times" (ἠγοράσθητε γὰρ τιμῆς): fuisteis comprados por precio infinito (la sangre de Cristo).',
+            historicalContext:
+              'En Corinto, la inmoralidad y la prostitución sagrada eran comunes. Los creyentes corintios usaban eslóganes libertinos como "las viandas para el vientre y el vientre para las viandas" para justificar el libertinaje como una mera función biológica. Pablo refuta esta falacia demostrando la redención integral del cuerpo.',
+            theologicalPrinciple:
+              'El cuerpo del cristiano pertenece al Señor y es templo vivo del Espíritu Santo. La inmoralidad sexual constituye un sacrilegio contra Dios y un pecado autodestructivo único que hiere al propio cuerpo del pecador.',
+            pastoralApplication:
+              'Instruir al aconsejado en la práctica de la huida activa (Charles Swindoll): escapar como José, mantener distancia prudente y segura, cortar el acceso a la tentación digital o física, ser severo consigo mismo y evitar toda apariencia de mal.'
+          }
+        },
+        {
+          reference: 'Proverbios 5:1–23',
+          text:
+            '1 Hijo mío, está atento a mi sabiduría, y a mi inteligencia inclina tu oído, 2 para que guardes consejo, y tus labios conserven la ciencia. 3 Porque los labios de la mujer extraña destilan miel, y su paladar es más blando que el aceite; 4 mas su fin es amargo como el ajenjo, agudo como espada de dos filos. 5 Sus pies descienden a la muerte; sus pasos calzan el Seol. 6 Sus caminos son inestables; no los conocerás, si no considerares el camino de vida. 7 Ahora pues, hijos, oídme, y no os apartéis de las razones de mi boca. 8 Aleja de ella tu camino, y no te acerques a la puerta de su casa; 9 para que no des a los extraños tu honor, y tus años al cruel; 10 no sea que los extraños se sacien de tu fuerza, y tus trabajos estén en casa del extraño; 11 y gimas al final, cuando se consuma tu carne y tu cuerpo, 12 y digas: ¡Cómo aborrecí el consejo, y mi corazón menospreció la reprensión; 13 no oí la voz de los que me instruían, y a los que me enseñaban no incliné mi oído! 14 Casi en todo mal he estado, en medio de la sociedad y de la congregación. 15 Bebe el agua de tu misma cisterna, y los raudales de tu propio pozo. 16 ¿Se derramarán tus fuentes por las calles, y tus corrientes de aguas por las plazas? 17 Sean para ti solo, y no para los extraños contigo. 18 Sea bendito tu manantial, y alégrate con la mujer de tu juventud, 19 como cierva amada y graciosa gacela. Sus caricias te satisfagan en todo tiempo, y en su amor recréate siempre. 20 ¿Y por qué, hijo mío, andarás ciego con la mujer ajena, y abrazarás el seno de la extraña? 21 Porque los caminos del hombre están ante los ojos de Jehová, y él considera todas sus veredas. 22 Prenderán al impío sus propias iniquidades, y retenido será con las cuerdas de su pecado. 23 Él morirá por falta de corrección, y errará por lo grande de su locura.',
           version: 'RVR1960',
           exegesis: {
-            originalTerms: 'En hebreo: "To\'evah" (תּוֹעֵבָה - abominación o transgresión moral grave que contamina el pacto santo).',
-            historicalContext: 'Parte del código de santidad dado a Israel para preservar la pureza del pueblo escogido frente a las prácticas idolátricas paganas.',
-            theologicalPrinciple: 'Dios demandó siempre la pureza y fidelidad al diseño creacional del matrimonio y la sexualidad humana.',
-            pastoralApplication: 'Afirmar la verdad de la Escritura con firmeza teológica y compasión pastoral, guiando al aconsejado al arrepentimiento y perdón provisto en Cristo.'
+            originalTerms:
+              'En hebreo: "Ishah zarah" (אִשָּׁ֣ה זָרָ֑ה - mujer extraña, ajena al pacto). "Acharitah marāh chela\'anah" (אַחֲרִיתָהּ מָרָה כַֽלַּעֲנָה - su desenlace final es amargo como el ajenjo y letal como veneno). "Bor" (cisterna) y "be\'er" (pozo de agua viva): metáforas poéticas del deleite exclusivo y la satisfacción en la fidelidad conyugal. "Shagah" (שָׁגָה - deleitarse y embriagarse de continuo en el amor de la esposa de la juventud).',
+            historicalContext:
+              'Literatura sapiencial de Salomón donde un padre aconseja a su hijo antes de entrar a la vida adulta sobre los peligros de la seducción inmoral que destruye la honra, el vigor, la economía y la reputación familiar.',
+            theologicalPrinciple:
+              'La inmoralidad promete placer inmediato pero desemboca en amargura, muerte y ruina espiritual. Dios instituyó el matrimonio como la cisterna santa donde la pasión y el afecto encuentran deleite puro, seguro y bendito.',
+            pastoralApplication:
+              'En la consejería con creyentes atraídos por pasiones extramatrimoniales o pornografía, contrastar la dulzura engañosa inicial con la amargura destructiva del final. Guiar a los cónyuges a cultivar intencionalmente el afecto y la intimidad conyugal.'
           }
         },
         {
-          reference: 'Lucas 9:23–24',
-          text: '23 Entonces dijo a la multitud: «Si alguno de ustedes quiere ser mi seguidor, tiene que abandonar su manera egoísta de vivir, tomar su cruz cada día y seguirme. 24 Si tratas de aferrarte a la vida, la perderás, pero si entregas tu vida por mi causa, la salvarás.',
-          version: 'NTV',
+          reference: 'Proverbios 6:23–35',
+          text:
+            '23 Porque el mandamiento es lámpara, y la enseñanza es luz, y camino de vida las reprensiones que te instruyen, 24 para que te guarden de la mala mujer, de la blandura de la lengua de la extraña. 25 No codicies su hermosura en tu corazón, ni ella te prenda con sus ojos; 26 porque a causa de la mujer ramera el hombre es reducido a un bocado de pan; y la mujer caza la preciosa alma del varón. 27 ¿Tomará el hombre fuego en su seno sin que sus vestidos ardan? 28 ¿Andará el hombre sobre brasas sin que sus pies se quemen? 29 Así es el que se llega a la mujer de su prójimo; no quedará impune ninguno que la tocare. 30 No tienen en poco al ladrón si hurta para saciar su apetito cuando tiene hambre; 31 pero si es sorprendido, pagará siete veces; entregará todo el haber de su casa. 32 Mas el que comete adulterio es falto de entendimiento; corrompe su alma el que tal hace. 33 Heridas y vergüenza hallará, y su afrenta nunca será borrada. 34 Porque los celos son el furor del hombre, y no perdonará en el día de la venganza. 35 No aceptará ningún rescate, ni querrá perdonar, aunque multipliques los dones.',
+          version: 'RVR1960',
           exegesis: {
-            originalTerms: 'En griego: "Arnesastho heauton" (renuncie y niéguese a sí mismo), "Arato ton stauron autou kath hemeran" (tome su cruz diariamente) y "Akoloutheito moi" (sígame de continuo).',
-            historicalContext: 'Jesús enseña a Sus discípulos el costo ineludible del discipulado: la entrega y muerte diaria al propio yo pecaminoso.',
-            theologicalPrinciple: 'Seguir a Cristo y vencer los deseos de la carne demanda la renuncia diaria al egoísmo y la sumisión constante al señorío de Jesús.',
-            pastoralApplication: 'Desafiar al aconsejado a no buscar una vida cristiana de conveniencia, sino a rendir diariamente su voluntad y deseos ante la Cruz de Cristo.'
+            originalTerms:
+              'En hebreo: "Al-tachmod yofyāh bilvavecha" (אַל־תַּחְמֹ֣ד יָ֭פְיָהּ בִּלְבָבֶ֑ךָ - no codicies su hermosura en tu corazón). "Chaser-lev" (חֲסַר־לֵב - falto de juicio, insensato espiritual). "Mashchit nafsho hu ya\'asenah" (מַשְׁחִ֥ית נַ֝פְשׁ֗וֹ - destruye y arruina activamente su propia alma quien tal hace).',
+            historicalContext:
+              'El proverbista compara el robo provocado por necesidad con el adulterio: mientras el ladrón puede restituir bienes materiales, el adúltero destruye la confianza pactual, provocando vergüenza indeleble y la ira justa del ofendido.',
+            theologicalPrinciple:
+              'La Palabra de Dios es la lámpara que preserva del autoengaño. El adulterio es un acto de demencia espiritual que destruye el alma humana y acarrea heridas relacionales profundas y una afrenta duradera.',
+            pastoralApplication:
+              'Desmontar en consejería la fantasía de que el pecado secreto no traerá consecuencias públicas. Mostrar al aconsejado que codiciar en el corazón es el primer paso hacia la autodestrucción y que la santidad exige rendición de cuentas inmediata.'
+          }
+        },
+        {
+          reference: 'Proverbios 7:1–27',
+          text:
+            '1 Hijo mío, guarda mis razones, y atesora contigo mis mandamientos. 2 Guarda mis mandamientos y vivirás, y mi ley como las niñas de tus ojos. 3 Lígalos a tus dedos; escríbelos en la tabla de tu corazón. 4 Di a la sabiduría: Mi hermana eres tú, y a la inteligencia llama parienta; 5 para que te guarden de la mujer ajena, y de la extraña que ablanda sus palabras. 6 Porque mirando yo por la ventana de mi casa, por mi celosía, 7 vi entre los simples, consideré entre los jóvenes, a un joven falto de entendimiento, 8 el cual pasaba por la calle, junto a la esquina, e iba camino a la casa de ella, 9 a la tarde del día, cuando ya oscurecía, en la media noche y oscuridad de la noche. 10 Cuando he aquí, una mujer le sale al encuentro, con atavío de ramera y astuta de corazón. 11 Alborotadora y rencillosa, sus pies no pueden estar en casa; 12 unas veces está en la calle, otras veces en las plazas, acechando por todas las esquinas. 13 Se asió de él, y le besó. Con rostro descarado le dijo: 14 Sacrificios de paz había prometido, hoy he pagado mis votos; 15 por tanto, he salido a encontrarte, buscando con ansia tu rostro, y te he hallado. 16 He adornado mi cama con colchas recamadas con cordoncillo de Egipto; 17 he perfumado mi cámara con mirra, áloe y canela. 18 Ven, embriaguémonos de amores hasta la mañana; disfrutemos de amores. 19 Porque mi marido no está en casa; se ha ido a un largo viaje. 20 La bolsa de dinero se llevó en su mano; el día señalado volverá a su casa. 21 Lo rindió con la suavidad de sus muchas palabras, le obligó con la zalamería de sus labios. 22 Al punto se fue tras ella, como va el buey al degolladero, y como el necio a las prisiones para ser castigado; 23 como el ave que se apresura a la red, y no sabe que es contra su vida, hasta que la saeta traspasa su corazón. 24 Ahora pues, hijos, oídme, y estad atentos a las razones de mi boca. 25 No se aparte tu corazón a sus caminos; no yerres en sus veredas. 26 Porque a muchos ha hecho caer heridos, y aun los más fuertes han sido muertos por ella. 27 Camino al Seol es su casa, que conduce a las cámaras de la muerte.',
+          version: 'RVR1960',
+          exegesis: {
+            originalTerms:
+              'En hebreo: "Hitathu berov liqchāh" (la persuasión de sus labios dobló su voluntad). "Ke\'shor el-tevach yavo" (כְּ֭שׁוֹר אֶל־טָ֣בַח יָב֑וֹא - como buey conducido ciegamente al matadero). "Darkey she\'ol beytah" (דַּרְכֵ֣י שְׁא֣וֹל בֵּיתָ֑הּ - los caminos de su casa descienden directamente al Seol y la condenación).',
+            historicalContext:
+              'Descripción vívida de un joven ingenuo que transita en la penumbra por la esquina de una mujer seductora, cayendo en la red del engaño por carecer de discernimiento y disciplina preventiva.',
+            theologicalPrinciple:
+              'La inmoralidad explota la ociosidad, la soledad y la falta de vigilancia moral. Quien no huye del entorno de tentación termina cautivo y encaminado a la muerte espiritual sin percibir el peligro inminente.',
+            pastoralApplication:
+              'Ayudar al aconsejado a identificar y clausurar sus "esquinas peligrosas" (horarios de navegación solitaria, canales de chat inapropiados, amistades no transparentes), aplicando medidas preventivas de santificación radical.'
+          }
+        },
+        {
+          reference: 'Mateo 19:3–10',
+          text:
+            '3 Entonces vinieron a él los fariseos, tentándole y diciéndole: ¿Es lícito al hombre repudiar a su mujer por cualquier causa? 4 Él, respondiendo, les dijo: ¿No habéis leído que el que los hizo al principio, varón y hembra los hizo, 5 y dijo: Por esto el hombre dejará padre y madre, y se unirá a su mujer, y los dos serán una sola carne? 6 Así que no son ya más dos, sino una sola carne; por tanto, lo que Dios juntó, no lo separe el hombre. 7 Le dijeron: ¿Por qué, pues, mandó Moisés dar carta de divorcio, y repudiarla? 8 Él les dijo: Por la dureza de vuestro corazón Moisés os permitió repudiar a vuestras mujeres; mas al principio no fue así. 9 Y yo os digo que cualquiera que repudia a su mujer, salvo por causa de fornicación, y se casa con otra, adultera; y el que se casa con la repudiada, adultera. 10 Le dijeron sus discípulos: Si así es la condición del hombre con su mujer, no conviene casarse.',
+          version: 'RVR1960',
+          exegesis: {
+            originalTerms:
+              'En griego: "Ho poiesas ap\' arches arsen kai thelu epoiesen autous" (ὁ ποιήσας ἀπ\' ἀρχῆς ἄρσεν καὶ θῆλυ ἐποίησεν αὐτούς - el Creador desde el principio los hizo varón y hembra). "Esontai hoi dyo eis sarka mian" (ἔσονται οἱ δύο εἰς σάρκα μίαν - serán los dos una sola carne indivisible). "Me epi porneia" (μὴ ἐπὶ πορνείᾳ - salvo por causa de fornicación o ruptura inmoral del pacto). "Moichatai" (μοιχᾶται - comete adulterio continuo).',
+            historicalContext:
+              'En el debate rabínico del primer siglo entre las escuelas de Shamai y Hillel sobre las causas legítimas de divorcio, Jesús eleva el matrimonio al diseño creacional del Génesis, repudiando el divorcio fácil y egoísta.',
+            theologicalPrinciple:
+              'El matrimonio es una unión santa, heterosexual, monógama e indisoluble instituida por Dios. La inmoralidad sexual es de tal gravedad que violenta y desgarra la comunión ontológica de la "sola carne".',
+            pastoralApplication:
+              'Fundamentar la consejería conyugal en la santidad y permanencia del pacto matrimonial. Promover el arrepentimiento, la gracia redentora y la reconciliación antes que la separación, reafirmando el señorío de Cristo en el hogar.'
+          }
+        },
+        {
+          reference: '1 Corintios 5:1–5',
+          text:
+            '1 De cierto se oye que hay entre vosotros fornicación, y tal fornicación cual ni aun se nombra entre los gentiles; tanto que alguno tiene la mujer de su padre. 2 Y vosotros estáis envanecidos, y no os habéis lamentado más bien, para que fuese quitado de en medio de vosotros el que cometió tal acción. 3 Ciertamente yo, como ausente en cuerpo, pero presente en espíritu, ya como presente he juzgado al que tal cosa ha hecho. 4 En el nombre de nuestro Señor Jesucristo, reunidos vosotros y mi espíritu, con el poder de nuestro Señor Jesucristo, 5 el tal sea entregado a Satanás para destrucción de la carne, a fin de que el espíritu sea salvo en el día del Señor Jesús.',
+          version: 'RVR1960',
+          exegesis: {
+            originalTerms:
+              'En griego: "Holos akouetai en hymin porneia" (ὅλως ἀκούεται ἐν ὑμῖν πορνεία - es notorio y público el pecado de fornicación entre vosotros). "Pephysiomenoi este" (estáis inflados de orgullo y falsa tolerancia). "Paradounai ton toiouton to Satana eis olethron tes sarkos" (entregar al tal a Satanás mediante la disciplina de excomunión para quebrantamiento de la soberbia carnal y preservación del espíritu).',
+            historicalContext:
+              'La congregación de Corinto toleraba con orgullo un caso escandaloso de incesto (unión con la madrastra), tolerando un pecado que incluso la ley civil romana repudiaba.',
+            theologicalPrinciple:
+              'La tolerancia del pecado sexual en la iglesia no refleja amor, sino vanagloria destructiva que contamina a toda la comunidad ("un poco de levadura leuda toda la masa"). La disciplina eclesiástica es un mandato bíblico esencial para buscar la restauración del pecador y preservar la pureza del testimonio de Cristo.',
+            pastoralApplication:
+              'Aplicar la disciplina eclesiástica con rectitud y compasión (Charles Swindoll): si el aconsejado profesa fe en Cristo pero rehúsa arrepentirse de la inmoralidad, el liderazgo debe actuar según las Escrituras para llamarlo al arrepentimiento y proteger al rebaño.'
+          }
+        },
+        {
+          reference: '1 Corintios 6:9–20',
+          text:
+            '9 ¿No sabéis que los injustos no heredarán el reino de Dios? No erréis; ni los fornicarios, ni los idólatras, ni los adúlteros, ni los afeminados, ni los que se echan con varones, 10 ni los ladrones, ni los avaros, ni los borrachos, ni los maldicientes, ni los estafadores, heredarán el reino de Dios. 11 Y esto erais algunos; mas ya habéis sido lavados, ya habéis sido santificados, ya habéis sido justificados en el nombre del Señor Jesús, y por el Espíritu de nuestro Dios. 12 Todas las cosas me son lícitas, mas no todas convienen; todas las cosas me son lícitas, mas yo no me dejaré dominar de ninguna. 13 Las viandas para el vientre, y el vientre para las viandas; pero tanto al uno como a las otras destruirá Dios. Pero el cuerpo no es para la fornicación, sino para el Señor, y el Señor para el cuerpo. 14 Y Dios, que levantó al Señor, también a nosotros nos levantará con su poder. 15 ¿No sabéis que vuestros cuerpos son miembros de Cristo? ¿Quitaré, pues, los miembros de Cristo y los haré miembros de una ramera? ¡De ningún modo! 16 ¿O no sabéis que el que se une con una ramera, es un cuerpo con ella? Porque dice: Los dos serán una sola carne. 17 Pero el que se une al Señor, un espíritu es con él. 18 Huid de la fornicación. Todos los demás pecados que un hombre comete están fuera del cuerpo; pero el fornicario peca contra su propio cuerpo. 19 ¿O no sabéis que vuestro cuerpo es templo del Espíritu Santo, que está en vosotros, el cual tenéis de Dios, y que no sois vuestros? 20 Pues por precio habéis sido comprados; por tanto, glorificad a Dios en vuestro cuerpo y en vuestro espíritu, los cuales son de Dios.',
+          version: 'RVR1960',
+          exegesis: {
+            originalTerms:
+              'En griego: "Pornoi" (inmorales), "Moichoi" (adúlteros), "Malakoi" (afeminados/pasivos en actos homosexuales), "Arsenokoitai" (quienes practican activamente la homosexualidad). "Alla apeloúsasthe, alla hegiassthe, alla edikaiothete" (ἀλλὰ ἀπελούσασθε, ἀλλὰ ἡγιάσθητε, ἀλλὰ ἐδικαιώθητε - aoristos indicativos que proclaman el lavamiento, santificación y justificación irreversibles en Cristo). "Kolletheis te porne hen soma estin" (el que se une a una ramera es un cuerpo con ella).',
+            historicalContext:
+              'Pablo advierte a una iglesia inmersa en la cultura pagana de Corinto sobre el autoengaño de creer que se puede vivir en impenitencia moral y al mismo tiempo ser partícipe del reino de Dios.',
+            theologicalPrinciple:
+              'La impenitencia en la inmoralidad sexual y la homosexualidad evidencia la ausencia de la vida regenerada. No obstante, el Evangelio confiere una gloriosa nueva identidad: la sangre de Cristo limpia y capacita al creyente para andar en santidad.',
+            pastoralApplication:
+              'Confrontar con la solemnidad del juicio divino pero infundir inmensa esperanza pastoral (Heath Lambert / Robert Jones): ningún pecado sexual está fuera del poder purificador de la sangre de Cristo ni de la gracia transformadora del Espíritu.'
+          }
+        },
+        {
+          reference: 'Efesios 5:3',
+          text:
+            '3 Pero fornicación y toda inmundicia, o avaricia, ni aun se nombre entre vosotros, como conviene a santos.',
+          version: 'RVR1960',
+          exegesis: {
+            originalTerms:
+              'En griego: "Porneia de kai akatharsia pasa e pleonexia mede onomazestho en hymin, kathos prepei hagiois" (πορνεία δὲ καὶ ἀκαθαρσία πᾶσα ἢ πλεονεξία μηδὲ ὀνομαζέσθω ἐν ὑμῖν, καθὼς prepei hagiois). "Mede onomazestho" (ni siquiera se mencione con liviandad o tolerancia). "Kathos prepei hagiois" (como es digno y decoroso para el pueblo santo).',
+            historicalContext:
+              'Éfeso albergaba el culto a Diana, epicentro del desenfreno sensual. Pablo llama a la iglesia a ser un testimonio resplandeciente de pureza frente a las tinieblas de la sociedad gentil.',
+            theologicalPrinciple:
+              'La comunidad de los santos está llamada a una pureza impecable, eliminando cualquier condescendencia o apariencia de impureza en sus relaciones personales.',
+            pastoralApplication:
+              'Regla ética fundamental para el consejero (Heath Lambert): evitar toda apariencia de mal. En circunstancias normales, los consejeros no deben atender de forma continua y a solas a personas del sexo opuesto, cerrando la puerta a la murmuración o la tentación.'
+          }
+        },
+        {
+          reference: '1 Tesalonicenses 4:3–7',
+          text:
+            '3 Porque esta es la voluntad de Dios: vuestra santificación; es decir, que os abstengáis de inmoralidad sexual; 4 que cada uno de vosotros sepa cómo poseer su propio vaso en santificación y honor, 5 no en pasión de concupiscencia, como los gentiles que no conocen a Dios; 6 y que nadie peque y defraude a su hermano en este asunto, porque el Señor es el vengador en todas estas cosas, como también antes os lo dijimos y advertimos solemnemente. 7 Porque Dios no nos ha llamado a impureza, sino a santificación.',
+          version: 'LBLA / RVR1960',
+          exegesis: {
+            originalTerms:
+              'En griego: "Thelema tou Theou, ho hagiasmos hymon" (θέλημα τοῦ Θεοῦ, ὁ ἁγιασμὸς ὑμῶν - la voluntad de Dios es vuestra santificación). "Apechesthai apo tes porneias" (abstenerse radicalmente de toda fornicación). "To heautou skeuos ktasthai" (aprender a gobernar el propio cuerpo en santidad y honor). "Ekdikos ho Kyrios" (el Señor es el vengador y juez en estos asuntos).',
+            historicalContext:
+              'En la cultura grecorromana, el sexo extramarital y la promiscuidad eran prácticas cotidianas aceptadas. Pablo proclama una contracultura de santidad para los nuevos creyentes en Tesalónica.',
+            theologicalPrinciple:
+              'La santidad personal es el llamamiento directo y soberano de Dios. La inmoralidad sexual defrauda y despoja espiritualmente al prójimo y sitúa al transgresor bajo la severidad del Señor como vengador.',
+            pastoralApplication:
+              'Instruir al aconsejado en la mayordomía de sus miembros corporales. Enfatizar que el pecado sexual defrauda a otros (cónyuges, familias, la iglesia) y que Dios demanda una vida de pureza y reverencia.'
+          }
+        },
+        {
+          reference: 'Mateo 5:27–28',
+          text:
+            '27 Oísteis que fue dicho: No cometerás adulterio. 28 Pero yo os digo que cualquiera que mira a una mujer para codiciarla, ya adulteró con ella en su corazón.',
+          version: 'RVR1960',
+          exegesis: {
+            originalTerms:
+              'En griego: "Pas ho blepon gynaika pros to epithymesai auten" (πᾶς ὁ βλέπων γυναῖκα πρὸς τὸ ἐπιθυμῆσαι αὐτήν). "Blepon... pros to epithymesai" describe una mirada intencional y voluntaria orientada a encender el deseo lascivo. "Ede emoicheusen auten en te kardia autou" (ἤδη ἐμοίχευσεν αὐτὴν ἐν τῇ καρδίᾳ αὐτοῦ): ya consumó el adulterio en el corazón. Conexión directa con "dialogismoi poneroi" (Mt. 15:19 - malos pensamientos planeados).',
+            historicalContext:
+              'Jesús refuta el legalismo externo farisaico, demostrando que la Ley moral de Dios evalúa y juzga los pensamientos, afectos y motivaciones más profundas de la mente humana.',
+            theologicalPrinciple:
+              'El pecado no comienza en la comisión física, sino en la volición y el deseo del corazón. La codicia mental deliberada posee la misma culpabilidad moral que el acto exterior ante la santidad de Dios.',
+            pastoralApplication:
+              'Tratar con la lujuria mental en su origen (Samuel Pérez Millos): guiar al aconsejado a no negociar con los malos pensamientos ni con la estimulación visual, practicando la mortificación radical del pecado interior.'
+          }
+        },
+        {
+          reference: 'Proverbios 2:17',
+          text:
+            '17 La cual abandona al compañero de su juventud, y se olvida del pacto de su Dios.',
+          version: 'RVR1960',
+          exegesis: {
+            originalTerms:
+              'En hebreo: "Ha\'ozevet alluf ne\'ureyha ve\'et-berit Eloheyha shachechah" (הַעֹזֶבֶת אַלּוּף נְעוּרֶיהָ וְאֶת־בְּרִית אֱלֹהֶיהָ machine). "Alluf" (guía íntimo, esposo y protector). "Berit Eloheyha" (el pacto sagrado sellado ante Dios). "Shachechah" (olvidar deliberadamente, despreciar con desdén).',
+            historicalContext:
+              'Advertencia de la sabiduría salomónica a los jóvenes sobre los dos senderos de la vida: el camino de la justicia frente a la ruina de la mujer extraña que deserta de su pacto conyugal.',
+            theologicalPrinciple:
+              'El matrimonio es un pacto sagrado celebrado en la presencia de Dios. El adulterio representa perjurio y rebelión directa contra el Creador al pisotear el pacto jurado ante Su trono.',
+            pastoralApplication:
+              'Confrontar la ligereza con la que el adúltero justifica su conducta: mostrarle que la infidelidad es una violación pactual grave contra Dios y contra su cónyuge, que demanda arrepentimiento humilde y restauración.'
           }
         }
       ],
@@ -159,239 +234,68 @@ export const BIBLE_STUDIES: BibleStudy[] = [
         number: 2,
         title: 'Introducción',
         paragraphs: [
-          'Abordar la inmoralidad sexual requiere un enfoque integral que vaya más allá de enfocarse únicamente en la conducta sexual. El tratamiento debe considerar el problema en relación con todas las áreas de la vida, reconociendo que cuando cada aspecto de la existencia se alinea adecuadamente con Dios, los problemas se resuelven.',
-          'Concentrarse exclusivamente en la conducta sexual tiende a fracasar, pues factores como la salud deficiente o la falta de sueño pueden debilitar la capacidad de resistir la tentación y perpetuar patrones antiguos. El desempeño laboral deficiente, preocupaciones financieras, relaciones familiares y sociales deterioradas, y la negligencia en la oración y el estudio bíblico pueden contribuir a recaídas.'
+          'La vida santa constituye la voluntad explícita de Dios, quien nos ha llamado de manera categórica a la santidad y no a la inmoralidad (1 Ts. 4:3-7). En el texto del Nuevo Testamento, el término fornicación (porneia) posee una extensión genérica mucho más amplia que el adulterio, involucrando todos aquellos aspectos y pecados que contaminan las relaciones íntimas entre los seres humanos y comprendiendo todo aquello que es moralmente reprobable y pecaminoso en el ámbito de la intimidad sexual (Samuel Pérez Millos).',
+          'Este amplio espectro de transgresión abarca las relaciones ilícitas entre solteros, el adulterio en sus diversas manifestaciones, el incesto, la prostitución y la homosexualidad. Respecto a esta última, la Escritura enseña con meridiana claridad que la práctica homosexual —tanto entre hombres como entre mujeres— está condenada por Dios y evidencia la ausencia de la regeneración espiritual o nuevo nacimiento, por lo que quienes persisten impenitentemente en ella no heredarán el reino de Dios (1 Co. 6:9-10).',
+          'El ministerio pastoral y la consejería bíblica requieren un abordaje teológico integral y reformado. No se trata simplemente de reprimir o corregir una conducta sexual aislada, sino de ministrar al ser humano en su totalidad, reconociendo que cuando cada área de la vida se alinea y rinde bajo el señorío de Cristo, el corazón es capacitado por la gracia divina para andar en pureza y libertad.'
         ]
       },
       problemToTreat: {
         number: 3,
         title: 'Problema a tratar',
         paragraphs: [
-          'El proceso de transformación implica varios pasos fundamentales. El consejero debe recopilar información en cada área de la vida y luego ayudar a reestructurar cada una conforme a los principios de Dios. Esto puede incluir asignaciones que reparen relaciones familiares, reorganicen patrones de vida diaria para asegurar descanso adecuado, y modifiquen hábitos problemáticos.',
-          'Desde una perspectiva bíblica, quienes fueron sexualmente inmorales han sido "lavados, santificados y justificados en el nombre del Señor Jesús", y sin embargo se les instruye a huir de la inmoralidad sexual como un acto coherente con su nueva identidad en Cristo. Dios promete capacidad para resistir cualquier tentación.',
-          'La solución positiva que Dios ofrece ante los deseos sexuales intensos es el matrimonio, que reemplaza los patrones pecaminosos con pautas piadosas.',
-          'Existe esperanza mediante la conversión cristiana, el reconocimiento y confesión del pecado que lleva al perdón, y la reestructuración de toda la vida conforme a principios bíblicos por el poder del Espíritu de Cristo.'
+          'La santidad y el diseño divino para la sexualidad se fundamentan en el honor del pacto conyugal: «Sea el matrimonio honroso en todos, y el lecho matrimonial sin mancilla; porque a los inmorales y a los adúlteros los juzgará Dios» (He. 13:4). El adulterio constituye un pecado de extrema gravedad que quebranta el pacto sagrado instituido ante Dios (Pr. 2:17), incurriendo en perjurio delante del Creador y destruyendo la confianza y la unidad familiar.',
+          'La inmoralidad sexual atenta directamente contra la teología del cuerpo revelada en la Escritura. Como instruye el apóstol Pablo en 1 Corintios 6:18-20: «Huid de la fornicación. Todos los demás pecados que un hombre comete están fuera del cuerpo, pero el fornicario peca contra su propio cuerpo. ¿O no sabéis que vuestro cuerpo es templo del Espíritu Santo? Por tanto, glorificad a Dios en vuestro cuerpo». El pecado sexual profana el santuario mismo del Espíritu y pisotea el precio supremo pagado por Cristo en la Cruz.',
+          'Como exponen Robert Jones y Brad Hambrick en "Consejería Bíblica Cristo-Céntrica", el problema central y fundamental que todo aconsejado enfrenta en última instancia es el pecado. No solo somos culpables de cometer pecado, sino que sufrimos profundamente sus consecuencias destructivas (aislamiento, vergüenza, deterioro físico, dolor emocional y fractura social). La labor de la consejería bíblica trasciende el mero señalamiento de faltas: consiste en ministrar el pleno impacto redentor del evangelio sobre todos los efectos personales, conyugales y colectivos del pecado.'
         ]
       },
       rootProblem: {
         number: 4,
         title: 'Raíz del problema',
         paragraphs: [
-          'La raíz de la inmoralidad sexual radica en el corazón corrompido del ser humano. Lo que aflora al exterior desde el corazón puede revestir muchas formas pecaminosas, y la fornicación abarca un amplio espectro de pecados de inmoralidad o perversión sexual, incluyendo relaciones ilícitas entre solteros, adulterio, incesto y homosexualidad.',
-          'Los malos pensamientos tienen que ver con un diálogo íntimo que conduce a reflexiones pecaminosas planeadas, y esto es crucial para entender la inmoralidad sexual. De hecho, Jesús condenaba no solo el hecho de la comisión física del acto, sino también el pensamiento que orientaba en esa dirección, afirmando que quien mira a una mujer para codiciarla, ya adulteró con ella en su corazón.'
+          'La raíz primordial de la inmoralidad sexual reside en el corazón corrompido del ser humano. El Señor Jesús enseñó que de adentro, del corazón de los hombres, proceden los malos pensamientos (dialogismoi poneroi), las fornicaciones y los adulterios (Mt. 15:19). La expresión griega utilizada alude a un diálogo interior deliberado que conduce a reflexiones pecaminosas planeadas, las cuales pueden consumarse físicamente o permanecer en el deseo voluntario del alma, siendo igualmente perversas ante el juicio divino (Samuel Pérez Millos).',
+          'Existe una conexión causal directa e indisoluble entre el adulterio y la codicia. En el Decálogo divino, a la prohibición «No cometerás adulterio» le sigue de inmediato «No codiciarás la mujer de tu prójimo» (Éx. 20:14, 17). Como analiza Charles Swindoll, el adulterio es un acto de soberbia y arrogancia en el que el deseo ilícito ciega al individuo al punto de la codicia desenfrenada, llevándolo a justificar su pecado y a pisotear compromisos sagrados, lealtades relacionales y la Ley moral de Dios.',
+          'En el Sermón del Monte, Cristo profundizó en este principio al declarar que cualquiera que mira a una mujer para codiciarla ya adulteró con ella en su corazón (Mt. 5:28). En los creyentes convertidos del mundo pagano (como en Corinto y Colosas), las prácticas inmorales eran hábitos comunes y justificados socialmente; de igual modo hoy, la mente no renovada tiende a tolerar la lascivia si no es confrontada con la santidad radical de la Palabra de Dios.'
         ]
       },
       consequences: {
         number: 5,
         title: 'Consecuencias del pecado tratado',
         paragraphs: [
-          'Pablo fundamenta su instrucción contra la inmoralidad sexual en una teología del cuerpo, afirmando que nuestros cuerpos físicos son miembros de Cristo, que la inmoralidad sexual es un pecado contra nuestro cuerpo físico, que nuestro cuerpo es templo del Espíritu Santo, y que debemos glorificar a Dios con nuestros cuerpos porque han sido comprados por Jesucristo.'
+          '1. Interrupción de la comunión con Dios y juicio divino: Todo pecado sexual sin confesar interrumpe la comunión vital con el Señor. La fornicación es contraria a la vida santa y coloca a quien la practica bajo el juicio activo de Dios (He. 13:4), quien no deja impune la profanación de Su santuario.',
+          '2. Destrucción personal y pecado contra el propio cuerpo: A diferencia de otros pecados, el fornicario peca directamente contra su propio cuerpo físico —redimido por Cristo— acarreando culpa constante, cautiverio espiritual, desintegración moral y consecuencias psicológicas y físicas devastadoras (1 Co. 6:18).',
+          '3. Trauma conyugal y fractura del pacto matrimonial: El adulterio desata una crisis desgarradora en el matrimonio, destruyendo la confianza íntima, vulnerando a los hijos y deshonrando el testimonio de Cristo ante el mundo.',
+          '4. Contaminación colectiva y raíz de amargura en la iglesia: Como advierte Samuel Pérez Millos en Hebreos 12:15, la amargura brota en el corazón y no se queda solo en el individuo: se propaga como planta venenosa que infecta a la familia y a la congregación entera. La amargura no resuelta ocasiona desaliento, rencor, murmuración y ruina espiritual en quienes están en contacto con el ofendido o con el pecador impenitente.'
         ]
       },
       counselingApproach: {
         number: 6,
         title: 'Cómo tratar el problema en consejería',
         paragraphs: [
-          'El proceso de transformación implica varios pasos fundamentales. El consejero debe recopilar información en cada área de la vida y luego ayudar a reestructurar cada una conforme a los principios de Dios. Esto puede incluir asignaciones que reparen relaciones familiares, reorganicen patrones de vida diaria para asegurar descanso adecuado, y modifiquen hábitos problemáticos.',
-          'Desde una perspectiva bíblica, quienes fueron sexualmente inmorales han sido "lavados, santificados y justificados en el nombre del Señor Jesús", y sin embargo se les instruye a huir de la inmoralidad sexual como un acto coherente con su nueva identidad en Cristo. Dios promete capacidad para resistir cualquier tentación.',
-          'La solución positiva que Dios ofrece ante los deseos sexuales intensos es el matrimonio, que reemplaza los patrones pecaminosos con pautas piadosas.',
-          'Existe esperanza mediante la conversión cristiana, el reconocimiento y confesión del pecado que lleva al perdón, y la reestructuración de toda la vida conforme a principios bíblicos por el poder del Espíritu de Cristo.'
+          'Confrontación compasiva y centrada en Cristo: Las doctrinas de la persona y la obra de Jesucristo transforman radicalmente la manera en que el consejero aborda el pecado (Heath Lambert). En lugar de un ataque cruel o legalista contra el aconsejado, se le brinda un cuidado profundamente pastoral y amoroso. Jamás confrontamos simplemente al pecador con su falta, sino con la sangre redentora de Cristo provista para quitar y limpiar ese pecado. Toda confrontación debe estar impregnada de compasión, ternura y esperanza, proclamando la promesa incondicional del perdón divino ante el arrepentimiento genuino.',
+          'Huida radical y pasos prácticos de resistencia: El mandato apostólico de «huir de la fornicación» exige una acción enérgica y decisiva (Charles Swindoll). Huir significa escapar, rehusar, mantener distancia segura, detener de inmediato todo avance hacia la lujuria y custodiar el templo del Espíritu Santo. Siguiendo el ejemplo de José, el creyente debe huir en dirección opuesta, aplicar medidas radicales de amputación preventiva (Mt. 5:29), ser rigurosamente severo consigo mismo y evitar toda apariencia de mal.',
+          'Salvaguardas éticas estrictas en el ministerio pastoral: Basándose en la exhortación de Efesios 5:3 de que la inmoralidad ni aun se nombre entre los santos, la consejería bíblica demanda una estricta protección moral. En la inmensa mayoría de circunstancias normales, es incorrecto y peligroso que los hombres aconsejen continuamente a mujeres a solas, o que las mujeres aconsejen a hombres a solas; esto previene cualquier tentación, protege el testimonio cristiano y clausura toda apariencia de pecado o incorrección (Heath Lambert).',
+          'Disciplina eclesiástica correctiva y restauradora: Si el aconsejado profesa ser creyente pero persiste en la impenitencia y rehúsa abandonar su conducta inmoral, la disciplina eclesiástica bíblica se vuelve indispensable por amor al ofensor (para que proceda al arrepentimiento) y para preservar la pureza espiritual de la iglesia local.'
         ]
       },
       sanctificationFollowUp: {
         number: 7,
         title: 'Seguimiento del plan de santificación',
         paragraphs: [
-          'Aunque la inmoralidad sexual es profundamente pecaminosa, la esperanza cristiana ofrece transformación. Pablo insiste en que los creyentes que antes eran sexualmente inmorales ya han sido "lavados, ya habéis sido santificados, ya habéis sido justificados en el nombre del Señor Jesús", y aun así inmediatamente los manda a huir de la inmoralidad sexual, pues ésta constituye un pecado contra nuestra identidad en Cristo.'
+          'Restauración diaria de la comunión mediante la confesión: Cuando surge el pecado o la debilidad, la comunión con Dios se renueva de inmediato mediante la confesión humilde y sincera (1 Jn. 1:9). El aconsejado debe experimentar la paz del perdón de Cristo, sabiendo que el Señor es paciente y anhela que todos procedan al arrepentimiento continuo (2 P. 3:9).',
+          'Abordaje integral de las áreas de vulnerabilidad: Como enfatiza Heath Lambert, todo ser humano culpable necesita el perdón divino, pero los aconsejados luchan con múltiples cargas adicionales a su pecado sexual (agotamiento, conflictos relacionales, estrés laboral o soledad). Por ello, el pecado sexual no será lo único ni lo primero que se atienda en cada sesión: es indispensable reestructurar integralmente la vida del creyente, fortaleciendo sus disciplinas de oración, estudio bíblico, descanso físico y participación activa en la iglesia.',
+          'Rendición de cuentas y ministración redentora: El consejero y los mentores espirituales del mismo sexo deben establecer mecanismos concretos de supervisión y rendición de cuentas. Como recuerdan Robert Jones y Brad Hambrick, el objetivo del seguimiento es que el poder redentor del Evangelio transforme los patrones del corazón, restaurando matrimonios heridos y capacitando al creyente para avanzar en santificación progresiva y glorificar a Dios con su cuerpo.'
         ]
       },
       conclusions: {
         number: 8,
         title: 'Conclusiones',
         paragraphs: [
-          'La enseñanza escritural es explícita en múltiples pasajes. El Levítico la califica de "abominación" y prescribía castigo capital para quienes la practicaban. Pablo, en Romanos 1, describe las prácticas homosexuales como "pasiones vergonzosas" y "cosas impropias" que merecen muerte espiritual. Más allá de ser una transgresión moral, representa una transgresión contra el orden natural establecido por Dios.',
-          'Un aspecto crucial es la cuestión de la responsabilidad personal. Aunque ciertos rasgos físicos pueden tener base genética, la práctica homosexual no es resultado de determinismo biológico sino de elecciones conductuales. Esta distinción es teológicamente significativa porque abre la puerta a la transformación: existe esperanza precisamente porque Dios se interesa en tratar con pecadores, no con enfermedades genéticas incurables.',
-          'Para quienes buscan libertad de esta práctica, el cambio es posible mediante el abandono de patrones pecaminosos antiguos y la adopción de nuevos patrones de vida conforme a los principios divinos. Cristo ofrece lavamiento y santificación de la contaminación y el poder del pecado. Sin embargo, el proceso requiere compromiso genuino: ruptura con asociaciones anteriores, arrepentimiento sincero y sometimiento a la autoridad de las Escrituras como guía para la transformación personal.'
-        ]
-      }
-    }
-  },
-  {
-    id: 'icv-mcb-amargura-rencor',
-    title: 'ICV MCB Amargura y rencor',
-    subtitle: 'Amargura · Rencor · Falta de Perdón · Resentimiento · Venganza',
-    category: 'Sanidad del Corazón & Relaciones',
-    tags: ['Amargura', 'Rencor', 'Perdón', 'Resentimiento', 'Ira', 'Reconciliación', 'Santificación'],
-    readTime: '18 min de estudio pastoral',
-    summary: 'Este estudio aborda la amargura, el rencor y la falta de perdón desde los fundamentos de la consejería bíblica reformada (Jay Adams, Wayne Mack, Heath Lambert y Samuel Pérez Millos). La amargura no es una simple emoción pasiva o herida psicológica, sino un pecado activo de rebelión contra la providencia de Dios y un mecanismo destructivo de venganza en el corazón humano. El texto bíblico manda extirpar radicalmente toda amargura (Efesios 4:31) y advierte sobre su naturaleza altamente contagiosa, capaz de contaminar y envenenar familias y congregaciones enteras (Hebreos 12:15). La metodología pastoral establece como principio innegociable ordenar primero la relación vertical con Dios antes de intentar resolver el conflicto horizontal con el prójimo. Se instruye al aconsejado a romper la cadena de autocompasión mediante la disciplina de la oración y la acción, entendiendo que el amor bíblico es una decisión sacrificial de entrega y obediencia que precede a los sentimientos. En la gracia soberana y el perdón incondicional recibido en la Cruz de Cristo reside el poder transformador para desarmar el resentimiento y vivir en auténtica libertad espiritual.',
-    sections: {
-      verses: [
-        {
-          reference: 'Efesios 4:31',
-          text: '31 Quítense de vosotros toda amargura, enojo, ira, gritería y maledicencia, y toda malicia.\n\nLa amargura representa un espíritu profundamente resentido que rechaza la reconciliación, manifestándose como una disposición agria y hostil hacia quienes han causado ofensa. Pablo manda quitarla de raíz junto con sus frutos destructivos: los arrebatos de ira, la cólera prolongada, las palabras hirientes y la malicia deliberada.',
-          version: 'RVR1960 / LBLA',
-          exegesis: {
-            originalTerms: 'En griego: "Aritheto aph hymon pasa pikria" (ἀρθήτω ἀφ\' ὑμῶν πᾶσα πικρία). El verbo "artheto" es un imperativo aoristo pasivo que exige una extirpación inmediata, radical y completa: ser arrancado de una vez por todas. El término "pikria" (amargura) designa una cualidad interior agria y punzante. Aristóteles usaba esta palabra para describir "el espíritu resentido que rehúsa la reconciliación y guarda permanentemente la ofensa". Se acompaña de "thymos" (arrebatos de furia), "orge" (ira asentada y vengativa), "krauge" (gritería/alboroto), "blasphemia" (maledicencia/difamación) y "kakia" (malicia destructiva).',
-            historicalContext: 'Pablo exhorta a la iglesia en Éfeso en el marco de la doctrina del nuevo hombre en Cristo, mostrando que la amargura y la maledicencia entristecen al Espíritu Santo (v. 30) y fracturan la unidad del cuerpo redimido.',
-            theologicalPrinciple: 'La amargura no es un simple estado anímico involuntario, sino un pecado voluntario que viola el mandato divino de santidad comunitaria y menosprecia la gracia perdonadora de Dios.',
-            pastoralApplication: 'En la consejería bíblica, el consejero debe confrontar la tendencia del aconsejado a justificar su amargura amparándose en la magnitud de la ofensa sufrida, guiándolo al deber imperativo de despojarse de ella sin demora.'
-          }
-        },
-        {
-          reference: 'Hebreos 12:15',
-          text: '15 Mirad bien, no sea que alguno deje de alcanzar la gracia de Dios; que brotando alguna raíz de amargura, os estorbe, y por ella muchos sean contaminados.\n\nLa amargura es como una planta venenosa que fructifica en el corazón donde brota. La contaminación comienza amargando al individuo, pero no queda en él solo, sino que se extiende e infecta a familias y congregaciones, causando desánimo y ruina espiritual.',
-          version: 'RVR1960 / LBLA',
-          exegesis: {
-            originalTerms: 'En griego: "Episkopountes me tis hysterōn apo tes charitos tou Theou, me tis rhiza pikrias ano phuousa enochle, kai dia tautes mianthosin polloi" (ἐπισκοποῦντες μή τις ὑστερῶν ἀπὸ τῆς χάριτος τοῦ Θεοῦ, μή τις ῥίζα πικρίας ἄνω φύουσα ἐνοχλῇ...). "Episkopountes" indica una vigilancia atenta y pastoral constante. "Rhiza pikrias" (raíz de amargura) alude a Dt. 29:18. "Enochle" significa perturbar gravemente, causar desorden y estorbo; y "mianthosin" denota contaminación moral y ceremonial que infecta a la colectividad.',
-            historicalContext: 'El autor de Hebreos advierte a creyentes en peligro de apostasía y endurecimiento frente a las pruebas, enfatizando la responsabilidad de velar mutuamente para que nadie quede rezagado de los recursos de la gracia.',
-            theologicalPrinciple: 'El pecado de la amargura tiene un carácter altamente contagioso: mientras la santidad no se transmite por ósmosis, la ponzoña del resentimiento se propaga rápidamente, contaminando a quienes conviven con el ofendido.',
-            pastoralApplication: 'Mostrar al aconsejado las consecuencias expansivas de su pecado: sus quejas y resentimiento no son un asunto privado; están envenenando el ambiente espiritual de su cónyuge, sus hijos y su iglesia local.'
-          }
-        },
-        {
-          reference: 'Efesios 4:32',
-          text: '32 Antes sed benignos unos con otros, misericordiosos, perdonándoos unos a otros, como Dios también os perdonó a vosotros en Cristo.\n\nEl antídoto bíblico contra la amargura es el revestimiento del amor, la compasión entrañable y el perdón activo. El estándar supremo y la motivación soberana del perdón cristiano es la magnitud de la gracia inmerecida que Dios nos concedió en la Cruz.',
-          version: 'RVR1960 / LBLA',
-          exegesis: {
-            originalTerms: 'En griego: "Ginesthe de eis allelous chrestoi, eusplanchnoi, charizomenoi heautois kathos kai ho Theos en Christo echarisato hymin" (γίνεσθε δὲ εἰς ἀλλήλους χρηστοί, εὔσπλαγχνοι, χαριζόμενοι ἑαυτοῖς...). "Chrestoi" (benignos, amables, dispuestos al servicio), "eusplanchnoi" (de entrañas compasivas) y "charizomenoi" (perdonando gratuitamente por pura gracia, derivado de "charis" - gracia inmerecida).',
-            historicalContext: 'Representa la contraparte positiva del "despojarse" del v. 31. En una sociedad grecorromana que consideraba la venganza una virtud de honor, Pablo presenta la ética de la Cruz.',
-            theologicalPrinciple: 'El perdón cristiano no se fundamenta en los méritos del ofensor, sino en la obra redentora de Cristo. Quien ha comprendido el abismo de pecado que Dios le perdonó en la Cruz no puede retener el perdón a su prójimo.',
-            pastoralApplication: 'Conducir al aconsejado a meditar profundamente en el Evangelio de la gracia: la deuda impagable que Cristo canceló en su favor desarma todo derecho autoimpuesto a exigir venganza.'
-          }
-        },
-        {
-          reference: 'Romanos 8:28',
-          text: '28 Y sabemos que a los que aman a Dios, todas las cosas les ayudan a bien, esto es, a los que conforme a su propósito son llamados.\n\nMientras el aconsejado no esté dispuesto a aceptar los propósitos providenciales de Dios en lo que sucedió, el cambio bíblico estará bloqueado. La amargura esconde en el fondo una queja contra la soberanía divina.',
-          version: 'RVR1960',
-          exegesis: {
-            originalTerms: 'En griego: "Oidamen de hoti tois agaposin ton Theon panta synergei eis agathon" (οἴδαμεν δὲ ὅτι τοῖς ἀγαπῶσιν τὸν Θεὸν πάντα συνεργεῖ εἰς ἀγαθόν). "Oidamen" expresa certidumbre doctrinal absoluta e inquebrantable. "Synergei" denota que Dios hace cooperar orquestadamente todas las circunstancias —incluso las ofensas y dolores— para el supremo bien de la santificación.',
-            historicalContext: 'Pablo consuela a los creyentes en Roma recordándoles que los sufrimientos temporales están subordinados al plan redentor eterno de conformarnos a la imagen de Su Hijo.',
-            theologicalPrinciple: 'Dios es soberano sobre las ofensas humanas. Reconocer que ningún agravio escapa a Su providencia purificadora neutraliza la amargura y abre paso a la gratitud y la sumisión.',
-            pastoralApplication: 'Ayudar al aconsejado a reformular su perspectiva: no enfocarse únicamente en la maldad del ofensor, sino contemplar la mano soberana de Dios que utiliza la prueba para forjar carácter y fe probada.'
-          }
-        },
-        {
-          reference: 'Salmo 86:5',
-          text: '5 Porque tú, Señor, eres bueno y perdonador, y grande en misericordia para con todos los que te invocan.\n\nEl modelo supremo para el consejero y el aconsejado es el carácter mismo de Dios: un corazón perdonador, abundante en misericordia y pronto para derribar las barreras de condenación.',
-          version: 'RVR1960',
-          exegesis: {
-            originalTerms: 'En hebreo: "Ki-attah Adonai tov vesallach verav-chesed lechol-kore\'echa" (כִּֽי־אַתָּ֣ה אֲ֭דֹנָי ט֣וֹב וְסַלָּ֑ח וְרַב־חֶ֝֗סֶד לְכָל־קֹרְאֶֽיךָ). "Sallach" es un adjetivo que significa "dispuesto al perdón, perdonador por excelencia" y "chesed" es el amor fiel y pactual inagotable de Dios.',
-            historicalContext: 'Súplica individual de David en medio de angustias, donde su confianza para hallar liberación se ancla exclusivamente en los atributos misericordiosos de Dios.',
-            theologicalPrinciple: 'Dios no guarda rencor eternamente ni se deleita en la venganza; Su naturaleza es perdonadora para con todo corazón arrepentido.',
-            pastoralApplication: 'Instruir al aconsejado a imitar la disposición divina ("sallach"): cultivar una actitud constante de perdón interior que esté lista para extender la reconciliación en cuanto el ofensor confiese su falta.'
-          }
-        },
-        {
-          reference: 'Deuteronomio 29:18',
-          text: '18 No sea que haya en medio de vosotros hombre o mujer, o familia o tribu, cuyo corazón se aparte hoy de Jehová nuestro Dios, para ir a servir a los dioses de esas naciones; no sea que haya en medio de vosotros raíz que produzca hiel y ajenjo.\n\nLa amargura no es un accidente emocional, sino el fruto de un corazón que se aparta de Dios para abrazar ídolos de justicia propia, orgullo y venganza.',
-          version: 'RVR1960',
-          exegesis: {
-            originalTerms: 'En hebreo: "Shoresh poreh rosh welaanah" (שֹׁ֥רֶשׁ פֹּרֶ֛ה רֹ֖אשׁ וְלַעֲנָ֑ה). "Shoresh" (raíz profunda), "rosh" (veneno amargo o planta letal) y "laanah" (ajenjo, símbolo de extrema desolación y castigo).',
-            historicalContext: 'Moisés renueva el pacto en las llanuras de Moab advirtiendo contra la apostasía secreta del corazón que amenaza la pureza de toda la comunidad israelita.',
-            theologicalPrinciple: 'La raíz de la amargura está íntimamente ligada a la rebelión y al abandono de la comunión con Dios. Quien rechaza el señorío de Dios termina alimentando ajenjo en su alma.',
-            pastoralApplication: 'Guiar al aconsejado a escudriñar los ídolos de su corazón: la demanda egoísta de no ser ofendido, el deseo de castigar al prójimo o la negativa a someterse a la Ley moral de Dios.'
-          }
-        },
-        {
-          reference: 'Filipenses 4:13',
-          text: '13 Todo lo puedo en Cristo que me fortalece.\n\nEl poder para vencer la amargura, abandonar el deseo de venganza y perdonar sinceramente no se origina en la fuerza de voluntad humana, sino en la gracia infundida por la unión vital con Cristo.',
-          version: 'RVR1960',
-          exegesis: {
-            originalTerms: 'En griego: "Panta ischyo en to endynamounti me Christo" (πάντα ἰσχύω ἐν τῷ ἐνδυναμοῦντί με). "Ischyo" denota suficiencia de fuerza y capacidad espiritual plena; "endynamounti" es un participio presente continuo: "Aquel que de continuo me infunde poder interior".',
-            historicalContext: 'Pablo testifica desde su encierro carcelario de cómo la gracia de Cristo le otorga plenitud y contentamiento soberano sobre cualquier circunstancia adversa.',
-            theologicalPrinciple: 'La vida cristiana en el Nuevo Pacto no es autosuficiencia ni pasividad mística, sino dependencia activa del poder resucitador de Cristo para obedecer mandamientos costosos.',
-            pastoralApplication: 'Desarmar la objeción frecuente del aconsejado: "no tengo la capacidad de perdonar". En Cristo hay gracia suficiente para obedecer el mandato del perdón aun cuando las emociones se resistan.'
-          }
-        },
-        {
-          reference: 'Salmo 73:25–26',
-          text: '25 ¿A quién tengo yo en los cielos sino a ti? Y fuera de ti nada deseo en la tierra. 26 Mi carne y mi corazón desfallecen; mas la roca de mi corazón y mi porción es Dios para siempre.\n\nLa amargura es la evidencia manifiesta de un vacío de Dios. Quien encuentra su plena satisfacción en Dios no puede vivir consumido por el resentimiento, pues el gozo es el fruto natural de esa comunión.',
-          version: 'RVR1960',
-          exegesis: {
-            originalTerms: 'En hebreo: "Tzur-levavi vechelqi Elohim le\'olam" (צ֥וּר לְבָבִ֥י וְחֶלְקִ֗י אֱלֹהִ֥ים לְעוֹלָֽם). "Tzur" (roca inamovible de refugio) y "cheleq" (porción de heredad que sacia toda necesidad del alma).',
-            historicalContext: 'Asaf confiesa cómo su alma se llenó de amargura (v. 21) al mirar horizontalmente la prosperidad del impío, hasta que entró en el santuario y halló su tesoro supremo en Dios.',
-            theologicalPrinciple: 'El gozo espiritual y la amargura son mutuamente excluyentes. La amargura revela una fijación idolátrica en lo terrenal, mientras que la satisfacción en Dios llena el alma de paz inalterable.',
-            pastoralApplication: 'Llevar al aconsejado al santuario de la presencia divina mediante la oración y la Palabra para que Dios sea su porción y herencia, disipando la envidia y el resentimiento terrenal.'
-          }
-        },
-        {
-          reference: 'Colosenses 3:19',
-          text: '19 Maridos, amad a vuestras mujeres, y no seáis ásperos con ellas.\n\nEn las relaciones familiares y matrimoniales, la amargura no resuelta se transforma en aspereza, frialdad y maltrato emocional, destruyendo el pacto conyugal.',
-          version: 'RVR1960',
-          exegesis: {
-            originalTerms: 'En griego: "Me pikrainesthe pros autas" (μὴ πικραίνεσθε πρὸς αὐτάς). "Me pikrainesthe" es un imperativo presente con negación: "no os amarguéis de continuo ni alberguéis resentimiento agrio hacia ellas".',
-            historicalContext: 'Instrucción apostólica para el orden familiar cristiano, demandando amor sacrificial en contraposición a la dureza autoritaria tolerada en la cultura pagana.',
-            theologicalPrinciple: 'El resentimiento acumulado en el corazón corrompe los deberes relacionales más sagrados, convirtiendo el liderazgo conyugal en aspereza pecaminosa.',
-            pastoralApplication: 'Identificar en la consejería matrimonial las micro-ofensas no resueltas que con el tiempo se han solidificado en frialdad y trato áspero entre los cónyuges.'
-          }
-        }
-      ],
-      introduction: {
-        number: 2,
-        title: 'Introducción',
-        paragraphs: [
-          'La amargura representa un espíritu profundamente resentido que rechaza la reconciliación y se manifiesta como una disposición agria, punzante y hostil hacia quienes han causado ofensa. Lejos de ser un estado anímico involuntario o una simple reacción emocional comprensible, las Escrituras la identifican como una raíz venenosa introducida por el pecado en la naturaleza caída del ser humano.',
-          'En la consejería bíblica eficiente (tal como fundamenta Jay E. Adams), un principio medular e ineludible es que los consejeros deben separar siempre la relación —primeramente con Dios y luego con el prójimo— del problema o conflicto específico. Intentar tratar el problema circunstancial antes de haber restaurado la relación fundamental con el Señor es una de las causas primarias de fracaso en el ministerio pastoral.'
-        ]
-      },
-      problemToTreat: {
-        number: 3,
-        title: 'Problema a tratar',
-        paragraphs: [
-          'La amargura y el resentimiento operan con frecuencia como mecanismos encubiertos de venganza. La persona amargada utiliza su silencio, su frialdad y su negativa a comunicarse o pedir perdón como armas para castigar al ofensor, levantando un muro que bloquea cualquier avance hacia la reconciliación bíblica.',
-          'Heath Lambert establece una distinción teológica vital entre el acto formal de perdón y la actitud de perdón: Si bien el perdón formal refleja el modelo divino (Dios otorga el perdón cuando hay una humilde confesión de culpa y arrepentimiento), la falta de contrición del ofensor jamás constituye una licencia divina para que el creyente alimente el rencor, la ira o la malicia.',
-          'El consejero debe instruir al aconsejado a desarrollar una actitud constante de perdón interior, orando y deseando el bien espiritual de quien lo dañó, estando listo para conceder el perdón en cuanto haya arrepentimiento genuino.',
-          'Asimismo, Wayne Mack señala el error de supeditar la obediencia a los sentimientos: los sentimientos son el vagón de cola que sigue a la locomotora de la obediencia. Cuando el creyente decide perdonar y obedecer la Palabra sin importar cómo se siente, sus emociones se alinearán como fruto de su sumisión a Dios.'
-        ]
-      },
-      rootProblem: {
-        number: 4,
-        title: 'Raíz del problema',
-        paragraphs: [
-          'La raíz primordial de la amargura es el vacío de Dios en la vida del individuo (Samuel Pérez Millos). Quien está plenamente satisfecho en Dios y descansa en Su gracia experimenta el gozo como fruto natural de esa comunión; por el contrario, quien está vacío de Dios intenta llenar ese vacío con justicia propia, amargura y constante rumiación de agravios.',
-          'La amargura revela además una queja idolátrica contra la soberanía y providencia de Dios (Romanos 8:28). El amargado se rehúsa a creer que Dios puede usar el dolor y la injusticia sufrida para propósitos santos y eternos, erigiéndose a sí mismo como juez supremo de la historia.',
-          'Ideas antibíblicas como la pasividad mística (creer que "Dios debe quitarme el sentimiento sin que yo haga nada") o el orgullo que rehúsa perdonar alimentan una resistencia tenaz al cambio bíblico.'
-        ]
-      },
-      consequences: {
-        number: 5,
-        title: 'Consecuencias del pecado tratado',
-        paragraphs: [
-          '1. Contaminación Colectiva (Hebreos 12:15): La santidad no se contagia por contacto, pero el pecado sí. Una raíz de amargura no queda confinada al corazón del ofendido; brota al exterior a través de la maledicencia y el chisme, envenenando a familiares, hijos y miembros de la congregación.',
-          '2. Pérdida del Gozo y del Testimonio: La amargura apaga la vida en el Espíritu Santo y extingue el gozo de la salvación, sumiendo al creyente en desaliento y convirtiéndolo en un instrumento de desánimo para los demás hermanos.',
-          '3. Destrucción de las Relaciones Familiares (Colosenses 3:19): El rencor acumulado desemboca en aspereza en el trato conyugal, frialdad emocional y la ruptura de la comunicación en el hogar.',
-          '4. Cadena Destructiva del Ánimo: El cavilar continuo en la ofensa detona una espiral descendente: Autocompasión → Ira → Amargura → Depresión profunda.'
-        ]
-      },
-      counselingApproach: {
-        number: 6,
-        title: 'Cómo tratar el problema en consejería',
-        paragraphs: [
-          'Paso 1: Recolección Exhaustiva de Información (Wayne Mack). En las primeras sesiones, el consejero debe escuchar pacientemente al aconsejado para descubrir las dificultades ocultas que se niega a confesar. Como las doce puertas de la muralla de Jerusalén, si una puerta emocional está cerrada, el consejero debe probar con otra hasta acceder a los pensamientos, temores y raíces reales de su amargura.',
-          'Paso 2: Romper la Cadena en el Primer Eslabón (Jay Adams). Instruir al aconsejado para que, en lugar de permitir que comience la autocompasión y el cavilar mental, corte de raíz el pensamiento mediante la oración y la entrega del asunto a Dios.',
-          'Paso 3: Procedimiento Práctico de los 2 Minutos. Cuando asalte el recuerdo del hecho triste o injusto: dedicarle exactamente 2 minutos de reloj a reconocer la realidad del dolor; al cumplirse los 2 minutos, elevar una oración de entrega a Dios poniendo la carga en Sus manos; y de inmediato levantarse a cumplir con diligencia y energía la tarea o deber presente.',
-          'Paso 4: El Principio de "Quitar y Poner" (Efesios 4:22–32). No basta con reprimir la ira; es indispensable "quitar" la maledicencia, la amargura y la gritería, y "poner" activamente la benignidad, la compasión entrañable y el perdón mutuo.'
-        ]
-      },
-      sanctificationFollowUp: {
-        number: 7,
-        title: 'Seguimiento del plan de santificación',
-        paragraphs: [
-          'El Amor Bíblico como Acción Concreta de Entrega: El consejero debe recordar que el amor no es primordialmente una emoción, sino que se aprende y se expresa dando (tiempo, servicio, bondad específica). Cuando el aconsejado realiza actos deliberados de bien hacia quien lo ofendió (vencer el mal con el bien, Ro. 12:21), el sentimiento del amor le sigue.',
-          'Estructuración del Entorno: Establecer límites concretos para impedir las conductas viejas (evitar conversaciones de queja, eliminar registros de rencores) y facilitar las pautas nuevas (orar diariamente por la persona, memorizar pasajes bíblicos sobre la gracia).',
-          'Rendición de Cuentas: Compromiso formal del aconsejado delante de Dios y de su consejero para reportar semanalmente sus victorias sobre la tentación de amargarse y sus actos concretos de amor y servicio.'
-        ]
-      },
-      conclusions: {
-        number: 8,
-        title: 'Conclusiones',
-        paragraphs: [
-          'La amargura, el rencor y la falta de perdón son obstáculos mayúsculos para el crecimiento espiritual, pero no tienen la última palabra en la vida del redimido. Su victoria no descansa en técnicas humanas ni en la pasividad emocional, sino en la obra consumada de Jesucristo en la Cruz.',
-          'Cristo no solo perdona la culpa de nuestra propia amargura, sino que mediante Su Espíritu Santo infunde el poder capacitador (Filipenses 4:13) para arrancar toda raíz venenosa y reemplazarla con benignidad, misericordia y paz.',
-          'Al descansar plenamente en la providencia soberana de Dios y en Su llamado santo, el creyente es libertado de la prisión del resentimiento para vivir en la gloriosa libertad y gozo de los hijos de Dios.'
+          'La inmoralidad sexual constituye una transgresión fundamental y directa contra la voluntad soberana de Dios para la santidad de Sus redimidos. Sus raíces profundas residen en la codicia idolátrica, la soberbia y los pensamientos perversos que brotan de un corazón descuidado o no regenerado.',
+          'La consejería bíblica ofrece una esperanza viva e inquebrantable. Mediante una confrontación compasiva centrada en la suficiencia de la Cruz de Cristo, la aplicación de medidas radicales de huida de la tentación y el establecimiento de salvaguardas éticas rigurosas para evitar toda apariencia de mal, el creyente es conducido al arrepentimiento sincero y a la purificación de su vida.',
+          'Dado que las consecuencias del pecado y de la amargura tienen el poder destructivo de contaminar hogares y congregaciones enteras, el plan de santificación debe integrar la gracia perdonadora de Jesucristo con una rendición de cuentas perseverante, permitiendo que el Espíritu Santo renueve el corazón y preserve el cuerpo como templo santo para la gloria de Dios.',
+          'Fuentes y Fundamentación en el Índice Didáctico: El presente estudio se nutre directamente de las obras de Samuel Pérez Millos (Comentarios Exegéticos al Texto Griego de 1a y 2a Tesalonicenses, Mateo, Apocalipsis, Colosenses y Hebreos), Charles Swindoll (Adulterio: Sanando un Matrimonio), Heath Lambert (Teología de la Consejería Bíblica) y Robert Jones & Brad Hambrick (Consejería Bíblica Cristo-Céntrica). Consulta la Sección 9 para acceder a los vínculos directos de cada libro en el Índice Didáctico.'
         ]
       }
     }
   }
 ];
-

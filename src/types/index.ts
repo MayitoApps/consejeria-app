@@ -49,6 +49,7 @@ export interface BookPassage {
   fullText: string;
   biblicalReferences: string[];
   keyTakeaway: string;
+  logosUrl?: string;
 }
 
 export interface RecommendedBook {
@@ -60,6 +61,7 @@ export interface RecommendedBook {
   coverGradient: string;
   coverIcon?: string;
   summary: string;
+  logosUrl?: string;
   passages: BookPassage[];
 }
 

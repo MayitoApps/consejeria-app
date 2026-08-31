@@ -13,16 +13,47 @@ import {
   Check, 
   ChevronDown, 
   ChevronUp, 
-  Type 
+  Type,
+  ExternalLink
 } from 'lucide-react';
 import { GlossaryTopic, RecommendedBook, BookPassage } from '../../types';
 import { GLOSSARY_TOPICS } from '../../data/glossaryBooksData';
 import { BibleRefBadge } from '../bible/BibleRefBadge';
 
-export const GlossaryView: React.FC = () => {
-  const [selectedTopic, setSelectedTopic] = useState<GlossaryTopic | null>(null);
-  const [selectedBook, setSelectedBook] = useState<RecommendedBook | null>(null);
+interface GlossaryViewProps {
+  initialTopicId?: string | null;
+  initialBookId?: string | null;
+}
+
+export const GlossaryView: React.FC<GlossaryViewProps> = ({ initialTopicId, initialBookId }) => {
+  const [selectedTopic, setSelectedTopic] = useState<GlossaryTopic | null>(() => {
+    if (initialTopicId) {
+      return GLOSSARY_TOPICS.find(t => t.id === initialTopicId) || null;
+    }
+    return null;
+  });
+  const [selectedBook, setSelectedBook] = useState<RecommendedBook | null>(() => {
+    if (initialTopicId && initialBookId) {
+      const topic = GLOSSARY_TOPICS.find(t => t.id === initialTopicId);
+      return topic?.books.find(b => b.id === initialBookId) || null;
+    }
+    return null;
+  });
   
+  // Sincronizar si cambian los props
+  useEffect(() => {
+    if (initialTopicId) {
+      const topic = GLOSSARY_TOPICS.find(t => t.id === initialTopicId) || null;
+      setSelectedTopic(topic);
+      if (topic && initialBookId) {
+        const book = topic.books.find(b => b.id === initialBookId) || null;
+        setSelectedBook(book);
+      } else {
+        setSelectedBook(null);
+      }
+    }
+  }, [initialTopicId, initialBookId]);
+
   // Desplazar automáticamente al tope de la página al cambiar de nivel en el glosario
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
@@ -293,12 +324,27 @@ export const GlossaryView: React.FC = () => {
             <p className="text-xs text-slate-400 leading-relaxed italic pt-2 border-t border-white/[0.06] break-words max-w-3xl">
               "{selectedBook.summary}"
             </p>
+
+            {selectedBook.logosUrl && (
+              <div className="pt-2">
+                <a
+                  href={selectedBook.logosUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-xl bg-amber-500/15 hover:bg-amber-500/25 border border-amber-500/30 text-amber-300 hover:text-amber-100 text-xs font-semibold shadow-gold-sm transition-all group/booklogos"
+                >
+                  <ExternalLink className="w-3.5 h-3.5 text-amber-400 group-hover/booklogos:scale-110 transition-transform" />
+                  <span>Abrir Libro en Logos Bible Software</span>
+                </a>
+              </div>
+            )}
           </div>
 
           {/* Lista de Pasajes del Libro */}
           <div className="space-y-4">
             {selectedBook.passages.map((passage, pIdx) => {
               const isFullOpen = !!expandedPassageIds[passage.id];
+              const logosTargetUrl = passage.logosUrl || selectedBook.logosUrl;
 
               return (
                 <div
@@ -337,6 +383,19 @@ export const GlossaryView: React.FC = () => {
                           </>
                         )}
                       </button>
+
+                      {logosTargetUrl && (
+                        <a
+                          href={logosTargetUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="px-2.5 py-1 rounded-lg text-amber-400 hover:text-amber-200 bg-amber-500/10 hover:bg-amber-500/20 border border-amber-500/30 text-[11px] font-medium flex items-center space-x-1.5 transition-all shadow-sm group/logos"
+                          title="Abrir página del libro en Logos Bible Software"
+                        >
+                          <ExternalLink className="w-3 h-3 text-amber-400 group-hover/logos:scale-110 transition-transform" />
+                          <span>Ver en Logos</span>
+                        </a>
+                      )}
 
                       <button
                         onClick={() => toggleExpandPassage(passage.id)}
