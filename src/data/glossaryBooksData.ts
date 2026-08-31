@@ -329,5 +329,250 @@ La consejería incluye más que meramente llamar a las personas a que se arrepie
         ]
       }
     ]
+  },
+  {
+    id: 'amargura-rencor',
+    title: 'Amargura y rencor',
+    shortDescription:
+      'Resentimiento, falta de perdón, raíz de amargura contagiosa, maledicencia, providencia divina y dinámica bíblica de reconciliación.',
+    iconName: 'HeartCrack',
+    categoryColor: 'from-rose-600 to-amber-700',
+    books: [
+      {
+        id: 'consejeria-mack-amargura',
+        title: 'La Consejería: Cómo aconsejar bíblicamente',
+        author: 'Wayne A. Mack',
+        publisher: 'Grupo Nelson (Nashville, TN)',
+        year: '2009',
+        coverGradient: 'from-slate-900 via-amber-950 to-slate-900',
+        coverIcon: 'BookOpenCheck',
+        logosUrl: 'https://ref.ly/logosres/LLS:MIRACONBIB?pos=res%2fLLS%3aMIRACONBIB%2f2020-04-17T00%3a34%3a47Z%2f739665',
+        summary:
+          'Tratado pastoral sobre el proceso de cambio bíblico: el diagnóstico de la amargura como resistencia y venganza solapada, la sumisión indispensable a los propósitos providenciales de Dios (Ro. 8:28, Sal. 86:5) y la recolección organizada de datos escuchando con paciencia al aconsejado.',
+        passages: [
+          {
+            id: 'mack-amargura-pasaje-1',
+            bookTitle: 'La Consejería: Cómo aconsejar bíblicamente',
+            author: 'Wayne A. Mack',
+            chapter: 'Capítulo: Consejería bíblica e inducción',
+            pages: 'Página 315',
+            passageTitle: 'La Amargura como Instrumento de Venganza y la Resistencia al Cambio Bíblico',
+            logosUrl: 'https://ref.ly/logosres/LLS:MIRACONBIB?pos=res%2fLLS%3aMIRACONBIB%2f2020-04-17T00%3a34%3a47Z%2f739665',
+            excerpt:
+              'La amargura y el resentimiento pueden provocar resistencia. Algunos ven la amargura como medio de vengarse de otros, negándose a reconciliarse...',
+            fullText: `La amargura y el resentimiento pueden provocar resistencia en el proceso de consejería. Algunos ven la amargura como un medio de vengarse de otros. Por tanto, se niegan a hablar con ellos, pedirles perdón o dar otros pasos hacia una reconciliación genuina.
+
+Mientras las personas no estén dispuestas a aceptar los propósitos providenciales de Dios por lo que sucedió (Ro. 8:28) y listos a perdonar a quienes les ofendieron (Sal. 86:5), el proceso de cambio bíblico será impedido. El consejero debe guiar al aconsejado a descansar en la soberanía de Dios y a abandonar todo deseo de venganza personal.`,
+            biblicalReferences: [
+              'Romanos 8:28',
+              'Salmo 86:5',
+              'Génesis 50:20'
+            ],
+            keyTakeaway:
+              'La amargura frena el cambio espiritual; superarla exige someterse a la providencia de Dios y renunciar a la venganza mediante el perdón activo.'
+          },
+          {
+            id: 'mack-amargura-pasaje-2',
+            bookTitle: 'La Consejería: Cómo aconsejar bíblicamente',
+            author: 'Wayne A. Mack',
+            chapter: 'Capítulo: Cómo llevar un inventario del aconsejado: recolección de datos',
+            pages: 'Página 242',
+            passageTitle: 'La Escucha Paciente y la Recolección Organizada de Información',
+            logosUrl: 'https://ref.ly/logosres/LLS:MIRACONBIB?pos=res%2fLLS%3aMIRACONBIB%2f2020-04-17T00%3a34%3a47Z%2f590009',
+            excerpt:
+              'Una consejería bíblica eficiente requiere un método organizado de obtener información, dedicando tiempo suficiente para oír al aconsejado en las etapas iniciales...',
+            fullText: `Una consejería bíblica eficiente debe incluir un método organizado de obtener información que requiere tiempo suficiente para oír al aconsejado. Es de particular importancia, en las etapas iniciales de la consejería, animar al aconsejado a que sea quien hable durante buena parte del tiempo.
+
+Para ser eficiente, el consejero debe reunir información que le permita entender adecuadamente a la persona y sus problemas, identificando las heridas, quejas y raíces de amargura no resueltas que obstruyen su vida espiritual.`,
+            biblicalReferences: [
+              'Proverbios 18:13',
+              'Santiago 1:19',
+              'Proverbios 20:5'
+            ],
+            keyTakeaway:
+              'El consejero debe dedicar tiempo paciente a escuchar para discernir con exactitud las raíces del conflicto y el dolor no procesado.'
+          }
+        ]
+      },
+      {
+        id: 'comentario-efesios-millos',
+        title: 'Comentario Exegético al Texto Griego: Efesios',
+        author: 'Samuel Pérez Millos',
+        publisher: 'Editorial CLIE (Viladecavalls, Barcelona)',
+        year: '2010',
+        coverGradient: 'from-amber-950 via-slate-900 to-rose-950',
+        coverIcon: 'Flame',
+        logosUrl: 'https://ref.ly/logosres/LLS:CTGDNTFSS?pos=res%2fLLS%3aCTGDNTFSS%2f2015-05-22T18%3a28%3a12Z%2f1075604',
+        summary:
+          'Análisis exegético de Efesios 4:31–32: la naturaleza agria de la amargura (pikria), el rechazo permanente a la reconciliación, la pérdida del gozo en el Espíritu y el contagio comunitario como planta venenosa.',
+        passages: [
+          {
+            id: 'ef-millos-pasaje-1',
+            bookTitle: 'Comentario Exegético: Efesios',
+            author: 'Samuel Pérez Millos',
+            chapter: 'Capítulo 4: El Despojo de la Amargura y la Vida en el Espíritu',
+            pages: 'Páginas 376–377',
+            passageTitle: 'Pikría: El Espíritu Agrio que Rehúsa la Reconciliación y Contamina a Otros',
+            logosUrl: 'https://ref.ly/logosres/LLS:CTGDNTFSS?pos=res%2fLLS%3aCTGDNTFSS%2f2015-05-22T18%3a28%3a12Z%2f1075604',
+            excerpt:
+              'Lo primero que ha de quitarse es toda amargura. Aristóteles usó la palabra para designar el espíritu resentido que rehúsa la reconciliación. Como planta venenosa se extiende y contamina a otros...',
+            fullText: `Lo primero que ha de quitarse es toda amargura, que por el enfado conduce también al resentimiento. El sustantivo da idea de un espíritu y una forma expresiva altamente agria. Aristóteles usó la palabra para designar "el espíritu resentido que rehúsa la reconciliación". Todo aquel que no quiere perdonar y recuerda permanentemente la ofensa recibida, vive una vida de amargura.
+
+Al no abandonar la amargura, se está dejando a un lado la vida en el Espíritu que trae aparejada la consecuencia primaria que ocasiona y que es la pérdida del gozo sustituida por raíces de amargura.
+
+La amargura no afecta sólo al que la vive, sino que se extiende y contamina a muchos, como escribe el escritor a los Hebreos: "...que brotando alguna raíz de amargura, os estorbe, y por ella muchos sean contaminados" (He. 12:15). La amargura fructifica en el corazón del creyente en donde brota. La contaminación comienza amargando al creyente, pero no queda el problema en él sólo, sino que, como planta venenosa se extiende y contamina a otros.
+
+Un cristiano amargado es amargura al resto de los hermanos. La influencia perniciosa de un amargado ocasiona desaliento y desánimo en quienes están en contacto con él. Normalmente el amargado procura extender el veneno de su amargura a otros, por medio de la lengua.`,
+            biblicalReferences: [
+              'Efesios 4:31-32',
+              'Hebreos 12:15',
+              'Efesios 4:30'
+            ],
+            keyTakeaway:
+              'La amargura es un veneno activo que sofoca el gozo del Espíritu Santo y propaga desaliento y murmuración destructiva en toda la congregación.'
+          }
+        ]
+      },
+      {
+        id: 'comentario-santiago-millos',
+        title: 'Comentario Exegético al Texto Griego: Santiago',
+        author: 'Samuel Pérez Millos',
+        publisher: 'Editorial CLIE (Viladecavalls, Barcelona)',
+        year: '2011',
+        coverGradient: 'from-slate-900 via-rose-950 to-slate-900',
+        coverIcon: 'Zap',
+        logosUrl: 'https://ref.ly/logosres/LLS:CTGDNTSNTG?pos=res%2fLLS%3aCTGDNTSNTG%2f2015-05-22T18%3a28%3a44Z%2f477334',
+        summary:
+          'Exposición sobre la lengua, la maledicencia y la amargura en Santiago 3: el vacío de Dios como origen del rencor y el gozo como fruto natural de la comunión plena con el Señor.',
+        passages: [
+          {
+            id: 'stg-millos-pasaje-1',
+            bookTitle: 'Comentario Exegético: Santiago',
+            author: 'Samuel Pérez Millos',
+            chapter: 'Capítulo 3: La Maledicencia y la Raíz Venenosa del Corazón',
+            pages: 'Páginas 185–186',
+            passageTitle: 'El Vacío de Dios y las Palabras Venenosas de la Amargura',
+            logosUrl: 'https://ref.ly/logosres/LLS:CTGDNTSNTG?pos=res%2fLLS%3aCTGDNTSNTG%2f2015-05-22T18%3a28%3a44Z%2f477334',
+            excerpt:
+              'Junto con la maledicencia está la amargura. La amargura es la manifestación de quien tiene vacío de Dios. Quien está satisfecho con Dios no puede vivir en amargura...',
+            fullText: `Junto con la maledicencia, compañera inseparable de ella, está la amargura. Esta raíz venenosa introducida por el pecado en la naturaleza caída del hombre, genera palabras que salen al exterior como expresión de un corazón contaminado por ella.
+
+La amargura es la manifestación de quien tiene vacío de Dios. Quien está satisfecho con Dios no puede vivir en amargura, sino que el gozo es la forma natural de esa relación.
+
+La amargura fructifica en el corazón del creyente, en donde brota. La contaminación comienza amargando al creyente en el que ha brotado la raíz de amargura, pero no queda el problema en él sólo, sino que, como planta venenosa se extiende y contamina a otros mediante palabras ásperas, críticas destructivas y juicios maliciosos.`,
+            biblicalReferences: [
+              'Santiago 3:14-16',
+              'Santiago 1:26',
+              'Salmo 16:11'
+            ],
+            keyTakeaway:
+              'La amargura delata un vacío espiritual; la plenitud y satisfacción en Dios producen gozo genuino que desactiva la maledicencia.'
+          }
+        ]
+      },
+      {
+        id: 'manual-consejero-adams',
+        title: 'Manual del Consejero Cristiano',
+        author: 'Jay E. Adams',
+        publisher: 'Editorial CLIE (Terrassa, Barcelona)',
+        year: '1984',
+        coverGradient: 'from-slate-900 via-amber-950 to-indigo-950',
+        coverIcon: 'Bookmark',
+        logosUrl: 'https://ref.ly/logosres/LLS:MNLDLCNSJRCRSTN?pos=res%2fLLS%3aMNLDLCNSJRCRSTN%2f2017-12-15T23%3a50%3a14Z%2f913558',
+        summary:
+          'Obra clásica de la consejería noutética: separar la relación del problema, la dinámica del amor como acción sacrificial de dar, romper la cadena de autocompasión-ira-amargura con oración inmediata y el principio de quitar y poner.',
+        passages: [
+          {
+            id: 'adams-amargura-pasaje-1',
+            bookTitle: 'Manual del Consejero Cristiano',
+            author: 'Jay E. Adams',
+            chapter: 'Capítulo: La Dinámica de la Reconciliación y la Relación',
+            pages: 'Páginas 355, 361–362',
+            passageTitle: 'Separar la Relación del Conflicto y el Amor Expresado en el Dar',
+            logosUrl: 'https://ref.ly/logosres/LLS:MNLDLCNSJRCRSTN?pos=res%2fLLS%3aMNLDLCNSJRCRSTN%2f2017-12-15T23%3a50%3a14Z%2f931515',
+            excerpt:
+              'Los consejeros tienen que dividir siempre la relación del problema. El amor no es sentimiento sino acción: se aprende dando y el sentimiento sigue...',
+            fullText: `Los consejeros tienen que dividir siempre la relación (a Dios y al otro) de la cuestión que les trae, y estar seguros de que no intentan tratar esta última antes de haber puesto en orden la primera. La confusión de las dos cosas es una causa importante de fracaso en el aconsejar.
+
+Los consejeros tienen que asegurar a los aconsejados que los cristianos pueden aprender a vivir sin amargura, ira, enojo, gritería, maledicencia y malicia. Pero tienen también que ayudarles a desarrollar y mantener actitudes de buena voluntad el uno hacia el otro. En el suelo de estas actitudes, las soluciones a los problemas de la vida crecen lozanas. Estas actitudes pueden ser sustentadas sólo por medio de desarrollo de pautas en que sean «benignos unos con otros, misericordiosos, perdonándose los unos a los otros como también Dios les perdonó en Cristo».
+
+El amor debe reemplazar la ira. Pero los consejeros deben recordar que el amor, en su base, no es un sentimiento. El amor, primero, se expresa y se aprende dando. Éste es el núcleo del amor. Cuando el aconsejado da, el sentimiento del amor sigue. Para amar tiene que aprender a darse a sí mismo, su tiempo, su sustancia, todo lo que sea necesario para mostrar amor; porque dar es fundamental para la idea bíblica del amor.
+
+Pidieron y recibieron el perdón de Dios y cada uno el del otro. Cuando, arrepentidos, empezaron a atacar los problemas con palabras, en vez de atacarse el uno al otro, descubrieron el gozo de resolver las cosas bíblicamente.`,
+            biblicalReferences: [
+              'Efesios 4:31-32',
+              '1 Juan 3:18',
+              'Proverbios 15:1',
+              'Mateo 5:23-24'
+            ],
+            keyTakeaway:
+              'Primero se restaura la relación con Dios y el prójimo antes de resolver los desacuerdos; el amor se ejercita dando y desactiva el rencor.'
+          },
+          {
+            id: 'adams-amargura-pasaje-2',
+            bookTitle: 'Manual del Consejero Cristiano',
+            author: 'Jay E. Adams',
+            chapter: 'Capítulo: Romper la Cadena del Rencor y la Estructuración de Hábitos',
+            pages: 'Páginas 355, 370',
+            passageTitle: 'Interrumpir la Cadena Autocompasión → Ira → Amargura → Depresión',
+            logosUrl: 'https://ref.ly/logosres/LLS:MNLDLCNSJRCRSTN?pos=res%2fLLS%3aMNLDLCNSJRCRSTN%2f2017-12-15T23%3a50%3a14Z%2f942164',
+            excerpt:
+              'El consejero puede dirigir al aconsejado a romper la cadena de autocompasión → ira → amargura → depresión en el primero de los eslabones, orando en lugar de cavilar...',
+            fullText: `El consejero puede dar una vista general bíblica del problema, usando los Salmos 73 y 37. Luego, puede dirigir al aconsejado a romper la cadena de autocompasión → ira → amargura → depresión en el primero de los eslabones. Más bien que permitir que empiece el cavilar y la autocompasión, el aconsejado ha de recibir instrucciones de orar sobre el problema, poniendo el asunto en las manos de Dios.
+
+El consejero debe procurar, como en el tratar todo hábito, ayudar al aconsejado a «quitar» y a «poner». Ha de recordar que para el «quitarse» es esencial darse cuenta de la práctica errónea, estructurar la situación de modo que se impida la práctica vieja, se facilite la nueva, y se busque y se obtenga ayuda para hacerlo donde sea posible.
+
+El comprometerse a este cambio delante de Dios y los otros implicados en el problema, es importante. Por encima de todo, tiene que buscar ayuda de Dios en el momento de la tentación, pidiendo ayuda a Dios, que use las estructuras erigidas y las personas que ayudan.`,
+            biblicalReferences: [
+              'Salmo 73:1-28',
+              'Salmo 37:1-8',
+              'Efesios 4:22-24',
+              'Filipenses 4:6-7'
+            ],
+            keyTakeaway:
+              'La amargura se frena en su origen interrumpiendo la autocompasión mediante la oración inmediata y estableciendo estructuras para quitar lo viejo y poner lo nuevo.'
+          }
+        ]
+      },
+      {
+        id: 'teologia-consejeria-lambert-amargura',
+        title: 'Teología de la Consejería Bíblica: Las Bases Doctrinales del Ministerio',
+        author: 'Heath Lambert',
+        publisher: 'Editorial Bautista Independiente (Sebring, FL)',
+        year: '2020',
+        coverGradient: 'from-slate-900 via-amber-950 to-blue-950',
+        coverIcon: 'Users',
+        logosUrl: 'https://ref.ly/logosres/LLS:TLGDLCNSJRBBLC?pos=res%2fLLS%3aTLGDLCNSJRBBLC%2f2020-10-16T01%3a14%3a37Z%2f559683',
+        summary:
+          'Bases doctrinales sobre el perdón y la amargura: el perdón bilateral pactual modelado según el perdón de Dios y el principio incondicional de que la falta de contrición ajena no otorga jamás permiso divino para abrigar ira o resentimiento.',
+        passages: [
+          {
+            id: 'lambert-amargura-pasaje-1',
+            bookTitle: 'Teología de la Consejería Bíblica',
+            author: 'Heath Lambert',
+            chapter: 'Capítulo: La Teología del Perdón y la Prohibición de la Amargura',
+            pages: 'Página 178',
+            passageTitle: 'El Modelo Divino del Perdón y la Inadmisibilidad del Rencor',
+            logosUrl: 'https://ref.ly/logosres/LLS:TLGDLCNSJRBBLC?pos=res%2fLLS%3aTLGDLCNSJRBBLC%2f2020-10-16T01%3a14%3a37Z%2f559683',
+            excerpt:
+              'Dios perdona a quienes buscan su perdón; si modelamos nuestro perdón según el divino, esto excluye perdonar a quien no confiesa culpa. Pero la falta de contrición no es permiso para amargarnos...',
+            fullText: `Ya hemos observado que debemos perdonar a los demás como Dios nos ha perdonado. Una implicación de esto es que Dios perdona solo a aquellos que han buscado su perdón a través de una humilde confesión de pecado. Si el modelo de nuestro propio perdón es del tipo que hemos recibido de Dios, entonces esto excluye extender el perdón a alguien que no confesará la culpa o no parece interesado en buscar la reconciliación.
+
+Sin embargo, incluso cuando alguien no está interesado en confesar el pecado, no se nos permite amargarnos. Efesios 4:31 dice: "Quítense de vosotros toda amargura, enojo, ira, gritería y maledicencia, y toda malicia".
+
+La falta de contrición por parte de los que han pecado contra nosotros no constituye un permiso divino para que alimentemos la ira y la amargura. Aunque la reconciliación formal requiera arrepentimiento del ofensor, la actitud del corazón del creyente ofendido debe permanecer libre de rencor, confiando la justicia a Dios.`,
+            biblicalReferences: [
+              'Efesios 4:31',
+              'Lucas 17:3-4',
+              'Romanos 12:19-21',
+              'Mateo 6:14-15'
+            ],
+            keyTakeaway:
+              'La ausencia de arrepentimiento ajeno no concede licencia divina para alimentar rencor; el corazón debe guardarse puro de amargura mientras confía en la justicia de Dios.'
+          }
+        ]
+      }
+    ]
   }
 ];
+

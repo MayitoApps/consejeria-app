@@ -297,5 +297,209 @@ export const BIBLE_STUDIES: BibleStudy[] = [
         ]
       }
     }
+  },
+  {
+    id: 'amargura-rencor',
+    title: 'Amargura y rencor',
+    subtitle: 'Resentimiento · Falta de Perdón · Raíz Venenosa · Maledicencia · Sanidad del Corazón · Reconciliación Bíblica',
+    category: 'Corazón & Relaciones',
+    tags: [
+      'Amargura',
+      'Rencor',
+      'Resentimiento',
+      'Falta de perdón',
+      'Reconciliación',
+      'Consejería Bíblica',
+      'Maledicencia',
+      'Gracia',
+      'Providencia'
+    ],
+    readTime: '18 min de estudio pastoral',
+    summary:
+      'Este estudio bíblico y pastoral examina la amargura, el rencor, el resentimiento y la falta de perdón desde la exégesis bíblica reformada y la consejería pastoral (Wayne A. Mack, Samuel Pérez Millos, Jay E. Adams y Heath Lambert). La amargura y el resentimiento representan obstáculos de primer orden en el proceso de consejería, reflejando un espíritu profundamente agrio que rechaza la reconciliación y mantiene vivo el registro de las ofensas. Su naturaleza es expansiva: no queda recluida en quien la experimenta, sino que brota y se extiende como una planta venenosa contaminando a familiares, hermanos y a la iglesia entera a través de la maledicencia y palabras tóxicas. El análisis identifica que la raíz del rencor radica en un vacío de Dios en el corazón, la resistencia a someterse a Sus propósitos providenciales soberanos (Ro. 8:28, Sal. 86:5) y el uso del distanciamiento como instrumento de venganza. El modelo bíblico de consejería exige separar la relación (con Dios y el prójimo) de los conflictos específicos antes de tratarlos, romper la cadena destructiva de autocompasión → ira → amargura → depresión en su primer eslabón mediante la oración inmediata, aplicar la dinámica de «quitar y poner», y modelar el perdón cristiano según la gracia inmerecida de Cristo, recordando que la falta de arrepentimiento del ofensor jamás concede permiso divino para abrigar rencor.',
+    sections: {
+      verses: [
+        {
+          reference: 'Hebreos 12:15',
+          text:
+            '15 Mirad bien, no sea que alguno deje de alcanzar la gracia de Dios; que brotando alguna raíz de amargura, os estorbe, y por ella muchos sean contaminados;',
+          version: 'RVR1960 / LBLA',
+          exegesis: {
+            originalTerms:
+              'En griego: "Episkopountes me tis hysterōn apo tes charitos tou Theou, me tis rhiza pikrias ano phuousa enochle kai dia tautes mianthosin polloi" (ἐπισκοποῦντες μή τις ὑστερῶν ἀπὸ τῆς χάριτος τοῦ Θεοῦ, μή τις ῥίζα πικρίας ἄνω φύουσα ἐνοχλῇ καὶ διὰ ταύτης μιανθῶσιν πολλοί). "Episkopountes" (participio presente activo: velar diligentemente, supervisar con celo pastoral mutuo). "Rhiza pikrias" (ῥίζα πικρίας - raíz de amargura, alusión directa a Deuteronomio 29:18 sobre la raíz que produce hiel y ajenjo). "Enochle" (causar desasosiego grave, estorbo y conmoción). "Mianthosin" (quedar moral y espiritualmente contaminados e infectados en masa).',
+            historicalContext:
+              'La epístola a los Hebreos exhorta a creyentes probados bajo persecución y tentados al desánimo, advirtiéndoles que descuidar la gracia y dar albergue a actitudes amargas corrompe y desestabiliza a la comunidad entera de creyentes.',
+            theologicalPrinciple:
+              'La amargura posee una dinámica expansiva y corrosiva: comienza germinando en el fuero interno de una persona, apaga la comunión en el Espíritu Santo y se propaga como un veneno letal que contamina el entorno relacional y eclesial.',
+            pastoralApplication:
+              'El consejero debe ayudar al aconsejado a identificar los brotes subterráneos de resentimiento antes de que cristalicen en hábitos amargos y maledicencia. Es vital enseñar a la congregación y a las familias a velar unos por otros en gracia para cortar de raíz cualquier foco de amargura.'
+          }
+        },
+        {
+          reference: 'Efesios 4:31–32',
+          text:
+            '31 Quítense de vosotros toda amargura, enojo, ira, gritería y maledicencia, y toda malicia. 32 Antes sed benignos unos con otros, misericordiosos, perdonándoos unos a otros, como Dios también os perdonó a vosotros en Cristo.',
+          version: 'RVR1960',
+          exegesis: {
+            originalTerms:
+              'En griego: "Pasa pikria kai thymos kai orge kai krauge kai blasphemia artheto aph\' hymon syn pase kakia" (πᾶσα πικρία καὶ θυμὸς καὶ ὀργὴ καὶ κραυγὴ καὶ βλασφημία ἀρθήτω ἀφ\' ὑμῶν σὺν πάσῃ κακίᾳ). "Pikria" (πικρία - amargura, espíritu resentido y agrio que rechaza la reconciliación). "Artheto" (imperativo aoristo pasivo: sea extirpado, removido tajantemente de raíz). "Ginesthē de eis allelous chrestoi, eusplanchnoi, charizomenoi heautois kathos kai ho Theos en Christo echarisato hymin" (sed benignos, de entrañas compasivas, perdonándoos gratuitamente como Dios os perdonó en Cristo).',
+            historicalContext:
+              'Pablo expone en Efesios 4 la teología práctica de la santificación: despojarse del viejo hombre corrompido y vestirse del nuevo hombre renovado en justicia y santidad de la verdad, erradicando los vicios de la convivencia que contristan al Espíritu Santo.',
+            theologicalPrinciple:
+              'La amargura y la ira son incompatibles con la presencia del Espíritu Santo en el creyente. El fundamento inamovible del perdón interpersonal es la gracia desbordante con la que Dios nos perdonó en Cristo Jesús.',
+            pastoralApplication:
+              'Implementar la metodología bíblica de «quitar y poner» (Jay E. Adams): renunciar al hábito de alimentar ofensas y gritería, y estructurar activamente prácticas de compasión, palabras de edificación y concesión de perdón mutuo.'
+          }
+        },
+        {
+          reference: 'Santiago 3:13–18',
+          text:
+            '13 ¿Quién es sabio y entendido entre vosotros? Muestre por la buena conducta sus obras en sabia mansedumbre. 14 Pero si tenéis celos amargos y contención en vuestro corazón, no os jactéis, ni mintáis contra la verdad; 15 porque esta sabiduría no es la que desciende de lo alto, sino terrenal, animal, diabólica. 16 Porque donde hay celos y contención, allí hay perturbación y toda obra perversa. 17 Pero la sabiduría que es de lo alto es primeramente pura, después pacífica, amable, benigna, llena de misericordia y de buenos frutos, sin incertidumbre ni hipocresía. 18 Y el fruto de justicia se siembra en paz para aquellos que hacen la paz.',
+          version: 'RVR1960',
+          exegesis: {
+            originalTerms:
+              'En griego: "Zelon pikron" (ζῆλον πικρόν - celo amargo, resentimiento venenoso). "Eritheian" (ἐριθείαν - rivalidad egoísta, espíritu contencioso). "Epigeios, psychike, daimoniodes" (ἐπίγειος, ψυχική, δαιμονιώδης - terrenal, sensual/carnal y de inspiración demoníaca). "Eirenikē, epieikes, eupeithes" (pacífica, afable, conciliadora, dispuesta a ceder por amor).',
+            historicalContext:
+              'Santiago confronta los conflictos y murmuraciones entre los creyentes dispersos, desenmascarando que las contiendas y juicios maliciosos provienen de pasiones carnales y no de la genuina piedad bíblica.',
+            theologicalPrinciple:
+              'La amargura y la maledicencia son expresiones de un corazón con un vacío de Dios que se nutre de una sabiduría demoníaca. Quien está plenamente satisfecho en el Señor rebosa de gozo, pureza, misericordia y pacificación.',
+            pastoralApplication:
+              'Exponer la raíz espiritual del rencor en el aconsejado (Samuel Pérez Millos): mostrarle que justificar su animosidad o criticismo bajo el manto de la "justicia propia" es un engaño carnal, y guiarle a buscar la sabiduría que siembra paz y produce frutos de justicia.'
+          }
+        },
+        {
+          reference: 'Romanos 8:28 / Salmo 86:5',
+          text:
+            'Romanos 8:28: Y sabemos que a los que aman a Dios, todas las cosas les ayudan a bien, esto es, a los que conforme a su propósito son llamados.\n\nSalmo 86:5: Porque tú, Señor, eres bueno y perdonador, y grande en misericordia para con todos los que te invocan.',
+          version: 'RVR1960',
+          exegesis: {
+            originalTerms:
+              'En griego (Ro. 8:28): "Panta synergei eis agathon" (πάντα συνεργεῖ εἰς ἀγαθόν - Dios hace concurrir activamente todas las circunstancias, incluso las heridas causadas por otros, para el bien supremo de la conformación a Cristo). En hebreo (Sal. 86:5): "Ki-atah Adonai tov vesallach verav-chesed" (כִּֽי־אַתָּ֣ה אֲ֭דֹנָי ט֣וֹב וְסַלָּ֑ח וְרַב־חֶ֝֗סֶד). "Sallach" (סַלָּח - adjetivo que denota una disposición inherente, pronta y generosa para perdonar). "Chesed" (fidelidad pactual y amor inagotable).',
+            historicalContext:
+              'Pablo consuela a los santos en Roma recordándoles la soberanía benevolente del Padre en medio del sufrimiento; mientras que David, en angustia profunda, encuentra descanso seguro en la bondad y misericordia perdonadora del Señor.',
+            theologicalPrinciple:
+              'La fe firme en la providencia soberana de Dios desmantela el rencor. Cuando el cristiano confía en que Dios gobierna sobre los agravios recibidos para su bien espiritual, abandona el rol de vengador y se dispone a perdonar como Dios perdona (Wayne A. Mack).',
+            pastoralApplication:
+              'Ayudar al aconsejado a desplazar su mirada de la persona que lo ofendió hacia los propósitos soberanos de Dios (como José ante sus hermanos en Génesis 50:20: "Vosotros pensasteis mal contra mí, mas Dios lo encaminó a bien"), abriendo la puerta a la sanidad y al perdón bíblico.'
+          }
+        },
+        {
+          reference: 'Salmo 73:21–26',
+          text:
+            '21 Se llenó de amargura mi corazón, y en mis riñones sentía punzadas. 22 Tan torpe era yo, que no entendía; era como una bestia delante de ti. 23 Con todo, yo siempre estuve contigo; me tomaste de la mano derecha. 24 Me has guiado según tu consejo, y después me recibirás en gloria. 25 ¿A quién tengo yo en los cielos sino a ti? Y fuera de ti nada deseo en la tierra. 26 Mi carne y mi corazón desfallecen; mas la roca de mi corazón y mi porción es Dios para siempre.',
+          version: 'RVR1960',
+          exegesis: {
+            originalTerms:
+              'En hebreo: "Yitchamets levavi" (יִתְחַמֵּ֣ץ לְבָבִ֑י - se agriaba mi corazón, fermentaba como vinagre). "Vekilyotay eshtonan" (sentía punzadas agudas en mis afectos más íntimos). "Va\'ani-va\'ar velo ede\'a behemot hayiti immach" (yo era un necio insensible, como una bestia salvaje ante tu presencia). "Tzur levavi vechelqi Elohim le\'olam" (la roca firme de mi corazón y mi herencia eterna es Dios).',
+            historicalContext:
+              'Asaf relata su tormento interior al contemplar la aparente prosperidad de los impíos, confesando que el cavilar obsesivo y la autocompasión casi destruyen su fe, hasta que entró en el santuario y recuperó la perspectiva divina.',
+            theologicalPrinciple:
+              'La autocompasión y el resentimiento degradan la lucidez espiritual del creyente, volviéndolo irracional ("como una bestia"). La amargura se disuelve cuando el corazón encuentra su refugio y porción suprema en la presencia de Dios (Jay E. Adams).',
+            pastoralApplication:
+              'Instruir al aconsejado a cortar la peligrosa cadena: autocompasión → ira → amargura → depresión. Ante el primer pensamiento de agravio o autoconmiseración, debe acudir inmediatamente a la oración, poniendo el asunto en manos del Señor en lugar de rumiar la queja.'
+          }
+        },
+        {
+          reference: 'Mateo 18:21–35',
+          text:
+            '21 Entonces se le acercó Pedro y le dijo: Señor, ¿cuántas veces perdonaré a mi hermano que peque contra mí? ¿Hasta siete? 22 Jesús le dijo: No te digo hasta siete, sino aun hasta setenta veces siete... 32 Entonces, llamándole su señor, le dijo: Siervo malvado, toda aquella deuda te perdoné, porque me rogaste. 33 ¿No debías tú también tener misericordia de tu consiervo, como yo tuve misericordia de ti? 34 Entonces su señor, enojado, le entregó a los verdugos, hasta que pagase todo lo que le debía. 35 Así también mi Padre celestial hará con vosotros si no perdonáis de corazón cada uno a su hermano sus ofensas.',
+          version: 'RVR1960',
+          exegesis: {
+            originalTerms:
+              'En griego: "Heos hebdomekontakis hepta" (ἕως ἑβδομηκοντάκις ἑπτά - setenta veces siete, denotando un perdón continuo y sin límites cuantitativos). "Doule ponere, pasan ten opheilen ekeinen apheka soi" (siervo perverso, te cancelé por completo aquella deuda infinita). "Ouk edei kai se eleesai ton syndoulon sou" (¿no era una obligación moral ineludible que te compadecieras de tu consiervo?). "Apo ton kardion hymon" (de todo corazón, con sinceridad interior y sin hipocresía).',
+            historicalContext:
+              'Frente a la tradición rabínica que limitaba el deber de perdonar a tres veces, Jesús amplía el horizonte de la gracia a través de la parábola de los dos deudores, contrastando la deuda cósmica que Dios nos perdonó con las ofensas terrenales que otros cometen contra nosotros.',
+            theologicalPrinciple:
+              'Retener el perdón evidencia una total falta de comprensión y aprecio por la gracia redentora recibida. La falta de perdón aprisiona al individuo en un tormento espiritual y acarrea la corrección paternal severa de Dios.',
+            pastoralApplication:
+              'Confrontar en consejería el orgullo del corazón no perdonador: contrastar la deuda impagable de nuestros pecados limpiada en la Cruz con la ofensa recibida de nuestro prójimo, guiando al aconsejado a desatar el perdón de corazón.'
+          }
+        },
+        {
+          reference: 'Colosenses 3:12–15',
+          text:
+            '12 Vestíos, pues, como escogidos de Dios, santos y amados, de entrañable misericordia, de benignidad, de humildad, de mansedumbre, de paciencia; 13 soportándoos unos a otros, y perdonándoos unos a otros si alguno tuviere queja contra otro. De la manera que Cristo os perdonó, así también hacedlo vosotros. 14 Y sobre todas estas cosas vestíos de amor, que es el vínculo perfecto. 15 Y la paz de Dios gobierne en vuestros corazones, a la que asimismo fuisteis llamados en un solo cuerpo; y sed agradecidos.',
+          version: 'RVR1960',
+          exegesis: {
+            originalTerms:
+              'En griego: "Endysasthe oun hos eklektoi tou Theou" (ἐνδύσασθε οὖν ὡς ἐκλεκτοὶ τοῦ Θεοῦ - vestíos deliberadamente como escogidos de Dios). "Splanchna oiktirmou" (entrañas de misericordia y compasión tierna). "Charizomenoi heautois kathos kai ho Christos echarisato hymin" (perdonándoos por pura gracia y generosidad tal como Cristo os perdonó). "Syndesmos tes teleiotetos" (el vínculo perfecto que une armónicamente todo el cuerpo). "Braveueto" (arbitre, dirija y decida como juez la paz en vuestros corazones).',
+            historicalContext:
+              'Pablo previene a la congregación de Colosas contra el ascetismo vacío y los preceptos humanos, enfatizando que la verdadera espiritualidad se encarna en virtudes relacionales activas dentro del cuerpo de Cristo.',
+            theologicalPrinciple:
+              'El amor bíblico y el perdón no son meros estados afectivos pasivos, sino acciones concretas de la voluntad que se expresan en el dar, soportar y restaurar la comunión (Jay E. Adams).',
+            pastoralApplication:
+              'Guiar al aconsejado a pasar del rencor a la acción benevolente: el amor se aprende dando; cuando el creyente toma la iniciativa de hacer el bien, orar por el ofensor y servir, los afectos correctos del corazón florecen en obediencia a Cristo.'
+          }
+        }
+      ],
+      introduction: {
+        number: 2,
+        title: 'Introducción',
+        paragraphs: [
+          'La amargura, el rencor, el odio y el resentimiento representan obstáculos de extrema gravedad en el ministerio de la consejería bíblica (Wayne A. Mack). Lejos de ser un estado anímico pasivo o una simple respuesta emocional involuntaria, la amargura constituye un pecado activo y rebelde que contrista al Espíritu Santo (Ef. 4:30-31) y socava las bases de la comunión con Dios y con el prójimo.',
+          'En el análisis exegético del texto bíblico, el término amargura (pikría) describe un espíritu agrio, cortante y resentido que rechaza la reconciliación y mantiene un registro celoso y permanente de las ofensas sufridas (Samuel Pérez Millos). Aristóteles usaba esta palabra para designar a la persona cuyo resentimiento rehúsa toda posibilidad de paz. Todo aquel que no quiere perdonar y revive perpetuamente la ofensa vive prisionero bajo el dominio de la amargura.',
+          'Lo más alarmante y distintivo de este pecado es su carácter expansivo e infeccioso. Como advierte solemnemente el escritor de Hebreos: «Mirad bien... que brotando alguna raíz de amargura, os estorbe, y por ella muchos sean contaminados» (He. 12:15). La amargura no se conforma con envenenar el alma de quien la concibe; brota como una planta tóxica que esparce su ponzoña, causando estorbo, desánimo, división y ruina espiritual en familias y congregaciones enteras.'
+        ]
+      },
+      problemToTreat: {
+        number: 3,
+        title: 'Problema a tratar',
+        paragraphs: [
+          'El problema central que enfrentamos al tratar la amargura y el rencor es la resistencia al cambio bíblico impulsada por un deseo solapado de venganza. Como observa Wayne A. Mack, muchos aconsejados utilizan su amargura y distanciamiento como un instrumento punitivo para castigar a quienes les han ofendido: se niegan a comunicarse abiertamente, rechazan pedir perdón, sabotean los intentos de reconciliación y alimentan una postura de superioridad moral herida.',
+          'La persona amargada tiende a distorsionar su percepción de la realidad. Vive atrapada en una constante rumiación mental de agravios pasados, interpretando cada nueva interacción a través del lente del recelo y la desconfianza. Este estado interior sofoca la vida en el Espíritu y ocasiona una consecuencia devastadora: la pérdida absoluta del gozo cristiano, el cual es sustituido por una ponzoña amarga que carcome la salud emocional, relacional e incluso física del individuo (Samuel Pérez Millos).',
+          'En el ámbito eclesiástico y comunitario, un cristiano amargado se convierte en una fuente activa de amargura y desaliento para los demás hermanos. Mediante el uso descontrolado de la lengua —a través de la queja velada, la murmuración, la maledicencia y el criticismo corrosivo— el amargado busca justificar su postura reclutando aliados y esparciendo su veneno entre quienes le rodean, estorbando la obra del Evangelio.'
+        ]
+      },
+      rootProblem: {
+        number: 4,
+        title: 'Raíz del problema',
+        paragraphs: [
+          'La raíz primordial de la amargura es espiritual y teológica: emerge de un profundo vacío de Dios en la vida del individuo (Samuel Pérez Millos en Santiago 3). Quien está plenamente satisfecho en Dios y descansa en Su gracia no puede vivir dominado por la amargura, pues el gozo y la paz constituyen el fruto natural y espontáneo de esa comunión vital. La presencia del rencor evidencia que el alma ha apartado su mirada del Señor y ha entronizado su propio ego como juez supremo.',
+          'La amargura camina de la mano con la maledicencia (compañera inseparable de la lengua no regenerada). Esta raíz venenosa, introducida por el pecado en la naturaleza caída, genera palabras tóxicas que salen al exterior como la manifestación irrebatible de un corazón contaminado (Stg. 3:14-16). Revela, en última instancia, la ausencia o el silenciamiento de la acción transformadora del Espíritu Santo en la vida cotidiana del creyente.',
+          'Asimismo, la raíz del rencor radica en la incredulidad ante los propósitos providenciales soberanos de Dios. Como señala Wayne A. Mack, mientras los aconsejados no estén dispuestos a abrazar que Dios está en control y hace cooperar todas las cosas para bien de los suyos (Ro. 8:28) y no estén dispuestos a perdonar a imitación de la benevolencia del Señor (Sal. 86:5), el proceso de transformación bíblica estará totalmente bloqueado.'
+        ]
+      },
+      consequences: {
+        number: 5,
+        title: 'Consecuencias del pecado tratado',
+        paragraphs: [
+          '1. Pérdida del gozo y extinción de la comunión con el Espíritu: Al rechazar el perdón y abrazar el encono, el creyente contrista al Espíritu Santo (Ef. 4:30), pierde la paz de Dios y experimenta una aridez espiritual profunda, donde el deleite de la gracia es reemplazado por la amargura del alma.',
+          '2. Destrucción relacional y aislamiento endurecido: La amargura bloquea la comunicación genuina, levanta muros defensivos en el matrimonio, fractura la relación entre padres e hijos y destruye amistades sinceras, empujando al individuo a un aislamiento defensivo y amargado.',
+          '3. Contaminación comunitaria e infección de la iglesia: Conforme a Hebreos 12:15, la raíz de amargura fructifica en el corazón y luego se extiende como planta venenosa. El creyente amargado esparce desaliento, siembra sospechas y causa desánimo y tropiezo en los hermanos de la congregación a través de su lengua maledicente.',
+          '4. Parálisis y bloqueo del crecimiento espiritual: Quien retiene el rencor queda incapacitado para madurar en Cristo. La incapacidad de perdonar ata al individuo al pasado, convirtiéndolo en un esclavo espiritual de la misma ofensa que alega repudiar.'
+        ]
+      },
+      counselingApproach: {
+        number: 6,
+        title: 'Cómo tratar el problema en consejería',
+        paragraphs: [
+          'Separar siempre la relación del problema específico: Como establece con lucidez Jay E. Adams en el «Manual del Consejero Cristiano», los consejeros deben dividir rigurosamente la relación (la relación vertical con Dios y la horizontal con el prójimo) de la cuestión o problema circunstancial que les aqueja. Intentar resolver un conflicto práctico antes de que las partes hayan puesto en orden su corazón y su relación ante Dios y entre sí es una de las causas principales de fracaso en la consejería.',
+          'Infundir certeza de cambio y cultivar buena voluntad: El consejero debe asegurar con la Palabra de Dios que es absolutamente posible aprender a vivir libres de amargura, ira, enojo, gritería, maledicencia y malicia (Ef. 4:31). Se debe guiar a los aconsejados a desarrollar actitudes de buena voluntad y misericordia mutua, suelo fértil donde las soluciones bíblicas florecen lozanas (Jay E. Adams).',
+          'El amor bíblico como acción sacrificial y no mero sentimiento: Es imperativo reeducar al aconsejado en la naturaleza bíblica del amor (ágape). El amor, en su esencia, no es una emoción pasiva sino una decisión que se aprende y se expresa mediante la acción de dar: entregarse a sí mismo, su tiempo, su bondad y su paciencia. Cuando el aconsejado obedece y da, los sentimientos de afecto y restauración siguen a la acción obediente (Jay E. Adams).',
+          'Romper la cadena destructiva en el primer eslabón: Utilizando el Salmo 73 y el Salmo 37, el consejero debe enseñar al aconsejado a identificar y quebrar la cadena letal: autocompasión → ira → amargura → depresión. Debe interrumpirse en su primer eslabón: en lugar de consentir el cavilar y la conmiseración egoísta ante la ofensa, el aconsejado debe acudir inmediatamente a la oración, rindiendo la carga en las manos de Dios.'
+        ]
+      },
+      sanctificationFollowUp: {
+        number: 7,
+        title: 'Seguimiento del plan de santificación',
+        paragraphs: [
+          'Método organizado de recolección de datos y escucha paciente: Una consejería bíblica eficiente requiere un método estructurado para obtener información y suficiente tiempo para oír (Wayne A. Mack). En las primeras sesiones, el consejero debe animar al aconsejado a expresarse ampliamente para entender con precisión los antecedentes, heridas y pautas de pecado que han alimentado el resentimiento.',
+          'Dinámica de «quitar y poner» con estructuras preventivas: Siguiendo a Jay E. Adams, para tratar los hábitos de rencor el aconsejado debe reconocer la práctica errónea (el registro de ofensas, la queja, el desdén), estructurar su entorno y rutinas de modo que se impida la conducta vieja y se facilite la nueva (oración matutina, bendecir a quien le ofendió, versículos de memorización), comprometiéndose delante de Dios y de su consejero.',
+          'Claridad teológica sobre el perdón y la impenitencia: Como puntualiza Heath Lambert («Teología de la Consejería Bíblica»), el perdón pactual y bilateral modelado según el perdón de Dios requiere confesión y arrepentimiento del ofensor; no obstante, la falta de contrición del ofensor JAMÁS otorga permiso divino para albergar amargura o alimentar ira. El creyente ofendido está estrictamente obligado por Dios a guardar su corazón limpio de todo rencor (Ef. 4:31) y encomendar la justicia al Juez Supremo.',
+          'Ataque bíblico a los problemas y no a las personas: Ayudar a las partes en conflicto a comunicarse conforme a las pautas de Efesios 4:25-32: atacar los problemas con palabras bíblicas y soluciones claras en lugar de atacarse mutuamente con recriminaciones destructivas, experimentando el gozo de restaurar la comunión.'
+        ]
+      },
+      conclusions: {
+        number: 8,
+        title: 'Conclusiones',
+        paragraphs: [
+          'La amargura, el rencor, el resentimiento y la falta de perdón son pecados interconectados que corroen el alma, marchitan el gozo espiritual y actúan como un veneno infeccioso para los hogares y las iglesias locales. Su superación demanda confrontar la falsa justificación del ofendido y guiarlo a descansar plenamente en la sabiduría providencial de Dios.',
+          'La consejería bíblica ofrece el camino seguro de la sanidad: primero restaurar la relación con Dios y con el prójimo mediante la Cruz de Cristo; segundo, desarticular la autocompasión mediante la oración inmediata; y tercero, encarnar el amor a través de actos concretos de entrega y servicio, despojándose de la maledicencia para vestirse de benignidad y perdón generoso.',
+          'La victoria sostenible sobre este pecado reside en la dependencia continua del Espíritu Santo, la vigilancia sobre la lengua y el compromiso incondicional de no alimentar rencor, recordando que hemos sido colmados de una misericordia infinita e inmerecida por parte de nuestro Padre celestial.',
+          'Fuentes y Fundamentación en el Índice Didáctico: Este estudio se fundamenta rigurosamente en las obras de Wayne A. Mack («La Consejería: Cómo aconsejar bíblicamente»), Samuel Pérez Millos («Comentarios Exegéticos al Texto Griego de Efesios y Santiago»), Jay E. Adams («Manual del Consejero Cristiano») y Heath Lambert («Teología de la Consejería Bíblica»). Consulta la Sección 9 para examinar cada obra, capítulo y pasaje referenciado en el Índice Didáctico con sus enlaces a Logos Bible Software.'
+        ]
+      }
+    }
   }
 ];
+

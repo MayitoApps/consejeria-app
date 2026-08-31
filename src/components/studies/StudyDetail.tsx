@@ -662,7 +662,7 @@ export const StudyDetail: React.FC<StudyDetailProps> = ({ study, onBack, onNavig
 
               {onNavigateToGlossary && (
                 <button
-                  onClick={() => onNavigateToGlossary('inmoralidad-sexual')}
+                  onClick={() => onNavigateToGlossary(study.id)}
                   className="inline-flex items-center space-x-2 px-4 py-2 rounded-xl bg-gradient-to-r from-amber-600 to-amber-500 hover:from-amber-500 hover:to-amber-400 text-white text-xs font-semibold shadow-gold-sm transition-all group self-start sm:self-auto select-none"
                 >
                   <BookMarked className="w-3.5 h-3.5" />
@@ -678,12 +678,13 @@ export const StudyDetail: React.FC<StudyDetailProps> = ({ study, onBack, onNavig
 
             {/* Grid de Libros Citados */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5 pt-1">
-              {(GLOSSARY_TOPICS.find(t => t.id === 'inmoralidad-sexual')?.books || []).map((book) => {
+              {((GLOSSARY_TOPICS.find(t => t.id === study.id) || GLOSSARY_TOPICS.find(t => t.id === 'inmoralidad-sexual'))?.books || []).map((book) => {
                 const passage = book.passages[0];
+                const topicId = (GLOSSARY_TOPICS.find(t => t.id === study.id) || GLOSSARY_TOPICS[0]).id;
                 return (
                   <div
                     key={book.id}
-                    onClick={() => onNavigateToGlossary?.('inmoralidad-sexual', book.id)}
+                    onClick={() => onNavigateToGlossary?.(topicId, book.id)}
                     className="glass-card glass-card-hover rounded-2xl p-4 sm:p-5 border border-white/[0.08] hover:border-amber-500/40 cursor-pointer group flex flex-col justify-between space-y-4 transition-all shadow-sm bg-slate-900/60"
                   >
                     <div className="space-y-3">
