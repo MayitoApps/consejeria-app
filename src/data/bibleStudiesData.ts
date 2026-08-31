@@ -500,6 +500,210 @@ export const BIBLE_STUDIES: BibleStudy[] = [
         ]
       }
     }
+  },
+  {
+    id: 'orgullo-soberbia',
+    title: 'Orgullo y soberbia',
+    subtitle: 'Arrogancia · Altivez de Espíritu · Idolatría del Yo · Autosuficiencia · Humillación Bíblica · Gracia para los Humildes',
+    category: 'Corazón & Carácter',
+    tags: [
+      'Orgullo',
+      'Soberbia',
+      'Arrogancia',
+      'Altivez',
+      'Humildad',
+      'Consejería Bíblica',
+      'Justicia Propia',
+      'Arrepentimiento',
+      'Gracia'
+    ],
+    readTime: '20 min de estudio pastoral',
+    summary:
+      'Este estudio bíblico y pastoral aborda el orgullo, la soberbia, la arrogancia, la altivez de espíritu y la autosuficiencia desde la exégesis bíblica reformada y la consejería pastoral (Samuel Pérez Millos, Paul David Tripp, James MacDonald, Robert Cheong, Heath Lambert y Jay E. Adams). El orgullo y la arrogancia constituyen la matriz original y la base de todo pecado: la arrogancia expresa el orgullo, y el orgullo manifiesta el culto al yo. Estos términos describen la exaltación del ego por encima de Dios y de los semejantes. Quien se enaltece a sí mismo se coloca en abierta oposición y enemistad contra el Creador, perdiendo la cordura espiritual y atrayendo Su juicio activo («Dios resiste y se pone en formación de batalla contra los soberbios», Stg. 4:6, 1 P. 5:5). En la dinámica eclesial y familiar, el envanecimiento engendra divisiones, contiendas doctrinales, espíritu amargo no resuelto y desprecio hacia los hermanos. La metodología en consejería bíblica rechaza el mero cambio conductual externo para penetrar en los ídolos del corazón que adoran al yo en lugar de a Dios. Mediante una confrontación compasiva con la verdad bíblica, se estimula un arrepentimiento genuino que transforme los afectos interiores, guiando al aconsejado a revestirse del «delantal de esclavo» a imitación de Cristo lavando los pies de Sus discípulos (Jn. 13:4, 1 P. 5:5), y a descansar en la gracia salvadora que Dios derrama abundantemente sobre los humildes.',
+    sections: {
+      verses: [
+        {
+          reference: 'Proverbios 8:13 / Proverbios 16:18',
+          text:
+            'Proverbios 8:13: El temor de Jehová es aborrecer el mal; la soberbia y la arrogancia, el mal camino, y la boca perversa, aborrezco.\n\nProverbios 16:18: Antes del quebrantamiento es la soberbia, y antes de la caída la altivez de espíritu.',
+          version: 'RVR1960',
+          exegesis: {
+            originalTerms:
+              'En hebreo: "Yir\'at Adonai senot ra, ge\'ah vega\'on vederech ra uphi tahpuchot sane\'ti" (יִֽרְאַ֣ת יְהוָה֮ שְׂנֹ֪את רָ֥֫ע גֵּ֘אָ֤ה וְגָא֨וֹן ׀ וְדֶ֣רֶךְ רָ֭ע וּפִ֥י תַהְפֻּכ֗וֹת שָׂנֵֽאתִי). "Ge\'ah" y "Ga\'on" (soberbia, arrogancia, engreimiento y presunción). En Pr. 16:18: "Lipney-shever ga\'on, velifney chishalon govah ruach" (לִפְנֵי־שֶׁ֥בֶר גָּא֑וֹן וְלִפְנֵ֥י כִ֝שָּׁל֗וֹן גֹּ֣בַהּ רֽוּחַ). "Shever" (fractura, quebranto devastador total). "Govah ruach" (altivez interior de espíritu que se cree invulnerable).',
+            historicalContext:
+              'Salomón instruye a los discípulos de la sabiduría divina, contrastando el temor reverente a Dios con las pretensiones de grandeza y soberbia que conducen a la ruina a reyes, cortesanos y pueblos enteros.',
+            theologicalPrinciple:
+              'La soberbia y la altivez son incompatibles con el temor de Jehová y son aborrecidas por Dios. Lejos de proveer seguridad o fortaleza, la soberbia es el preludio inexorable de la caída y el quebrantamiento divino.',
+            pastoralApplication:
+              'Ayudar al aconsejado a discernir que sus actitudes de suficiencia propia, superioridad moral o desdén hacia otros no son virtudes ni rasgos de carácter inofensivos, sino el camino certero hacia el colapso espiritual y familiar si no se humilla a tiempo.'
+          }
+        },
+        {
+          reference: 'Santiago 4:6 / 1 Pedro 5:5',
+          text:
+            'Santiago 4:6: Pero él da mayor gracia. Por esto dice: Dios resiste a los soberbios, y da gracia a los humildes.\n\n1 Pedro 5:5: Igualmente, jóvenes, estad sujetos a los ancianos; y todos, sumisos unos a otros, revestíos de humildad; porque: Dios resiste a los soberbios, y da gracia a los humildes.',
+          version: 'RVR1960',
+          exegesis: {
+            originalTerms:
+              'En griego: "Ho Theos hyperephanois antitassetai, tapeinois de didosin charin" (ὁ Θεὸς ὑπερηφάνοις ἀντιτάσσεται, ταπεινοῖς δὲ δίδωσιν χάριν). "Hyperephanois" (ὑπερηφάνοις - compuesto de "hyper" [por encima] y "phainomai" [aparecer/manifestarse]: sobreaparecer, colocarse presuntuosamente por encima de los demás). "Antitassetai" (ἀντιτάσσεται - lenguaje militar técnico: desplegarse en formación de combate contra alguien). "Enkombosasthe" (ἐγκομβώσασθε - en 1 P. 5:5: ceñirse con fuerza el delantal o paño propio del esclavo doméstico).',
+            historicalContext:
+              'Tanto Santiago como Pedro citan Proverbios 3:34 para advertir a comunidades cristianas acechadas por rivalidades carnales, vanagloria y persecución, exhortándoles a buscar el favor de Dios mediante la sumisión humilde.',
+            theologicalPrinciple:
+              'Dios no mantiene una neutralidad pasiva frente al soberbio: se coloca activamente enfrente en orden de batalla contra él. Por el contrario, sobre el creyente humilde y quebrantado derrama los recursos inagotables de Su gracia redentora.',
+            pastoralApplication:
+              'Confrontar con amor pero con suma gravedad al aconsejado orgulloso (Samuel Pérez Millos): hacerle ver que al alimentar su soberbia y resistirse a pedir perdón, tiene a Dios mismo como adversario de batalla en lugar de aliado.'
+          }
+        },
+        {
+          reference: 'Mateo 23:11–12 / Lucas 14:11',
+          text:
+            '11 El que es el mayor de vosotros, sea vuestro siervo. 12 Porque el que se enaltece será humillado, y el que se humilla será enaltecido.',
+          version: 'RVR1960',
+          exegesis: {
+            originalTerms:
+              'En griego: "Hostis de hypsosei heauton tapeinothesetai, kai hostis tapeinosei heauton hypsothesetai" (ὅστις δὲ ὑψώσει ἑαυτὸν ταπεινωθήσεται, καὶ ὅστις ταπεινώσει ἑαυτὸν ὑψωθήσεται). "Hypsosei heauton" (el que busca enaltecerse, promoverse y alabarse a sí mismo). "Tapeinothesetai" (voz pasiva: será abatido y humillado bajo la mano soberana de Dios). "Diakonos" (servidor sacrificial).',
+            historicalContext:
+              'Jesús pronuncia este principio eterno frente a las multitudes y los líderes religiosos en Jerusalén, denunciando la ostentación y el afán farisaico de buscar el aplauso humano y las posiciones de honor.',
+            theologicalPrinciple:
+              'En el Reino de Dios opera una ley espiritual inmutable: la exaltación propia desemboca en la humillación judicial de Dios, mientras que el descenso voluntario en servicio humilde es el único sendero que Dios corona de honra.',
+            pastoralApplication:
+              'Enseñar al aconsejado a renunciar a la demanda de reconocimiento, privilegios o tener siempre la razón en sus discusiones matrimoniales y familiares, abrazando la vocación de siervo según el modelo de Cristo.'
+          }
+        },
+        {
+          reference: 'Romanos 12:3–4',
+          text:
+            '3 Digo, pues, por la gracia que me es dada, a cada cual que está entre vosotros, que no tenga más alto concepto de sí que el que debe tener, sino que piense de sí con cordura, conforme a la medida de fe que Dios repartió a cada uno. 4 Porque de la manera que en un cuerpo tenemos muchos miembros, pero no todos los miembros tienen la misma función,',
+          version: 'RVR1960',
+          exegesis: {
+            originalTerms:
+              'En griego: "Me hyperphronein par\' ho dei phronein, alla phronein eis to sophronein" (μὴ ὑπερφρονεῖν παρ\' ὃ δεῖ φρονεῖν, ἀλλὰ φρονεῖν εἰς τὸ σωφρονεῖν). "Hyperphronein" (sobreestimarse, tener un concepto inflado de sí mismo). "Sophronein" (pensar con cordura, sobriedad mental, dominio propio y juicio equilibrado). "Metron pisteos" (la medida de fe otorgada soberanamente por Dios).',
+            historicalContext:
+              'Pablo expone la ética práctica de la vida cristiana en el cuerpo de Cristo, previniendo a los creyentes de Roma contra la vanidad personal y el desprecio mutuo en el ejercicio de los dones espirituales.',
+            theologicalPrinciple:
+              'El orgullo es una distorsión cognitiva y espiritual que despoja al individuo de la lucidez mental ("el orgulloso está fuera de sí y no puede pensar con cordura"). La verdadera cordura mental consiste en verse a la luz de la gracia divina.',
+            pastoralApplication:
+              'Guiar al aconsejado a un ejercicio de autorreflexión honesta y sobria: ayudarle a identificar dónde ha estado operando bajo sobrestima personal, autosuficiencia o desprecio hacia su cónyuge o consiervos (Samuel Pérez Millos).'
+          }
+        },
+        {
+          reference: '1 Corintios 4:6–7',
+          text:
+            '6 Pero esto, hermanos, lo he aplicado en ejemplo a mí y a Apolos por amor de vosotros, para que en nosotros aprendáis a no pensar más de lo que está escrito, no sea que por causa de uno, os envanezcáis unos contra otros. 7 Porque ¿quién te distingue? ¿o qué tienes que no hayas recibido? Y si lo recibiste, ¿por qué te jactas como si no hubieras recibido?',
+          version: 'RVR1960',
+          exegesis: {
+            originalTerms:
+              'En griego: "Hina me heis hyper tou henos physiousthe kata tou heterou" (ἵνα μὴ εἷς ὑπὲρ τοῦ ἑνὸς φυσιοῦσθε κατὰ τοῦ ἑτέρου). "Physiousthe" (estar hinchado de vanidad, envanecido como fuelle carnal). "Ti de echeis ho ouk elabes" (¿qué posees que no hayas recibido como dádiva gratuita de Dios?). "Kauchatai" (jactarse presuntuosamente).',
+            historicalContext:
+              'La iglesia en Corinto experimentaba divisiones amargas causadas por el sectarismo y la arrogancia de miembros que se creían poseedores de sabiduría superior y dones más eminentes que los demás.',
+            theologicalPrinciple:
+              'Todo lo que el hombre es y tiene es un don inmerecido de la gracia de Dios. Jactarse o envanecerse de lo recibido es una necedad teológica que roba la gloria al Creador y destruye la unidad del cuerpo de Cristo.',
+            pastoralApplication:
+              'Desarticular el orgullo intelectual, teológico o posicional en el aconsejado: recordarle que sus talentos, posición o conocimiento bíblico son regalos de gracia para edificar a otros, no para inflarse ni menospreciar a sus semejantes.'
+          }
+        },
+        {
+          reference: 'Salmo 18:27 / Isaías 66:2 / Salmo 138:6',
+          text:
+            'Salmo 18:27: Porque tú salvarás al pueblo afligido, y humillarás los ojos altivos.\n\nIsaías 66:2: Mi mano hizo todas estas cosas, y así todas estas cosas fueron, dice Jehová; pero miraré a aquel que es pobre y humilde de espíritu, y que tiembla a mi palabra.\n\nSalmo 138:6: Porque Jehová es excelso, y atiende al humilde, mas al altivo mira de lejos.',
+          version: 'RVR1960',
+          exegesis: {
+            originalTerms:
+              'En hebreo (Sal. 18:27): "Einayim ramot tashpil" (עֵינַ֥יִם רָ֝מ֗וֹת תַּשְׁפִּֽיל - humillarás y abatirás los ojos altaneros). En Is. 66:2: "El-ani unecheh-ruach vechared al-debari" (אֶל־עָנִ֣י וּנְכֵה־ר֔וּחַ וְחָרֵ֖ד עַל־דְּבָרִֽי - hacia el quebrantado de espíritu que reverencia y tiembla ante Mi Palabra). En Sal. 138:6: "Vegavoha mimerechaq yeyeda" (y al altivo lo conoce y mira a la distancia).',
+            historicalContext:
+              'David y los profetas proclaman la majestad excelsa de Dios, enseñando que el Creador Soberano no se impresiona con la grandeza exterior ni con templos hechos por manos humanas, sino con el corazón quebrantado.',
+            theologicalPrinciple:
+              'La altivez levanta una barrera infranqueable ante el trono de Dios, quien mantiene al orgulloso lejos de Su comunión íntima. En cambio, Su mirada de deleite y salvación reposa eternamente sobre el humilde.',
+            pastoralApplication:
+              'Inculcar en el aconsejado un temor reverente hacia Dios y Su Palabra: mostrarle que la cercanía de Dios, la respuesta a sus oraciones y la paz interior solo se experimentan en la postura de la contrición y la humildad.'
+          }
+        },
+        {
+          reference: 'Juan 13:3–15',
+          text:
+            '3 sabiendo Jesús que el Padre le había dado todas las cosas en las manos, y que había salido de Dios, y a Dios iba, 4 se levantó de la cena, y se quitó su manto, y tomando una toalla, se la ciñó. 5 Luego puso agua en un lebrillo, y comenzó a lavar los pies de los discípulos, y a enjugarlos con la toalla con que estaba ceñido... 14 Pues si yo, el Señor y el Maestro, he lavado vuestros pies, vosotros también debéis lavar los pies los unos a los otros. 15 Porque ejemplo os he dado, para que como yo os he hecho, vosotros también hagáis.',
+          version: 'RVR1960',
+          exegesis: {
+            originalTerms:
+              'En griego: "Eidos ho Iesous hoti panta edoken auto ho Pater eis tas cheiras" (εἰδὼς ὁ Ἰησοῦς ὅτι πάντα ἔδωκεν αὐτῷ ὁ Πατὴρ εἰς τὰς χεῖρας - plenamente consciente de Su majestad soberana). "Diezosen heauton" (διέζωσεν ἑαυτόν - se ciñó la toalla del esclavo más humilde). "Hypodeigma gar edoka hymin" (ejemplo y patrón normativo os he dado para que hagáis lo mismo).',
+            historicalContext:
+              'En la víspera de Su crucifixión, en un contexto donde los discípulos discutían acaloradamente quién de ellos debía ser considerado el más grande, Jesús realiza la tarea reservada al siervo doméstico más inferior.',
+            theologicalPrinciple:
+              'La verdadera humildad bíblica no nace del complejo de inferioridad, sino de la seguridad inquebrantable de la identidad en Dios. Cristo, poseedor de toda autoridad en el cielo y en la tierra, se despoja para servir con amor sacrificial.',
+            pastoralApplication:
+              'Guiar al aconsejado a vestirse de la actitud de Cristo: despojarse de sus títulos, quejas y demandas de honra personal para asumir activamente el servicio y el lavado mutuo de pies (perdón, paciencia y generosidad) en su hogar y congregación.'
+          }
+        }
+      ],
+      introduction: {
+        number: 2,
+        title: 'Introducción',
+        paragraphs: [
+          'El orgullo, la soberbia, la arrogancia, la altivez de espíritu, el engreimiento, la prepotencia y la presunción constituyen distintas facetas de una misma anomalía espiritual destructiva: la exaltación idólatra del yo por encima de Dios y de los semejantes (Samuel Pérez Millos). Lejos de ser un mero defecto de personalidad o una falta menor, el orgullo y la arrogancia representan la matriz original y la base fundamental de todo pecado humano.',
+          'La arrogancia es la expresión directa del orgullo, y el orgullo es la manifestación suprema del ego caído. Quienes se dedican a sembrar divisiones en la iglesia son manifiestamente arrogantes, y aquellos que presumen saberlo todo respecto a la doctrina o a la vida espiritual se encuentran ciegos por el orgullo (1 Co. 4:6; 8:1). Con alarmante frecuencia, el concepto que el hombre caído tiene de sí mismo lo conduce a la presunción de considerarse superior a sus hermanos y con derecho a juzgarlos.',
+          'La gravedad teológica del orgullo radica en su naturaleza impía: quien toma gloria para sí mismo a fin de enaltecerse está robando sacrílegamente lo que pertenece con exclusividad al Dios Altísimo. El orgullo fue la causa cósmica de la caída de Satanás (Ez. 28:16-18; Is. 14:12-15), y cualquier actitud de engreimiento constituye una manifestación directa de oposición y rebelión contra el señorío divino.'
+        ]
+      },
+      problemToTreat: {
+        number: 3,
+        title: 'Problema a tratar',
+        paragraphs: [
+          'El problema central que enfrentamos al tratar el orgullo en consejería bíblica es la ceguera y la autosuficiencia espiritual del aconsejado. El hombre envanecido vive bajo la falsa ilusión de su propia fuerza, sabiduría y justicia moral. Esta sobrestima personal produce un olvido práctico de Dios y conduce al individuo a una pérdida de la cordura espiritual: el orgulloso está «fuera de sí» y queda incapacitado para evaluar su vida con sobriedad y verdad (Ro. 12:3; Samuel Pérez Millos).',
+          'En el ámbito relacional y matrimonial, la soberbia se traduce en una incapacidad casi total para pedir perdón, admitir equivocaciones o ceder ante el prójimo. El aconsejado orgulloso atribuye siempre la culpa de los conflictos a los demás, presentándose a sí mismo como víctima incomprendida o como juez implacable. Esta postura alimenta inevitablemente la amargura, el resentimiento y la dureza de corazón, destruyendo los canales de comunicación y la intimidad conyugal.',
+          'En la vida eclesial, el orgullo engendra disputas destructivas, partidismos carnales y murmuración. Quienes están inflados de vanidad desprecian la autoridad pastoral, resisten la disciplina bíblica y buscan constantemente la preeminencia, convirtiéndose en instrumentos de división y estorbo para el Evangelio.'
+        ]
+      },
+      rootProblem: {
+        number: 4,
+        title: 'Raíz del problema',
+        paragraphs: [
+          'La raíz primordial del orgullo reside en la idolatría del corazón. Como exponen James MacDonald y Robert Cheong en «Consejería Bíblica Cristo-Céntrica», toda conducta humana está ligada a los pensamientos, intenciones y afectos del corazón; todas nuestras acciones brotan de corazones que están adorando bien sea al Dios vivo o a alguna otra cosa. El orgullo es la entronización del yo en el altar interior del corazón, exigiendo que Dios y las personas giren en torno a los propios deseos, comodidades y exigencias personales.',
+          'El envanecimiento se apoya en la vana confianza en las fuerzas y méritos personales. Quien sucumbe al orgullo olvida que «¿qué tienes que no hayas recibido? Y si lo recibiste, ¿por qué te jactas como si no lo hubieras recibido?» (1 Co. 4:7). La jactancia delata una ignorancia profunda de la doctrina de la gracia soberana de Dios.',
+          'Asimismo, el orgullo se alimenta de una falsa justicia propia. Como ilustra Paul David Tripp en «Instrumentos en las Manos del Redentor», muchas personas ocultan bajo una apariencia externa de religiosidad o arrepentimiento simulado una profunda autosuficiencia y un corazón controlado por la amargura y la justicia propia, resistiéndose al quebrantamiento radical que demanda la Cruz.'
+        ]
+      },
+      consequences: {
+        number: 5,
+        title: 'Consecuencias del pecado tratado',
+        paragraphs: [
+          '1. Oposición activa de Dios en combate: La consecuencia más aterradora del orgullo es que coloca al pecador bajo la resistencia activa del Señor: «Dios resiste a los soberbios» (Stg. 4:6; 1 P. 5:5). El término griego antitassetai revela que Dios se despliega en orden de batalla contra el arrogante; el soberbio no tiene a Dios como protector, sino como adversario soberano.',
+          '2. Quebrantamiento y ruina inminente: Conforme a Proverbios 16:18 («Antes del quebrantamiento es la soberbia, y antes de la caída la altivez de espíritu»), la altanería espiritual precede invariablemente a caídas morales, quiebras matrimoniales y desastres ministeriales. Ejemplos bíblicos elocuentes dan testimonio de este juicio: el quebrantamiento fulminante de Senaquerib (2 Cr. 32), la degradación animal de Nabucodonosor (Dn. 4) y la muerte herida por gusanos de Herodes (Hch. 12).',
+          '3. Alejamiento de la comunión y pérdida de la gracia: «Jehová es excelso, y atiende al humilde, mas al altivo mira de lejos» (Sal. 138:6). La soberbia cierra el grifo de la gracia y sumerge al creyente en una aridez espiritual angustiante, cegando sus ojos y endureciendo su conciencia.',
+          '4. Fructificación de raíces de amargura: Como analiza Samuel Pérez Millos en Efesios y Hebreos, el orgullo no tratado es el terreno más fértil para la amargura. Quien se considera superior no soporta ser ofendido; guarda el registro del agravio y propaga su veneno mediante la maledicencia, contaminando a su familia y a la congregación.'
+        ]
+      },
+      counselingApproach: {
+        number: 6,
+        title: 'Cómo tratar el problema en consejería',
+        paragraphs: [
+          'Enfoque centrado en los ídolos del corazón: La consejería bíblica sabia no se conforma con podar conductas externas, sino que penetra en los afectos, deseos e intenciones del corazón (James MacDonald / Robert Cheong). El consejero debe ayudar al aconsejado a identificar qué ídolo está adorando (el control, la aprobación humana, la razón absoluta, el éxito personal) y confrontarlo con la verdad de que solo Cristo merece la adoración y el trono de su vida.',
+          'Confrontación compasiva con la Cruz y la gracia: La consejería bíblica ofrece la confrontación de Dios a los pecados en amor, estimulando el arrepentimiento sincero y presentando el perdón gratuito provisto por la sangre de Cristo (James MacDonald). No se destruye el orgullo con ataques humanos ni humillaciones crueles, sino exaltando la infinita majestad y santidad de Dios frente a nuestra bajeza moral.',
+          'Llamado a un arrepentimiento radical del corazón: Siguiendo a Paul David Tripp («Instrumentos en las Manos del Redentor»), el arrepentimiento bíblico trasciende la mera tristeza o el miedo al castigo: es un giro radical del corazón que produce una dirección diametralmente opuesta de vida. Si el corazón no se humilla sinceramente ante Dios reconociendo su bancarrota espiritual, no hay arrepentimiento verdadero.',
+          'Revestirse del «delantal de esclavo» a imitación de Cristo: El consejero debe instruir al aconsejado en el mandato apostólico de 1 Pedro 5:5 de revestirse de humildad (enkombosasthe), ceñirse el delantal propio de un esclavo sobre sus ropas para servir, contemplando el ejemplo supremo del Señor Jesús cuando se ciñó la toalla para lavar los pies de Sus discípulos (Jn. 13:4; Samuel Pérez Millos).'
+        ]
+      },
+      sanctificationFollowUp: {
+        number: 7,
+        title: 'Seguimiento del plan de santificación',
+        paragraphs: [
+          'Evaluación pastoral humilde y dependencia del Espíritu Santo: Como enseña con agudeza Heath Lambert («Teología de la Consejería Bíblica»), cuando como consejeros experimentamos estancamiento o aparente fracaso en la consejería, debemos evaluar con humildad nuestra labor pidiendo a Dios que nos muestre si nos faltó mayor comprensión, mayor perspicacia bíblica o mayor compasión; y al mismo tiempo, descansar absolutamente en la soberanía del Espíritu Santo, quien es el único que regenera, quebranta y transforma los corazones conforme a Su sabia voluntad (Jn. 3:8).',
+          'Ruptura de la cadena del orgullo y la autocompasión mediante la oración inmediata: Aplicando el método práctico de Jay E. Adams («Manual del Consejero Cristiano»), el aconsejado debe aprender a interrumpir las quejas internas y la conmiseración egoísta ante los agravios. En lugar de rumiar pensamientos de superioridad u ofensa durante horas, debe limitar su reflexión, volverse de inmediato a Dios en oración humilde, rendir sus cuidados al Señor y levantarse con energía a cumplir sus deberes presentes en amor.',
+          'Prácticas deliberadas de servicio oculto y humillación voluntaria: Diseñar tareas prácticas donde el aconsejado deba realizar actos de servicio desinteresado hacia las personas con quienes ha mantenido conflictos o actitudes de altivez, pidiendo perdón de manera concreta, sin justificaciones ni excusas, y buscando intencionalmente el bien del prójimo.',
+          'Vigilancia sobre la lengua y mortificación de la maledicencia: Erradicar todo comentario de desdén, crítica destructiva o jactancia verbal (Pr. 8:13; Stg. 3:14-16), reemplazándolo por palabras de edificación, gratitud constante y reconocimiento de la gracia de Dios en la vida de los demás.'
+        ]
+      },
+      conclusions: {
+        number: 8,
+        title: 'Conclusiones',
+        paragraphs: [
+          'El orgullo y la soberbia representan una rebelión directa contra la majestad de Dios que contamina toda la existencia humana y acarrea juicio, quebrantamiento y resistencia activa de parte del Creador. Ningún ser humano puede prosperar espiritualmente mientras permanezca atrincherado en la autosuficiencia de su ego.',
+          'La gracia de Dios en el Evangelio es el único poder capaz de desmantelar la soberbia del corazón. Al contemplar al Hijo de Dios despojándose a Sí mismo y tomando forma de siervo hasta la muerte de cruz (Fil. 2:5-11), el pecador es conducido a la humillación sincera, al arrepentimiento transformador y a la reconciliación con Dios y con sus semejantes.',
+          'El camino de la verdadera bendición y madurez cristiana consiste en ceñirse diariamente la toalla del servicio humilde, recordar que todo lo que tenemos lo hemos recibido por pura gracia y vivir con el santo anhelo de que solo Cristo sea enaltecido en nuestras vidas, familias y ministerios.',
+          'Fuentes y Fundamentación en el Índice Didáctico: El presente estudio se nutre rigurosamente de las obras exegéticas de Samuel Pérez Millos (Comentarios Exegéticos al Texto Griego de 1ª Corintios, Mateo, Apocalipsis, Efesios, Hebreos, Santiago y Romanos), Paul David Tripp (Instrumentos en las Manos del Redentor), James MacDonald & Robert Cheong (Consejería Bíblica Cristo-Céntrica), Heath Lambert (Teología de la Consejería Bíblica) y Jay E. Adams (Manual del Consejero Cristiano). Consulta la Sección 9 para examinar cada obra, pasaje y enlace directo a Logos Bible Software.'
+        ]
+      }
+    }
   }
 ];
+
 

@@ -573,6 +573,338 @@ La falta de contrición por parte de los que han pecado contra nosotros no const
         ]
       }
     ]
+  },
+  {
+    id: 'orgullo-soberbia',
+    title: 'Orgullo y soberbia',
+    shortDescription:
+      'Arrogancia, altivez de espíritu, sobrestima del ego, juicio divino contra el soberbio, desmantelamiento de la justicia propia y la toalla del siervo en Cristo.',
+    iconName: 'ShieldAlert',
+    categoryColor: 'from-amber-600 to-indigo-800',
+    books: [
+      {
+        id: 'comentario-1-corintios-millos-orgullo',
+        title: '1ª Corintios: Comentario Exegético al Texto Griego',
+        author: 'Samuel Pérez Millos',
+        publisher: 'Editorial CLIE (Barcelona, España)',
+        year: '2019',
+        coverGradient: 'from-slate-900 via-amber-950 to-slate-900',
+        coverIcon: 'Bookmark',
+        logosUrl: 'https://ref.ly/logosres/LLS:CTGDNT67CO1?pos=res%2fLLS%3aCTGDNT67CO1%2f2021-01-14T20%3a07%3a32Z%2f791376',
+        summary:
+          'Tratado exegético sobre el envanecimiento en la iglesia de Corinto: la arrogancia de quienes dividen la congregación, la presunción doctrinal y el aborrecimiento divino de la soberbia conforme a Proverbios 8:13.',
+        passages: [
+          {
+            id: '1co-millos-pasaje-1',
+            bookTitle: '1ª Corintios: Comentario Exegético',
+            author: 'Samuel Pérez Millos',
+            chapter: 'Capítulo 4: El Envanecimiento y las Divisiones en la Iglesia',
+            pages: 'Páginas 301–302',
+            passageTitle: 'El Envanecimiento Carnal y el Aborrecimiento Divino de la Arrogancia',
+            logosUrl: 'https://ref.ly/logosres/LLS:CTGDNT67CO1?pos=res%2fLLS%3aCTGDNT67CO1%2f2021-01-14T20%3a07%3a32Z%2f791376',
+            excerpt:
+              'Quienes se dedican a dividir la iglesia son manifiestamente arrogantes. Los que consideran saber todo lo relativo a la doctrina son orgullosos...',
+            fullText: `Quienes se dedican a dividir la iglesia son manifiestamente arrogantes. Los que consideran saber todo lo relativo a la doctrina son orgullosos. El apóstol afirma que "algunos estaban envanecidos".
+
+Una de las razones del envanecimiento de aquellos era considerar al apóstol como incapaz de abordar los problemas de la iglesia personalmente acudiendo a visitar la congregación para poner orden a lo que estaba desordenado. Es más, algunos pensaban que enviaba a Timoteo porque no se atrevía a ir él personalmente. Los falsos maestros querían minimizar la autoridad de Pablo, levantando sospechas sobre la falta de veracidad en aquello que afirmaba o prometía.
+
+Profundo conocedor de la Escritura, tenía en mente las consecuencias del orgullo y de la maledicencia: "El temor de Jehová es aborrecer el mal; la soberbia y la arrogancia, el mal camino, y la boca perversa, aborrezco" (Pr. 8:13). De modo que no quería que sus amados hermanos en Corinto padeciesen las consecuencias de un modo de vida reprobado por Dios.`,
+            biblicalReferences: [
+              '1 Corintios 4:6-7',
+              '1 Corintios 4:18-19',
+              'Proverbios 8:13'
+            ],
+            keyTakeaway:
+              'El envanecimiento engendra divisiones y rebeldía; el orgullo doctrinal es reprobado activamente por Dios conforme al principio de Proverbios 8:13.'
+          }
+        ]
+      },
+      {
+        id: 'comentario-mateo-millos-orgullo',
+        title: 'Comentario Exegético al Texto Griego: Mateo',
+        author: 'Samuel Pérez Millos',
+        publisher: 'Editorial CLIE (Viladecavalls, Barcelona)',
+        year: '2009',
+        coverGradient: 'from-amber-950 via-slate-900 to-amber-900',
+        coverIcon: 'Flame',
+        logosUrl: 'https://ref.ly/logosres/LLS:CTGDNTMT?pos=res%2fLLS%3aCTGDNTMT%2f2015-05-22T18%3a29%3a13Z%2f4441013',
+        summary:
+          'Exposición sobre el origen del orgullo como culto al yo, la pérdida de cordura espiritual (Ro. 12:3), la resistencia activa de Dios (Stg. 4:6) y la ley inmutable de que el enaltecido será humillado (Mt. 23:12; Pr. 16:18).',
+        passages: [
+          {
+            id: 'mt-millos-orgullo-pasaje-1',
+            bookTitle: 'Comentario Exegético: Mateo',
+            author: 'Samuel Pérez Millos',
+            chapter: 'Capítulo 26: La Presunción Humana y la Pérdida de Cordura',
+            pages: 'Página 1861',
+            passageTitle: 'La Arrogancia como Manifestación del Yo y Dios Resistiendo al Soberbio',
+            logosUrl: 'https://ref.ly/logosres/LLS:CTGDNTMT?pos=res%2fLLS%3aCTGDNTMT%2f2015-05-22T18%3a29%3a13Z%2f5294165',
+            excerpt:
+              'Todo pecado tiene su base en el orgullo y la arrogancia. La arrogancia es la expresión del orgullo y el orgullo la manifestación del yo...',
+            fullText: `Muchas veces nuestro concepto personal nos conduce a la arrogancia de considerarnos superiores a nuestros hermanos. Como algunos de los corintios, también podemos nosotros estar envanecidos (1 Co. 5:2; 8:1). Todo pecado tiene su base en el orgullo y la arrogancia.
+
+La falsa presunción de no caer en la tentación se apoya en la presuntuosa confianza de las propias fuerzas. Por eso el complemento que necesitamos recordar son también las palabras del mismo apóstol: "Digo, pues, por la gracia que me es dada, a cada cual que está entre vosotros, que no tenga más alto concepto de sí que el que debe tener, sino que piense de sí con cordura, conforme a la medida de fe que Dios repartió a cada uno" (Ro. 12:3–4).
+
+La arrogancia es la expresión del orgullo y el orgullo la manifestación del yo. Cada creyente debe pensar de sí mismo, es decir, tener control personal mediante una seria reflexión mental. El pensamiento puede conducir a una sobrestima que lleva al orgullo arrogante. Generalmente produce un olvido de Dios y descansa en las vanas fuerzas personales. El orgulloso está fuera de sí y no puede pensar con cordura.
+
+Todo esto tiene una consecuencia grave porque "Dios resiste a los soberbios y da gracia a los humildes" (Stg. 4:6). Quiere decir que el orgulloso tiene enfrente a Dios, mientras que el humilde es amparado por los recursos de su gracia.`,
+            biblicalReferences: [
+              'Romanos 12:3-4',
+              'Santiago 4:6',
+              '1 Corintios 5:2',
+              '1 Corintios 8:1'
+            ],
+            keyTakeaway:
+              'El orgullo arrebata la cordura mental y hace descansar al hombre en sus vanas fuerzas; el soberbio tiene a Dios enfrente como oponente en combate.'
+          },
+          {
+            id: 'mt-millos-orgullo-pasaje-2',
+            bookTitle: 'Comentario Exegético: Mateo',
+            author: 'Samuel Pérez Millos',
+            chapter: 'Capítulo 23: La Hipocresía Farisaica y el Enaltecimiento Propio',
+            pages: 'Página 1568',
+            passageTitle: 'El Quebrantamiento del Soberbio y la Humillación Judicial de Dios',
+            logosUrl: 'https://ref.ly/logosres/LLS:CTGDNTMT?pos=res%2fLLS%3aCTGDNTMT%2f2015-05-22T18%3a29%3a13Z%2f4441013',
+            excerpt:
+              'El que se enaltece a sí mismo será humillado. Antes del quebrantamiento es la soberbia y antes de la caída la altivez de espíritu...',
+            fullText: `La enseñanza dirigida a los discípulos concluye con las consecuencias que acarrea la conducta del orgulloso: el que se enaltece a sí mismo, es decir, aquel que busca la atención y alabanzas humanas.
+
+La importancia de la humildad y las consecuencias funestas que acarrea el orgullo hace necesario que esta enseñanza se repita continuamente: porque el que se enaltece a sí mismo será humillado, y el que se humille a sí mismo será enaltecido (Mt. 23:12). Que Dios actuará en contra del pecado de engreimiento es una enseñanza reiterada en la Escritura (Job 22:29; Pr. 29:23; Lc. 14:11; 18:14; Stg. 4:6; 1 P. 5:5).
+
+La caída en la vida cristiana suele ir acompañada de la arrogancia y altivez de espíritu, como dice Salomón: "Antes del quebrantamiento es la soberbia, y antes de la caída la altivez de espíritu" (Pr. 16:18). La altivez está reñida con el seguimiento a Cristo, que fue humilde (Mt. 11:29).
+
+Por esa causa fue quebrantado Senaquerib (2 Cr. 32:14, 21); lo mismo Nabucodonosor (Dn. 4:30–33); por esa misma razón se produjo la muerte de Herodes (Hch. 12:21–23). La altanería y la arrogancia no valen delante de Dios, porque como dice el salmista: "Porque tú salvarás al pueblo afligido, y humillarás los ojos altivos" (Sal. 18:27).`,
+            biblicalReferences: [
+              'Mateo 23:12',
+              'Proverbios 16:18',
+              'Salmo 18:27',
+              '2 Crónicas 32:21',
+              'Daniel 4:30-33',
+              'Hechos 12:21-23'
+            ],
+            keyTakeaway:
+              'La autopromoción acarrea juicio inexorable; la Escritura advierte que la altivez de espíritu precede al quebrantamiento fulminante.'
+          }
+        ]
+      },
+      {
+        id: 'comentario-apocalipsis-millos-orgullo',
+        title: 'Comentario Exegético al Texto Griego: Apocalipsis',
+        author: 'Samuel Pérez Millos',
+        publisher: 'Editorial CLIE (Viladecavalls, Barcelona)',
+        year: '2010',
+        coverGradient: 'from-rose-950 via-slate-900 to-indigo-950',
+        coverIcon: 'ShieldAlert',
+        logosUrl: 'https://ref.ly/logosres/LLS:CTGDNTAPCSS?pos=res%2fLLS%3aCTGDNTAPCSS%2f2015-05-22T18%3a28%3a36Z%2f3124188',
+        summary:
+          'Tratado sobre la impiedad cósmica del orgullo: la rebelión de Satanás, el robo de la gloria divina, la formación militar de Dios contra los soberbios (antitassetai) y el mandato de ceñirse el delantal de esclavo a imitación de Jesús.',
+        passages: [
+          {
+            id: 'ap-millos-orgullo-pasaje-1',
+            bookTitle: 'Comentario Exegético: Apocalipsis',
+            author: 'Samuel Pérez Millos',
+            chapter: 'Capítulo 18: La Caída de Babilonia y la Autoglorificación Impía',
+            pages: 'Páginas 1070–1071',
+            passageTitle: 'El Robo de la Gloria de Dios y la Formación en Batalla contra el Soberbio',
+            logosUrl: 'https://ref.ly/logosres/LLS:CTGDNTAPCSS?pos=res%2fLLS%3aCTGDNTAPCSS%2f2015-05-22T18%3a28%3a36Z%2f3124188',
+            excerpt:
+              'Quien toma para sí mismo gloria está robando lo que sólo corresponde a Dios. Dios resiste a los soberbios, equivalente a ponerse en formación de batalla contra ellos...',
+            fullText: `Primeramente se glorificó a sí misma. Es una manifestación, no sólo de orgullo, sino de impiedad, por cuanto la gloria de todo corresponde a Dios. Quien toma para sí mismo gloria a fin de glorificarse está robando lo que sólo corresponde a Dios.
+
+La situación es todavía más grave por cuanto quien se glorifica a sí misma está oponiéndose abiertamente a Dios y disponiéndose a luchar contra él. El Señor no consiente el orgullo del hombre.
+
+La Escritura advierte que Él "resiste a los soberbios y da gracia a los humildes" (Stg. 4:6; 1 P. 5:5). La advertencia es solemne ya que resistir equivale a ponerse en formación de batalla contra alguien. No se trata de una resistencia pasiva, sino activa, como si Dios peleara contra el soberbio.
+
+Los soberbios son literalmente los arrogantes, palabra griega compuesta que literalmente significa sobreaparecer. Es, por tanto, el que se coloca por encima de los demás. De ahí que el mismo Señor Jesús hiciese una solemne afirmación: "Porque el que se enaltece será humillado, y el que se humilla será enaltecido" (Mt. 23:12).`,
+            biblicalReferences: [
+              'Santiago 4:6',
+              '1 Pedro 5:5',
+              'Mateo 23:12',
+              'Isaías 42:8'
+            ],
+            keyTakeaway:
+              'El orgullo es un robo sacrílego de la gloria de Dios; Dios combate activamente en formación militar contra todo aquel que se enaltece por encima de los demás.'
+          },
+          {
+            id: 'ap-millos-orgullo-pasaje-2',
+            bookTitle: 'Comentario Exegético: Apocalipsis',
+            author: 'Samuel Pérez Millos',
+            chapter: 'Capítulo 19: El Triunfo de Cristo y el Revestimiento de Humildad',
+            pages: 'Páginas 1105–1106',
+            passageTitle: 'El Delantal del Esclavo y la Toalla de Jesús como Patrón de Humildad',
+            logosUrl: 'https://ref.ly/logosres/LLS:CTGDNTAPCSS?pos=res%2fLLS%3aCTGDNTAPCSS%2f2015-05-22T18%3a28%3a36Z%2f3228406',
+            excerpt:
+              'El creyente debe revestirse de humildad, ceñirse el delantal propio de un esclavo que se ponía sobre el vestido, como hizo el Señor al ceñirse la toalla...',
+            fullText: `Cada creyente debe recordar que el orgullo fue la causa de la caída de Satanás (Ez. 28:16–18). Cualquier actitud de engreimiento es una manifestación de oposición a Dios.
+
+El apóstol Pedro llama, no sólo a dejar el orgullo, sino a revestirse de humildad (1 P. 5:5), haciendo referencia al delantal propio de un esclavo, que se ponía sobre el vestido para poder hacer las labores propias de esa condición servil. Sin duda estaba pensando en el ejemplo del Señor cuando se ciñó la toalla para lavar los pies de los discípulos (Jn. 13:4 ss).
+
+El humilde no se enaltece a sí mismo, ni lo hace por sí mismo; es Dios quien lo lleva a cabo. Así el proceso de Jesús es ejemplo sobre el resultado de quien se humilla verdaderamente delante de Dios; luego de la humildad viene la exaltación que Dios mismo lleva a cabo.
+
+Ningún instrumento será válido en la mano de Dios, a no ser que esté revestido de humildad. Las bendiciones suyas están reservadas para el humilde, mientras aleja de él al altivo (Sal. 138:6).`,
+            biblicalReferences: [
+              '1 Pedro 5:5',
+              'Juan 13:4-15',
+              'Ezequiel 28:16-18',
+              'Salmo 138:6'
+            ],
+            keyTakeaway:
+              'La verdadera grandeza ministerial reside en ceñirse la toalla de esclavo; Dios no usa instrumentos altivos, sino a los que se humillan voluntariamente delante de Su presencia.'
+          }
+        ]
+      },
+      {
+        id: 'instrumentos-redentor-tripp-orgullo',
+        title: 'Instrumentos en las Manos del Redentor',
+        author: 'Paul David Tripp',
+        publisher: 'Publicaciones Faro de Gracia (Graham, NC)',
+        year: '2012',
+        coverGradient: 'from-slate-900 via-amber-950 to-slate-900',
+        coverIcon: 'Users',
+        logosUrl: 'https://ref.ly/logosres/LLS:NSTRMNTSNLSMNSD?pos=res%2fLLS%3aNSTRMNTSNLSMNSD%2f2016-04-29T22%3a25%3a22Z%2f613397',
+        summary:
+          'Metodología práctica para el cambio de corazón: el diagnóstico de la justicia propia y la amargura que enmascaran el orgullo espiritual, y la naturaleza del arrepentimiento radical como giro completo de adoración.',
+        passages: [
+          {
+            id: 'pdt-orgullo-pasaje-1',
+            bookTitle: 'Instrumentos en las Manos del Redentor',
+            author: 'Paul David Tripp',
+            chapter: 'Capítulo: El Arrepentimiento Verdadero y la Transformación del Corazón',
+            pages: 'Página 309',
+            passageTitle: 'El Arrepentimiento Radical y el Desenmascaramiento de la Justicia Propia',
+            logosUrl: 'https://ref.ly/logosres/LLS:NSTRMNTSNLSMNSD?pos=res%2fLLS%3aNSTRMNTSNLSMNSD%2f2016-04-29T22%3a25%3a22Z%2f613397',
+            excerpt:
+              'El arrepentimiento es presentado en las Escrituras como un cambio radical del corazón que trae como resultado una manera radicalmente diferente de vivir...',
+            fullText: `El arrepentimiento es presentado en las Escrituras como un cambio radical del corazón que trae como resultado una manera radicalmente diferente de vivir. A medida que el corazón se vuelve y se mueve en una dirección diferente, la vida hace lo mismo. Cualquier cosa que no sea esto, no es arrepentimiento.
+
+Lamentablemente, muchas personas realizan actos externos de piedad o remordimiento que ocultan la amargura y la justicia propia que controlan sus corazones. La justicia propia es la forma más refinada y engañosa del orgullo: nos lleva a justificar nuestras faltas, a señalar las ofensas ajenas y a resistir la confrontación bíblica.
+
+El consejero debe ayudar al aconsejado a ver que el orgullo de su corazón lo ciega a su propia necesidad de gracia, guiándole a confesar su bancarrota espiritual y a abrazar el perdón transformador de Cristo.`,
+            biblicalReferences: [
+              'Lucas 18:9-14',
+              '2 Corintios 7:10',
+              'Ezequiel 36:26-27'
+            ],
+            keyTakeaway:
+              'El arrepentimiento no es mero remordimiento externo, sino una rendición total de la justicia propia y del orgullo del corazón ante la gracia redentora.'
+          }
+        ]
+      },
+      {
+        id: 'consejeria-cristocentrica-macdonald-orgullo',
+        title: 'Consejería Bíblica Cristo-Céntrica',
+        author: 'James MacDonald y Robert Cheong',
+        publisher: 'Editorial Bautista Independiente (Sebring, FL)',
+        year: '2018',
+        coverGradient: 'from-amber-950 via-slate-900 to-indigo-950',
+        coverIcon: 'Sparkles',
+        logosUrl: 'https://ref.ly/logosres/LLS:CNSJRBCRSTCNTRC?pos=res%2fLLS%3aCNSJRBCRSTCNTRC%2f2020-10-13T15%3a35%3a22Z%2f980516',
+        summary:
+          'Tratado sobre los afectos del corazón y la adoración del ego: cómo todas nuestras acciones brotan de lo que adoramos, la distinción entre pecado y sufrimiento, y la confrontación de Dios en amor.',
+        passages: [
+          {
+            id: 'jmd-orgullo-pasaje-1',
+            bookTitle: 'Consejería Bíblica Cristo-Céntrica',
+            author: 'James MacDonald y Robert Cheong',
+            chapter: 'Capítulo: La Adoración del Corazón y la Confrontación en Amor',
+            pages: 'Páginas 120, 332–334',
+            passageTitle: 'La Idolatría del Yo en el Corazón y la Confrontación Redentora',
+            logosUrl: 'https://ref.ly/logosres/LLS:CNSJRBCRSTCNTRC?pos=res%2fLLS%3aCNSJRBCRSTCNTRC%2f2020-10-13T15%3a35%3a22Z%2f980516',
+            excerpt:
+              'Toda la conducta humana está ligada a pensamientos, intenciones y afectos del corazón. Todas nuestras acciones brotan de corazones que están adorando bien sea a Dios o a alguna otra cosa...',
+            fullText: `Creemos que la conducta humana está ligada a pensamientos, intenciones y afectos del corazón. Todas nuestras acciones brotan de corazones que están adorando bien sea a Dios o a alguna otra cosa; por consiguiente, recalcamos la importancia del corazón y consideramos a la persona interna.
+
+La consejería sabia procura atender tanto los aspectos internos como los externos de la vida humana para producir cambio cabal y duradero a imagen de Cristo. La Biblia es clara en que la conducta humana no es mecánica, sino que brota de un corazón que desea, anhela, piensa, escoge y siente de maneras que son orientadas bien sea hacia o contra Cristo.
+
+La timidez, el orgullo, la vergüenza, la amargura, la absorción en nosotros mismos y la suspicacia son barreras que nos privan de la comunión bíblica. La consejería bíblica considera el pecado e interactúa con los pecadores de numerosas maneras de amor: ofrece la confrontación de Dios a los pecados, estimula el arrepentimiento, presenta el perdón de la gracia de Dios en Cristo y proclama la senda de victoria sobre el pecado.`,
+            biblicalReferences: [
+              'Mateo 23:23-28',
+              'Colosenses 3:1-17',
+              '2 Timoteo 2:24-26',
+              '1 Juan 1:8-2:2'
+            ],
+            keyTakeaway:
+              'El orgullo es un problema de adoración idólatra del yo; la consejería sabia confronta el pecado con amor y proclama la gracia de Cristo para transformar el corazón.'
+          }
+        ]
+      },
+      {
+        id: 'teologia-consejeria-lambert-orgullo',
+        title: 'Teología de la Consejería Bíblica: Las Bases Doctrinales del Ministerio',
+        author: 'Heath Lambert',
+        publisher: 'Editorial Bautista Independiente (Sebring, FL)',
+        year: '2020',
+        coverGradient: 'from-slate-900 via-amber-950 to-blue-950',
+        coverIcon: 'Users',
+        logosUrl: 'https://ref.ly/logosres/LLS:TLGDLCNSJRBBLC?pos=res%2fLLS%3aTLGDLCNSJRBBLC%2f2020-10-16T01%3a14%3a37Z%2f427830',
+        summary:
+          'La humildad pastoral y la doctrina del Espíritu Santo: cómo evaluar honestamente nuestras limitaciones como consejeros y descansar en la obra soberana del Espíritu en los corazones.',
+        passages: [
+          {
+            id: 'hl-orgullo-pasaje-1',
+            bookTitle: 'Teología de la Consejería Bíblica',
+            author: 'Heath Lambert',
+            chapter: 'Capítulo: La Doctrina del Espíritu Santo y la Humildad en la Consejería',
+            pages: 'Página 127',
+            passageTitle: 'La Autoevaluación Humilde y la Soberanía del Espíritu Santo',
+            logosUrl: 'https://ref.ly/logosres/LLS:TLGDLCNSJRBBLC?pos=res%2fLLS%3aTLGDLCNSJRBBLC%2f2020-10-16T01%3a14%3a37Z%2f427830',
+            excerpt:
+              'Cuando experimentamos un fracaso en nuestro trabajo, debemos evaluar nuestra consejería con humildad y confiar absolutamente en Dios Espíritu Santo...',
+            fullText: `Como consejeros bíblicos, cuando experimentamos un fracaso en nuestro trabajo, hay un par de cosas que podemos hacer. Primero, debemos evaluar nuestra consejería y pedirle a Dios que nos muestre las áreas en las que podríamos haber demostrado una mayor comprensión del problema del aconsejado, una mayor perspicacia en lo que Dios dice sobre la dificultad del aconsejado o más amabilidad en nuestro cuidado de consejería.
+
+Cuando la consejería parece no dar fruto a pesar de nuestra fidelidad, debemos confiar en Dios Espíritu Santo. El Espíritu Santo es el Dios soberano que obra en los corazones de las personas según su propia voluntad sabia y amorosa (Juan 3:8).
+
+El consejero debe despojarse de todo orgullo ministerial o pretensión mesiánica: no somos nosotros quienes cambiamos a los corazones humanos; somos meros instrumentos de la gracia, llamados a sembrar con amor y fidelidad mientras Dios da el crecimiento.`,
+            biblicalReferences: [
+              'Juan 3:8',
+              '1 Corintios 3:6-7',
+              'Zacarías 4:6'
+            ],
+            keyTakeaway:
+              'El consejero debe modelar profunda humildad, reconociendo que el cambio soberano del corazón humano es obra exclusiva del Espíritu Santo.'
+          }
+        ]
+      },
+      {
+        id: 'manual-consejero-adams-orgullo',
+        title: 'Manual del Consejero Cristiano',
+        author: 'Jay E. Adams',
+        publisher: 'Editorial CLIE (Terrassa, Barcelona)',
+        year: '1984',
+        coverGradient: 'from-slate-900 via-amber-950 to-indigo-950',
+        coverIcon: 'Bookmark',
+        logosUrl: 'https://ref.ly/logosres/LLS:MNLDLCNSJRCRSTN?pos=res%2fLLS%3aMNLDLCNSJRCRSTN%2f2017-12-15T23%3a50%3a14Z%2f942164',
+        summary:
+          'Dinámica práctica contra la autocompasión y el resentimiento: el uso de los Salmos 73 y 37 para romper la cadena destructiva en el primer eslabón mediante la oración inmediata y la reanudación activa de los deberes.',
+        passages: [
+          {
+            id: 'adams-orgullo-pasaje-1',
+            bookTitle: 'Manual del Consejero Cristiano',
+            author: 'Jay E. Adams',
+            chapter: 'Capítulo: Romper la Cadena de la Autocompasión y la Acción Inmediata',
+            pages: 'Páginas 370–371',
+            passageTitle: 'Interrumpir el Cavilar Egoísta y Dirigirse a las Responsabilidades en Dios',
+            logosUrl: 'https://ref.ly/logosres/LLS:MNLDLCNSJRCRSTN?pos=res%2fLLS%3aMNLDLCNSJRCRSTN%2f2017-12-15T23%3a50%3a14Z%2f942164',
+            excerpt:
+              'El consejero puede dirigir al aconsejado a romper la cadena de autocompasión → ira → amargura → depresión en el primer eslabón mediante la oración inmediata...',
+            fullText: `Primero, el consejero puede dar una vista general bíblica del problema, usando los Salmos 73 y 37. Luego, puede dirigir al aconsejado a romper la cadena de autocompasión → ira → amargura → depresión en el primero de los eslabones. Más bien que permitir que empiece el cavilar y la autocompasión, el aconsejado ha de recibir instrucciones de orar sobre el problema, poniendo el asunto en las manos de Dios.
+
+También puede orar pidiendo fuerza para romper las pautas destructivas de la envidia y la autocompasión. Luego debe levantarse y, finalmente, dirigirse a las responsabilidades presentes, que de otro modo serían descuidadas.
+
+Siempre que empieces a pensar sobre este triste suceso, dedícale dos minutos (con el reloj en la mano), piensa en ello. El hecho es triste y la pérdida es real. Pero esto no ha de inmovilizarte ni amargarte. A los dos minutos haces una oración a Dios, poniendo tus cuidados en sus manos, luego: Levántate y empieza a hacer el trabajo o deber que tengas entre manos, y pon toda tu energía en ello.`,
+            biblicalReferences: [
+              'Salmo 73:1-28',
+              'Salmo 37:1-8',
+              'Filipenses 4:6-8',
+              'Colosenses 3:23-24'
+            ],
+            keyTakeaway:
+              'El orgullo herido y la autocompasión se vencen cortando el cavilar mental mediante la oración inmediata y volcando la energía en el servicio y deber cotidiano.'
+          }
+        ]
+      }
+    ]
   }
 ];
+
 
