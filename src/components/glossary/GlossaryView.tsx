@@ -17,6 +17,7 @@ import {
 } from 'lucide-react';
 import { GlossaryTopic, RecommendedBook, BookPassage } from '../../types';
 import { GLOSSARY_TOPICS } from '../../data/glossaryBooksData';
+import { BibleRefBadge } from '../bible/BibleRefBadge';
 
 export const GlossaryView: React.FC = () => {
   const [selectedTopic, setSelectedTopic] = useState<GlossaryTopic | null>(null);
@@ -383,9 +384,7 @@ export const GlossaryView: React.FC = () => {
                         Referencias Bíblicas:
                       </span>
                       {passage.biblicalReferences.map((ref, idx) => (
-                        <span key={idx} className="font-serif text-[11px] px-2.5 py-0.5 rounded-md bg-slate-900 border border-amber-500/20 text-amber-300">
-                          {ref}
-                        </span>
+                        <BibleRefBadge key={idx} reference={ref} />
                       ))}
                     </div>
                   )}

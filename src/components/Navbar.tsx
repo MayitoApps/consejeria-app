@@ -9,16 +9,27 @@ import {
   ChevronDown
 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
+import { useBible } from '../context/BibleContext';
+import { AlertsDropdown } from './alerts/AlertsDropdown';
+import { PastoralAlert } from '../types';
 
 export type NavTab = 'studies' | 'glossary' | 'methodology' | 'advisees';
 
 interface NavbarProps {
   activeTab: NavTab;
   setActiveTab: (tab: NavTab) => void;
+  alerts?: PastoralAlert[];
+  onSelectAdvisee?: (adviseeId: string) => void;
 }
 
-export const Navbar: React.FC<NavbarProps> = ({ activeTab, setActiveTab }) => {
+export const Navbar: React.FC<NavbarProps> = ({ 
+  activeTab, 
+  setActiveTab,
+  alerts = [],
+  onSelectAdvisee = () => {}
+}) => {
   const { user, signOut } = useAuth();
+  const { openBible } = useBible();
   const [showProfileMenu, setShowProfileMenu] = useState(false);
 
   const navItems = [
@@ -75,61 +86,88 @@ export const Navbar: React.FC<NavbarProps> = ({ activeTab, setActiveTab }) => {
             })}
           </nav>
 
-          {/* User Profile / Logout */}
-          {user && (
-            <div className="relative">
-              <button
-                onClick={() => setShowProfileMenu(!showProfileMenu)}
-                className="flex items-center space-x-2 p-1 pl-2.5 pr-3 rounded-full bg-slate-900/80 border border-white/[0.08] hover:border-amber-500/30 transition-all text-xs"
-              >
-                {user.photoURL ? (
-                  <img 
-                    src={user.photoURL} 
-                    alt={user.displayName || 'Consejero'} 
-                    className="w-6 h-6 rounded-full border border-amber-400/40 object-cover"
-                  />
-                ) : (
-                  <div className="w-6 h-6 rounded-full bg-amber-600/25 border border-amber-500/40 flex items-center justify-center text-amber-300 font-bold text-[11px]">
-                    {user.displayName ? user.displayName.charAt(0).toUpperCase() : 'C'}
+          {/* Right Action Tools: Lector Bíblico + Alertas Pastorales + User Profile */}
+          <div className="flex items-center space-x-2 sm:space-x-3">
+            
+            {/* Botón Lector Bíblico Integrado */}
+            <button
+              type="button"
+              onClick={() => openBible()}
+              className="p-1.5 sm:px-3 sm:py-1.5 rounded-xl bg-amber-500/10 hover:bg-amber-500/20 border border-amber-500/30 text-amber-300 text-xs font-medium flex items-center space-x-1.5 transition-all shadow-sm group"
+              title="Abrir La Biblia de las Américas (LBLA)"
+            >
+              <BookOpen className="w-4 h-4 text-amber-400 group-hover:scale-110 transition-transform" />
+              <span className="hidden sm:inline font-semibold">Biblia LBLA</span>
+            </button>
+
+            {/* Dropdown de Alertas Pastorales */}
+            {user && (
+              <AlertsDropdown
+                alerts={alerts}
+                onSelectAdvisee={(adviseeId) => {
+                  setActiveTab('advisees');
+                  onSelectAdvisee(adviseeId);
+                }}
+              />
+            )}
+
+            {/* User Profile / Logout */}
+            {user && (
+              <div className="relative">
+                <button
+                  onClick={() => setShowProfileMenu(!showProfileMenu)}
+                  className="flex items-center space-x-2 p-1 pl-2.5 pr-3 rounded-full bg-slate-900/80 border border-white/[0.08] hover:border-amber-500/30 transition-all text-xs"
+                >
+                  {user.photoURL ? (
+                    <img 
+                      src={user.photoURL} 
+                      alt={user.displayName || 'Consejero'} 
+                      className="w-6 h-6 rounded-full border border-amber-400/40 object-cover"
+                    />
+                  ) : (
+                    <div className="w-6 h-6 rounded-full bg-amber-600/25 border border-amber-500/40 flex items-center justify-center text-amber-300 font-bold text-[11px]">
+                      {user.displayName ? user.displayName.charAt(0).toUpperCase() : 'C'}
+                    </div>
+                  )}
+                  <span className="hidden sm:inline font-medium text-slate-300 max-w-[120px] truncate text-xs">
+                    {user.displayName}
+                  </span>
+                  <ChevronDown className="w-3 h-3 text-slate-400" />
+                </button>
+
+                {/* Dropdown Menu */}
+                {showProfileMenu && (
+                  <div className="absolute right-0 mt-2 w-56 glass-card rounded-2xl p-2.5 shadow-navy-lg border border-amber-500/20 animate-fade-in text-xs z-50">
+                    <div className="px-2.5 py-1.5 border-b border-slate-800 mb-1.5">
+                      <p className="font-semibold text-slate-200 truncate text-xs">{user.displayName}</p>
+                      <p className="text-[10px] text-slate-400 truncate mt-0.5">{user.email}</p>
+                    </div>
+                    <button
+                      onClick={() => {
+                        setShowProfileMenu(false);
+                        setActiveTab('advisees');
+                      }}
+                      className="w-full flex items-center space-x-2 px-2.5 py-1.5 text-slate-300 hover:text-white hover:bg-slate-800/70 rounded-lg transition-all text-xs font-medium"
+                    >
+                      <FolderLock className="w-3.5 h-3.5 text-amber-400" />
+                      <span>Mis Expedientes</span>
+                    </button>
+                    <button
+                      onClick={() => {
+                        setShowProfileMenu(false);
+                        signOut();
+                      }}
+                      className="w-full flex items-center space-x-2 px-2.5 py-1.5 mt-1 text-rose-300 hover:text-rose-200 hover:bg-rose-950/30 rounded-lg transition-all text-xs font-medium"
+                    >
+                      <LogOut className="w-3.5 h-3.5 text-rose-400" />
+                      <span>Cerrar Sesión</span>
+                    </button>
                   </div>
                 )}
-                <span className="hidden sm:inline font-medium text-slate-300 max-w-[120px] truncate text-xs">
-                  {user.displayName}
-                </span>
-                <ChevronDown className="w-3 h-3 text-slate-400" />
-              </button>
+              </div>
+            )}
 
-              {/* Dropdown Menu */}
-              {showProfileMenu && (
-                <div className="absolute right-0 mt-2 w-56 glass-card rounded-2xl p-2.5 shadow-navy-lg border border-amber-500/20 animate-fade-in text-xs z-50">
-                  <div className="px-2.5 py-1.5 border-b border-slate-800 mb-1.5">
-                    <p className="font-semibold text-slate-200 truncate text-xs">{user.displayName}</p>
-                    <p className="text-[10px] text-slate-400 truncate mt-0.5">{user.email}</p>
-                  </div>
-                  <button
-                    onClick={() => {
-                      setShowProfileMenu(false);
-                      setActiveTab('advisees');
-                    }}
-                    className="w-full flex items-center space-x-2 px-2.5 py-1.5 text-slate-300 hover:text-white hover:bg-slate-800/70 rounded-lg transition-all text-xs font-medium"
-                  >
-                    <FolderLock className="w-3.5 h-3.5 text-amber-400" />
-                    <span>Mis Expedientes</span>
-                  </button>
-                  <button
-                    onClick={() => {
-                      setShowProfileMenu(false);
-                      signOut();
-                    }}
-                    className="w-full flex items-center space-x-2 px-2.5 py-1.5 mt-1 text-rose-300 hover:text-rose-200 hover:bg-rose-950/30 rounded-lg transition-all text-xs font-medium"
-                  >
-                    <LogOut className="w-3.5 h-3.5 text-rose-400" />
-                    <span>Cerrar Sesión</span>
-                  </button>
-                </div>
-              )}
-            </div>
-          )}
+          </div>
 
         </div>
       </div>

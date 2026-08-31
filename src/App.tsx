@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { AuthProvider, useAuth } from './context/AuthContext';
+import { BibleProvider } from './context/BibleContext';
 import { Navbar, NavTab } from './components/Navbar';
 import { MobileNav } from './components/MobileNav';
 import { AuthScreen } from './components/AuthScreen';
@@ -8,18 +9,43 @@ import { StudyDetail } from './components/studies/StudyDetail';
 import { GlossaryView } from './components/glossary/GlossaryView';
 import { MethodologyView } from './components/methodology/MethodologyView';
 import { AdviseesDashboard } from './components/advisees/AdviseesDashboard';
-import { BibleStudy } from './types';
+import { BibleStudy, Advisee } from './types';
+import { subscribeToAdvisees } from './services/adviseesService';
+import { calculatePastoralAlerts } from './utils/reminders';
 import { Anchor, Shield, BookOpen } from 'lucide-react';
 
 export const AppContent: React.FC = () => {
   const { user, loading } = useAuth();
   const [activeTab, setActiveTab] = useState<NavTab>('studies');
   const [selectedStudy, setSelectedStudy] = useState<BibleStudy | null>(null);
+  const [advisees, setAdvisees] = useState<Advisee[]>([]);
 
   // Cada que se cambia de pestaña o vista, desplazarse automáticamente hasta arriba
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
   }, [activeTab, selectedStudy]);
+
+  // Sincronización en tiempo real para las alertas globales en el Navbar
+  useEffect(() => {
+    if (!user) {
+      setAdvisees([]);
+      return;
+    }
+
+    const unsubscribe = subscribeToAdvisees(
+      user.uid,
+      (data) => {
+        setAdvisees(data);
+      },
+      (err) => {
+        console.error('Error al escuchar alertas pastorales:', err);
+      }
+    );
+
+    return () => unsubscribe();
+  }, [user]);
+
+  const alerts = calculatePastoralAlerts(advisees);
 
   const handleSelectTab = (tab: NavTab) => {
     setActiveTab(tab);
@@ -53,9 +79,13 @@ export const AppContent: React.FC = () => {
       <Navbar 
         activeTab={activeTab} 
         setActiveTab={handleSelectTab} 
+        alerts={alerts}
+        onSelectAdvisee={() => {
+          setActiveTab('advisees');
+        }}
       />
 
-      {/* Main View Router (Expansivo, aprovechando toda la pantalla con holgura) */}
+      {/* Main View Router */}
       <main className="flex-1 w-full pb-20 md:pb-16">
         {activeTab === 'studies' && (
           selectedStudy ? (
@@ -125,7 +155,9 @@ export const AppContent: React.FC = () => {
 export const App: React.FC = () => {
   return (
     <AuthProvider>
-      <AppContent />
+      <BibleProvider>
+        <AppContent />
+      </BibleProvider>
     </AuthProvider>
   );
 };

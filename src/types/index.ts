@@ -95,10 +95,13 @@ export type AdviseeStatus = 'Activo' | 'En Pausa' | 'Suspendido' | 'Cerrado' | '
 export type MaritalStatus = 'Soltero(a)' | 'Casado(a)' | 'Divorciado(a)' | 'Viudo(a)' | 'Unión Libre' | 'Otro';
 export type TaskStatus = 'pendiente' | 'en_progreso' | 'completada' | 'No Realizada' | 'Completada' | 'Parcial';
 
+export type TaskCategory = 'lectura' | 'memorizacion' | 'diario' | 'accion' | 'oracion' | 'general';
+
 export interface AdviseeTask {
   id: string;
   description: string;
   biblicalReference?: string;
+  category?: TaskCategory;
   status?: TaskStatus;
   isCompleted?: boolean;
   createdAt?: string;
@@ -178,3 +181,31 @@ export interface CounselorUser {
   photoURL: string | null;
   role?: string;
 }
+
+export type AlertType = 'cita_hoy' | 'cita_manana' | 'cita_proxima' | 'sin_sesion_reciente' | 'tareas_pendientes';
+
+export interface PastoralAlert {
+  id: string;
+  adviseeId: string;
+  adviseeName: string;
+  type: AlertType;
+  title: string;
+  description: string;
+  date?: string;
+  time?: string;
+  daysInactive?: number;
+  pendingTasksCount?: number;
+  severity: 'urgent' | 'warning' | 'info';
+}
+
+export interface BiblePassageLookup {
+  book: string;
+  chapter: number;
+  verseStart?: number;
+  verseEnd?: number;
+  referenceText: string;
+  text: string;
+  version: string;
+  sourceNotes?: string;
+}
+

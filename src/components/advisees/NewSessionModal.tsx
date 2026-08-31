@@ -1,6 +1,17 @@
 import React, { useState } from 'react';
-import { X, CalendarPlus, Save, Plus, Trash2 } from 'lucide-react';
-import { Advisee, AdviseeTask, SessionRecord, TaskStatus } from '../../types';
+import { 
+  X, 
+  CalendarPlus, 
+  Save, 
+  Plus, 
+  Trash2, 
+  Sparkles, 
+  BookOpen, 
+  Bookmark 
+} from 'lucide-react';
+import { Advisee, AdviseeTask, SessionRecord, TaskStatus, TaskCategory } from '../../types';
+import { BibleRefBadge } from '../bible/BibleRefBadge';
+import { useBible } from '../../context/BibleContext';
 
 interface NewSessionModalProps {
   advisee: Advisee;
@@ -10,6 +21,52 @@ interface NewSessionModalProps {
   currentSessionCount: number;
 }
 
+interface TaskPreset {
+  label: string;
+  description: string;
+  reference: string;
+  category: TaskCategory;
+}
+
+const TASK_PRESETS: TaskPreset[] = [
+  {
+    label: 'Despojo y Renovación',
+    description: 'Lectura y meditación diaria en el principio de despojarse del viejo hombre y vestirse del nuevo.',
+    reference: 'Efesios 4:22-24',
+    category: 'lectura'
+  },
+  {
+    label: 'Diario de Pensamientos',
+    description: 'Escribir un diario anotando las situaciones donde surgen emociones de ira, ansiedad o temor y filtrarlas.',
+    reference: 'Filipenses 4:6-8',
+    category: 'diario'
+  },
+  {
+    label: 'Confesión y Perdón',
+    description: 'Tiempo devocional de oración confesando el pecado a Dios y experimentando Su perdón fiel.',
+    reference: '1 Juan 1:9',
+    category: 'oracion'
+  },
+  {
+    label: 'Ídolos del Corazón',
+    description: 'Reflexión y detección de deseos dominantes (epithumia) que producen pleitos o frustración.',
+    reference: 'Santiago 4:1-3',
+    category: 'lectura'
+  },
+  {
+    label: 'Petición de Perdón',
+    description: 'Conversación presencial de humildad y reconciliación con el ofendido siguiendo el principio bíblico.',
+    reference: 'Mateo 18:15',
+    category: 'accion'
+  },
+  {
+    label: 'Memorización Semanal',
+    description: 'Memorizar y recitar el versículo clave de victoria sobre la tentación.',
+    reference: '1 Corintios 10:13',
+    category: 'memorizacion'
+  }
+];
+
 export const NewSessionModal: React.FC<NewSessionModalProps> = ({
   advisee,
   isOpen,
@@ -17,6 +74,7 @@ export const NewSessionModal: React.FC<NewSessionModalProps> = ({
   onSaveSession,
   currentSessionCount
 }) => {
+  const { openBible } = useBible();
   const [sessionNumber] = useState(currentSessionCount + 1);
   const [date, setDate] = useState(new Date().toISOString().split('T')[0]);
   const [time, setTime] = useState('18:00');
@@ -39,6 +97,7 @@ export const NewSessionModal: React.FC<NewSessionModalProps> = ({
   const [newTasks, setNewTasks] = useState<AdviseeTask[]>([]);
   const [newTaskDesc, setNewTaskDesc] = useState('');
   const [newTaskRef, setNewTaskRef] = useState('');
+  const [newTaskCategory, setNewTaskCategory] = useState<TaskCategory>('lectura');
   
   // Next appointment
   const [nextAppointmentDate, setNextAppointmentDate] = useState('');
@@ -66,12 +125,20 @@ export const NewSessionModal: React.FC<NewSessionModalProps> = ({
       id: Date.now().toString(),
       description: newTaskDesc.trim(),
       biblicalReference: newTaskRef.trim() || undefined,
+      category: newTaskCategory,
       isCompleted: false,
-      status: 'No Realizada'
+      status: 'No Realizada',
+      createdAt: new Date().toISOString()
     };
     setNewTasks([...newTasks, task]);
     setNewTaskDesc('');
     setNewTaskRef('');
+  };
+
+  const handleApplyPreset = (preset: TaskPreset) => {
+    setNewTaskDesc(preset.description);
+    setNewTaskRef(preset.reference);
+    setNewTaskCategory(preset.category);
   };
 
   const handleRemoveNewTask = (id: string) => {
@@ -105,38 +172,38 @@ export const NewSessionModal: React.FC<NewSessionModalProps> = ({
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-md animate-fade-in">
-      <div className="relative w-full max-w-2xl max-h-[90vh] flex flex-col glass-card rounded-2xl p-5 sm:p-7 border border-white/[0.08] shadow-navy-lg animate-slide-up">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 md:p-6 bg-black/85 backdrop-blur-md animate-fade-in">
+      <div className="relative w-full max-w-3xl max-h-[92vh] flex flex-col glass-card rounded-2xl p-5 sm:p-7 border border-amber-500/20 shadow-navy-lg animate-slide-up text-slate-100 overflow-hidden">
         
         {/* Header */}
-        <div className="flex items-center justify-between pb-3 mb-4 border-b border-white/[0.06]">
+        <div className="flex items-center justify-between pb-3 mb-4 border-b border-white/[0.08] flex-shrink-0">
           <div className="flex items-center space-x-2.5">
-            <div className="w-8 h-8 rounded-lg bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400">
+            <div className="w-8 h-8 rounded-lg bg-amber-500/15 border border-amber-500/30 flex items-center justify-center text-amber-400">
               <CalendarPlus className="w-4 h-4" />
             </div>
             <div>
-              <h3 className="font-serif text-lg sm:text-xl font-bold text-white">
+              <h3 className="font-serif text-lg sm:text-xl font-bold text-white tracking-tight">
                 Documentar Sesión #{sessionNumber}
               </h3>
               <p className="text-[11px] text-slate-400">
-                Aconsejado: <strong className="text-amber-300">{advisee.fullName}</strong>
+                Aconsejado: <strong className="text-amber-300 font-semibold">{advisee.fullName}</strong>
               </p>
             </div>
           </div>
 
           <button
             onClick={onClose}
-            className="p-1.5 rounded-lg text-slate-400 hover:text-white bg-slate-900/80 border border-white/[0.06]"
+            className="p-1.5 rounded-lg text-slate-400 hover:text-white bg-slate-900/80 border border-white/[0.06] transition-all"
           >
             <X className="w-4 h-4" />
           </button>
         </div>
 
         {/* Scrollable Form */}
-        <form onSubmit={handleSubmit} className="overflow-y-auto pr-1.5 space-y-4 flex-1 text-xs">
+        <form onSubmit={handleSubmit} className="overflow-y-auto pr-1 sm:pr-2 space-y-5 flex-1 text-xs">
           
           {/* General Session Info */}
-          <div className="grid sm:grid-cols-3 gap-3">
+          <div className="grid sm:grid-cols-3 gap-3 p-3.5 rounded-xl bg-slate-900/60 border border-white/[0.06]">
             <div>
               <label className="block text-[11px] font-medium text-slate-300 mb-1">Fecha de Sesión *</label>
               <input
@@ -144,7 +211,7 @@ export const NewSessionModal: React.FC<NewSessionModalProps> = ({
                 required
                 value={date}
                 onChange={(e) => setDate(e.target.value)}
-                className="w-full px-3 py-2 bg-slate-900/90 border border-white/[0.08] rounded-lg text-slate-100 text-xs focus:outline-none focus:border-amber-500"
+                className="w-full px-3 py-2 bg-slate-950 border border-white/[0.08] rounded-lg text-slate-100 text-xs focus:outline-none focus:border-amber-400"
               />
             </div>
             <div>
@@ -153,7 +220,7 @@ export const NewSessionModal: React.FC<NewSessionModalProps> = ({
                 type="time"
                 value={time}
                 onChange={(e) => setTime(e.target.value)}
-                className="w-full px-3 py-2 bg-slate-900/90 border border-white/[0.08] rounded-lg text-slate-100 text-xs focus:outline-none focus:border-amber-500"
+                className="w-full px-3 py-2 bg-slate-950 border border-white/[0.08] rounded-lg text-slate-100 text-xs focus:outline-none focus:border-amber-400"
               />
             </div>
             <div>
@@ -163,21 +230,22 @@ export const NewSessionModal: React.FC<NewSessionModalProps> = ({
                 required
                 value={theme}
                 onChange={(e) => setTheme(e.target.value)}
-                placeholder="Ej: Ídolos del corazón / Perdón"
-                className="w-full px-3 py-2 bg-slate-900/90 border border-white/[0.08] rounded-lg text-slate-100 placeholder-slate-500 text-xs focus:outline-none focus:border-amber-500"
+                placeholder="Ej: Ídolos del corazón / Reconciliación"
+                className="w-full px-3 py-2 bg-slate-950 border border-white/[0.08] rounded-lg text-slate-100 placeholder-slate-500 text-xs focus:outline-none focus:border-amber-400"
               />
             </div>
           </div>
 
           {/* 1. Revision of previous tasks */}
           {tasksReview.length > 0 && (
-            <div className="p-3.5 rounded-xl bg-slate-900/70 border border-white/[0.06] space-y-2.5">
-              <h4 className="text-[11px] uppercase font-semibold text-amber-400 tracking-wider">
-                1. Revisión de Tareas de la Sesión Pasada
+            <div className="p-3.5 rounded-xl bg-slate-900/60 border border-white/[0.06] space-y-2.5">
+              <h4 className="text-[11px] uppercase font-semibold text-amber-400 tracking-wider flex items-center justify-between">
+                <span>1. Revisión de Tareas de la Sesión Pasada</span>
+                <span className="text-[10px] text-slate-400 font-normal">Evalúa el fruto práctico</span>
               </h4>
               <div className="space-y-2">
                 {tasksReview.map((item, idx) => (
-                  <div key={idx} className="p-2.5 rounded-lg bg-slate-950/60 border border-white/[0.05] space-y-1.5">
+                  <div key={idx} className="p-2.5 rounded-lg bg-slate-950/80 border border-white/[0.05] space-y-1.5">
                     <div className="flex flex-wrap items-center justify-between gap-2">
                       <span className="font-medium text-slate-200 text-xs">{item.description}</span>
                       <div className="flex items-center space-x-1">
@@ -189,11 +257,11 @@ export const NewSessionModal: React.FC<NewSessionModalProps> = ({
                             className={`px-2 py-0.5 rounded text-[9px] font-semibold uppercase transition-all ${
                               item.status === st
                                 ? st === 'Completada'
-                                  ? 'bg-emerald-600 text-white'
+                                  ? 'bg-emerald-600 text-white shadow-sm'
                                   : st === 'Parcial'
-                                  ? 'bg-amber-600 text-white'
-                                  : 'bg-rose-600 text-white'
-                                : 'bg-slate-900 text-slate-400 hover:text-slate-200'
+                                  ? 'bg-amber-600 text-white shadow-sm'
+                                  : 'bg-rose-600 text-white shadow-sm'
+                                : 'bg-slate-900 text-slate-400 hover:text-slate-200 border border-white/[0.04]'
                             }`}
                           >
                             {st}
@@ -205,8 +273,8 @@ export const NewSessionModal: React.FC<NewSessionModalProps> = ({
                       type="text"
                       value={item.feedback}
                       onChange={(e) => handleFeedbackChange(idx, e.target.value)}
-                      placeholder="Observación o retroalimentación sobre la tarea..."
-                      className="w-full px-2.5 py-1 bg-slate-900 border border-white/[0.06] rounded-md text-slate-300 text-xs focus:outline-none focus:border-amber-500"
+                      placeholder="Observaciones de santificación o dificultades..."
+                      className="w-full px-2.5 py-1.5 bg-slate-900 border border-white/[0.06] rounded-md text-slate-300 text-xs focus:outline-none focus:border-amber-400"
                     />
                   </div>
                 ))}
@@ -215,40 +283,73 @@ export const NewSessionModal: React.FC<NewSessionModalProps> = ({
           )}
 
           {/* 2. General Notes & Counseling Documentation */}
-          <div>
-            <label className="block text-[11px] font-medium text-slate-300 mb-1">
-              Notas y Documentación de la Sesión *
+          <div className="p-3.5 rounded-xl bg-slate-900/60 border border-white/[0.06] space-y-2">
+            <label className="block text-[11px] font-semibold uppercase tracking-wider text-amber-400">
+              2. Notas Exegéticas y Documentación Pastoral *
             </label>
             <textarea
               required
               rows={4}
               value={generalNotes}
               onChange={(e) => setGeneralNotes(e.target.value)}
-              placeholder="Escribe los aspectos tratados, confesiones, respuestas del aconsejado, pasajes bíblicos confrontados y acuerdos de la sesión..."
-              className="w-full px-3 py-2 bg-slate-900/90 border border-white/[0.08] rounded-lg text-slate-100 placeholder-slate-500 focus:outline-none focus:border-amber-500 leading-relaxed text-xs"
+              placeholder="Detalla las confesiones, raíces del problema expuestas a la luz bíblica, pasajes confrontados y compromisos acordados..."
+              className="w-full px-3 py-2.5 bg-slate-950 border border-white/[0.08] rounded-lg text-slate-100 placeholder-slate-500 focus:outline-none focus:border-amber-400 leading-relaxed text-xs"
             />
           </div>
 
-          {/* 3. Assign New Tasks */}
-          <div className="p-3.5 rounded-xl bg-slate-900/70 border border-white/[0.06] space-y-2.5">
-            <h4 className="text-[11px] uppercase font-semibold text-amber-400 tracking-wider">
-              3. Asignar Nuevas Tareas para la Próxima Semana
-            </h4>
+          {/* 3. Assign New Tasks (Mejorado con Plantillas y Categorías) */}
+          <div className="p-4 rounded-xl bg-slate-900/70 border border-white/[0.08] space-y-3">
+            <div className="flex items-center justify-between">
+              <h4 className="text-[11px] uppercase font-semibold text-amber-400 tracking-wider flex items-center space-x-1.5">
+                <Sparkles className="w-3.5 h-3.5 text-amber-400" />
+                <span>3. Asignar Tareas de Santificación</span>
+              </h4>
+              <span className="text-[10px] text-slate-400">Se incluirán en la Hoja Pastoral</span>
+            </div>
 
+            {/* Chips de Plantillas Rápidas */}
+            <div className="space-y-1.5 bg-slate-950/60 p-2.5 rounded-lg border border-white/[0.04]">
+              <span className="text-[10px] text-slate-400 font-semibold uppercase tracking-wider flex items-center space-x-1">
+                <Bookmark className="w-3 h-3 text-amber-400" />
+                <span>Plantillas Rápidas Frecuentes:</span>
+              </span>
+              <div className="flex flex-wrap gap-1.5">
+                {TASK_PRESETS.map((preset) => (
+                  <button
+                    key={preset.label}
+                    type="button"
+                    onClick={() => handleApplyPreset(preset)}
+                    className="px-2 py-1 rounded bg-slate-900 hover:bg-amber-600/25 border border-white/[0.06] hover:border-amber-500/40 text-[10px] text-slate-300 hover:text-amber-200 transition-all text-left"
+                  >
+                    + {preset.label}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            {/* Lista de Nuevas Tareas Asignadas */}
             {newTasks.length > 0 && (
-              <div className="space-y-1.5 mb-2">
+              <div className="space-y-2">
                 {newTasks.map((t) => (
-                  <div key={t.id} className="flex items-center justify-between p-2 rounded-lg bg-slate-950 border border-white/[0.05]">
-                    <div>
-                      <p className="text-slate-200 text-xs font-medium">{t.description}</p>
+                  <div key={t.id} className="flex items-start justify-between p-2.5 rounded-lg bg-slate-950 border border-amber-500/20">
+                    <div className="flex-1 pr-2">
+                      <div className="flex items-center space-x-2">
+                        <span className="text-[9px] uppercase font-bold px-1.5 py-0.5 rounded bg-slate-800 border border-white/[0.06] text-amber-300">
+                          {t.category || 'general'}
+                        </span>
+                        <p className="text-slate-200 text-xs font-medium">{t.description}</p>
+                      </div>
                       {t.biblicalReference && (
-                        <p className="text-[11px] text-amber-400 font-serif">{t.biblicalReference}</p>
+                        <div className="mt-1">
+                          <BibleRefBadge reference={t.biblicalReference} />
+                        </div>
                       )}
                     </div>
                     <button
                       type="button"
                       onClick={() => handleRemoveNewTask(t.id)}
-                      className="text-slate-500 hover:text-rose-400 p-1"
+                      className="text-slate-500 hover:text-rose-400 p-1 transition-colors"
+                      title="Quitar tarea"
                     >
                       <Trash2 className="w-3.5 h-3.5" />
                     </button>
@@ -257,43 +358,76 @@ export const NewSessionModal: React.FC<NewSessionModalProps> = ({
               </div>
             )}
 
-            <div className="space-y-2">
+            {/* Formulario de Entrada de Nueva Tarea */}
+            <div className="p-3 rounded-lg bg-slate-950/80 border border-white/[0.06] space-y-2.5">
+              <div className="flex flex-wrap items-center gap-2">
+                <span className="text-[10px] text-slate-400 font-medium">Categoría:</span>
+                {(['lectura', 'memorizacion', 'diario', 'accion', 'oracion', 'general'] as TaskCategory[]).map((cat) => (
+                  <button
+                    key={cat}
+                    type="button"
+                    onClick={() => setNewTaskCategory(cat)}
+                    className={`px-2 py-0.5 rounded text-[10px] font-medium uppercase transition-all ${
+                      newTaskCategory === cat
+                        ? 'bg-amber-600 text-white font-semibold shadow-gold-sm'
+                        : 'bg-slate-900 text-slate-400 hover:text-slate-200 border border-white/[0.05]'
+                    }`}
+                  >
+                    {cat}
+                  </button>
+                ))}
+              </div>
+
               <input
                 type="text"
                 value={newTaskDesc}
                 onChange={(e) => setNewTaskDesc(e.target.value)}
-                placeholder="Nueva tarea (ej: Escribir carta de confesión bíblica)..."
-                className="w-full px-2.5 py-1.5 bg-slate-950 border border-white/[0.06] rounded-lg text-slate-100 placeholder-slate-500 text-xs focus:outline-none focus:border-amber-500"
+                placeholder="Descripción de la tarea de santificación..."
+                className="w-full px-3 py-2 bg-slate-900 border border-white/[0.08] rounded-lg text-slate-100 placeholder-slate-500 text-xs focus:outline-none focus:border-amber-400"
               />
-              <div className="flex gap-2">
-                <input
-                  type="text"
-                  value={newTaskRef}
-                  onChange={(e) => setNewTaskRef(e.target.value)}
-                  placeholder="Cita Bíblica (ej: Salmo 51)"
-                  className="flex-1 px-2.5 py-1.5 bg-slate-950 border border-white/[0.06] rounded-lg text-slate-100 placeholder-slate-500 text-xs focus:outline-none focus:border-amber-500"
-                />
+
+              <div className="flex gap-2 items-center">
+                <div className="relative flex-1">
+                  <input
+                    type="text"
+                    value={newTaskRef}
+                    onChange={(e) => setNewTaskRef(e.target.value)}
+                    placeholder="Referencia Bíblica (ej: Efesios 4:22-24, Salmo 32)..."
+                    className="w-full pl-3 pr-8 py-2 bg-slate-900 border border-white/[0.08] rounded-lg text-slate-100 placeholder-slate-500 text-xs focus:outline-none focus:border-amber-400"
+                  />
+                  {newTaskRef.trim() && (
+                    <button
+                      type="button"
+                      onClick={() => openBible(newTaskRef)}
+                      className="absolute right-2 top-1/2 -translate-y-1/2 text-amber-400 hover:text-amber-300 p-1"
+                      title="Leer pasaje ahora"
+                    >
+                      <BookOpen className="w-3.5 h-3.5" />
+                    </button>
+                  )}
+                </div>
+
                 <button
                   type="button"
                   onClick={handleAddNewTask}
-                  className="px-3 py-1.5 bg-amber-600 hover:bg-amber-500 text-white rounded-lg text-xs font-semibold flex items-center space-x-1"
+                  className="px-3.5 py-2 bg-amber-600 hover:bg-amber-500 text-white rounded-lg text-xs font-semibold flex items-center space-x-1 shadow-gold-sm transition-all flex-shrink-0"
                 >
                   <Plus className="w-3.5 h-3.5" />
-                  <span>Agregar</span>
+                  <span>Añadir Tarea</span>
                 </button>
               </div>
             </div>
           </div>
 
           {/* 4. Next Appointment */}
-          <div className="grid sm:grid-cols-2 gap-3">
+          <div className="grid sm:grid-cols-2 gap-3 p-3.5 rounded-xl bg-slate-900/60 border border-white/[0.06]">
             <div>
               <label className="block text-[11px] font-medium text-slate-300 mb-1">Próxima Cita (Fecha)</label>
               <input
                 type="date"
                 value={nextAppointmentDate}
                 onChange={(e) => setNextAppointmentDate(e.target.value)}
-                className="w-full px-3 py-2 bg-slate-900/90 border border-white/[0.08] rounded-lg text-slate-100 text-xs focus:outline-none focus:border-amber-500"
+                className="w-full px-3 py-2 bg-slate-950 border border-white/[0.08] rounded-lg text-slate-100 text-xs focus:outline-none focus:border-amber-400"
               />
             </div>
             <div>
@@ -302,17 +436,17 @@ export const NewSessionModal: React.FC<NewSessionModalProps> = ({
                 type="time"
                 value={nextAppointmentTime}
                 onChange={(e) => setNextAppointmentTime(e.target.value)}
-                className="w-full px-3 py-2 bg-slate-900/90 border border-white/[0.08] rounded-lg text-slate-100 text-xs focus:outline-none focus:border-amber-500"
+                className="w-full px-3 py-2 bg-slate-950 border border-white/[0.08] rounded-lg text-slate-100 text-xs focus:outline-none focus:border-amber-400"
               />
             </div>
           </div>
 
           {/* Actions */}
-          <div className="pt-3 border-t border-white/[0.06] flex justify-end space-x-2.5">
+          <div className="pt-3 border-t border-white/[0.06] flex justify-end space-x-2.5 flex-shrink-0">
             <button
               type="button"
               onClick={onClose}
-              className="px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 font-semibold text-xs"
+              className="px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 font-semibold text-xs transition-colors"
             >
               Cancelar
             </button>
@@ -322,7 +456,7 @@ export const NewSessionModal: React.FC<NewSessionModalProps> = ({
               className="gold-button px-5 py-2 font-semibold flex items-center space-x-1.5 text-xs disabled:opacity-50"
             >
               <Save className="w-3.5 h-3.5" />
-              <span>{isSaving ? 'Guardando...' : 'Guardar Sesión'}</span>
+              <span>{isSaving ? 'Guardando...' : 'Guardar y Finalizar Sesión'}</span>
             </button>
           </div>
 

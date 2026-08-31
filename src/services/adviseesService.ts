@@ -344,3 +344,68 @@ export const updateAdviseeTasks = async (
   });
 };
 
+/**
+ * Agrega una nueva tarea directamente al aconsejado
+ */
+export const addSingleAdviseeTask = async (
+  counselorId: string,
+  adviseeId: string,
+  task: AdviseeTask
+): Promise<void> => {
+  const now = new Date().toISOString();
+
+  if (!isFirebaseConfigured || !db) {
+    const advisees = getLocalAdvisees(counselorId);
+    const target = advisees.find(a => a.id === adviseeId);
+    if (!target) return;
+    const currentTasks = target.currentAssignedTasks || [];
+    const updatedTasks = [...currentTasks, task];
+    const updated = advisees.map(a => a.id === adviseeId ? { ...a, currentAssignedTasks: updatedTasks, updatedAt: now } : a);
+    saveLocalAdvisees(counselorId, updated);
+    return;
+  }
+
+  const advisees = getLocalAdvisees(counselorId);
+  const target = advisees.find(a => a.id === adviseeId);
+  const currentTasks = target?.currentAssignedTasks || [];
+  const updatedTasks = [...currentTasks, task];
+
+  const adviseeDocRef = doc(db, 'users', counselorId, 'advisees', adviseeId);
+  await updateDoc(adviseeDocRef, {
+    currentAssignedTasks: updatedTasks,
+    updatedAt: now
+  });
+};
+
+/**
+ * Elimina una tarea directamente del aconsejado
+ */
+export const deleteSingleAdviseeTask = async (
+  counselorId: string,
+  adviseeId: string,
+  taskId: string
+): Promise<void> => {
+  const now = new Date().toISOString();
+
+  if (!isFirebaseConfigured || !db) {
+    const advisees = getLocalAdvisees(counselorId);
+    const target = advisees.find(a => a.id === adviseeId);
+    if (!target) return;
+    const updatedTasks = (target.currentAssignedTasks || []).filter(t => t.id !== taskId);
+    const updated = advisees.map(a => a.id === adviseeId ? { ...a, currentAssignedTasks: updatedTasks, updatedAt: now } : a);
+    saveLocalAdvisees(counselorId, updated);
+    return;
+  }
+
+  const advisees = getLocalAdvisees(counselorId);
+  const target = advisees.find(a => a.id === adviseeId);
+  const updatedTasks = (target?.currentAssignedTasks || []).filter(t => t.id !== taskId);
+
+  const adviseeDocRef = doc(db, 'users', counselorId, 'advisees', adviseeId);
+  await updateDoc(adviseeDocRef, {
+    currentAssignedTasks: updatedTasks,
+    updatedAt: now
+  });
+};
+
+

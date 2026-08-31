@@ -21,6 +21,7 @@ import {
 } from 'lucide-react';
 import { BibleStudy, VerseItem } from '../../types';
 import { exportStudyToPDF } from '../../services/pdfService';
+import { useBible } from '../../context/BibleContext';
 
 interface StudyDetailProps {
   study: BibleStudy;
@@ -28,6 +29,7 @@ interface StudyDetailProps {
 }
 
 export const StudyDetail: React.FC<StudyDetailProps> = ({ study, onBack }) => {
+  const { openBible } = useBible();
   // Estados de interactividad y lectura dinámica (todos los versículos cerrados por defecto)
   const [expandedVerseIndices, setExpandedVerseIndices] = useState<Record<number, boolean>>({});
   const [copiedVerseIndex, setCopiedVerseIndex] = useState<number | null>(null);
@@ -287,6 +289,19 @@ export const StudyDetail: React.FC<StudyDetailProps> = ({ study, onBack }) => {
                       </div>
 
                       <div className="flex items-center space-x-2">
+                        <button
+                          type="button"
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            openBible(v.reference);
+                          }}
+                          className="px-2.5 py-1 rounded-lg text-slate-300 hover:text-amber-300 hover:bg-slate-800 border border-white/[0.06] text-[11px] flex items-center space-x-1.5 transition-all"
+                          title="Abrir en Lector Bíblico"
+                        >
+                          <BookOpen className="w-3 h-3 text-amber-400" />
+                          <span className="hidden sm:inline">Leer Pasaje</span>
+                        </button>
+
                         <button
                           onClick={(e) => handleCopyExegesis(v, i, e)}
                           className="px-2.5 py-1 rounded-lg text-slate-400 hover:text-amber-300 hover:bg-slate-800 border border-white/[0.06] text-[11px] flex items-center space-x-1.5 transition-all"

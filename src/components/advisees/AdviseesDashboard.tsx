@@ -15,9 +15,11 @@ import {
   updateAdvisee, 
   deleteAdvisee 
 } from '../../services/adviseesService';
+import { calculatePastoralAlerts } from '../../utils/reminders';
 import { useAuth } from '../../context/AuthContext';
 import { AdviseeModal } from './AdviseeModal';
 import { AdviseeDetail } from './AdviseeDetail';
+import { PastoralAlertsBanner } from './PastoralAlertsBanner';
 
 export const AdviseesDashboard: React.FC = () => {
   const { user } = useAuth();
@@ -62,6 +64,9 @@ export const AdviseesDashboard: React.FC = () => {
     return () => unsubscribe();
   }, [user]);
 
+  // Alertas calculadas
+  const pastoralAlerts = calculatePastoralAlerts(advisees);
+
   if (selectedAdvisee) {
     return (
       <AdviseeDetail
@@ -93,8 +98,14 @@ export const AdviseesDashboard: React.FC = () => {
     }
   };
 
+  const handleSelectAdviseeById = (adviseeId: string) => {
+    const found = advisees.find(a => a.id === adviseeId);
+    if (found) {
+      setSelectedAdvisee(found);
+    }
+  };
+
   const filteredAdvisees = advisees.filter(a => {
-    const matchesStatus = selectedStatus === 'Todos' || a.status === selectedStatus;
     const q = searchQuery.toLowerCase();
     const matchesQuery = 
       a.fullName.toLowerCase().includes(q) ||
@@ -102,17 +113,31 @@ export const AdviseesDashboard: React.FC = () => {
       (a.email && a.email.toLowerCase().includes(q)) ||
       (a.reason && a.reason.toLowerCase().includes(q));
 
-    return matchesStatus && matchesQuery;
+    if (!matchesQuery) return false;
+
+    // Filtros especiales de alertas
+    if (selectedStatus === 'alert_hoy') {
+      return a.status === 'Activo' && pastoralAlerts.some(al => al.adviseeId === a.id && al.type === 'cita_hoy');
+    }
+    if (selectedStatus === 'alert_proximas') {
+      return a.status === 'Activo' && pastoralAlerts.some(al => al.adviseeId === a.id && (al.type === 'cita_manana' || al.type === 'cita_proxima'));
+    }
+    if (selectedStatus === 'alert_inactivos') {
+      return a.status === 'Activo' && pastoralAlerts.some(al => al.adviseeId === a.id && al.type === 'sin_sesion_reciente');
+    }
+
+    const matchesStatus = selectedStatus === 'Todos' || a.status === selectedStatus;
+    return matchesStatus;
   });
 
   const activeCount = advisees.filter(a => a.status === 'Activo').length;
-  const suspendedCount = advisees.filter(a => a.status === 'Suspendido').length;
-  const closedCount = advisees.filter(a => a.status === 'Cerrado').length;
+  const suspendedCount = advisees.filter(a => a.status === 'Suspendido' || a.status === 'En Pausa').length;
+  const closedCount = advisees.filter(a => a.status === 'Cerrado' || a.status === 'Completado').length;
 
   return (
     <div className="w-full px-4 sm:px-8 lg:px-12 xl:px-16 py-6 sm:py-8 animate-fade-in space-y-6 sm:space-y-8">
       
-      {/* Top Banner - Limpio y Elegante */}
+      {/* Top Banner */}
       <div className="glass-card rounded-2xl p-6 sm:p-8 lg:p-10 border border-white/[0.08] shadow-navy-md relative overflow-hidden bg-gradient-to-r from-slate-900/90 via-slate-900/80 to-amber-950/15">
         <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-5 relative z-10">
           <div className="space-y-2.5">
@@ -151,7 +176,7 @@ export const AdviseesDashboard: React.FC = () => {
             <span className="font-serif text-xl sm:text-2xl font-bold text-emerald-300 mt-0.5 block">{activeCount}</span>
           </div>
           <div className="p-3 sm:p-3.5 rounded-xl bg-slate-900/70 border border-amber-500/20 shadow-sm">
-            <span className="text-amber-400 text-[11px] block font-semibold">🟡 Suspendidos</span>
+            <span className="text-amber-400 text-[11px] block font-semibold">🟡 Suspendidos / Pausa</span>
             <span className="font-serif text-xl sm:text-2xl font-bold text-amber-300 mt-0.5 block">{suspendedCount}</span>
           </div>
           <div className="p-3 sm:p-3.5 rounded-xl bg-slate-900/70 border border-white/[0.05] shadow-sm">
@@ -161,6 +186,14 @@ export const AdviseesDashboard: React.FC = () => {
         </div>
 
       </div>
+
+      {/* Banner de Alertas Pastorales Prioritarias */}
+      <PastoralAlertsBanner
+        alerts={pastoralAlerts}
+        onSelectAdvisee={handleSelectAdviseeById}
+        activeFilter={selectedStatus}
+        onFilterChange={(newFilter) => setSelectedStatus(newFilter)}
+      />
 
       {/* Filters and Search */}
       <div className="glass-card rounded-2xl p-3.5 sm:p-4 border border-white/[0.07] shadow-sm space-y-3">
@@ -200,7 +233,7 @@ export const AdviseesDashboard: React.FC = () => {
       {loading ? (
         <div className="text-center py-12">
           <div className="w-8 h-8 border-2 border-amber-500 border-t-transparent rounded-full animate-spin mx-auto mb-2.5"></div>
-          <p className="text-xs text-slate-400">Sincronizando con Cloud Firestore...</p>
+          <p className="text-xs text-slate-400">Sincronizando expedientes pastorales...</p>
         </div>
       ) : filteredAdvisees.length === 0 ? (
         <div className="glass-card rounded-2xl p-8 sm:p-10 text-center border border-white/[0.06] space-y-3 max-w-xl mx-auto">
@@ -212,9 +245,17 @@ export const AdviseesDashboard: React.FC = () => {
           </h3>
           <p className="text-xs text-slate-400">
             {searchQuery || selectedStatus !== 'Todos'
-              ? 'Prueba modificando tus términos de búsqueda.'
+              ? 'Prueba modificando tus términos de búsqueda o restableciendo los filtros.'
               : 'Da de alta a tu primer aconsejado para iniciar el seguimiento pastoral con citas y tareas.'}
           </p>
+          {selectedStatus !== 'Todos' && (
+            <button
+              onClick={() => setSelectedStatus('Todos')}
+              className="px-3.5 py-1.5 rounded-lg bg-slate-800 text-amber-300 text-xs font-semibold hover:bg-slate-700 transition-all mt-2"
+            >
+              Mostrar Todos los Expedientes
+            </button>
+          )}
           {!searchQuery && selectedStatus === 'Todos' && (
             <button
               onClick={() => {
@@ -245,7 +286,7 @@ export const AdviseesDashboard: React.FC = () => {
                     <span className={`text-[10px] font-semibold uppercase tracking-wider px-2.5 py-0.5 rounded-full border ${
                       advisee.status === 'Activo'
                         ? 'bg-emerald-500/10 border-emerald-500/25 text-emerald-300'
-                        : advisee.status === 'Suspendido'
+                        : advisee.status === 'Suspendido' || advisee.status === 'En Pausa'
                         ? 'bg-amber-500/10 border-amber-500/25 text-amber-300'
                         : 'bg-slate-800 border-white/[0.06] text-slate-400'
                     }`}>
@@ -276,7 +317,7 @@ export const AdviseesDashboard: React.FC = () => {
                     {advisee.nextSessionDate ? (
                       <div className="flex items-center space-x-1.5 text-amber-300 text-xs font-medium">
                         <Calendar className="w-3.5 h-3.5 flex-shrink-0" />
-                        <span className="truncate">Próxima sesión: {advisee.nextSessionDate}</span>
+                        <span className="truncate">Próxima sesión: {advisee.nextSessionDate} {advisee.nextSessionTime && `• ${advisee.nextSessionTime}`}</span>
                       </div>
                     ) : (
                       <div className="flex items-center space-x-1.5 text-slate-500 text-xs">
@@ -288,7 +329,7 @@ export const AdviseesDashboard: React.FC = () => {
                     {pendingTasks > 0 && (
                       <div className="flex items-center space-x-1.5 text-slate-300 text-xs">
                         <CheckCircle2 className="w-3.5 h-3.5 text-amber-400 flex-shrink-0" />
-                        <span>{pendingTasks} {pendingTasks === 1 ? 'tarea pendiente de santificación' : 'tareas pendientes de santificación'}</span>
+                        <span>{pendingTasks} {pendingTasks === 1 ? 'tarea pendiente' : 'tareas pendientes'}</span>
                       </div>
                     )}
                   </div>
