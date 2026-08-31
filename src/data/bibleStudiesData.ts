@@ -215,5 +215,183 @@ export const BIBLE_STUDIES: BibleStudy[] = [
         ]
       }
     }
+  },
+  {
+    id: 'icv-mcb-amargura-rencor',
+    title: 'ICV MCB Amargura y rencor',
+    subtitle: 'Amargura · Rencor · Falta de Perdón · Resentimiento · Venganza',
+    category: 'Sanidad del Corazón & Relaciones',
+    tags: ['Amargura', 'Rencor', 'Perdón', 'Resentimiento', 'Ira', 'Reconciliación', 'Santificación'],
+    readTime: '18 min de estudio pastoral',
+    summary: 'Este estudio aborda la amargura, el rencor y la falta de perdón desde los fundamentos de la consejería bíblica reformada (Jay Adams, Wayne Mack, Heath Lambert y Samuel Pérez Millos). La amargura no es una simple emoción pasiva o herida psicológica, sino un pecado activo de rebelión contra la providencia de Dios y un mecanismo destructivo de venganza en el corazón humano. El texto bíblico manda extirpar radicalmente toda amargura (Efesios 4:31) y advierte sobre su naturaleza altamente contagiosa, capaz de contaminar y envenenar familias y congregaciones enteras (Hebreos 12:15). La metodología pastoral establece como principio innegociable ordenar primero la relación vertical con Dios antes de intentar resolver el conflicto horizontal con el prójimo. Se instruye al aconsejado a romper la cadena de autocompasión mediante la disciplina de la oración y la acción, entendiendo que el amor bíblico es una decisión sacrificial de entrega y obediencia que precede a los sentimientos. En la gracia soberana y el perdón incondicional recibido en la Cruz de Cristo reside el poder transformador para desarmar el resentimiento y vivir en auténtica libertad espiritual.',
+    sections: {
+      verses: [
+        {
+          reference: 'Efesios 4:31',
+          text: '31 Quítense de vosotros toda amargura, enojo, ira, gritería y maledicencia, y toda malicia.\n\nLa amargura representa un espíritu profundamente resentido que rechaza la reconciliación, manifestándose como una disposición agria y hostil hacia quienes han causado ofensa. Pablo manda quitarla de raíz junto con sus frutos destructivos: los arrebatos de ira, la cólera prolongada, las palabras hirientes y la malicia deliberada.',
+          version: 'RVR1960 / LBLA',
+          exegesis: {
+            originalTerms: 'En griego: "Aritheto aph hymon pasa pikria" (ἀρθήτω ἀφ\' ὑμῶν πᾶσα πικρία). El verbo "artheto" es un imperativo aoristo pasivo que exige una extirpación inmediata, radical y completa: ser arrancado de una vez por todas. El término "pikria" (amargura) designa una cualidad interior agria y punzante. Aristóteles usaba esta palabra para describir "el espíritu resentido que rehúsa la reconciliación y guarda permanentemente la ofensa". Se acompaña de "thymos" (arrebatos de furia), "orge" (ira asentada y vengativa), "krauge" (gritería/alboroto), "blasphemia" (maledicencia/difamación) y "kakia" (malicia destructiva).',
+            historicalContext: 'Pablo exhorta a la iglesia en Éfeso en el marco de la doctrina del nuevo hombre en Cristo, mostrando que la amargura y la maledicencia entristecen al Espíritu Santo (v. 30) y fracturan la unidad del cuerpo redimido.',
+            theologicalPrinciple: 'La amargura no es un simple estado anímico involuntario, sino un pecado voluntario que viola el mandato divino de santidad comunitaria y menosprecia la gracia perdonadora de Dios.',
+            pastoralApplication: 'En la consejería bíblica, el consejero debe confrontar la tendencia del aconsejado a justificar su amargura amparándose en la magnitud de la ofensa sufrida, guiándolo al deber imperativo de despojarse de ella sin demora.'
+          }
+        },
+        {
+          reference: 'Hebreos 12:15',
+          text: '15 Mirad bien, no sea que alguno deje de alcanzar la gracia de Dios; que brotando alguna raíz de amargura, os estorbe, y por ella muchos sean contaminados.\n\nLa amargura es como una planta venenosa que fructifica en el corazón donde brota. La contaminación comienza amargando al individuo, pero no queda en él solo, sino que se extiende e infecta a familias y congregaciones, causando desánimo y ruina espiritual.',
+          version: 'RVR1960 / LBLA',
+          exegesis: {
+            originalTerms: 'En griego: "Episkopountes me tis hysterōn apo tes charitos tou Theou, me tis rhiza pikrias ano phuousa enochle, kai dia tautes mianthosin polloi" (ἐπισκοποῦντες μή τις ὑστερῶν ἀπὸ τῆς χάριτος τοῦ Θεοῦ, μή τις ῥίζα πικρίας ἄνω φύουσα ἐνοχλῇ...). "Episkopountes" indica una vigilancia atenta y pastoral constante. "Rhiza pikrias" (raíz de amargura) alude a Dt. 29:18. "Enochle" significa perturbar gravemente, causar desorden y estorbo; y "mianthosin" denota contaminación moral y ceremonial que infecta a la colectividad.',
+            historicalContext: 'El autor de Hebreos advierte a creyentes en peligro de apostasía y endurecimiento frente a las pruebas, enfatizando la responsabilidad de velar mutuamente para que nadie quede rezagado de los recursos de la gracia.',
+            theologicalPrinciple: 'El pecado de la amargura tiene un carácter altamente contagioso: mientras la santidad no se transmite por ósmosis, la ponzoña del resentimiento se propaga rápidamente, contaminando a quienes conviven con el ofendido.',
+            pastoralApplication: 'Mostrar al aconsejado las consecuencias expansivas de su pecado: sus quejas y resentimiento no son un asunto privado; están envenenando el ambiente espiritual de su cónyuge, sus hijos y su iglesia local.'
+          }
+        },
+        {
+          reference: 'Efesios 4:32',
+          text: '32 Antes sed benignos unos con otros, misericordiosos, perdonándoos unos a otros, como Dios también os perdonó a vosotros en Cristo.\n\nEl antídoto bíblico contra la amargura es el revestimiento del amor, la compasión entrañable y el perdón activo. El estándar supremo y la motivación soberana del perdón cristiano es la magnitud de la gracia inmerecida que Dios nos concedió en la Cruz.',
+          version: 'RVR1960 / LBLA',
+          exegesis: {
+            originalTerms: 'En griego: "Ginesthe de eis allelous chrestoi, eusplanchnoi, charizomenoi heautois kathos kai ho Theos en Christo echarisato hymin" (γίνεσθε δὲ εἰς ἀλλήλους χρηστοί, εὔσπλαγχνοι, χαριζόμενοι ἑαυτοῖς...). "Chrestoi" (benignos, amables, dispuestos al servicio), "eusplanchnoi" (de entrañas compasivas) y "charizomenoi" (perdonando gratuitamente por pura gracia, derivado de "charis" - gracia inmerecida).',
+            historicalContext: 'Representa la contraparte positiva del "despojarse" del v. 31. En una sociedad grecorromana que consideraba la venganza una virtud de honor, Pablo presenta la ética de la Cruz.',
+            theologicalPrinciple: 'El perdón cristiano no se fundamenta en los méritos del ofensor, sino en la obra redentora de Cristo. Quien ha comprendido el abismo de pecado que Dios le perdonó en la Cruz no puede retener el perdón a su prójimo.',
+            pastoralApplication: 'Conducir al aconsejado a meditar profundamente en el Evangelio de la gracia: la deuda impagable que Cristo canceló en su favor desarma todo derecho autoimpuesto a exigir venganza.'
+          }
+        },
+        {
+          reference: 'Romanos 8:28',
+          text: '28 Y sabemos que a los que aman a Dios, todas las cosas les ayudan a bien, esto es, a los que conforme a su propósito son llamados.\n\nMientras el aconsejado no esté dispuesto a aceptar los propósitos providenciales de Dios en lo que sucedió, el cambio bíblico estará bloqueado. La amargura esconde en el fondo una queja contra la soberanía divina.',
+          version: 'RVR1960',
+          exegesis: {
+            originalTerms: 'En griego: "Oidamen de hoti tois agaposin ton Theon panta synergei eis agathon" (οἴδαμεν δὲ ὅτι τοῖς ἀγαπῶσιν τὸν Θεὸν πάντα συνεργεῖ εἰς ἀγαθόν). "Oidamen" expresa certidumbre doctrinal absoluta e inquebrantable. "Synergei" denota que Dios hace cooperar orquestadamente todas las circunstancias —incluso las ofensas y dolores— para el supremo bien de la santificación.',
+            historicalContext: 'Pablo consuela a los creyentes en Roma recordándoles que los sufrimientos temporales están subordinados al plan redentor eterno de conformarnos a la imagen de Su Hijo.',
+            theologicalPrinciple: 'Dios es soberano sobre las ofensas humanas. Reconocer que ningún agravio escapa a Su providencia purificadora neutraliza la amargura y abre paso a la gratitud y la sumisión.',
+            pastoralApplication: 'Ayudar al aconsejado a reformular su perspectiva: no enfocarse únicamente en la maldad del ofensor, sino contemplar la mano soberana de Dios que utiliza la prueba para forjar carácter y fe probada.'
+          }
+        },
+        {
+          reference: 'Salmo 86:5',
+          text: '5 Porque tú, Señor, eres bueno y perdonador, y grande en misericordia para con todos los que te invocan.\n\nEl modelo supremo para el consejero y el aconsejado es el carácter mismo de Dios: un corazón perdonador, abundante en misericordia y pronto para derribar las barreras de condenación.',
+          version: 'RVR1960',
+          exegesis: {
+            originalTerms: 'En hebreo: "Ki-attah Adonai tov vesallach verav-chesed lechol-kore\'echa" (כִּֽי־אַתָּ֣ה אֲ֭דֹנָי ט֣וֹב וְסַלָּ֑ח וְרַב־חֶ֝֗סֶד לְכָל־קֹרְאֶֽיךָ). "Sallach" es un adjetivo que significa "dispuesto al perdón, perdonador por excelencia" y "chesed" es el amor fiel y pactual inagotable de Dios.',
+            historicalContext: 'Súplica individual de David en medio de angustias, donde su confianza para hallar liberación se ancla exclusivamente en los atributos misericordiosos de Dios.',
+            theologicalPrinciple: 'Dios no guarda rencor eternamente ni se deleita en la venganza; Su naturaleza es perdonadora para con todo corazón arrepentido.',
+            pastoralApplication: 'Instruir al aconsejado a imitar la disposición divina ("sallach"): cultivar una actitud constante de perdón interior que esté lista para extender la reconciliación en cuanto el ofensor confiese su falta.'
+          }
+        },
+        {
+          reference: 'Deuteronomio 29:18',
+          text: '18 No sea que haya en medio de vosotros hombre o mujer, o familia o tribu, cuyo corazón se aparte hoy de Jehová nuestro Dios, para ir a servir a los dioses de esas naciones; no sea que haya en medio de vosotros raíz que produzca hiel y ajenjo.\n\nLa amargura no es un accidente emocional, sino el fruto de un corazón que se aparta de Dios para abrazar ídolos de justicia propia, orgullo y venganza.',
+          version: 'RVR1960',
+          exegesis: {
+            originalTerms: 'En hebreo: "Shoresh poreh rosh welaanah" (שֹׁ֥רֶשׁ פֹּרֶ֛ה רֹ֖אשׁ וְלַעֲנָ֑ה). "Shoresh" (raíz profunda), "rosh" (veneno amargo o planta letal) y "laanah" (ajenjo, símbolo de extrema desolación y castigo).',
+            historicalContext: 'Moisés renueva el pacto en las llanuras de Moab advirtiendo contra la apostasía secreta del corazón que amenaza la pureza de toda la comunidad israelita.',
+            theologicalPrinciple: 'La raíz de la amargura está íntimamente ligada a la rebelión y al abandono de la comunión con Dios. Quien rechaza el señorío de Dios termina alimentando ajenjo en su alma.',
+            pastoralApplication: 'Guiar al aconsejado a escudriñar los ídolos de su corazón: la demanda egoísta de no ser ofendido, el deseo de castigar al prójimo o la negativa a someterse a la Ley moral de Dios.'
+          }
+        },
+        {
+          reference: 'Filipenses 4:13',
+          text: '13 Todo lo puedo en Cristo que me fortalece.\n\nEl poder para vencer la amargura, abandonar el deseo de venganza y perdonar sinceramente no se origina en la fuerza de voluntad humana, sino en la gracia infundida por la unión vital con Cristo.',
+          version: 'RVR1960',
+          exegesis: {
+            originalTerms: 'En griego: "Panta ischyo en to endynamounti me Christo" (πάντα ἰσχύω ἐν τῷ ἐνδυναμοῦντί με). "Ischyo" denota suficiencia de fuerza y capacidad espiritual plena; "endynamounti" es un participio presente continuo: "Aquel que de continuo me infunde poder interior".',
+            historicalContext: 'Pablo testifica desde su encierro carcelario de cómo la gracia de Cristo le otorga plenitud y contentamiento soberano sobre cualquier circunstancia adversa.',
+            theologicalPrinciple: 'La vida cristiana en el Nuevo Pacto no es autosuficiencia ni pasividad mística, sino dependencia activa del poder resucitador de Cristo para obedecer mandamientos costosos.',
+            pastoralApplication: 'Desarmar la objeción frecuente del aconsejado: "no tengo la capacidad de perdonar". En Cristo hay gracia suficiente para obedecer el mandato del perdón aun cuando las emociones se resistan.'
+          }
+        },
+        {
+          reference: 'Salmo 73:25–26',
+          text: '25 ¿A quién tengo yo en los cielos sino a ti? Y fuera de ti nada deseo en la tierra. 26 Mi carne y mi corazón desfallecen; mas la roca de mi corazón y mi porción es Dios para siempre.\n\nLa amargura es la evidencia manifiesta de un vacío de Dios. Quien encuentra su plena satisfacción en Dios no puede vivir consumido por el resentimiento, pues el gozo es el fruto natural de esa comunión.',
+          version: 'RVR1960',
+          exegesis: {
+            originalTerms: 'En hebreo: "Tzur-levavi vechelqi Elohim le\'olam" (צ֥וּר לְבָבִ֥י וְחֶלְקִ֗י אֱלֹהִ֥ים לְעוֹלָֽם). "Tzur" (roca inamovible de refugio) y "cheleq" (porción de heredad que sacia toda necesidad del alma).',
+            historicalContext: 'Asaf confiesa cómo su alma se llenó de amargura (v. 21) al mirar horizontalmente la prosperidad del impío, hasta que entró en el santuario y halló su tesoro supremo en Dios.',
+            theologicalPrinciple: 'El gozo espiritual y la amargura son mutuamente excluyentes. La amargura revela una fijación idolátrica en lo terrenal, mientras que la satisfacción en Dios llena el alma de paz inalterable.',
+            pastoralApplication: 'Llevar al aconsejado al santuario de la presencia divina mediante la oración y la Palabra para que Dios sea su porción y herencia, disipando la envidia y el resentimiento terrenal.'
+          }
+        },
+        {
+          reference: 'Colosenses 3:19',
+          text: '19 Maridos, amad a vuestras mujeres, y no seáis ásperos con ellas.\n\nEn las relaciones familiares y matrimoniales, la amargura no resuelta se transforma en aspereza, frialdad y maltrato emocional, destruyendo el pacto conyugal.',
+          version: 'RVR1960',
+          exegesis: {
+            originalTerms: 'En griego: "Me pikrainesthe pros autas" (μὴ πικραίνεσθε πρὸς αὐτάς). "Me pikrainesthe" es un imperativo presente con negación: "no os amarguéis de continuo ni alberguéis resentimiento agrio hacia ellas".',
+            historicalContext: 'Instrucción apostólica para el orden familiar cristiano, demandando amor sacrificial en contraposición a la dureza autoritaria tolerada en la cultura pagana.',
+            theologicalPrinciple: 'El resentimiento acumulado en el corazón corrompe los deberes relacionales más sagrados, convirtiendo el liderazgo conyugal en aspereza pecaminosa.',
+            pastoralApplication: 'Identificar en la consejería matrimonial las micro-ofensas no resueltas que con el tiempo se han solidificado en frialdad y trato áspero entre los cónyuges.'
+          }
+        }
+      ],
+      introduction: {
+        number: 2,
+        title: 'Introducción',
+        paragraphs: [
+          'La amargura representa un espíritu profundamente resentido que rechaza la reconciliación y se manifiesta como una disposición agria, punzante y hostil hacia quienes han causado ofensa. Lejos de ser un estado anímico involuntario o una simple reacción emocional comprensible, las Escrituras la identifican como una raíz venenosa introducida por el pecado en la naturaleza caída del ser humano.',
+          'En la consejería bíblica eficiente (tal como fundamenta Jay E. Adams), un principio medular e ineludible es que los consejeros deben separar siempre la relación —primeramente con Dios y luego con el prójimo— del problema o conflicto específico. Intentar tratar el problema circunstancial antes de haber restaurado la relación fundamental con el Señor es una de las causas primarias de fracaso en el ministerio pastoral.'
+        ]
+      },
+      problemToTreat: {
+        number: 3,
+        title: 'Problema a tratar',
+        paragraphs: [
+          'La amargura y el resentimiento operan con frecuencia como mecanismos encubiertos de venganza. La persona amargada utiliza su silencio, su frialdad y su negativa a comunicarse o pedir perdón como armas para castigar al ofensor, levantando un muro que bloquea cualquier avance hacia la reconciliación bíblica.',
+          'Heath Lambert establece una distinción teológica vital entre el acto formal de perdón y la actitud de perdón: Si bien el perdón formal refleja el modelo divino (Dios otorga el perdón cuando hay una humilde confesión de culpa y arrepentimiento), la falta de contrición del ofensor jamás constituye una licencia divina para que el creyente alimente el rencor, la ira o la malicia.',
+          'El consejero debe instruir al aconsejado a desarrollar una actitud constante de perdón interior, orando y deseando el bien espiritual de quien lo dañó, estando listo para conceder el perdón en cuanto haya arrepentimiento genuino.',
+          'Asimismo, Wayne Mack señala el error de supeditar la obediencia a los sentimientos: los sentimientos son el vagón de cola que sigue a la locomotora de la obediencia. Cuando el creyente decide perdonar y obedecer la Palabra sin importar cómo se siente, sus emociones se alinearán como fruto de su sumisión a Dios.'
+        ]
+      },
+      rootProblem: {
+        number: 4,
+        title: 'Raíz del problema',
+        paragraphs: [
+          'La raíz primordial de la amargura es el vacío de Dios en la vida del individuo (Samuel Pérez Millos). Quien está plenamente satisfecho en Dios y descansa en Su gracia experimenta el gozo como fruto natural de esa comunión; por el contrario, quien está vacío de Dios intenta llenar ese vacío con justicia propia, amargura y constante rumiación de agravios.',
+          'La amargura revela además una queja idolátrica contra la soberanía y providencia de Dios (Romanos 8:28). El amargado se rehúsa a creer que Dios puede usar el dolor y la injusticia sufrida para propósitos santos y eternos, erigiéndose a sí mismo como juez supremo de la historia.',
+          'Ideas antibíblicas como la pasividad mística (creer que "Dios debe quitarme el sentimiento sin que yo haga nada") o el orgullo que rehúsa perdonar alimentan una resistencia tenaz al cambio bíblico.'
+        ]
+      },
+      consequences: {
+        number: 5,
+        title: 'Consecuencias del pecado tratado',
+        paragraphs: [
+          '1. Contaminación Colectiva (Hebreos 12:15): La santidad no se contagia por contacto, pero el pecado sí. Una raíz de amargura no queda confinada al corazón del ofendido; brota al exterior a través de la maledicencia y el chisme, envenenando a familiares, hijos y miembros de la congregación.',
+          '2. Pérdida del Gozo y del Testimonio: La amargura apaga la vida en el Espíritu Santo y extingue el gozo de la salvación, sumiendo al creyente en desaliento y convirtiéndolo en un instrumento de desánimo para los demás hermanos.',
+          '3. Destrucción de las Relaciones Familiares (Colosenses 3:19): El rencor acumulado desemboca en aspereza en el trato conyugal, frialdad emocional y la ruptura de la comunicación en el hogar.',
+          '4. Cadena Destructiva del Ánimo: El cavilar continuo en la ofensa detona una espiral descendente: Autocompasión → Ira → Amargura → Depresión profunda.'
+        ]
+      },
+      counselingApproach: {
+        number: 6,
+        title: 'Cómo tratar el problema en consejería',
+        paragraphs: [
+          'Paso 1: Recolección Exhaustiva de Información (Wayne Mack). En las primeras sesiones, el consejero debe escuchar pacientemente al aconsejado para descubrir las dificultades ocultas que se niega a confesar. Como las doce puertas de la muralla de Jerusalén, si una puerta emocional está cerrada, el consejero debe probar con otra hasta acceder a los pensamientos, temores y raíces reales de su amargura.',
+          'Paso 2: Romper la Cadena en el Primer Eslabón (Jay Adams). Instruir al aconsejado para que, en lugar de permitir que comience la autocompasión y el cavilar mental, corte de raíz el pensamiento mediante la oración y la entrega del asunto a Dios.',
+          'Paso 3: Procedimiento Práctico de los 2 Minutos. Cuando asalte el recuerdo del hecho triste o injusto: dedicarle exactamente 2 minutos de reloj a reconocer la realidad del dolor; al cumplirse los 2 minutos, elevar una oración de entrega a Dios poniendo la carga en Sus manos; y de inmediato levantarse a cumplir con diligencia y energía la tarea o deber presente.',
+          'Paso 4: El Principio de "Quitar y Poner" (Efesios 4:22–32). No basta con reprimir la ira; es indispensable "quitar" la maledicencia, la amargura y la gritería, y "poner" activamente la benignidad, la compasión entrañable y el perdón mutuo.'
+        ]
+      },
+      sanctificationFollowUp: {
+        number: 7,
+        title: 'Seguimiento del plan de santificación',
+        paragraphs: [
+          'El Amor Bíblico como Acción Concreta de Entrega: El consejero debe recordar que el amor no es primordialmente una emoción, sino que se aprende y se expresa dando (tiempo, servicio, bondad específica). Cuando el aconsejado realiza actos deliberados de bien hacia quien lo ofendió (vencer el mal con el bien, Ro. 12:21), el sentimiento del amor le sigue.',
+          'Estructuración del Entorno: Establecer límites concretos para impedir las conductas viejas (evitar conversaciones de queja, eliminar registros de rencores) y facilitar las pautas nuevas (orar diariamente por la persona, memorizar pasajes bíblicos sobre la gracia).',
+          'Rendición de Cuentas: Compromiso formal del aconsejado delante de Dios y de su consejero para reportar semanalmente sus victorias sobre la tentación de amargarse y sus actos concretos de amor y servicio.'
+        ]
+      },
+      conclusions: {
+        number: 8,
+        title: 'Conclusiones',
+        paragraphs: [
+          'La amargura, el rencor y la falta de perdón son obstáculos mayúsculos para el crecimiento espiritual, pero no tienen la última palabra en la vida del redimido. Su victoria no descansa en técnicas humanas ni en la pasividad emocional, sino en la obra consumada de Jesucristo en la Cruz.',
+          'Cristo no solo perdona la culpa de nuestra propia amargura, sino que mediante Su Espíritu Santo infunde el poder capacitador (Filipenses 4:13) para arrancar toda raíz venenosa y reemplazarla con benignidad, misericordia y paz.',
+          'Al descansar plenamente en la providencia soberana de Dios y en Su llamado santo, el creyente es libertado de la prisión del resentimiento para vivir en la gloriosa libertad y gozo de los hijos de Dios.'
+        ]
+      }
+    }
   }
 ];
+
