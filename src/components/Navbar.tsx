@@ -23,7 +23,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activeTab, setActiveTab }) => {
 
   const navItems = [
     { id: 'studies' as NavTab, label: 'Estudios Bíblicos', icon: BookOpen },
-    { id: 'glossary' as NavTab, label: 'Glosario & Libros', icon: Library },
+    { id: 'glossary' as NavTab, label: 'Índice Didáctico', icon: Library },
     { id: 'methodology' as NavTab, label: 'Metodología', icon: Compass },
     { id: 'advisees' as NavTab, label: 'Expedientes', icon: FolderLock },
   ];

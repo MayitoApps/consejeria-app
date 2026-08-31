@@ -12,10 +12,28 @@ const firebaseConfig = {
   appId: import.meta.env.VITE_FIREBASE_APP_ID
 };
 
-const app = getApps().length === 0 ? initializeApp(firebaseConfig) : getApp();
-export const auth = getAuth(app);
-export const googleProvider = new GoogleAuthProvider();
-googleProvider.setCustomParameters({ prompt: 'select_account' });
-export const db = getFirestore(app);
+export const isFirebaseConfigured = Boolean(
+  firebaseConfig.apiKey &&
+  firebaseConfig.projectId &&
+  !firebaseConfig.apiKey.includes('your_api_key')
+);
 
+let app: any = null;
+let auth: any = null;
+let googleProvider: any = null;
+let db: any = null;
+
+if (isFirebaseConfigured) {
+  try {
+    app = getApps().length === 0 ? initializeApp(firebaseConfig) : getApp();
+    auth = getAuth(app);
+    googleProvider = new GoogleAuthProvider();
+    googleProvider.setCustomParameters({ prompt: 'select_account' });
+    db = getFirestore(app);
+  } catch (err) {
+    console.warn('Advertencia al inicializar Firebase:', err);
+  }
+}
+
+export { app, auth, googleProvider, db };
 export default app;

@@ -5,17 +5,21 @@ import {
   onAuthStateChanged,
   User 
 } from 'firebase/auth';
-import { auth, googleProvider } from '../config/firebase';
+import { auth, googleProvider, isFirebaseConfigured } from '../config/firebase';
 import { CounselorUser } from '../types';
 
 interface AuthContextType {
   user: CounselorUser | null;
   loading: boolean;
   signInWithGoogle: () => Promise<void>;
+  signInAsGuest: () => void;
   signOut: () => Promise<void>;
   authError: string | null;
   clearAuthError: () => void;
+  isFirebaseConfigured: boolean;
 }
+
+const LOCAL_USER_STORAGE_KEY = 'ancla_local_counselor_user';
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
@@ -25,6 +29,21 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const [authError, setAuthError] = useState<string | null>(null);
 
   useEffect(() => {
+    // Si Firebase no está configurado o no hay auth, verificar si hay sesión local persistida
+    if (!isFirebaseConfigured || !auth) {
+      const savedUser = localStorage.getItem(LOCAL_USER_STORAGE_KEY);
+      if (savedUser) {
+        try {
+          setUser(JSON.parse(savedUser));
+        } catch (e) {
+          localStorage.removeItem(LOCAL_USER_STORAGE_KEY);
+        }
+      }
+      setLoading(false);
+      return;
+    }
+
+    // Si Firebase está configurado, escuchar cambios de autenticación
     const unsubscribe = onAuthStateChanged(auth, (fbUser: User | null) => {
       if (fbUser) {
         setUser({
@@ -34,7 +53,17 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
           photoURL: fbUser.photoURL
         });
       } else {
-        setUser(null);
+        // Verificar si hay sesión local persistida
+        const savedUser = localStorage.getItem(LOCAL_USER_STORAGE_KEY);
+        if (savedUser) {
+          try {
+            setUser(JSON.parse(savedUser));
+          } catch (e) {
+            setUser(null);
+          }
+        } else {
+          setUser(null);
+        }
       }
       setLoading(false);
     });
@@ -43,10 +72,16 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   }, []);
 
   const signInWithGoogle = async () => {
+    if (!isFirebaseConfigured || !auth || !googleProvider) {
+      setAuthError('Firebase no está configurado. Agrega tus credenciales en el archivo .env o ingresa en Modo Local.');
+      return;
+    }
+
     try {
       setAuthError(null);
       const result = await signInWithPopup(auth, googleProvider);
       if (result.user) {
+        localStorage.removeItem(LOCAL_USER_STORAGE_KEY);
         setUser({
           uid: result.user.uid,
           displayName: result.user.displayName || 'Consejero Bíblico',
@@ -71,19 +106,44 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     }
   };
 
+  const signInAsGuest = () => {
+    const guestUser: CounselorUser = {
+      uid: 'consejero-local',
+      displayName: 'Consejero Pastoral',
+      email: 'pastoral@anclaconsejeria.org',
+      photoURL: null,
+      role: 'Consejero Principal'
+    };
+    localStorage.setItem(LOCAL_USER_STORAGE_KEY, JSON.stringify(guestUser));
+    setUser(guestUser);
+  };
+
   const signOut = async () => {
     try {
-      await fbSignOut(auth);
-      setUser(null);
+      if (auth) {
+        await fbSignOut(auth);
+      }
     } catch (error: any) {
       console.error('Error al cerrar sesión:', error);
+    } finally {
+      localStorage.removeItem(LOCAL_USER_STORAGE_KEY);
+      setUser(null);
     }
   };
 
   const clearAuthError = () => setAuthError(null);
 
   return (
-    <AuthContext.Provider value={{ user, loading, signInWithGoogle, signOut, authError, clearAuthError }}>
+    <AuthContext.Provider value={{ 
+      user, 
+      loading, 
+      signInWithGoogle, 
+      signInAsGuest, 
+      signOut, 
+      authError, 
+      clearAuthError,
+      isFirebaseConfigured 
+    }}>
       {children}
     </AuthContext.Provider>
   );
@@ -96,3 +156,4 @@ export const useAuth = (): AuthContextType => {
   }
   return context;
 };
+

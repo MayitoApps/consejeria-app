@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { Anchor, ShieldCheck, Lock, AlertCircle } from 'lucide-react';
+import { Anchor, ShieldCheck, Lock, AlertCircle, Sparkles, Database } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 
 export const AuthScreen: React.FC = () => {
-  const { signInWithGoogle, authError, clearAuthError } = useAuth();
+  const { signInWithGoogle, signInAsGuest, authError, clearAuthError, isFirebaseConfigured } = useAuth();
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleGoogleSignIn = async () => {
@@ -15,6 +15,10 @@ export const AuthScreen: React.FC = () => {
     } finally {
       setIsSubmitting(false);
     }
+  };
+
+  const handleLocalSignIn = () => {
+    signInAsGuest();
   };
 
   return (
@@ -47,10 +51,10 @@ export const AuthScreen: React.FC = () => {
           <div className="mb-4 p-2.5 rounded-xl bg-rose-950/60 border border-rose-500/30 text-rose-200 text-xs flex items-start space-x-2">
             <AlertCircle className="w-3.5 h-3.5 text-rose-400 flex-shrink-0 mt-0.5" />
             <div className="flex-1">
-              <span>{authError}</span>
+              <span className="text-[11px] leading-tight block">{authError}</span>
               <button 
                 onClick={clearAuthError}
-                className="block text-[10px] text-rose-300 underline font-semibold mt-0.5"
+                className="block text-[10px] text-rose-300 underline font-semibold mt-1"
               >
                 Cerrar
               </button>
@@ -58,8 +62,9 @@ export const AuthScreen: React.FC = () => {
           </div>
         )}
 
-        {/* Mandatory Sign In Button */}
+        {/* Auth Buttons */}
         <div className="space-y-2.5 relative z-10">
+          {/* Sign In with Google */}
           <button
             onClick={handleGoogleSignIn}
             disabled={isSubmitting}
@@ -85,17 +90,34 @@ export const AuthScreen: React.FC = () => {
             </svg>
             <span>{isSubmitting ? 'Iniciando sesión...' : 'Iniciar Sesión con Google'}</span>
           </button>
+
+          {/* Sign In in Local / Guest Mode */}
+          <button
+            onClick={handleLocalSignIn}
+            className="w-full flex items-center justify-center space-x-2 py-2.5 px-3.5 rounded-xl bg-amber-500/15 hover:bg-amber-500/25 text-amber-300 border border-amber-500/30 font-semibold text-xs transition-all shadow-sm active:scale-[0.99]"
+          >
+            <Sparkles className="w-3.5 h-3.5 text-amber-400" />
+            <span>Ingresar en Modo Local / Pruebas</span>
+          </button>
         </div>
 
+        {/* Info about Firebase status */}
+        {!isFirebaseConfigured && (
+          <div className="mt-3.5 p-2 rounded-lg bg-slate-900/80 border border-slate-800 text-[10px] text-slate-400 flex items-start space-x-2">
+            <Database className="w-3.5 h-3.5 text-amber-400 flex-shrink-0 mt-0.5" />
+            <span>Modo Local activado. Los expedientes se guardan en este navegador. Para sincronizar con Firebase, añade tus claves en <code>.env</code>.</span>
+          </div>
+        )}
+
         {/* Security & Confidentiality Badges */}
-        <div className="mt-5 pt-4 border-t border-white/[0.06] space-y-1.5 text-[10px] text-slate-400">
+        <div className="mt-4 pt-3.5 border-t border-white/[0.06] space-y-1.5 text-[10px] text-slate-400">
           <div className="flex items-center space-x-2">
             <Lock className="w-3 h-3 text-amber-400 flex-shrink-0" />
             <span>Acceso restringido exclusivamente a consejeros bíblicos.</span>
           </div>
           <div className="flex items-center space-x-2">
             <ShieldCheck className="w-3 h-3 text-emerald-400 flex-shrink-0" />
-            <span>Tus datos y expedientes se sincronizan de forma privada.</span>
+            <span>Tus datos y expedientes se mantienen confidenciales.</span>
           </div>
         </div>
 
@@ -103,3 +125,4 @@ export const AuthScreen: React.FC = () => {
     </div>
   );
 };
+

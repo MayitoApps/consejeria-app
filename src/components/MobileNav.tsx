@@ -10,7 +10,7 @@ interface MobileNavProps {
 export const MobileNav: React.FC<MobileNavProps> = ({ activeTab, setActiveTab }) => {
   const navItems = [
     { id: 'studies' as NavTab, label: 'Estudios', icon: BookOpen },
-    { id: 'glossary' as NavTab, label: 'Glosario', icon: Library },
+    { id: 'glossary' as NavTab, label: 'Índice', icon: Library },
     { id: 'methodology' as NavTab, label: 'Método', icon: Compass },
     { id: 'advisees' as NavTab, label: 'Expedientes', icon: FolderLock },
   ];

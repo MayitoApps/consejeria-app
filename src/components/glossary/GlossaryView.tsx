@@ -84,7 +84,7 @@ export const GlossaryView: React.FC = () => {
                 <span>Biblioteca de Referencia Pastoral</span>
               </div>
               <h1 className="font-serif text-2xl sm:text-3xl lg:text-4xl font-bold gold-gradient-text tracking-tight leading-tight">
-                Glosario Teológico & Obras Maestras
+                Índice Didáctico & Obras Maestras
               </h1>
               <p className="text-xs sm:text-[13px] text-slate-300/90 leading-relaxed max-w-2xl pt-0.5">
                 Explora los pecados originales y raíces del corazón, descubre las obras literarias de consejería bíblica más influyentes y examina los pasajes con su capítulo y página exacta.
