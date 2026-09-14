@@ -904,6 +904,168 @@ Siempre que empieces a pensar sobre este triste suceso, dedícale dos minutos (c
         ]
       }
     ]
+  },
+  {
+    id: 'perdon-arrepentimiento-confesion',
+    title: 'Perdón, Arrepentimiento y Confesión',
+    shortDescription:
+      'El poder del perdón en Cristo, la confesión honesta ante Dios y el prójimo, arrepentimiento genuino, espacios seguros en consejería y perdón condicional vs. incondicional.',
+    iconName: 'Sparkles',
+    categoryColor: 'from-emerald-600 to-teal-800',
+    books: [
+      {
+        id: 'consejeria-biblica-cristocentrica-perdon',
+        title: 'Consejería Bíblica Cristo-Céntrica',
+        author: 'James MacDonald & Garrett Higbee',
+        publisher: 'Editorial Bautista Independiente (Sebring, FL)',
+        year: '2018',
+        coverGradient: 'from-teal-950 via-slate-900 to-emerald-950',
+        coverIcon: 'BookOpenCheck',
+        logosUrl: 'https://ref.ly/logosres/cbcc?ref=Page.p+277',
+        summary:
+          'Tratado fundamental de consejería pastoral: el perdón como pegamento que supera las ofensas inevitables en un mundo caído, el poder de la confesión y el arrepentimiento, la creación de espacios seguros y el abordaje integral del pecado y el sufrimiento.',
+        passages: [
+          {
+            id: 'cbcc-pasaje-1',
+            bookTitle: 'Consejería Bíblica Cristo-Céntrica',
+            author: 'James MacDonald y Garrett Higbee',
+            chapter: 'Capítulo 25: El Poder del Perdón',
+            pages: 'Páginas 277–278 (págs. 25–33)',
+            passageTitle: 'El Perdón como Fundamento Ineludible de las Relaciones Duraderas',
+            logosUrl: 'https://ref.ly/logosres/cbcc?ref=Page.p+277',
+            excerpt:
+              'Si nuestra consejería es verdaderamente Cristo-céntrica, entonces el tema del perdón inevitablemente aparecerá en la jornada hacia el crecimiento y cambio. No hay relación personal duradera sin el perdón...',
+            fullText: `Si nuestra consejería es verdaderamente Cristo-céntrica, entonces el tema del perdón inevitablemente aparecerá en la jornada hacia el crecimiento y cambio. No hay relación personal duradera sin el perdón. Las relaciones personales no desarrollan fuerza y longevidad porque las personas siempre concuerdan y se llevan bien. Más bien, sobreviven debido a que el perdón es el pegamento que supera las ofensas inevitables que suceden en un mundo caído.
+
+Por todo el capítulo 24, al hablar del arrepentimiento, tocamos el asunto del perdón, que es el resultado esperado que nos aguarda más allá del arrepentimiento y la confesión. El perdón de Dios conduce al temor del Señor y nos motiva a que perdonemos a otros, que es una de las acciones más semejantes a Cristo que podemos exhibir hacia los que nos rodean.
+
+Todo empieza con la realidad de que toda persona necesita el perdón de Dios, la respuesta al juicio universal en la proclamación de que "todos pecaron, y están destituidos de la gloria de Dios" (Ro. 3:23). Entre sus palabras finales está una oración que a menudo aplicamos a las circunstancias inmediatas de Jesús, pero la oración en realidad encapsula toda su vida: "Padre, perdónalos, porque no saben lo que hacen" (Lc. 23:34).
+
+La mayoría de nosotros ya tenemos una lista, pero el título de ella por lo general es "Personas a quienes no puedo perdonar", o "Individuos detestables, aborrecibles y despreciables a quienes jamás perdonaré". Ahora bien, ese es un problema; y debemos verlo como problema. Como cristianos, hemos sido perdonados de una lista muy monumental de ofensas hechas contra un Dios santo. Una vez que nos damos cuenta de nuestra depravación, podemos entonces confesar nuestro pecado y conocer el perdón de Dios. Si aquellos a quienes aconsejamos no entienden su necesidad desesperada de la obra expiatoria de Cristo en la cruz, y no se sienten humildes ante la obra concluida de Cristo, entonces revestirse de valor para perdonar el pecado de otros será frustrante, superficial y a menudo mero teatro sin fruto duradero. De la manera en que él nos ha perdonado libremente, debemos perdonar a otros.`,
+            biblicalReferences: [
+              'Romanos 3:23',
+              'Lucas 23:34',
+              'Colosenses 3:13',
+              'Efesios 4:32'
+            ],
+            keyTakeaway:
+              'El perdón es el pegamento de gracia que supera las ofensas en un mundo caído; solo quien comprende la inmensidad de la deuda cancelada en la Cruz puede perdonar genuinamente a su prójimo.'
+          },
+          {
+            id: 'cbcc-pasaje-2',
+            bookTitle: 'Consejería Bíblica Cristo-Céntrica',
+            author: 'James MacDonald y Garrett Higbee',
+            chapter: 'Capítulo 24: El Poder de la Confesión y el Arrepentimiento',
+            pages: 'Páginas 268–269',
+            passageTitle: 'Creación de Espacios Seguros, la Analogía de la Astilla y el Poder de la Oración',
+            logosUrl: 'https://ref.ly/logosres/cbcc?ref=Page.p+268',
+            excerpt:
+              'Un consejero experimentado sabe que el poder del dolor, secretos vergonzosos y pecados está principalmente en su insistencia en permanecer escondido o sin confesar. Al producir un lugar seguro para que el aconsejado confiese el pecado, el poder del arrepentimiento se vuelve el punto de partida para la esperanza...',
+            fullText: `Un consejero experimentado sabe que el poder del dolor, secretos vergonzosos y pecados está principalmente en su insistencia en permanecer escondido o sin confesar. El pecado puede declarar su presencia en una miríada de maneras destructivas mientras se mantiene bajo cubierta, pero su exposición a la luz y la verdad trastorna los planes de Satanás y el poder del pecado. Al producir un lugar seguro para que el aconsejado confiese el pecado, el poder del arrepentimiento se vuelve el punto de partida para la esperanza y una permanencia más profunda en Cristo.
+
+Esto no quiere decir que la confesión sea indolora. Más bien, a menudo causa gran dolor. La gran mentira se esconde en la creencia errónea de que abstenerse de la confesión producirá menos dolor, cuando de hecho prolonga y ahonda el dolor. Si continúa ignorando la astilla, con el tiempo el área que la rodea se adormecerá, pero también se infectará. De la misma manera, llevamos dolor innecesario y nos enredamos nosotros mismos en nudos relacionales al descuidar los acicates del Espíritu para corregir las cosas con Dios y otros.
+
+A menudo instintivamente sabemos que queremos perdón de Dios y de otros, pero cuando no estamos dispuestos a reconocer por qué necesitamos perdón (porque somos personas pecadoras, quebrantadas), el perdón de Dios sigue fuera de nuestro alcance. Queremos experimentarlo sin la crisis de reconocer que no podemos tenerlo a menos que nos sea dado por misericordia y gracia. Así que, seguimos persiguiendo una razón en nosotros mismos que nos hará merecedores del perdón de Dios en lugar de confesar abiertamente que no lo merecemos y que sólo podemos recibir lo que Dios ofrece a un espíritu humilde que no tiene nada que ofrecer en pago. Como sucedió con Adán y Eva en el huerto del Edén, tenemos una tendencia de querer cubrir nuestra vergüenza, dar excusas por nuestro pecado y escondernos de Dios y de otros.
+
+Para el consejero dirigido por el Espíritu, la oración asume diferentes papeles significativos en el proceso de recabar y oír la confesión. Primero, oramos pidiendo sabiduría para discernir lo que puede estar parcialmente escondido. Segundo, la oración a menudo anima a los aconsejados a una mayor revelación conforme demostramos dependencia en Dios y deliberadamente los ponemos a ellos y sus necesidades en las manos de Dios. Considere, por ejemplo, el contexto de Santiago 5:16, con su énfasis en la confesión y la oración. No hay manera para ponerse debajo de la carga de alguien o restaurar gentilmente a alguien si primero no se confronta y confiesa el pecado presente.`,
+            biblicalReferences: [
+              'Santiago 5:16',
+              'Génesis 3:8-10',
+              'Salmo 32:3-5',
+              '1 Juan 1:7'
+            ],
+            keyTakeaway:
+              'Ocultar el pecado infecta el alma como una astilla descuidada; crear espacios seguros y ejercer la oración pastoral desarma las tinieblas y abre la puerta a la esperanza restauradora.'
+          },
+          {
+            id: 'cbcc-pasaje-3',
+            bookTitle: 'Consejería Bíblica Cristo-Céntrica',
+            author: 'James MacDonald (Ed.)',
+            chapter: 'Fundamentos de la Consejería: Consejería Integral',
+            pages: 'Páginas 333–334',
+            passageTitle: 'Consejería Integral: Ministrar al Pecado que se Comete y al Mal que se Sufre',
+            logosUrl: 'https://ref.ly/logosres/cbcc?ref=Page.p+333',
+            excerpt:
+              'Creemos que la Palabra de Dios es útil para tratar a cabalidad los males que sufrimos, así como también los pecados que cometemos. Puesto que las personas que batallan por lo general experimentan alguna combinación de pecado que acosa y sufrimiento personal...',
+            fullText: `Creemos que la Palabra de Dios es útil para tratar a cabalidad los males que sufrimos, así como también los pecados que cometemos. Puesto que las personas que batallan por lo general experimentan alguna combinación de pecado que acosa y sufrimiento personal, los consejeros sabios procuran discernir las diferencias y las conexiones entre el pecado y el sufrimiento, y ministrar apropiadamente a lo uno y a lo otro (1 Ts. 5:14).
+
+La consejería bíblica considera el pecado e interactúa con los pecadores de numerosas maneras de amor. Ofrece la confrontación de Dios a los pecados, estimula el arrepentimiento de los pecados, presenta el perdón de la gracia de Dios en Cristo y proclama la poderosa senda de Dios para la victoria progresiva sobre el pecado (2 Co. 2:5–11; Col. 3:1–17; 2 Ti. 2:24–26; 1 Jn. 1:8–2:2).`,
+            biblicalReferences: [
+              '1 Tesalonicenses 5:14',
+              '2 Corintios 2:5-11',
+              'Colosenses 3:1-17',
+              '1 Juan 1:8-2:2'
+            ],
+            keyTakeaway:
+              'La consejería bíblica debe discernir con sabiduría entre los males sufridos y los pecados cometidos, ministrando compasión al dolor y confrontación redentora al pecado.'
+          }
+        ]
+      },
+      {
+        id: 'teologia-consejeria-lambert-perdon',
+        title: 'Teología de la Consejería Bíblica: Las Bases Doctrinales del Ministerio de la Consejería',
+        author: 'Heath Lambert',
+        publisher: 'Editorial Bautista Independiente (Sebring, FL)',
+        year: '2020',
+        coverGradient: 'from-slate-900 via-indigo-950 to-slate-900',
+        coverIcon: 'ShieldCheck',
+        logosUrl: 'https://ref.ly/logosres/tcblbdmc?ref=Page.p+166',
+        summary:
+          'Tratado de doctrina aplicada a la consejería: la doble dimensión de la confesión ante Dios y ante el prójimo agraviado, el principio de Proverbios 28, y el análisis teológico del perdón condicional vs. incondicional distinguiendo la actitud interior del acto formal.',
+        passages: [
+          {
+            id: 'lambert-pasaje-1',
+            bookTitle: 'Teología de la Consejería Bíblica',
+            author: 'Heath Lambert',
+            chapter: 'Doctrina del Pecado y la Confesión',
+            pages: 'Páginas 166–167',
+            passageTitle: 'Confesión Vertical a Dios y Horizontal a los Hombres: El Camino a la Misericordia',
+            logosUrl: 'https://ref.ly/logosres/tcblbdmc?ref=Page.p+166',
+            excerpt:
+              'Los aconsejados deben confesarle sus pecados a Dios. No importa cuál sea el pecado... es siempre Dios la persona principal contra la que pecamos. Además, deben confesar su pecado ante cualquier otra persona contra la que hayan pecado...',
+            fullText: `Los aconsejados deben confesarle sus pecados a Dios. No importa cuál sea el pecado, e independientemente de si ese pecado es un pecado interno de deseo, un pecado externo de comportamiento, o incluso si involucra a otra persona, es siempre Dios la persona principal contra la que pecamos. Es su ley la que estamos quebrantando. Como hemos transgredido contra él al violar su ley, debemos confesárselo (Sal. 51:4).
+
+Podemos estar seguros de que, cuando le confesamos a Dios nuestro pecado, él nos perdonará por causa de la obra de Cristo. Juan dice aquí que cuando confesamos nuestros pecados, Dios nos perdona y nos limpia de toda maldad (1 Jn. 1:8-9). Dios hace esto porque, como dice el texto, él es fiel y justo. Dios nunca dejará de perdonarnos cuando confesemos nuestros pecados.
+
+Una segunda realidad que debería caracterizar las confesiones de los aconsejados es que confiesen su pecado no solo ante Dios, sino también ante cualquier otra persona contra la que hayan pecado. Esto es difícil para muchas personas. No quieren enfrentar muchas de las dificultades que surgen de confesar su pecado a otros.
+
+Necesitamos recordar que la causa de todos estos problemas es el pecado, y no una honesta confesión del mismo. Proverbios 28:13 dice que cuando encubrimos nuestras transgresiones no podremos prosperar. El camino a la misericordia es el camino que va a través de la honesta confesión de nuestro pecado. Después de haber pecado, la única pregunta es si seremos sinceros al respecto con aquellos a quienes hemos ofendido. Cuando somos sinceros, es posible que tengamos que soportar algunas consecuencias por nuestro pecado, pero la confesión misma nos conducirá en última instancia a alcanzar misericordia en nuestra vida.`,
+            biblicalReferences: [
+              'Salmo 51:4',
+              '1 Juan 1:8-9',
+              'Proverbios 28:13'
+            ],
+            keyTakeaway:
+              'Dios es siempre el ofendido principal en todo pecado; la confesión debe ser tanto vertical a Dios como horizontal a las personas agraviadas para experimentar la verdadera misericordia divina.'
+          },
+          {
+            id: 'lambert-pasaje-2',
+            bookTitle: 'Teología de la Consejería Bíblica',
+            author: 'Heath Lambert',
+            chapter: 'Doctrina del Perdón',
+            pages: 'Páginas 167–168, 178',
+            passageTitle: 'Perdón Condicional vs. Incondicional: La Actitud del Corazón y el Mandato contra la Amargura',
+            logosUrl: 'https://ref.ly/logosres/tcblbdmc?ref=Page.p+167',
+            excerpt:
+              '¿Debemos perdonar a alguien que no ha confesado su pecado ni lo ha abandonado? Dios perdona a quienes buscan su perdón a través de humilde confesión; sin embargo, no se nos permite amargarnos bajo ninguna circunstancia (Ef. 4:31)...',
+            fullText: `Debemos abordar otro importante tema: ¿debemos perdonar a alguien que no ha confesado su pecado ni lo ha abandonado? Algunos creen que los mandamientos bíblicos sobre el perdón se aplican incluso si una persona no ha buscado el perdón. Otros sostienen que la Biblia respalda una especie de perdón condicional que ocurre solo después de que alguien solicita el perdón.
+
+Ya hemos observado que debemos perdonar a los demás como Dios nos ha perdonado. Una implicación de esto es que Dios perdona solo a aquellos que han buscado su perdón a través de una humilde confesión de pecado. Si el modelo de nuestro propio perdón es del tipo que hemos recibido de Dios, entonces esto excluye extender el perdón a alguien que no confesará la culpa o no parece interesado en buscar la reconciliación.
+
+Sin embargo, incluso cuando alguien no está interesado en confesar el pecado, no se nos permite amargarnos. Efesios 4:31 dice: "Quítense de vosotros toda amargura, enojo, ira, gritería y maledicencia, y toda malicia". La falta de contrición por parte de los que han pecado contra nosotros no constituye un permiso divino para que alimentemos la ira y la amargura.
+
+Queremos que nuestros aconsejados piensen, sientan y oren por aquellos que no han confesado su pecado de la misma manera que queremos que piensen, sientan y oren por aquellos que los han perjudicado y lo han confesado. Desde este punto de vista, es útil pensar en ayudar a los aconsejados a desarrollar una actitud de perdón incluso cuando la falta de confesión del ofensor no permita que tenga lugar el acto de perdón. Por último, debemos extender el perdón cuando la persona que pecó contra nosotros confiesa su pecado: cuando alguien confiesa el pecado a un cristiano, éste debe perdonarle porque él ya ha sido perdonado.`,
+            biblicalReferences: [
+              'Efesios 4:31-32',
+              'Lucas 17:3-4',
+              'Marcos 11:25'
+            ],
+            keyTakeaway:
+              'El acto formal de perdón y reconciliación requiere la confesión bíblica del ofensor, pero la actitud de perdón en el corazón del creyente es incondicional y obligatoria para arrancar toda amargura.'
+          }
+        ]
+      }
+    ]
   }
 ];
 

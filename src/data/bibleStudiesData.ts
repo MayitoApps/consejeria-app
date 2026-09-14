@@ -703,6 +703,225 @@ export const BIBLE_STUDIES: BibleStudy[] = [
         ]
       }
     }
+  },
+  {
+    id: 'perdon-arrepentimiento-confesion',
+    title: 'Perdón, arrepentimiento y confesión',
+    subtitle: 'Perdón de Dios · Arrepentimiento Genuino · Confesión a Dios y al Prójimo · Creación de Espacios Seguros · Reconciliación Bíblica',
+    category: 'Gracia & Restauración',
+    tags: [
+      'Perdón',
+      'Arrepentimiento',
+      'Confesión',
+      'Reconciliación',
+      'Consejería Bíblica',
+      'Gracia',
+      'Espacios Seguros',
+      'Misericordia',
+      'Restauración'
+    ],
+    readTime: '22 min de estudio pastoral',
+    summary:
+      'Este estudio pastoral y exegético aborda el perdón, el arrepentimiento y la confesión como un ciclo continuo e indispensable en la consejería bíblica centrada en Cristo (James MacDonald, Garrett Higbee y Heath Lambert). Las relaciones personales no subsisten por la ausencia de conflictos, sino porque el perdón actúa como el pegamento de gracia que supera las ofensas inevitables en un mundo caído. Todo proceso de sanidad inicia reconociendo la culpabilidad universal del pecado (Ro. 3:23) y entendiendo que Dios es siempre la persona primordial contra la cual se transgrede (Sal. 51:4). El análisis desarticula las raíces del encubrimiento —la soberbia de no aceptar nuestra bancarrota espiritual, la tendencia adánica de ocultar la vergüenza y el mantenimiento de listas de ofensores "imperdonables"— y expone sus consecuencias destructivas, comparando el pecado oculto con una astilla que se adormece pero infecta gravemente el alma y enreda a las personas en nudos relacionales. La metodología pastoral establece la necesidad de crear espacios seguros en consejería para desarmar el poder del secreto vergonzoso mediante la oración dependiente del Espíritu (Stg. 5:16); establece con rigor bíblico la distinción entre la actitud incondicional de perdón (obligatoria para no dar cabida a la amargura, Ef. 4:31) y el acto formal de perdón y reconciliación (que requiere la confesión y abandono del pecado según el modelo divino, Pr. 28:13); e implementa un seguimiento que acompañe al creyente en una restitución sincera y en una vida de cuentas cortas ante Dios y los hombres.',
+    sections: {
+      verses: [
+        {
+          reference: 'Romanos 3:23',
+          text:
+            '23 por cuanto todos pecaron, y están destituidos de la gloria de Dios,',
+          version: 'RVR1960',
+          exegesis: {
+            originalTerms:
+              'En griego: "Pantes gar hemarton kai hysterountai tes doxes tou Theou" (πάντες γὰρ ἥμαρτον καὶ ὑστεροῦνται τῆς δόξης τοῦ Θεοῦ). "Hemarton" (aoristo activo global: todos pecaron sin excepción, errando el blanco de la santidad divina). "Hysterountai" (presente pasivo continuo: carecen de continuo y están destituidos de reflejar el resplandor y la aprobación de la gloria divina).',
+            historicalContext:
+              'Pablo presenta en su epístola a los Romanos el acta formal de acusación universal de Dios contra la humanidad: tanto judíos conocedores de la Ley como gentiles paganos se encuentran bajo la misma bancarrota moral y reatos de juicio divino.',
+            theologicalPrinciple:
+              'Ningún ser humano posee solvencia moral propia ante el Creador. La necesidad de recibir el perdón de Dios es universal y absoluta; sin este punto de partida, el ser humano intentará justificarse a sí mismo en lugar de clamar por misericordia.',
+            pastoralApplication:
+              'En consejería, confrontar la tendencia del aconsejado a compararse favorablemente con los demás. Desarmar su autojustificación recordándole que toda persona se encuentra en bancarrota espiritual y que el perdón no se merece, sino que se recibe por pura gracia.'
+          }
+        },
+        {
+          reference: '1 Juan 1:8–9',
+          text:
+            '8 Si decimos que no tenemos pecado, nos engañamos a nosotros mismos, y la verdad no está en nosotros. 9 Si confesamos nuestros pecados, él es fiel y justo para perdonar nuestros pecados, y limpiarnos de toda maldad.',
+          version: 'RVR1960',
+          exegesis: {
+            originalTerms:
+              'En griego: "Ean homologomen tas hamartias hemon" (ἐὰν ὁμολογῶμεν τὰς ἁμαρτίας ἡμῶν). "Homologomen" (compuesto de "homos" [lo mismo] y "lego" [decir]: confesar, estar de acuerdo con Dios, decir exactamente lo mismo que Dios declara sobre nuestro pecado sin excusas). "Pistos estin kai dikaios" (πιστός ἐστιν καὶ δίκαιος): fiel a Sus promesas de pacto y justo porque la ira debida a ese pecado ya fue consumada en la propiciación de Cristo en la cruz. "Katharise hemas" (limpiarnos y purificarnos cabalmente).',
+            historicalContext:
+              'Juan escribe refutando las primeras herejías gnósticas que alegaban haber alcanzado una perfección sin pecado o consideraban el pecado corporal como algo irrelevante para el espíritu.',
+            theologicalPrinciple:
+              'La confesión es el medio divinamente designado para restaurar la comunión práctica con Dios. El perdón divino no es una concesión laxa que pasa por alto la justicia, sino un acto de fidelidad y justicia garantizado por la obra vicaria de Jesucristo.',
+            pastoralApplication:
+              'Asegurar al aconsejado que cuando confiesa sinceramente su falta a Dios, la respuesta divina no es condenación ni rechazo, sino el perdón total y la purificación de toda mancha moral basada en la sangre de Cristo (Heath Lambert).'
+          }
+        },
+        {
+          reference: 'Salmo 51:4',
+          text:
+            '4 Contra ti, contra ti solo he pecado, y he hecho lo malo delante de tus ojos; para que seas reconocido justo en tu palabra, y tenido por puro en tu juicio.',
+          version: 'RVR1960',
+          exegesis: {
+            originalTerms:
+              'En hebreo: "Lecha levaddecha chatati, vehara be\'eyneycha asiti" (לְךָ֤ לְבַדְּךָ֨ ׀ חָטָאתִי֮ וְהָרַ֥ע בְּעֵינֶ֗יךָ עָשִׂ֑יתִי). "Lecha levaddecha" (a ti, a ti únicamente): énfasis reflexivo absoluto. Aunque David pecó atrozmente contra Betsabé, Urías y la nación de Israel, reconoce que todo pecado es en su esencia fundamental un ataque directo y rebelión contra la majestad santa del Creador.',
+            historicalContext:
+              'Salmo penitencial compuesto por el rey David tras ser confrontado por el profeta Natán por su adulterio con Betsabé y el asesinato premeditado de Urías heteo (2 S. 12).',
+            theologicalPrinciple:
+              'Independientemente de la dimensión horizontal del pecado o de quién resulte agraviado en la tierra, Dios es siempre la Persona suprema contra la cual se peca, pues es Su ley eterna la que ha sido transgredida.',
+            pastoralApplication:
+              'Guiar al aconsejado a no banalizar su falta viéndola solo como un "problema de pareja" o un "error social". La verdadera contrición inicia cuando el ofensor comprende con dolor santo la ofensa infinita cometida contra Dios (Heath Lambert).'
+          }
+        },
+        {
+          reference: 'Efesios 4:31–32',
+          text:
+            '31 Quítense de vosotros toda amargura, enojo, ira, gritería y maledicencia, y toda malicia. 32 Antes sed benignos unos con otros, misericordiosos, perdonándoos unos a otros, como Dios también os perdonó a vosotros en Cristo.',
+          version: 'RVR1960',
+          exegesis: {
+            originalTerms:
+              'En griego: "Pasa pikria kai thymos kai orge kai krauge kai blasphemia artheto aph\' hymon" (πᾶσα πικρία καὶ θυμὸς καὶ ὀργὴ καὶ κραυγὴ καὶ βλασφημία ἀρθήτω ἀφ\' ὑμῶν). "Artheto" (imperativo aoristo pasivo: sea extirpado y arrancado categóricamente). "Charizomenoi heautois kathos kai ho Theos en Christo echarisato hymin" (χαριζόμενοι ἑαυτοῖς καθὼς καὶ ὁ Θεὸς ἐν Χριστῷ ἐχαρίσατο ὑμῖν): perdonándoos por pura gracia ("charizomai"), con la misma medida con que Dios os perdonó gratuitamente por causa de Cristo.',
+            historicalContext:
+              'Pablo instruye a la iglesia de Éfeso sobre la vestidura práctica del nuevo hombre, contrastando los vicios corrosivos del hombre viejo con los afectos y virtudes de la comunidad redimida.',
+            theologicalPrinciple:
+              'El creyente tiene la prohibición divina categórica de retener amargura o rencor. El fundamento y la norma del perdón cristiano es el perdón inmerecido que Dios extendió a pecadores culpables mediante el sacrificio de Su Hijo.',
+            pastoralApplication:
+              'Instruir al aconsejado ofendido en que la falta de arrepentimiento del ofensor jamás le autoriza a alimentar la amargura o la venganza (Heath Lambert). Debe cultivar una actitud interior de perdón y misericordia constante.'
+          }
+        },
+        {
+          reference: 'Lucas 23:34',
+          text:
+            '34 Y Jesús decía: Padre, perdónalos, porque no saben lo que hacen. Y repartieron entre sí sus vestidos, echando suertes.',
+          version: 'RVR1960',
+          exegesis: {
+            originalTerms:
+              'En griego: "Ho de Iesous elegen: Pater, aphes autois, ou gar oidasin ti poiousin" (ὁ δὲ Ἰησοῦς ἔλεγεν· Πάτερ, ἄφες αὐτοῖς, οὐ γὰρ οἴδασιν τί ποιοῦσιν). "Elegen" (tiempo imperfecto activo: repetía continuamente en medio de los tormentos). "Aphes" (imperativo aoristo: perdona, cancela y remite la deuda). Cristo intercede sacerdotalmente por Sus ejecutores mientras se consuma la redención.',
+            historicalContext:
+              'Pronunciado en el Gólgota en el momento de la crucifixión pública de Jesús, rodeado de soldados romanos escarnecedores, gobernantes cínicos y una multitud hostil.',
+            theologicalPrinciple:
+              'Esta oración no fue una reacción aislada a las circunstancias inmediatas, sino la expresión cumbre que encapsuló toda la vida terrenal y el corazón sacerdotal de Jesús: un amor reconciliador que busca la redención de quienes le ultrajan.',
+            pastoralApplication:
+              'Presentar el modelo de Cristo a aconsejados atrapados en el resentimiento (James MacDonald). Ayudarlos a orar activamente por la bendición y redención de quienes los ofendieron, desarticulando el deseo de represalia carnal.'
+          }
+        },
+        {
+          reference: 'Proverbios 28:13',
+          text:
+            '13 El que encubre sus pecados no prosperará; mas el que los confiesa y se aparta alcanzará misericordia.',
+          version: 'RVR1960',
+          exegesis: {
+            originalTerms:
+              'En hebreo: "Mekhasseh fesha\'av lo yatsliach, umodeh ve\'ozev yerucham" (מְכַסֶּ֣ה פְ֭שָׁעָיו לֹ֣א יַצְלִ֑יחַ וּמוֹדֶ֖ה וְעֹזֵ֣ב יְרֻחָֽם). "Mekhasseh" (el que tapa, esconde y maquilla sus transgresiones). "Lo yatsliach" (no prosperará espiritualmente, su vida entrará en descomposición moral y relacional). "Umodeh" (y confiesa abiertamente) y "Ozev" (abandona de manera activa y decidida): los dos componentes inseparables del arrepentimiento bíblico que conducen a recibir "Yerucham" (misericordia y compasión entrañable).',
+            historicalContext:
+              'Proverbio salomónico sobre la integridad moral y espiritual requerida para andar en el favor y la bendición del pacto con Dios.',
+            theologicalPrinciple:
+              'Encubrir el pecado bloquea la bendición y la salud integral del ser humano. El único sendero que Dios ha trazado para alcanzar misericordia y sanidad relacional atraviesa la confesión sincera y el abandono voluntario de la transgresión.',
+            pastoralApplication:
+              'Enseñar al aconsejado que la causa de sus conflictos y crisis no es la confesión honesta, sino el pecado encubierto (Heath Lambert). La transparencia puede conllevar consecuencias difíciles, pero es la única puerta hacia la verdadera misericordia y paz.'
+          }
+        },
+        {
+          reference: 'Santiago 5:16',
+          text:
+            '16 Confesaos vuestras ofensas unos a otros, y orad unos por otros, para que seáis sanados. La oración eficaz del justo puede mucho.',
+          version: 'RVR1960',
+          exegesis: {
+            originalTerms:
+              'En griego: "Exomologeisthe oun allelois tas hamartias kai euchesthe hyper allelon, hopos iathete" (ἐξομολογεῖσθε οὖν ἀλλήλοις τὰς ἁμαρτίας καὶ εὔχεσθε ὑπὲρ ἀλλήλων, ὅπως ἰαθῆτε). "Exomologeisthe" (presente imperativo: mantened la práctica continua de confesaros abiertamente). "Allelois" (recíprocamente, unos a otros). "Euchesthe hyper allelon" (orad intercesoriamente unos a favor de otros). "Iathete" (para que experimentéis sanidad espiritual, emocional y física integral).',
+            historicalContext:
+              'Santiago exhorta a las doce tribus dispersas en el contexto de la vida comunitaria de fe, donde la vulnerabilidad sincera y la intercesión de los ancianos y hermanos desata el poder restaurador de Dios.',
+            theologicalPrinciple:
+              'La confesión mutua en un entorno de fe y la oración intercesora rompen el aislamiento del pecador, destruyendo el secreto vergonzoso y activando la gracia sanadora y restauradora de Dios.',
+            pastoralApplication:
+              'Crear en la sesión pastoral un espacio seguro donde el aconsejado sea guiado a confesar la falta y orar juntos con dependencia absoluta en Cristo, experimentando la sanidad que promete la Palabra (Garrett Higbee).'
+          }
+        },
+        {
+          reference: 'Colosenses 3:12–13',
+          text:
+            '12 Vestíos, pues, como escogidos de Dios, santos y amados, de entrañable misericordia, de benignidad, de humildad, de mansedumbre, de paciencia; 13 soportándoos unos a otros, y perdonándoos unos a otros si alguno tuviere queja contra otro. De la manera que Cristo os perdonó, así también hacedlo vosotros.',
+          version: 'RVR1960',
+          exegesis: {
+            originalTerms:
+              'En griego: "Endysasthe oun hos eklektoi tou Theou... charizomenoi heautois ean tis pros tina eche momphen; kathos kai ho Kyrios echarisato hymin, houtos kai hymeis" (ἐνδύσασθε οὖν ὡς ἐκλεκτοὶ τοῦ Θεοῦ... χαριζόμενοι ἑαυτοῖς ἐάν τις πρός τινα ἔχῃ μομφήν· καθὼς καὶ ὁ Κύριος ἐχαρίσατο ὑμῖν, οὕτως καὶ ὑμεῖς). "Kathos... houtos" (así exactamente como... de la misma manera vosotros): correlación ineludible. El perdón de Cristo a nosotros no es solo un motivo, es el patrón exacto que define nuestro perdón hacia otros.',
+            historicalContext:
+              'Pablo escribe a la congregación en Colosas exhortándolos a manifestar en la vida relacional cotidiana la realidad de su resurrección con Cristo frente a corrientes legalistas y ascéticas.',
+            theologicalPrinciple:
+              'El creyente que ha recibido el perdón infinito de sus pecados no puede retener el perdón a su prójimo sin incurrir en una grave incoherencia teológica y desprecio hacia la gracia del Evangelio.',
+            pastoralApplication:
+              'Confrontar las "listas de personas que jamás perdonaré": recordarle al aconsejado que si Cristo le perdonó libremente una montaña infinita de pecados cometidos contra un Dios santo, él está llamado a perdonar a quien le ofendió (James MacDonald).'
+          }
+        }
+      ],
+      introduction: {
+        number: 2,
+        title: 'Introducción',
+        paragraphs: [
+          'El perdón constituye un elemento central, decisivo e ineludible en la consejería bíblica centrada en Cristo, siendo indispensable para que cualquier relación personal posea salud, solidez y durabilidad (James MacDonald y Garrett Higbee). Si nuestra consejería es verdaderamente Cristo-céntrica, el tema del perdón emergerá inevitablemente a lo largo de toda la jornada hacia el crecimiento espiritual y la transformación del corazón.',
+          'Las relaciones interpersonales en la familia, el matrimonio y la congregación no desarrollan longevidad ni fortaleza porque las personas siempre concuerden o eviten el roce; sobreviven y maduran porque el perdón actúa como el pegamento de gracia que permite superar las ofensas inevitables que surgen en un mundo caído. El perdón no es una mera sugerencia terapéutica: representa el fruto glorioso y el resultado esperado que aguarda más allá del arrepentimiento genuino y la confesión sincera.',
+          'Asimismo, el perdón de Dios derramado sobre los creyentes conduce a un santo temor del Señor y los motiva a extender ese mismo perdón hacia quienes los rodean. Perdonar a los que nos han perjudicado es una de las acciones más semejantes a Cristo que un ser humano puede exhibir en este mundo, reflejando el carácter del Salvador que en la cruz oró por Sus verdugos: «Padre, perdónalos, porque no saben lo que hacen» (Lc. 23:34).'
+        ]
+      },
+      problemToTreat: {
+        number: 3,
+        title: 'Problema a tratar',
+        paragraphs: [
+          'Toda intervención pastoral comienza reconociendo la universalidad de la culpa y la necesidad desesperada que todo ser humano tiene del perdón de Dios: «todos pecaron, y están destituidos de la gloria de Dios» (Ro. 3:23). El problema central que aflige al aconsejado es siempre el pecado, manifestado en la transgresión cometida o en las heridas padecidas en medio de relaciones fracturadas.',
+          'La práctica bíblica de la confesión demanda una doble dimensión inquebrantable (Heath Lambert): en primer lugar, la confesión vertical a Dios. Independientemente de si el pecado es un deseo íntimo del corazón, una conducta externa o una ofensa contra un semejante, es siempre Dios la Persona primordial contra la cual se transgrede y cuya santa ley se quebranta (Sal. 51:4). Cuando confesamos nuestros pecados al Señor, Su fidelidad y justicia en Cristo garantizan perdón absoluto y limpieza de toda maldad (1 Jn. 1:8–9). En segundo lugar, la confesión horizontal: el aconsejado debe confesar su falta de manera abierta y sincera ante las personas a quienes haya agraviado, sin minimizar su culpa ni buscar excusas (Pr. 28:13).',
+          'Siguiendo la enseñanza de James MacDonald en "Consejería Bíblica Cristo-Céntrica", la consejería debe ser cabal e integral: la Palabra de Dios es enteramente suficiente para tratar tanto los males y sufrimientos que padecemos como los pecados que cometemos. Los consejeros sabios procuran discernir con prudencia las diferencias y conexiones entre el sufrimiento personal y el pecado que acosa, ministrando con compasión al afligido y confrontando con fidelidad al transgresor (1 Ts. 5:14).'
+        ]
+      },
+      rootProblem: {
+        number: 4,
+        title: 'Raíz del problema',
+        paragraphs: [
+          'La raíz primordial del problema radica en la resistencia del corazón humano caído a reconocer su depravación y bancarrota espiritual (Garrett Higbee y James MacDonald). Con frecuencia, los seres humanos desean experimentar el alivio del perdón de Dios y de los hombres, pero rehúsan aceptar la crisis de reconocer por qué lo necesitan: porque son personas quebrantadas, pecadoras y desprovistas de mérito alguno. Se busca un motivo en uno mismo para sentirse "merecedor" del perdón, en lugar de confesar con espíritu humilde que solo se puede recibir como una dádiva gratuita de pura misericordia y gracia.',
+          'Existe una tendencia innata, heredada de Adán y Eva en el huerto del Edén (Gn. 3:7-12), consistente en querer cubrir la propia vergüenza moral con hojas de higuera, fabricar pretextos para justificar el pecado y esconderse temerosamente de Dios y de los demás. Esta inclinación al encubrimiento perpetúa el conflicto interior y estrangula la comunión con el Creador.',
+          'En el ámbito relacional, la falta de perdón brota de la soberbia del corazón, la cual tiende a clasificar a los ofensores en listas mentales bajo el rótulo de "personas que jamás perdonaré" o "individuos detestables, aborrecibles y despreciables". Esta actitud delata una ceguera espiritual severa: quien alimenta semejante dureza olvida convenientemente que él mismo ha sido perdonado por Dios de una montaña monumental de ofensas cósmicas cometidas contra Su infinita santidad.'
+        ]
+      },
+      consequences: {
+        number: 5,
+        title: 'Consecuencias del pecado tratado',
+        paragraphs: [
+          '1. El poder destructivo del pecado encubierto: El pecado mantiene su veneno y virulencia destructiva principalmente mientras permanece escondido o sin confesar. La exposición a la luz de la verdad escritural trastorna y derriba los planes de Satanás, desarmando la fuerza con la que el pecado ata la conciencia del individuo (Garrett Higbee).',
+          '2. La analogía de la astilla infectada: Creer que callar el pecado causará menos dolor es una mentira sutil que solo prolonga y profundiza el sufrimiento. Si se ignora una astilla clavada en la carne, la zona puede adormecerse temporalmente, pero terminará infectándose con gravedad. De igual modo, descuidar los acicates del Espíritu para arreglar las cuentas con Dios y con el prójimo genera infecciones espirituales profundas.',
+          '3. Cautiverio en nudos relacionales y soledad: Quienes rehúsan confesar sus faltas y perdonar a los demás se enredan a sí mismos en nudos relacionales asfixiantes. La amargura levanta muros de desconfianza en el matrimonio, fractura la comunicación con los hijos y sumerge al individuo en un dolor innecesario y autoimpuesto.',
+          '4. Pérdida de la prosperidad espiritual: La sentencia divina de Proverbios 28:13 es tajante: «El que encubre sus pecados no prosperará». Se produce una aridez en la oración, una insensibilidad ante la Palabra de Dios y un bloqueo espiritual generalizado que solo se disuelve cuando el alma quebrantada confiesa y abandona el mal.'
+        ]
+      },
+      counselingApproach: {
+        number: 6,
+        title: 'Cómo tratar el problema en consejería',
+        paragraphs: [
+          'Creación de espacios seguros para la confesión pastoral: Un consejero experimentado sabe que el poder de los pecados vergonzosos y del dolor radica en su insistencia en permanecer en tinieblas. Al producir en la sesión pastoral un entorno de seguridad, gracia y discreción, el aconsejado pierde el temor a exponer su quebranto, convirtiéndose la confesión en el punto de partida para la esperanza y una permanencia profunda en Cristo (James MacDonald y Garrett Higbee).',
+          'El ministerio de la oración dependiente del Espíritu Santo: El consejero se apoya en Dios mediante la oración continua (Stg. 5:16). Ora pidiendo sabiduría divina para discernir lo que se encuentra parcialmente oculto en el relato del aconsejado —siguiendo el ejemplo de Jesús discerniendo el corazón de la mujer samaritana— y coloca deliberadamente las necesidades de los aconsejados en las manos soberanas de Dios, inspirándolos a una mayor revelación y sinceridad de corazón.',
+          'Distinción teológica crucial: Perdón Condicional vs. Incondicional (Heath Lambert): El consejero debe instruir al aconsejado en dos dimensiones complementarias de la doctrina bíblica del perdón: 1) La Actitud Interior de Perdón (Incondicional): Conforme a Efesios 4:31 («Quítense de vosotros toda amargura, enojo, ira...»), la falta de contrición del ofensor no constituye jamás un permiso divino para alimentar la amargura. El ofendido debe pensar, sentir y orar por quien lo dañó con un corazón misericordioso, manteniendo una actitud de perdón en todo tiempo. 2) El Acto Formal de Perdón y Reconciliación (Condicional): Siguiendo el modelo de Dios —quien perdona formalmente a quienes buscan Su perdón con humilde arrepentimiento—, el restablecimiento pleno de la relación y el otorgamiento efectivo del perdón interpersonal demandan que el ofensor reconozca su falta, confiese su culpa y busque la reconciliación (Pr. 28:13; Lc. 17:3-4).',
+          'Confrontación compasiva centrada en la Cruz: No existe restauración genuina si primero no se confronta y confiesa el pecado presente. Sin embargo, dicha confrontación nunca es un ataque despiadado, sino una presentación amorosa de la suficiente gracia y sangre expiatoria de Cristo, proclamando que hay perdón abundante para todo corazón contrito.'
+        ]
+      },
+      sanctificationFollowUp: {
+        number: 7,
+        title: 'Seguimiento del plan de santificación',
+        paragraphs: [
+          'Monitoreo del arrepentimiento genuino versus el mero teatro: El consejero debe verificar que la confesión no haya sido una maniobra superficial para escapar de la incomodidad presente, sino un quebrantamiento del corazón motivado por la santidad de Dios. Si el aconsejado no comprende la obra expiatoria de Cristo, el perdón será fingido, frustrante y sin fruto duradero (James MacDonald).',
+          'Pasos estructurados de confesión y restitución horizontal: Diseñar tareas concretas para que el ofensor acuda a las personas a quienes agravió. La confesión ante otros debe ser explícita, admitiendo el hecho concreto, reconociendo el dolor causado y pidiendo perdón sin usar excusas ni condicionales ("si te ofendí...", "fue porque tú me provocaste"). Asumir plenamente la responsabilidad es el único camino que desata misericordia (Pr. 28:13).',
+          'Mantenimiento de cuentas cortas y confesión diaria: Instruir al aconsejado en la disciplina espiritual de mantener cuentas cortas con Dios y con su prójimo (1 Jn. 1:9, Ef. 4:26). Cortar de raíz cualquier brote de autocompasión o resentimiento apenas surja en los pensamientos, acudiendo de inmediato en oración humilde ante el trono de la gracia.',
+          'Diario de oración intercesora por los ofensores: Asignar al aconsejado la tarea de orar deliberadamente por el bien espiritual y la salvación de quienes lo han herido (Lc. 23:34, Mt. 5:44). La oración intercesora sincera desactiva el veneno de la amargura y alinea los afectos del corazón con la misericordia de Cristo.'
+        ]
+      },
+      conclusions: {
+        number: 8,
+        title: 'Conclusiones',
+        paragraphs: [
+          'El perdón, el arrepentimiento y la confesión constituyen un ciclo integral e inseparable en la teología y la práctica de la consejería bíblica. Separar estos elementos conduce a un perdón superficial o a un legalismo amargo sin capacidad transformadora.',
+          'El entendimiento profundo de la Cruz de Cristo es el único cimiento para el perdón genuino: únicamente cuando el creyente contempla la magnitud incalculable de la deuda de la que fue absuelto por pura gracia, es librado de la arrogancia de mantener listas de ofensores y capacitado para perdonar libremente a sus semejantes.',
+          'Al exponer los pecados ocultos a la luz de la verdad en espacios seguros guiados por la oración pastoral, se extrae la astilla infectada del alma, se disuelven los nudos relacionales y se experimenta la plenitud de la misericordia prometida en Proverbios 28:13.',
+          'Fuentes y Fundamentación en el Índice Didáctico: El presente estudio se fundamenta rigurosamente en las obras maestras de James MacDonald & Garrett Higbee (Consejería Bíblica Cristo-Céntrica: «El Poder del Perdón», «El Poder de la Confesión y el Arrepentimiento» y «Consejería Integral») y Heath Lambert (Teología de la Consejería Bíblica: «Doctrina del Pecado y la Confesión» y «Doctrina del Perdón Condicional vs. Incondicional»). Consulta la Sección 9 para examinar cada obra, capítulo, páginas exactas, citas textuales y pasajes referenciados en el Índice Didáctico.'
+        ]
+      }
+    }
   }
 ];
 

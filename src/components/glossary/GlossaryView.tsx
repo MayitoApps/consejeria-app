@@ -69,6 +69,7 @@ export const GlossaryView: React.FC<GlossaryViewProps> = ({ initialTopicId, init
       case 'Flame': return Flame;
       case 'Zap': return Zap;
       case 'Wind': return Wind;
+      case 'Sparkles': return Sparkles;
       default: return HeartCrack;
     }
   };
