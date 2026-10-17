@@ -172,28 +172,28 @@ export const NewSessionModal: React.FC<NewSessionModalProps> = ({
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 md:p-6 bg-black/85 backdrop-blur-md animate-fade-in">
-      <div className="relative w-full max-w-3xl max-h-[92vh] flex flex-col glass-card rounded-2xl p-5 sm:p-7 border border-amber-500/20 shadow-navy-lg animate-slide-up text-slate-100 overflow-hidden">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 md:p-6 bg-slate-900/60 backdrop-blur-sm animate-fade-in">
+      <div className="relative w-full max-w-3xl max-h-[92vh] flex flex-col bg-[#fbfcfa] rounded-2xl p-5 sm:p-7 border border-[#d2daca] shadow-2xl animate-slide-up text-sage-950 overflow-hidden">
         
         {/* Header */}
-        <div className="flex items-center justify-between pb-3 mb-4 border-b border-white/[0.08] flex-shrink-0">
+        <div className="flex items-center justify-between pb-3 mb-4 border-b border-[#d2daca] flex-shrink-0">
           <div className="flex items-center space-x-2.5">
-            <div className="w-8 h-8 rounded-lg bg-amber-500/15 border border-amber-500/30 flex items-center justify-center text-amber-400">
+            <div className="w-8 h-8 rounded-lg bg-sage-100 border border-sage-300 flex items-center justify-center text-sage-800">
               <CalendarPlus className="w-4 h-4" />
             </div>
             <div>
-              <h3 className="font-serif text-lg sm:text-xl font-bold text-white tracking-tight">
+              <h3 className="font-serif text-lg sm:text-xl font-bold text-sage-950 tracking-tight">
                 Documentar Sesión #{sessionNumber}
               </h3>
-              <p className="text-[11px] text-slate-400">
-                Aconsejado: <strong className="text-amber-300 font-semibold">{advisee.fullName}</strong>
+              <p className="text-[11px] text-[#52645b]">
+                Aconsejado: <strong className="text-sage-900 font-semibold">{advisee.fullName}</strong>
               </p>
             </div>
           </div>
 
           <button
             onClick={onClose}
-            className="p-1.5 rounded-lg text-slate-400 hover:text-white bg-slate-900/80 border border-white/[0.06] transition-all"
+            className="p-1.5 rounded-lg text-[#52645b] hover:text-sage-950 bg-[#edf2ea] border border-[#d2daca] hover:bg-[#e4eae0] transition-all"
           >
             <X className="w-4 h-4" />
           </button>
@@ -203,51 +203,51 @@ export const NewSessionModal: React.FC<NewSessionModalProps> = ({
         <form onSubmit={handleSubmit} className="overflow-y-auto pr-1 sm:pr-2 space-y-5 flex-1 text-xs">
           
           {/* General Session Info */}
-          <div className="grid sm:grid-cols-3 gap-3 p-3.5 rounded-xl bg-slate-900/60 border border-white/[0.06]">
+          <div className="grid sm:grid-cols-3 gap-3 p-3.5 rounded-xl bg-[#edf2ea] border border-[#d2daca]">
             <div>
-              <label className="block text-[11px] font-medium text-slate-300 mb-1">Fecha de Sesión *</label>
+              <label className="block text-[11px] font-medium text-[#2c3d36] mb-1">Fecha de Sesión *</label>
               <input
                 type="date"
                 required
                 value={date}
                 onChange={(e) => setDate(e.target.value)}
-                className="w-full px-3 py-2 bg-slate-950 border border-white/[0.08] rounded-lg text-slate-100 text-xs focus:outline-none focus:border-amber-400"
+                className="w-full px-3 py-2 bg-[#fbfcfa] border border-[#d2daca] rounded-lg text-sage-950 text-xs focus:outline-none focus:border-sage-500 shadow-sm"
               />
             </div>
             <div>
-              <label className="block text-[11px] font-medium text-slate-300 mb-1">Hora</label>
+              <label className="block text-[11px] font-medium text-[#2c3d36] mb-1">Hora</label>
               <input
                 type="time"
                 value={time}
                 onChange={(e) => setTime(e.target.value)}
-                className="w-full px-3 py-2 bg-slate-950 border border-white/[0.08] rounded-lg text-slate-100 text-xs focus:outline-none focus:border-amber-400"
+                className="w-full px-3 py-2 bg-[#fbfcfa] border border-[#d2daca] rounded-lg text-sage-950 text-xs focus:outline-none focus:border-sage-500 shadow-sm"
               />
             </div>
             <div>
-              <label className="block text-[11px] font-medium text-slate-300 mb-1">Tema Principal *</label>
+              <label className="block text-[11px] font-medium text-[#2c3d36] mb-1">Tema Principal *</label>
               <input
                 type="text"
                 required
                 value={theme}
                 onChange={(e) => setTheme(e.target.value)}
                 placeholder="Ej: Ídolos del corazón / Reconciliación"
-                className="w-full px-3 py-2 bg-slate-950 border border-white/[0.08] rounded-lg text-slate-100 placeholder-slate-500 text-xs focus:outline-none focus:border-amber-400"
+                className="w-full px-3 py-2 bg-[#fbfcfa] border border-[#d2daca] rounded-lg text-sage-950 placeholder-[#718579] text-xs focus:outline-none focus:border-sage-500 shadow-sm"
               />
             </div>
           </div>
 
           {/* 1. Revision of previous tasks */}
           {tasksReview.length > 0 && (
-            <div className="p-3.5 rounded-xl bg-slate-900/60 border border-white/[0.06] space-y-2.5">
-              <h4 className="text-[11px] uppercase font-semibold text-amber-400 tracking-wider flex items-center justify-between">
+            <div className="p-3.5 rounded-xl bg-[#edf2ea] border border-[#d2daca] space-y-2.5">
+              <h4 className="text-[11px] uppercase font-semibold text-sage-900 tracking-wider flex items-center justify-between">
                 <span>1. Revisión de Tareas de la Sesión Pasada</span>
-                <span className="text-[10px] text-slate-400 font-normal">Evalúa el fruto práctico</span>
+                <span className="text-[10px] text-[#52645b] font-normal">Evalúa el fruto práctico</span>
               </h4>
               <div className="space-y-2">
                 {tasksReview.map((item, idx) => (
-                  <div key={idx} className="p-2.5 rounded-lg bg-slate-950/80 border border-white/[0.05] space-y-1.5">
+                  <div key={idx} className="p-2.5 rounded-lg bg-[#fbfcfa] border border-[#d2daca] space-y-1.5 shadow-sm">
                     <div className="flex flex-wrap items-center justify-between gap-2">
-                      <span className="font-medium text-slate-200 text-xs">{item.description}</span>
+                      <span className="font-medium text-sage-950 text-xs">{item.description}</span>
                       <div className="flex items-center space-x-1">
                         {(['Completada', 'Parcial', 'No Realizada'] as const).map((st) => (
                           <button
@@ -257,11 +257,11 @@ export const NewSessionModal: React.FC<NewSessionModalProps> = ({
                             className={`px-2 py-0.5 rounded text-[9px] font-semibold uppercase transition-all ${
                               item.status === st
                                 ? st === 'Completada'
-                                  ? 'bg-emerald-600 text-white shadow-sm'
+                                  ? 'bg-emerald-700 text-white shadow-sm'
                                   : st === 'Parcial'
-                                  ? 'bg-amber-600 text-white shadow-sm'
-                                  : 'bg-rose-600 text-white shadow-sm'
-                                : 'bg-slate-900 text-slate-400 hover:text-slate-200 border border-white/[0.04]'
+                                  ? 'bg-amber-700 text-white shadow-sm'
+                                  : 'bg-rose-700 text-white shadow-sm'
+                                : 'bg-[#edf2ea] text-[#3b4c44] hover:text-sage-950 border border-[#d2daca]'
                             }`}
                           >
                             {st}
@@ -274,7 +274,7 @@ export const NewSessionModal: React.FC<NewSessionModalProps> = ({
                       value={item.feedback}
                       onChange={(e) => handleFeedbackChange(idx, e.target.value)}
                       placeholder="Observaciones de santificación o dificultades..."
-                      className="w-full px-2.5 py-1.5 bg-slate-900 border border-white/[0.06] rounded-md text-slate-300 text-xs focus:outline-none focus:border-amber-400"
+                      className="w-full px-2.5 py-1.5 bg-[#edf2ea] border border-[#d2daca] rounded-md text-sage-950 text-xs focus:outline-none focus:border-sage-500"
                     />
                   </div>
                 ))}
@@ -283,8 +283,8 @@ export const NewSessionModal: React.FC<NewSessionModalProps> = ({
           )}
 
           {/* 2. General Notes & Counseling Documentation */}
-          <div className="p-3.5 rounded-xl bg-slate-900/60 border border-white/[0.06] space-y-2">
-            <label className="block text-[11px] font-semibold uppercase tracking-wider text-amber-400">
+          <div className="p-3.5 rounded-xl bg-[#edf2ea] border border-[#d2daca] space-y-2">
+            <label className="block text-[11px] font-semibold uppercase tracking-wider text-sage-900">
               2. Notas Exegéticas y Documentación Pastoral *
             </label>
             <textarea
@@ -293,24 +293,24 @@ export const NewSessionModal: React.FC<NewSessionModalProps> = ({
               value={generalNotes}
               onChange={(e) => setGeneralNotes(e.target.value)}
               placeholder="Detalla las confesiones, raíces del problema expuestas a la luz bíblica, pasajes confrontados y compromisos acordados..."
-              className="w-full px-3 py-2.5 bg-slate-950 border border-white/[0.08] rounded-lg text-slate-100 placeholder-slate-500 focus:outline-none focus:border-amber-400 leading-relaxed text-xs"
+              className="w-full px-3 py-2.5 bg-[#fbfcfa] border border-[#d2daca] rounded-lg text-sage-950 placeholder-[#718579] focus:outline-none focus:border-sage-500 leading-relaxed text-xs shadow-sm"
             />
           </div>
 
           {/* 3. Assign New Tasks (Mejorado con Plantillas y Categorías) */}
-          <div className="p-4 rounded-xl bg-slate-900/70 border border-white/[0.08] space-y-3">
+          <div className="p-4 rounded-xl bg-[#edf2ea] border border-[#d2daca] space-y-3">
             <div className="flex items-center justify-between">
-              <h4 className="text-[11px] uppercase font-semibold text-amber-400 tracking-wider flex items-center space-x-1.5">
-                <Sparkles className="w-3.5 h-3.5 text-amber-400" />
+              <h4 className="text-[11px] uppercase font-semibold text-sage-900 tracking-wider flex items-center space-x-1.5">
+                <Sparkles className="w-3.5 h-3.5 text-sage-800" />
                 <span>3. Asignar Tareas de Santificación</span>
               </h4>
-              <span className="text-[10px] text-slate-400">Se incluirán en la Hoja Pastoral</span>
+              <span className="text-[10px] text-[#52645b]">Se incluirán en la Hoja Pastoral</span>
             </div>
 
             {/* Chips de Plantillas Rápidas */}
-            <div className="space-y-1.5 bg-slate-950/60 p-2.5 rounded-lg border border-white/[0.04]">
-              <span className="text-[10px] text-slate-400 font-semibold uppercase tracking-wider flex items-center space-x-1">
-                <Bookmark className="w-3 h-3 text-amber-400" />
+            <div className="space-y-1.5 bg-[#fbfcfa] p-2.5 rounded-lg border border-[#d2daca]">
+              <span className="text-[10px] text-[#52645b] font-semibold uppercase tracking-wider flex items-center space-x-1">
+                <Bookmark className="w-3 h-3 text-sage-800" />
                 <span>Plantillas Rápidas Frecuentes:</span>
               </span>
               <div className="flex flex-wrap gap-1.5">
@@ -319,7 +319,7 @@ export const NewSessionModal: React.FC<NewSessionModalProps> = ({
                     key={preset.label}
                     type="button"
                     onClick={() => handleApplyPreset(preset)}
-                    className="px-2 py-1 rounded bg-slate-900 hover:bg-amber-600/25 border border-white/[0.06] hover:border-amber-500/40 text-[10px] text-slate-300 hover:text-amber-200 transition-all text-left"
+                    className="px-2 py-1 rounded bg-[#edf2ea] hover:bg-sage-100 border border-[#d2daca] hover:border-sage-400 text-[10px] text-[#3b4c44] hover:text-sage-950 transition-all text-left"
                   >
                     + {preset.label}
                   </button>
@@ -331,13 +331,13 @@ export const NewSessionModal: React.FC<NewSessionModalProps> = ({
             {newTasks.length > 0 && (
               <div className="space-y-2">
                 {newTasks.map((t) => (
-                  <div key={t.id} className="flex items-start justify-between p-2.5 rounded-lg bg-slate-950 border border-amber-500/20">
+                  <div key={t.id} className="flex items-start justify-between p-2.5 rounded-lg bg-[#fbfcfa] border border-sage-300 shadow-sm">
                     <div className="flex-1 pr-2">
                       <div className="flex items-center space-x-2">
-                        <span className="text-[9px] uppercase font-bold px-1.5 py-0.5 rounded bg-slate-800 border border-white/[0.06] text-amber-300">
+                        <span className="text-[9px] uppercase font-bold px-1.5 py-0.5 rounded bg-sage-100 border border-sage-200 text-sage-900">
                           {t.category || 'general'}
                         </span>
-                        <p className="text-slate-200 text-xs font-medium">{t.description}</p>
+                        <p className="text-sage-950 text-xs font-medium">{t.description}</p>
                       </div>
                       {t.biblicalReference && (
                         <div className="mt-1">
@@ -348,7 +348,7 @@ export const NewSessionModal: React.FC<NewSessionModalProps> = ({
                     <button
                       type="button"
                       onClick={() => handleRemoveNewTask(t.id)}
-                      className="text-slate-500 hover:text-rose-400 p-1 transition-colors"
+                      className="text-[#718579] hover:text-rose-600 p-1 transition-colors"
                       title="Quitar tarea"
                     >
                       <Trash2 className="w-3.5 h-3.5" />
@@ -359,9 +359,9 @@ export const NewSessionModal: React.FC<NewSessionModalProps> = ({
             )}
 
             {/* Formulario de Entrada de Nueva Tarea */}
-            <div className="p-3 rounded-lg bg-slate-950/80 border border-white/[0.06] space-y-2.5">
+            <div className="p-3 rounded-lg bg-[#fbfcfa] border border-[#d2daca] space-y-2.5 shadow-sm">
               <div className="flex flex-wrap items-center gap-2">
-                <span className="text-[10px] text-slate-400 font-medium">Categoría:</span>
+                <span className="text-[10px] text-[#52645b] font-medium">Categoría:</span>
                 {(['lectura', 'memorizacion', 'diario', 'accion', 'oracion', 'general'] as TaskCategory[]).map((cat) => (
                   <button
                     key={cat}
@@ -369,8 +369,8 @@ export const NewSessionModal: React.FC<NewSessionModalProps> = ({
                     onClick={() => setNewTaskCategory(cat)}
                     className={`px-2 py-0.5 rounded text-[10px] font-medium uppercase transition-all ${
                       newTaskCategory === cat
-                        ? 'bg-amber-600 text-white font-semibold shadow-gold-sm'
-                        : 'bg-slate-900 text-slate-400 hover:text-slate-200 border border-white/[0.05]'
+                        ? 'bg-sage-800 text-[#fbfcfa] font-semibold shadow-sm'
+                        : 'bg-[#edf2ea] text-[#3b4c44] hover:text-sage-950 border border-[#d2daca]'
                     }`}
                   >
                     {cat}
@@ -383,7 +383,7 @@ export const NewSessionModal: React.FC<NewSessionModalProps> = ({
                 value={newTaskDesc}
                 onChange={(e) => setNewTaskDesc(e.target.value)}
                 placeholder="Descripción de la tarea de santificación..."
-                className="w-full px-3 py-2 bg-slate-900 border border-white/[0.08] rounded-lg text-slate-100 placeholder-slate-500 text-xs focus:outline-none focus:border-amber-400"
+                className="w-full px-3 py-2 bg-[#edf2ea] border border-[#d2daca] rounded-lg text-sage-950 placeholder-[#718579] text-xs focus:outline-none focus:border-sage-500 shadow-sm"
               />
 
               <div className="flex gap-2 items-center">
@@ -393,13 +393,13 @@ export const NewSessionModal: React.FC<NewSessionModalProps> = ({
                     value={newTaskRef}
                     onChange={(e) => setNewTaskRef(e.target.value)}
                     placeholder="Referencia Bíblica (ej: Efesios 4:22-24, Salmo 32)..."
-                    className="w-full pl-3 pr-8 py-2 bg-slate-900 border border-white/[0.08] rounded-lg text-slate-100 placeholder-slate-500 text-xs focus:outline-none focus:border-amber-400"
+                    className="w-full pl-3 pr-8 py-2 bg-[#edf2ea] border border-[#d2daca] rounded-lg text-sage-950 placeholder-[#718579] text-xs focus:outline-none focus:border-sage-500 shadow-sm"
                   />
                   {newTaskRef.trim() && (
                     <button
                       type="button"
                       onClick={() => openBible(newTaskRef)}
-                      className="absolute right-2 top-1/2 -translate-y-1/2 text-amber-400 hover:text-amber-300 p-1"
+                      className="absolute right-2 top-1/2 -translate-y-1/2 text-sage-800 hover:text-sage-950 p-1"
                       title="Leer pasaje ahora"
                     >
                       <BookOpen className="w-3.5 h-3.5" />
@@ -410,7 +410,7 @@ export const NewSessionModal: React.FC<NewSessionModalProps> = ({
                 <button
                   type="button"
                   onClick={handleAddNewTask}
-                  className="px-3.5 py-2 bg-amber-600 hover:bg-amber-500 text-white rounded-lg text-xs font-semibold flex items-center space-x-1 shadow-gold-sm transition-all flex-shrink-0"
+                  className="px-3.5 py-2 bg-sage-800 hover:bg-sage-700 text-[#fbfcfa] rounded-lg text-xs font-semibold flex items-center space-x-1 shadow-sm transition-all flex-shrink-0"
                 >
                   <Plus className="w-3.5 h-3.5" />
                   <span>Añadir Tarea</span>
@@ -420,40 +420,40 @@ export const NewSessionModal: React.FC<NewSessionModalProps> = ({
           </div>
 
           {/* 4. Next Appointment */}
-          <div className="grid sm:grid-cols-2 gap-3 p-3.5 rounded-xl bg-slate-900/60 border border-white/[0.06]">
+          <div className="grid sm:grid-cols-2 gap-3 p-3.5 rounded-xl bg-[#edf2ea] border border-[#d2daca]">
             <div>
-              <label className="block text-[11px] font-medium text-slate-300 mb-1">Próxima Cita (Fecha)</label>
+              <label className="block text-[11px] font-medium text-[#2c3d36] mb-1">Próxima Cita (Fecha)</label>
               <input
                 type="date"
                 value={nextAppointmentDate}
                 onChange={(e) => setNextAppointmentDate(e.target.value)}
-                className="w-full px-3 py-2 bg-slate-950 border border-white/[0.08] rounded-lg text-slate-100 text-xs focus:outline-none focus:border-amber-400"
+                className="w-full px-3 py-2 bg-[#fbfcfa] border border-[#d2daca] rounded-lg text-sage-950 text-xs focus:outline-none focus:border-sage-500 shadow-sm"
               />
             </div>
             <div>
-              <label className="block text-[11px] font-medium text-slate-300 mb-1">Próxima Cita (Hora)</label>
+              <label className="block text-[11px] font-medium text-[#2c3d36] mb-1">Próxima Cita (Hora)</label>
               <input
                 type="time"
                 value={nextAppointmentTime}
                 onChange={(e) => setNextAppointmentTime(e.target.value)}
-                className="w-full px-3 py-2 bg-slate-950 border border-white/[0.08] rounded-lg text-slate-100 text-xs focus:outline-none focus:border-amber-400"
+                className="w-full px-3 py-2 bg-[#fbfcfa] border border-[#d2daca] rounded-lg text-sage-950 text-xs focus:outline-none focus:border-sage-500 shadow-sm"
               />
             </div>
           </div>
 
           {/* Actions */}
-          <div className="pt-3 border-t border-white/[0.06] flex justify-end space-x-2.5 flex-shrink-0">
+          <div className="pt-3 border-t border-[#d2daca] flex justify-end space-x-2.5 flex-shrink-0">
             <button
               type="button"
               onClick={onClose}
-              className="px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 font-semibold text-xs transition-colors"
+              className="px-4 py-2 rounded-xl bg-[#edf2ea] hover:bg-[#e4eae0] border border-[#d2daca] text-[#3b4c44] font-semibold text-xs transition-colors"
             >
               Cancelar
             </button>
             <button
               type="submit"
               disabled={isSaving}
-              className="gold-button px-5 py-2 font-semibold flex items-center space-x-1.5 text-xs disabled:opacity-50"
+              className="gold-button px-5 py-2 font-semibold flex items-center space-x-1.5 text-xs disabled:opacity-50 shadow-sm"
             >
               <Save className="w-3.5 h-3.5" />
               <span>{isSaving ? 'Guardando...' : 'Guardar y Finalizar Sesión'}</span>

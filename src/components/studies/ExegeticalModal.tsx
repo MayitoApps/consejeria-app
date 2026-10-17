@@ -21,34 +21,34 @@ export const ExegeticalModal: React.FC<ExegeticalModalProps> = ({ verse, isOpen,
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md animate-fade-in">
-      <div className="relative w-full max-w-xl max-h-[88vh] overflow-y-auto glass-card rounded-2xl p-5 sm:p-7 border border-white/[0.08] shadow-navy-lg animate-slide-up">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-sm animate-fade-in">
+      <div className="relative w-full max-w-xl max-h-[88vh] overflow-y-auto glass-card rounded-2xl p-5 sm:p-7 border border-stone-200 shadow-2xl animate-slide-up bg-white">
         
         {/* Header */}
-        <div className="flex items-start justify-between pb-3.5 mb-3.5 border-b border-white/[0.06]">
+        <div className="flex items-start justify-between pb-3.5 mb-3.5 border-b border-stone-100">
           <div>
             <div className="flex items-center space-x-1.5">
-              <span className="px-2 py-0.5 rounded-md bg-amber-500/10 border border-amber-500/20 text-amber-300 text-[10px] font-semibold tracking-wide uppercase">
+              <span className="px-2 py-0.5 rounded-md bg-amber-100 border border-amber-300 text-amber-900 text-[10px] font-semibold tracking-wide uppercase">
                 Análisis Exegético & Hermenéutico
               </span>
             </div>
-            <h3 className="font-serif text-lg sm:text-xl font-bold text-white mt-1 flex items-center space-x-2">
+            <h3 className="font-serif text-lg sm:text-xl font-bold text-slate-900 mt-1 flex items-center space-x-2">
               <span>{verse.reference}</span>
-              <span className="text-xs text-amber-400 font-sans font-normal">({verse.version || 'RVR1960'})</span>
+              <span className="text-xs text-amber-800 font-sans font-normal">({verse.version || 'RVR1960'})</span>
             </h3>
           </div>
           <div className="flex items-center space-x-1.5">
             <button
               onClick={handleCopy}
-              className="p-1.5 px-2.5 rounded-lg text-slate-300 hover:text-amber-300 hover:bg-slate-800/80 border border-white/[0.06] transition-all text-xs flex items-center space-x-1"
+              className="p-1.5 px-2.5 rounded-lg text-slate-600 hover:text-amber-800 hover:bg-stone-100 border border-stone-200 transition-all text-xs flex items-center space-x-1"
               title="Copiar estudio completo"
             >
-              {copied ? <Check className="w-3.5 h-3.5 text-emerald-400" /> : <Copy className="w-3.5 h-3.5" />}
+              {copied ? <Check className="w-3.5 h-3.5 text-emerald-600" /> : <Copy className="w-3.5 h-3.5" />}
               <span className="hidden sm:inline text-[11px]">{copied ? 'Copiado' : 'Copiar'}</span>
             </button>
             <button
               onClick={onClose}
-              className="p-1.5 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800/80 transition-all"
+              className="p-1.5 rounded-lg text-slate-400 hover:text-slate-700 hover:bg-stone-100 transition-all"
             >
               <X className="w-4 h-4" />
             </button>
@@ -57,7 +57,7 @@ export const ExegeticalModal: React.FC<ExegeticalModalProps> = ({ verse, isOpen,
 
         {/* Versicle Quote Box */}
         <div className="verse-blockquote mb-4">
-          <p className="font-serif text-xs sm:text-[13px] text-amber-100/90 italic leading-relaxed">
+          <p className="font-serif text-xs sm:text-[13px] text-slate-800 italic leading-relaxed">
             "{verse.text}"
           </p>
         </div>
@@ -66,53 +66,53 @@ export const ExegeticalModal: React.FC<ExegeticalModalProps> = ({ verse, isOpen,
         <div className="space-y-3">
           
           {/* 1. Original Languages & Terms */}
-          <div className="p-3.5 rounded-xl bg-slate-900/70 border border-white/[0.05] hover:border-amber-500/30 transition-all">
-            <div className="flex items-center space-x-2 text-amber-400 font-semibold text-xs mb-1">
-              <div className="p-1 rounded-md bg-amber-500/10 text-amber-300">
+          <div className="p-3.5 rounded-xl bg-stone-50 border border-amber-200/80 hover:border-amber-400 transition-all">
+            <div className="flex items-center space-x-2 text-amber-800 font-semibold text-xs mb-1">
+              <div className="p-1 rounded-md bg-amber-100 text-amber-800">
                 <BookOpen className="w-3.5 h-3.5" />
               </div>
               <span>1. Términos Originales (Hebreo / Griego)</span>
             </div>
-            <p className="text-xs text-slate-300 leading-relaxed pl-6">
+            <p className="text-xs text-slate-700 leading-relaxed pl-6">
               {verse.exegesis.originalTerms}
             </p>
           </div>
 
           {/* 2. Historical & Cultural Context */}
-          <div className="p-3.5 rounded-xl bg-slate-900/70 border border-white/[0.05] hover:border-blue-500/30 transition-all">
-            <div className="flex items-center space-x-2 text-blue-400 font-semibold text-xs mb-1">
-              <div className="p-1 rounded-md bg-blue-500/10 text-blue-300">
+          <div className="p-3.5 rounded-xl bg-stone-50 border border-blue-200/80 hover:border-blue-400 transition-all">
+            <div className="flex items-center space-x-2 text-blue-800 font-semibold text-xs mb-1">
+              <div className="p-1 rounded-md bg-blue-100 text-blue-800">
                 <History className="w-3.5 h-3.5" />
               </div>
               <span>2. Contexto Histórico y Audiencia Original</span>
             </div>
-            <p className="text-xs text-slate-300 leading-relaxed pl-6">
+            <p className="text-xs text-slate-700 leading-relaxed pl-6">
               {verse.exegesis.historicalContext}
             </p>
           </div>
 
           {/* 3. Perennial Theological Principle */}
-          <div className="p-3.5 rounded-xl bg-slate-900/70 border border-white/[0.05] hover:border-emerald-500/30 transition-all">
-            <div className="flex items-center space-x-2 text-emerald-400 font-semibold text-xs mb-1">
-              <div className="p-1 rounded-md bg-emerald-500/10 text-emerald-300">
+          <div className="p-3.5 rounded-xl bg-stone-50 border border-emerald-200/80 hover:border-emerald-400 transition-all">
+            <div className="flex items-center space-x-2 text-emerald-800 font-semibold text-xs mb-1">
+              <div className="p-1 rounded-md bg-emerald-100 text-emerald-800">
                 <Lightbulb className="w-3.5 h-3.5" />
               </div>
               <span>3. Principio Teológico Central</span>
             </div>
-            <p className="text-xs text-slate-300 leading-relaxed pl-6">
+            <p className="text-xs text-slate-700 leading-relaxed pl-6">
               {verse.exegesis.theologicalPrinciple}
             </p>
           </div>
 
           {/* 4. Pastoral & Counseling Application */}
-          <div className="p-3.5 rounded-xl bg-gradient-to-r from-amber-950/30 to-slate-900 border border-amber-500/25">
-            <div className="flex items-center space-x-2 text-amber-300 font-semibold text-xs mb-1">
-              <div className="p-1 rounded-md bg-amber-500/15 text-amber-300">
+          <div className="p-3.5 rounded-xl bg-amber-50/80 border border-amber-300">
+            <div className="flex items-center space-x-2 text-amber-900 font-semibold text-xs mb-1">
+              <div className="p-1 rounded-md bg-amber-100 text-amber-800">
                 <HeartHandshake className="w-3.5 h-3.5" />
               </div>
               <span>4. Aplicación Práctica en Consejería</span>
             </div>
-            <p className="text-xs text-amber-100/90 leading-relaxed pl-6 font-medium">
+            <p className="text-xs text-slate-800 leading-relaxed pl-6 font-medium">
               {verse.exegesis.pastoralApplication}
             </p>
           </div>
@@ -120,10 +120,10 @@ export const ExegeticalModal: React.FC<ExegeticalModalProps> = ({ verse, isOpen,
         </div>
 
         {/* Footer actions */}
-        <div className="mt-5 pt-3.5 border-t border-white/[0.06] flex justify-end">
+        <div className="mt-5 pt-3.5 border-t border-stone-100 flex justify-end">
           <button
             onClick={onClose}
-            className="px-4 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-semibold transition-all"
+            className="px-4 py-1.5 rounded-lg bg-stone-100 hover:bg-stone-200 text-slate-800 text-xs font-semibold transition-all border border-stone-200"
           >
             Entendido
           </button>

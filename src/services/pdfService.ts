@@ -179,3 +179,168 @@ export const exportStudyToPDF = async (study: BibleStudy, elementId?: string): P
 
   doc.save(`${study.id}-estudio-biblico.pdf`);
 };
+
+/**
+ * Exporta el documento oficial de Metodología de Consejería Bíblica a PDF
+ */
+export const exportMethodologyToPDF = async (): Promise<void> => {
+  const { METHODOLOGY_SECTIONS, METHODOLOGY_VERSE } = await import('../data/methodologyData');
+  
+  const doc = new jsPDF({
+    orientation: 'portrait',
+    unit: 'mm',
+    format: 'a4'
+  });
+
+  const margin = 15;
+  let y = margin;
+  const pageWidth = 210;
+  const contentWidth = pageWidth - (margin * 2);
+
+  doc.setFillColor(15, 23, 42);
+  doc.rect(0, 0, 210, 32, 'F');
+  
+  doc.setTextColor(217, 119, 6);
+  doc.setFontSize(16);
+  doc.setFont('helvetica', 'bold');
+  doc.text('ANCLA CONSEJERÍA BÍBLICA', margin, 14);
+
+  doc.setTextColor(255, 255, 255);
+  doc.setFontSize(9);
+  doc.setFont('helvetica', 'normal');
+  doc.text('Documento Oficial: Metodología de Consejería Pastoral (13 Dimensiones)', margin, 22);
+  doc.text(`Fecha: ${new Date().toLocaleDateString('es-ES')}`, pageWidth - margin - 35, 22);
+
+  y = 42;
+
+  doc.setTextColor(15, 23, 42);
+  doc.setFontSize(13);
+  doc.setFont('helvetica', 'bold');
+  doc.text(`Fundamento Bíblico: ${METHODOLOGY_VERSE.reference}`, margin, y);
+  y += 6;
+
+  doc.setTextColor(180, 83, 9);
+  doc.setFontSize(9);
+  doc.setFont('helvetica', 'italic');
+  const verseLines = doc.splitTextToSize(`"${METHODOLOGY_VERSE.text}"`, contentWidth);
+  doc.text(verseLines, margin, y);
+  y += verseLines.length * 4.5 + 6;
+
+  const checkPageBreak = (neededHeight: number) => {
+    if (y + neededHeight > 275) {
+      doc.addPage();
+      y = 20;
+    }
+  };
+
+  METHODOLOGY_SECTIONS.forEach((sec) => {
+    checkPageBreak(20);
+    doc.setTextColor(15, 23, 42);
+    doc.setFontSize(11);
+    doc.setFont('helvetica', 'bold');
+    doc.text(`${sec.number}. ${sec.title}`, margin, y);
+    y += 4.5;
+
+    if (sec.subtitle) {
+      doc.setTextColor(100, 116, 139);
+      doc.setFontSize(8);
+      doc.setFont('helvetica', 'italic');
+      doc.text(sec.subtitle, margin, y);
+      y += 4.5;
+    }
+
+    if (sec.content.overview) {
+      doc.setTextColor(51, 65, 85);
+      doc.setFontSize(8.5);
+      doc.setFont('helvetica', 'normal');
+      const ovLines = doc.splitTextToSize(sec.content.overview, contentWidth);
+      doc.text(ovLines, margin, y);
+      y += ovLines.length * 4 + 2;
+    }
+
+    if (sec.content.subsections) {
+      sec.content.subsections.forEach(sub => {
+        checkPageBreak(12);
+        doc.setTextColor(180, 83, 9);
+        doc.setFontSize(9);
+        doc.setFont('helvetica', 'bold');
+        doc.text(sub.title, margin + 2, y);
+        y += 4;
+
+        doc.setTextColor(51, 65, 85);
+        doc.setFontSize(8);
+        doc.setFont('helvetica', 'normal');
+        sub.points.forEach(p => {
+          checkPageBreak(7);
+          const pLines = doc.splitTextToSize(`• ${p}`, contentWidth - 4);
+          doc.text(pLines, margin + 4, y);
+          y += pLines.length * 3.5;
+        });
+        y += 2;
+      });
+    }
+
+    if (sec.content.questions) {
+      doc.setTextColor(180, 83, 9);
+      doc.setFontSize(8.5);
+      doc.setFont('helvetica', 'bold');
+      doc.text('Preguntas Clave:', margin + 2, y);
+      y += 4;
+
+      doc.setTextColor(51, 65, 85);
+      doc.setFontSize(8);
+      doc.setFont('helvetica', 'normal');
+      sec.content.questions.forEach((q, idx) => {
+        checkPageBreak(7);
+        const qLines = doc.splitTextToSize(`${idx + 1}. ${q}`, contentWidth - 4);
+        doc.text(qLines, margin + 4, y);
+        y += qLines.length * 3.5;
+      });
+      y += 2;
+    }
+
+    if (sec.content.items) {
+      doc.setTextColor(51, 65, 85);
+      doc.setFontSize(8);
+      doc.setFont('helvetica', 'normal');
+      sec.content.items.forEach(it => {
+        checkPageBreak(7);
+        const itLines = doc.splitTextToSize(`- ${it}`, contentWidth - 4);
+        doc.text(itLines, margin + 4, y);
+        y += itLines.length * 3.5;
+      });
+      y += 2;
+    }
+
+    if (sec.content.checklist) {
+      doc.setTextColor(51, 65, 85);
+      doc.setFontSize(8);
+      doc.setFont('helvetica', 'normal');
+      sec.content.checklist.forEach(c => {
+        checkPageBreak(7);
+        const cLines = doc.splitTextToSize(`[✓] ${c}`, contentWidth - 4);
+        doc.text(cLines, margin + 4, y);
+        y += cLines.length * 3.5;
+      });
+      y += 2;
+    }
+
+    if (sec.content.books) {
+      doc.setTextColor(51, 65, 85);
+      doc.setFontSize(8);
+      doc.setFont('helvetica', 'normal');
+      sec.content.books.forEach(b => {
+        checkPageBreak(7);
+        const bLines = doc.splitTextToSize(`📖 ${b}`, contentWidth - 4);
+        doc.text(bLines, margin + 4, y);
+        y += bLines.length * 3.5;
+      });
+      y += 2;
+    }
+
+    y += 3;
+  });
+
+  doc.save('Metodologia-de-Consejeria-Biblica.pdf');
+};
+

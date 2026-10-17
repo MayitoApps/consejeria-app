@@ -118,20 +118,20 @@ export const AdviseeModal: React.FC<AdviseeModalProps> = ({
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-md animate-fade-in">
-      <div className="relative w-full max-w-2xl max-h-[90vh] flex flex-col glass-card rounded-2xl p-5 sm:p-7 border border-white/[0.08] shadow-navy-lg animate-slide-up">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-sm animate-fade-in">
+      <div className="relative w-full max-w-2xl max-h-[90vh] flex flex-col bg-[#fbfcfa] rounded-2xl p-5 sm:p-7 border border-[#d2daca] shadow-2xl animate-slide-up">
         
         {/* Header */}
-        <div className="flex items-center justify-between pb-3 mb-4 border-b border-white/[0.06]">
+        <div className="flex items-center justify-between pb-3 mb-4 border-b border-[#d2daca]">
           <div className="flex items-center space-x-2.5">
-            <div className="w-8 h-8 rounded-lg bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400">
+            <div className="w-8 h-8 rounded-lg bg-sage-100 border border-sage-300 flex items-center justify-center text-sage-800">
               <UserPlus className="w-4 h-4" />
             </div>
             <div>
-              <h3 className="font-serif text-lg sm:text-xl font-bold text-white">
+              <h3 className="font-serif text-lg sm:text-xl font-bold text-sage-950">
                 {initialData ? 'Editar Expediente de Aconsejado' : 'Nuevo Expediente de Aconsejado'}
               </h3>
-              <p className="text-[11px] text-slate-400">
+              <p className="text-[11px] text-[#52645b]">
                 Información confidencial resguardada en tu cuenta de consejero
               </p>
             </div>
@@ -139,7 +139,7 @@ export const AdviseeModal: React.FC<AdviseeModalProps> = ({
 
           <button
             onClick={onClose}
-            className="p-1.5 rounded-lg text-slate-400 hover:text-white bg-slate-900/80 border border-white/[0.06]"
+            className="p-1.5 rounded-lg text-[#52645b] hover:text-sage-950 bg-[#edf2ea] hover:bg-[#e4eae0] border border-[#d2daca] transition-all"
           >
             <X className="w-4 h-4" />
           </button>
@@ -150,70 +150,70 @@ export const AdviseeModal: React.FC<AdviseeModalProps> = ({
           
           {/* Datos Personales */}
           <div>
-            <h4 className="text-[11px] uppercase font-semibold text-amber-400 tracking-wider mb-2.5 flex items-center space-x-1.5">
-              <User className="w-3.5 h-3.5" />
+            <h4 className="text-[11px] uppercase font-semibold text-sage-900 tracking-wider mb-2.5 flex items-center space-x-1.5">
+              <User className="w-3.5 h-3.5 text-sage-800" />
               <span>Datos Personales</span>
             </h4>
             
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
               <div className="sm:col-span-2">
-                <label className="block text-[11px] font-medium text-slate-300 mb-1">Nombre Completo *</label>
+                <label className="block text-[11px] font-medium text-[#2c3d36] mb-1">Nombre Completo *</label>
                 <input
                   type="text"
                   required
                   value={fullName}
                   onChange={(e) => setFullName(e.target.value)}
                   placeholder="Ej: Juan Pérez Martínez"
-                  className="w-full px-3 py-2 bg-slate-900/90 border border-white/[0.08] rounded-lg text-slate-100 placeholder-slate-500 text-xs focus:outline-none focus:border-amber-500"
+                  className="w-full px-3 py-2 bg-[#edf2ea] border border-[#d2daca] rounded-lg text-sage-950 placeholder-[#718579] text-xs focus:outline-none focus:border-sage-500 shadow-sm"
                 />
               </div>
 
               <div>
-                <label className="block text-[11px] font-medium text-slate-300 mb-1">Edad</label>
+                <label className="block text-[11px] font-medium text-[#2c3d36] mb-1">Edad</label>
                 <input
                   type="number"
                   min="1"
                   max="120"
                   value={age}
                   onChange={(e) => setAge(Number(e.target.value))}
-                  className="w-full px-3 py-2 bg-slate-900/90 border border-white/[0.08] rounded-lg text-slate-100 text-xs focus:outline-none focus:border-amber-500"
+                  className="w-full px-3 py-2 bg-[#edf2ea] border border-[#d2daca] rounded-lg text-sage-950 text-xs focus:outline-none focus:border-sage-500 shadow-sm"
                 />
               </div>
 
               <div>
-                <label className="block text-[11px] font-medium text-slate-300 mb-1">Teléfono</label>
+                <label className="block text-[11px] font-medium text-[#2c3d36] mb-1">Teléfono</label>
                 <div className="relative">
-                  <Phone className="w-3.5 h-3.5 text-slate-500 absolute left-2.5 top-1/2 -translate-y-1/2" />
+                  <Phone className="w-3.5 h-3.5 text-[#718579] absolute left-2.5 top-1/2 -translate-y-1/2" />
                   <input
                     type="tel"
                     value={phone}
                     onChange={(e) => setPhone(e.target.value)}
                     placeholder="+52 55 1234 5678"
-                    className="w-full pl-8 pr-3 py-2 bg-slate-900/90 border border-white/[0.08] rounded-lg text-slate-100 placeholder-slate-500 text-xs focus:outline-none focus:border-amber-500"
+                    className="w-full pl-8 pr-3 py-2 bg-[#edf2ea] border border-[#d2daca] rounded-lg text-sage-950 placeholder-[#718579] text-xs focus:outline-none focus:border-sage-500 shadow-sm"
                   />
                 </div>
               </div>
 
               <div>
-                <label className="block text-[11px] font-medium text-slate-300 mb-1">Email</label>
+                <label className="block text-[11px] font-medium text-[#2c3d36] mb-1">Email</label>
                 <div className="relative">
-                  <Mail className="w-3.5 h-3.5 text-slate-500 absolute left-2.5 top-1/2 -translate-y-1/2" />
+                  <Mail className="w-3.5 h-3.5 text-[#718579] absolute left-2.5 top-1/2 -translate-y-1/2" />
                   <input
                     type="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="aconsejado@ejemplo.com"
-                    className="w-full pl-8 pr-3 py-2 bg-slate-900/90 border border-white/[0.08] rounded-lg text-slate-100 placeholder-slate-500 text-xs focus:outline-none focus:border-amber-500"
+                    className="w-full pl-8 pr-3 py-2 bg-[#edf2ea] border border-[#d2daca] rounded-lg text-sage-950 placeholder-[#718579] text-xs focus:outline-none focus:border-sage-500 shadow-sm"
                   />
                 </div>
               </div>
 
               <div>
-                <label className="block text-[11px] font-medium text-slate-300 mb-1">Estado Civil</label>
+                <label className="block text-[11px] font-medium text-[#2c3d36] mb-1">Estado Civil</label>
                 <select
                   value={maritalStatus}
                   onChange={(e) => setMaritalStatus(e.target.value as MaritalStatus)}
-                  className="w-full px-3 py-2 bg-slate-900/90 border border-white/[0.08] rounded-lg text-slate-100 text-xs focus:outline-none focus:border-amber-500"
+                  className="w-full px-3 py-2 bg-[#edf2ea] border border-[#d2daca] rounded-lg text-sage-950 text-xs focus:outline-none focus:border-sage-500 shadow-sm"
                 >
                   <option value="Soltero(a)">Soltero(a)</option>
                   <option value="Casado(a)">Casado(a)</option>
@@ -224,31 +224,31 @@ export const AdviseeModal: React.FC<AdviseeModalProps> = ({
               </div>
 
               <div>
-                <label className="block text-[11px] font-medium text-slate-300 mb-1">Fecha de Nacimiento</label>
+                <label className="block text-[11px] font-medium text-[#2c3d36] mb-1">Fecha de Nacimiento</label>
                 <input
                   type="date"
                   value={birthDate}
                   onChange={(e) => setBirthDate(e.target.value)}
-                  className="w-full px-3 py-2 bg-slate-900/90 border border-white/[0.08] rounded-lg text-slate-100 text-xs focus:outline-none focus:border-amber-500"
+                  className="w-full px-3 py-2 bg-[#edf2ea] border border-[#d2daca] rounded-lg text-sage-950 text-xs focus:outline-none focus:border-sage-500 shadow-sm"
                 />
               </div>
 
               <div>
-                <label className="block text-[11px] font-medium text-slate-300 mb-1">Fecha Inicio Consejería</label>
+                <label className="block text-[11px] font-medium text-[#2c3d36] mb-1">Fecha Inicio Consejería</label>
                 <input
                   type="date"
                   value={startDate}
                   onChange={(e) => setStartDate(e.target.value)}
-                  className="w-full px-3 py-2 bg-slate-900/90 border border-white/[0.08] rounded-lg text-slate-100 text-xs focus:outline-none focus:border-amber-500"
+                  className="w-full px-3 py-2 bg-[#edf2ea] border border-[#d2daca] rounded-lg text-sage-950 text-xs focus:outline-none focus:border-sage-500 shadow-sm"
                 />
               </div>
 
               <div>
-                <label className="block text-[11px] font-medium text-slate-300 mb-1">Estado del Expediente</label>
+                <label className="block text-[11px] font-medium text-[#2c3d36] mb-1">Estado del Expediente</label>
                 <select
                   value={status}
                   onChange={(e) => setStatus(e.target.value as AdviseeStatus)}
-                  className="w-full px-3 py-2 bg-slate-900/90 border border-white/[0.08] rounded-lg text-slate-100 text-xs focus:outline-none focus:border-amber-500 font-semibold text-amber-300"
+                  className="w-full px-3 py-2 bg-[#edf2ea] border border-[#d2daca] rounded-lg text-sage-950 text-xs focus:outline-none focus:border-sage-500 font-semibold shadow-sm"
                 >
                   <option value="Activo">🟢 Activo</option>
                   <option value="Suspendido">🟡 Suspendido</option>
@@ -257,13 +257,13 @@ export const AdviseeModal: React.FC<AdviseeModalProps> = ({
               </div>
 
               <div className="sm:col-span-2 lg:col-span-3">
-                <label className="block text-[11px] font-medium text-slate-300 mb-1">Referido por quién</label>
+                <label className="block text-[11px] font-medium text-[#2c3d36] mb-1">Referido por quién</label>
                 <input
                   type="text"
                   value={referredBy}
                   onChange={(e) => setReferredBy(e.target.value)}
                   placeholder="Ej: Pastor Carlos / Su cónyuge / Búsqueda propia"
-                  className="w-full px-3 py-2 bg-slate-900/90 border border-white/[0.08] rounded-lg text-slate-100 placeholder-slate-500 text-xs focus:outline-none focus:border-amber-500"
+                  className="w-full px-3 py-2 bg-[#edf2ea] border border-[#d2daca] rounded-lg text-sage-950 placeholder-[#718579] text-xs focus:outline-none focus:border-sage-500 shadow-sm"
                 />
               </div>
             </div>
@@ -271,31 +271,31 @@ export const AdviseeModal: React.FC<AdviseeModalProps> = ({
 
           {/* Motivo y Antecedentes */}
           <div>
-            <h4 className="text-[11px] uppercase font-semibold text-amber-400 tracking-wider mb-2.5 flex items-center space-x-1.5">
-              <FileText className="w-3.5 h-3.5" />
+            <h4 className="text-[11px] uppercase font-semibold text-sage-900 tracking-wider mb-2.5 flex items-center space-x-1.5">
+              <FileText className="w-3.5 h-3.5 text-sage-800" />
               <span>Motivo de la Consejería & Antecedentes</span>
             </h4>
             
             <div className="space-y-3">
               <div>
-                <label className="block text-[11px] font-medium text-slate-300 mb-1">Motivo de la Búsqueda de Consejería *</label>
+                <label className="block text-[11px] font-medium text-[#2c3d36] mb-1">Motivo de la Búsqueda de Consejería *</label>
                 <textarea
                   rows={2}
                   value={reason}
                   onChange={(e) => setReason(e.target.value)}
                   placeholder="Describe la problemática principal por la cual busca ayuda bíblica..."
-                  className="w-full px-3 py-2 bg-slate-900/90 border border-white/[0.08] rounded-lg text-slate-100 placeholder-slate-500 text-xs focus:outline-none focus:border-amber-500 leading-relaxed"
+                  className="w-full px-3 py-2 bg-[#edf2ea] border border-[#d2daca] rounded-lg text-sage-950 placeholder-[#718579] text-xs focus:outline-none focus:border-sage-500 leading-relaxed shadow-sm"
                 />
               </div>
 
               <div>
-                <label className="block text-[11px] font-medium text-slate-300 mb-1">Antecedentes & Notas Generales del Consejero</label>
+                <label className="block text-[11px] font-medium text-[#2c3d36] mb-1">Antecedentes & Notas Generales del Consejero</label>
                 <textarea
                   rows={3}
                   value={backgroundNotes}
                   onChange={(e) => setBackgroundNotes(e.target.value)}
                   placeholder="Historial familiar, dinámicas relacionales, contexto espiritual y observaciones preliminares..."
-                  className="w-full px-3 py-2 bg-slate-900/90 border border-white/[0.08] rounded-lg text-slate-100 placeholder-slate-500 text-xs focus:outline-none focus:border-amber-500 leading-relaxed"
+                  className="w-full px-3 py-2 bg-[#edf2ea] border border-[#d2daca] rounded-lg text-sage-950 placeholder-[#718579] text-xs focus:outline-none focus:border-sage-500 leading-relaxed shadow-sm"
                 />
               </div>
             </div>
@@ -303,27 +303,27 @@ export const AdviseeModal: React.FC<AdviseeModalProps> = ({
 
           {/* Próxima Sesión */}
           <div>
-            <h4 className="text-[11px] uppercase font-semibold text-amber-400 tracking-wider mb-2.5 flex items-center space-x-1.5">
-              <Calendar className="w-3.5 h-3.5" />
+            <h4 className="text-[11px] uppercase font-semibold text-sage-900 tracking-wider mb-2.5 flex items-center space-x-1.5">
+              <Calendar className="w-3.5 h-3.5 text-sage-800" />
               <span>Programación de Próxima Sesión</span>
             </h4>
             <div className="grid sm:grid-cols-2 gap-3">
               <div>
-                <label className="block text-[11px] font-medium text-slate-300 mb-1">Fecha</label>
+                <label className="block text-[11px] font-medium text-[#2c3d36] mb-1">Fecha</label>
                 <input
                   type="date"
                   value={nextSessionDate}
                   onChange={(e) => setNextSessionDate(e.target.value)}
-                  className="w-full px-3 py-2 bg-slate-900/90 border border-white/[0.08] rounded-lg text-slate-100 text-xs focus:outline-none focus:border-amber-500"
+                  className="w-full px-3 py-2 bg-[#edf2ea] border border-[#d2daca] rounded-lg text-sage-950 text-xs focus:outline-none focus:border-sage-500 shadow-sm"
                 />
               </div>
               <div>
-                <label className="block text-[11px] font-medium text-slate-300 mb-1">Hora</label>
+                <label className="block text-[11px] font-medium text-[#2c3d36] mb-1">Hora</label>
                 <input
                   type="time"
                   value={nextSessionTime}
                   onChange={(e) => setNextSessionTime(e.target.value)}
-                  className="w-full px-3 py-2 bg-slate-900/90 border border-white/[0.08] rounded-lg text-slate-100 text-xs focus:outline-none focus:border-amber-500"
+                  className="w-full px-3 py-2 bg-[#edf2ea] border border-[#d2daca] rounded-lg text-sage-950 text-xs focus:outline-none focus:border-sage-500 shadow-sm"
                 />
               </div>
             </div>
@@ -331,8 +331,8 @@ export const AdviseeModal: React.FC<AdviseeModalProps> = ({
 
           {/* Asignar Tareas */}
           <div>
-            <h4 className="text-[11px] uppercase font-semibold text-amber-400 tracking-wider mb-2.5 flex items-center space-x-1.5">
-              <Heart className="w-3.5 h-3.5" />
+            <h4 className="text-[11px] uppercase font-semibold text-sage-900 tracking-wider mb-2.5 flex items-center space-x-1.5">
+              <Heart className="w-3.5 h-3.5 text-sage-800" />
               <span>Tareas Bíblicas Asignadas</span>
             </h4>
 
@@ -340,17 +340,17 @@ export const AdviseeModal: React.FC<AdviseeModalProps> = ({
             {tasks.length > 0 && (
               <div className="space-y-1.5 mb-2.5">
                 {tasks.map((task) => (
-                  <div key={task.id} className="flex items-center justify-between p-2.5 rounded-lg bg-slate-900/80 border border-white/[0.05]">
+                  <div key={task.id} className="flex items-center justify-between p-2.5 rounded-lg bg-[#fbfcfa] border border-[#d2daca] shadow-sm">
                     <div>
-                      <p className="text-slate-200 font-medium text-xs">{task.description}</p>
+                      <p className="text-sage-950 font-medium text-xs">{task.description}</p>
                       {task.biblicalReference && (
-                        <p className="text-[11px] text-amber-400 font-serif">{task.biblicalReference}</p>
+                        <p className="text-[11px] text-sage-800 font-serif font-semibold">{task.biblicalReference}</p>
                       )}
                     </div>
                     <button
                       type="button"
                       onClick={() => handleRemoveTask(task.id)}
-                      className="text-slate-500 hover:text-rose-400 p-1"
+                      className="text-[#718579] hover:text-rose-600 p-1"
                     >
                       <Trash2 className="w-3.5 h-3.5" />
                     </button>
@@ -360,13 +360,13 @@ export const AdviseeModal: React.FC<AdviseeModalProps> = ({
             )}
 
             {/* Add new task input */}
-            <div className="p-3 rounded-xl bg-slate-900/50 border border-white/[0.06] space-y-2">
+            <div className="p-3 rounded-xl bg-[#edf2ea] border border-[#d2daca] space-y-2 shadow-sm">
               <input
                 type="text"
                 value={newTaskDesc}
                 onChange={(e) => setNewTaskDesc(e.target.value)}
                 placeholder="Descripción de la tarea (ej: Leer Efesios 4 y anotar 3 aplicaciones)..."
-                className="w-full px-2.5 py-1.5 bg-slate-950 border border-white/[0.06] rounded-lg text-slate-100 placeholder-slate-500 focus:outline-none focus:border-amber-500 text-xs"
+                className="w-full px-2.5 py-1.5 bg-[#fbfcfa] border border-[#d2daca] rounded-lg text-sage-950 placeholder-[#718579] focus:outline-none focus:border-sage-500 text-xs shadow-sm"
               />
               <div className="flex gap-2">
                 <input
@@ -374,12 +374,12 @@ export const AdviseeModal: React.FC<AdviseeModalProps> = ({
                   value={newTaskRef}
                   onChange={(e) => setNewTaskRef(e.target.value)}
                   placeholder="Cita Bíblica opcional (ej: Efesios 4:22-32)"
-                  className="flex-1 px-2.5 py-1.5 bg-slate-950 border border-white/[0.06] rounded-lg text-slate-100 placeholder-slate-500 focus:outline-none focus:border-amber-500 text-xs"
+                  className="flex-1 px-2.5 py-1.5 bg-[#fbfcfa] border border-[#d2daca] rounded-lg text-sage-950 placeholder-[#718579] focus:outline-none focus:border-sage-500 text-xs shadow-sm"
                 />
                 <button
                   type="button"
                   onClick={handleAddTask}
-                  className="px-3 py-1.5 bg-amber-600 hover:bg-amber-500 text-white rounded-lg text-xs font-semibold flex items-center space-x-1"
+                  className="px-3 py-1.5 bg-sage-800 hover:bg-sage-700 text-[#fbfcfa] rounded-lg text-xs font-semibold flex items-center space-x-1 shadow-sm transition-all"
                 >
                   <Plus className="w-3.5 h-3.5" />
                   <span>Agregar</span>
@@ -389,18 +389,18 @@ export const AdviseeModal: React.FC<AdviseeModalProps> = ({
           </div>
 
           {/* Form Actions */}
-          <div className="pt-3 border-t border-white/[0.06] flex justify-end space-x-2.5">
+          <div className="pt-3 border-t border-[#d2daca] flex justify-end space-x-2.5">
             <button
               type="button"
               onClick={onClose}
-              className="px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 font-semibold text-xs"
+              className="px-4 py-2 rounded-xl bg-[#edf2ea] hover:bg-[#e4eae0] text-[#3b4c44] font-semibold text-xs border border-[#d2daca] transition-all"
             >
               Cancelar
             </button>
             <button
               type="submit"
               disabled={isSaving}
-              className="gold-button px-5 py-2 font-semibold flex items-center space-x-1.5 text-xs disabled:opacity-50"
+              className="gold-button px-5 py-2 font-semibold flex items-center space-x-1.5 text-xs disabled:opacity-50 shadow-sm"
             >
               <Save className="w-3.5 h-3.5" />
               <span>{isSaving ? 'Guardando...' : 'Guardar Expediente'}</span>

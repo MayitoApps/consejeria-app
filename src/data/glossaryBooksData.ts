@@ -1066,7 +1066,323 @@ Queremos que nuestros aconsejados piensen, sientan y oren por aquellos que no ha
         ]
       }
     ]
+  },
+  {
+    id: 'ira-furia-rencor-resentimiento',
+    title: 'Ira, furia, rencor y resentimiento',
+    shortDescription:
+      'Enojo contra el hermano, cólera íntima (thumos) vs. ira manifiesta (orgë), amontonar resentimientos, consecuencias somáticas, el amor demostrado en dar y la actitud de perdón.',
+    iconName: 'Zap',
+    categoryColor: 'from-rose-600 to-amber-700',
+    books: [
+      {
+        id: 'comentario-mateo-millos-ira',
+        title: 'Comentario Exegético al Texto Griego: Mateo',
+        author: 'Samuel Pérez Millos',
+        publisher: 'Editorial CLIE (Viladecavalls, Barcelona)',
+        year: '2009',
+        coverGradient: 'from-amber-950 via-slate-900 to-red-950',
+        coverIcon: 'Flame',
+        logosUrl: 'https://ref.ly/logosres/LLS:CTGDNTMT?pos=res%2fLLS%3aCTGDNTMT%2f2015-05-22T18%3a29%3a13Z%2f332',
+        summary:
+          'Análisis exegético de Mateo 5:21-22 sobre el alcance del sexto mandamiento: el verbo griego orgizo (enojarse), la raíz del enojo en el odio interno hacia el prójimo, el pecado del enojo sin causa o desproporcionado, y la prohibición paulina de Efesios 4:31.',
+        passages: [
+          {
+            id: 'millos-mateo-ira-pasaje-1',
+            bookTitle: 'Comentario Exegético: Mateo',
+            author: 'Samuel Pérez Millos',
+            chapter: 'Capítulo 5: El Sermón del Monte y el Alcance del Mandamiento',
+            pages: 'Páginas 332–333',
+            passageTitle: 'El Enojo como Manifestación de Odio y Quebrantamiento del Sexto Mandamiento',
+            logosUrl: 'https://ref.ly/logosres/LLS:CTGDNTMT?pos=res%2fLLS%3aCTGDNTMT%2f2015-05-22T18%3a29%3a13Z%2f332',
+            excerpt:
+              'El enojo es una manifestación de ira contra el prójimo, expresada por el verbo griego ὀργίζω (orgizo), que significa enojarse. Esa ira es el resultado del odio interno hacia alguien... Todo esto es un quebrantamiento del sexto mandamiento, pues quien se enoja de este modo, llegaría a matar si pudiese...',
+            fullText: `El enojo es una manifestación de ira contra el prójimo, expresada por el verbo griego ὀργίζω (orgizo), que significa enojarse. Esa ira es el resultado del odio interno hacia alguien. El Nuevo Testamento desarrolla la afirmación de Cristo, presentando el odio que se manifiesta en el enojo como una actitud contraria al amor y a la gracia de Dios. Quien es incapaz de amar manifiesta que no ha conocido a Dios (1 Jn. 4:8). Quien ha conocido, esto es, quien ha intimado y participa en el amor de Dios, ama a su hermano hasta ser capaz de poner su vida por él, porque también Jesús lo hizo (1 Jn. 3:16, 4:9–10). Quien no ama a su hermano debe preguntarse si realmente ha nacido de nuevo (1 Jn. 3:14).
+
+El enojo por principios santos quebrantados no es la expresión de ira pecaminosa, sino la manifestación de una reacción a causa del amor a Dios y su santidad (Ef. 4:26). Sin embargo si la reacción ante una ofensa cometida contra Dios se acumula y permanece en el corazón, se está dando lugar al diablo, ya que se convierte en odio humano lo que simplemente debió haber sido una reacción de amor hacia la ofensa contra Dios (Ef. 4:27).
+
+El enojo es una pasión natural; hay casos en que es legítimo y laudable; pero cuando nos enojamos sin causa, es pecado. Cuando surge sin que exista una provocación justa; sin causa, o sin causa buena, o sin causa proporcionada; cuando nos enojamos por suposiciones sin fundamento, o por afrentas triviales que no merecen respuesta. Cuando no hay ningún objetivo bueno en perspectiva, no sólo es vano, sino que hace daño; mientras que, si en alguna ocasión nos enojamos, debería ser para incitar al ofensor a arrepentirse, e impedir así que vuelva a ofender.
+
+Cuando sobrepasa los debidos límites, cuando va acompañado del ultraje y de la frase maliciosa, cuando tratamos de herir en lo vivo a quienes se van a resentir de ello. Todo esto es un quebrantamiento del sexto mandamiento, pues quien se enoja de este modo, llegaría a matar si pudiese o se atreviese a ello, ya que está dando los primeros pasos en esa dirección. El enojo contra el hermano es pecado y está prohibido expresamente para el creyente (Ef. 4:31). Cuando el enojo va acompañado de palabras hirientes está dentro del límite que Cristo aplicaba al alcance del mandamiento. Este tipo de enojo entra de lleno dentro de la prohibición "no cometerás homicidio".`,
+            biblicalReferences: [
+              'Mateo 5:21-22',
+              '1 Juan 4:8',
+              '1 Juan 3:14-16',
+              '1 Juan 4:9-10',
+              'Efesios 4:26-27',
+              'Efesios 4:31'
+            ],
+            keyTakeaway:
+              'El enojo injustificado, los ultrajes y las palabras hirientes proceden del odio interior y quebrantan el sexto mandamiento ("no matarás"); si se acumulan en el corazón, dan lugar y cabida al diablo.'
+          }
+        ]
+      },
+      {
+        id: 'comentario-apocalipsis-millos-ira',
+        title: 'Comentario Exegético al Texto Griego: Apocalipsis',
+        author: 'Samuel Pérez Millos',
+        publisher: 'Editorial CLIE (Viladecavalls, Barcelona)',
+        year: '2010',
+        coverGradient: 'from-rose-950 via-slate-900 to-amber-950',
+        coverIcon: 'ShieldAlert',
+        logosUrl: 'https://ref.ly/logosres/LLS:CTGDNTAPCSS?pos=res%2fLLS%3aCTGDNTAPCSS%2f2015-05-22T18%3a28%3a36Z%2f1870103',
+        summary:
+          'Exposición de los términos griegos de la ira: la distinción fundamental entre thumos (la cólera íntima instantánea) y orgë (el ánimo encolerizado manifiesto hacia el exterior y orientado hacia alguien), y la diferencia entre la ira humana y la ira santa de Dios.',
+        passages: [
+          {
+            id: 'millos-apocalipsis-ira-pasaje-1',
+            bookTitle: 'Comentario Exegético: Apocalipsis',
+            author: 'Samuel Pérez Millos',
+            chapter: 'Capítulo 14: La Psicología de las Pasiones del Alma y la Ira Divina',
+            pages: 'Página 497',
+            passageTitle: 'Anatomía Psíquica de la Ira: Distinción entre Thumos (Cólera Íntima) y Orgë (Ira Manifiesta)',
+            logosUrl: 'https://ref.ly/logosres/LLS:CTGDNTAPCSS?pos=res%2fLLS%3aCTGDNTAPCSS%2f2015-05-22T18%3a28%3a36Z%2f1870103',
+            excerpt:
+              'La ira es una pasión del alma, que mueve a indignación y enojo. Es, por tanto, una disposición anímica que conduce a acciones, aunque estas no lleguen a realizarse. En el griego se diferenciaban ambas partes: la cólera instantánea se denominaba θυμός (thumos); cuando se manifestaba al exterior recibía el nombre de ὀργή (orgë)...',
+            fullText: `La ira es una pasión del alma, que mueve a indignación y enojo. Es, por tanto, una disposición anímica que conduce a acciones, aunque estas no lleguen a realizarse. En el griego se diferenciaban ambas partes de este proceso psíquico, la intimidad en que se producía una cólera instantánea se denominaba θυμός (thumos), cuando el animo encolerizado se manifestaba al exterior recibía el nombre de ὀργή (orgë). La ira ὀργή (orgë) incorpora una determinada orientación que canaliza la cólera íntima y la orienta hacia algo o hacia alguien.
+
+Los diferentes términos que expresan ira, se usan tanto en relación con el hombre, como con Dios. En el primero de los casos, se hace diferenciación entre una expresión correcta o incorrecta de la ira. En el segundo, relacionado con Dios, sólo es posible entenderlo en la infinita perfección de Dios y de sus manifestaciones.`,
+            biblicalReferences: [
+              'Apocalipsis 14:10',
+              'Efesios 4:26',
+              'Salmo 7:11'
+            ],
+            keyTakeaway:
+              'La ira psíquica nace como cólera interior íntima (thumos) y se canaliza hacia afuera como ira orientada (orgë); en el hombre exige control bíblico riguroso, mientras que en Dios refleja Su infinita santidad y justicia.'
+          }
+        ]
+      },
+      {
+        id: 'manual-consejero-adams-ira',
+        title: 'Manual del Consejero Cristiano',
+        author: 'Jay E. Adams',
+        publisher: 'Editorial CLIE (Terrassa, Barcelona)',
+        year: '1984',
+        coverGradient: 'from-slate-900 via-amber-950 to-slate-900',
+        coverIcon: 'BookOpenCheck',
+        logosUrl: 'https://ref.ly/logosres/LLS:MNLDLCNSJRCRSTN?pos=res%2fLLS%3aMNLDLCNSJRCRSTN%2f2017-12-15T23%3a50%3a14Z%2f913558',
+        summary:
+          'Principios de la consejería noutética aplicados a la ira: la legitimidad de las emociones creadas por Dios, la distinción de Efesios 4:26, separar la relación del problema en consejería, el amor demostrado en el dar sacrificial (Ro. 12:20) y el perdón como deber moral y promesa inquebrantable.',
+        passages: [
+          {
+            id: 'adams-manual-ira-pasaje-1',
+            bookTitle: 'Manual del Consejero Cristiano',
+            author: 'Jay E. Adams',
+            chapter: 'Capítulo 21: La Emoción Humana y la Ira Bíblica',
+            pages: 'Páginas 349–350',
+            passageTitle: 'La Legitimidad Emocional de la Ira y el Ejemplo Santo de Jesucristo',
+            logosUrl: 'https://ref.ly/logosres/LLS:MNLDLCNSJRCRSTN?pos=res%2fLLS%3aMNLDLCNSJRCRSTN%2f2017-12-15T23%3a50%3a14Z%2f913558',
+            excerpt:
+              'La ira, en sí y por sí, no es pecaminosa. Esto lo vemos en la cuidadosa distinción que hace Pablo entre estar enojado y pecar: «Airaos, pero no pequéis» (Efesios 4:26)... No hay emociones perjudiciales o destructivas per se. Nuestra constitución emocional viene totalmente de Dios...',
+            fullText: `La ira, en sí y por sí, no es pecaminosa. Esto lo vemos en la cuidadosa distinción que hace Pablo entre estar enojado y pecar: «Airaos, pero no pequéis» (Efesios 4:26).
+
+La Biblia enseña que «Dios está airado con el malvado cada día» (Salmo 7:11). En 1.º Samuel 11:6 descubrimos que la venida del Espíritu Santo sobre Saúl resultó en una gran ira que le impulsó a llevar a cabo la obra para Dios. La Palabra de Dios nos revela que el Señor Jesús estuvo airado. No sólo era esta ira la que «le devoraba» (Juan 2:17), motivóle a echar de la casa de Dios a los que comerciaban en ella, pero Marcos nos informa de modo específico que, en otra ocasión, Jesús se volvió a los fariseos «en ira» (Marcos 3:5).
+
+La ira (en contraste con la rabia), sin embargo, es una reacción muy útil y necesaria… La ira es apropiada como una comunicación de sentimiento en reacción al comportamiento de otro. El hecho es que no hay emociones perjudiciales o destructivas per se. Nuestra constitución emocional viene totalmente de Dios. Todas las emociones de las que nos hizo capaces son constructivas cuando se usan propiamente (esto es, en conformidad con principios bíblicos). Todas las emociones, sin embargo, pueden llegar a ser destructivas cuando fallamos en expresarlas en armonía con las limitaciones y estructuras bíblicas.`,
+            biblicalReferences: [
+              'Efesios 4:26',
+              'Salmo 7:11',
+              '1 Samuel 11:6',
+              'Juan 2:17',
+              'Marcos 3:5'
+            ],
+            keyTakeaway:
+              'La ira no es intrínsecamente pecaminosa; Dios nos dotó de emociones constructivas para actuar con celo santo, pero se vuelven destructivas si rebasan las fronteras de la Escritura.'
+          },
+          {
+            id: 'adams-manual-ira-pasaje-2',
+            bookTitle: 'Manual del Consejero Cristiano',
+            author: 'Jay E. Adams',
+            chapter: 'Capítulo 22: El Proceso en Consejería y la Dinámica del Amor',
+            pages: 'Páginas 82, 361–362',
+            passageTitle: 'Separar la Relación de la Cuestión y el Amor Expresado en el Dar',
+            logosUrl: 'https://ref.ly/logosres/LLS:MNLDLCNSJRCRSTN?pos=res%2fLLS%3aMNLDLCNSJRCRSTN%2f2017-12-15T23%3a50%3a14Z%2f931515',
+            excerpt:
+              'Los consejeros tienen que dividir siempre la relación (a Dios y al otro) de la cuestión que les trae... El amor debe reemplazar la ira. Pero los consejeros deben recordar que el amor, en su base, no es un sentimiento sino que se expresa y se aprende dando...',
+            fullText: `El consejero debe decir: “Primero —usted debe reconocer su pecado y arrepentirse de él. Usted tiene que volver a la casa. Es imposible juntar a dos personas manteniéndolas separadas. 1.ª Corintios 7 dice que su separación es pecado.” Pidieron y recibieron el perdón de Dios y cada uno el del otro. Entonces empezaron a trabajar en el problema de la comunicación.
+
+Los consejeros, pues, tienen que dividir siempre la relación (a Dios y al otro) de la cuestión que les trae, y estar seguros de que no intentan tratar esta última antes de haber puesto en orden la primera. La confusión de las dos cosas es una causa importante de fracaso en el aconsejar.
+
+Los consejeros tienen que asegurar a los aconsejados que los cristianos pueden aprender a vivir sin amargura, ira, enojo, gritería, maledicencia y malicia. Pero tienen también que ayudarles a desarrollar y mantener actitudes de buena voluntad el uno hacia el otro. En el suelo de estas actitudes, las soluciones a los problemas de la vida crecen lozanas. Estas actitudes pueden ser sustentadas sólo por medio de desarrollo de pautas en que sean «benignos unos con otros, misericordiosos, perdonándose los unos a los otros como también Dios les perdonó en Cristo». Estas cosas proporcionan una alternativa bíblica.
+
+El amor debe reemplazar la ira. Pero los consejeros deben recordar que el amor, en su base, no es un sentimiento. El amor, primero, se expresa y se aprende dando. Éste es el núcleo del amor. Cuando el aconsejado da, el sentimiento del amor sigue. Para amar tiene que aprender a darse a sí mismo, su tiempo, su sustancia, todo lo que sea necesario para mostrar amor; porque dar es fundamental para la idea bíblica del amor. «Si tu enemigo tiene hambre, dale de comer; si tu enemigo tiene sed, dale de beber» (Romanos 12:20). Siempre es dando que empieza el amor, y el dar debe ser concreto y específico, como el vaso de agua. El espíritu del dar trae una nueva relación. Proporciona la atmósfera en que la comunicación crece y prospera.`,
+            biblicalReferences: [
+              '1 Corintios 7:1-5',
+              'Efesios 4:31-32',
+              'Romanos 12:20'
+            ],
+            keyTakeaway:
+              'En consejería se debe restaurar primero la relación con Dios y con el prójimo antes de abordar el problema material; el amor bíblico se enciende dando sacrificialmente y disuelve la ira.'
+          },
+          {
+            id: 'adams-manual-ira-pasaje-3',
+            bookTitle: 'Manual del Consejero Cristiano',
+            author: 'Jay E. Adams',
+            chapter: 'Capítulo 23: La Práctica y el Deber del Perdón',
+            pages: 'Páginas 362–363',
+            passageTitle: 'El Perdón como Mandato Imperativo y la Triple Promesa de No Resentir',
+            logosUrl: 'https://ref.ly/logosres/LLS:MNLDLCNSJRCRSTN?pos=res%2fLLS%3aMNLDLCNSJRCRSTN%2f2017-12-15T23%3a50%3a14Z%2f942164',
+            excerpt:
+              'Queda, pues, claro que el perdonar es un «deber». Tenemos la «orden» de hacerlo. La fe y el sentimiento no tienen nada que ver con el conceder perdón al hermano. Lo que hay que hacer es entregarse a la tarea difícil de prometer no volver a sacar a relucir la ofensa otra vez...',
+            fullText: `Queda, pues, claro que el perdonar es un «deber». Tenemos la «orden» de hacerlo. La fe y el sentimiento no tienen nada que ver con el conceder perdón al hermano. Lo que hay que hacer es entregarse a la tarea difícil de prometer no volver a sacar a relucir la ofensa otra vez. Ésta es la esencia de conceder el perdón. Cuando uno evita sinceramente mencionar la ofensa a su hermano, cuando rehúsa discutirla con nadie, y cuando la elimina de su propia mente al negarse a pensar y cavilar sobre ella con resentimiento o compadeciéndose a sí mismo, los sentimientos de perdón pronto van a acompañar la promesa y el acto.
+
+Ésta es, pues, la forma en que los consejeros tienen que dirigirse a los aconsejados que se resisten a conocer perdón. No tienen que dejarse desviar por las ideas de falta de fe, supuestos sentimientos de hipocresía, etc. En vez de esto, como su Señor, deben cortar a lo vivo eliminando todas las excusas y dejar a la vista la raíz del problema: la desobediencia.`,
+            biblicalReferences: [
+              'Lucas 17:3-4',
+              'Efesios 4:32',
+              'Colosenses 3:13'
+            ],
+            keyTakeaway:
+              'Perdonar no depende de emociones sino de obediencia a Dios; consiste en prometer no volver a sacar la ofensa al hermano, no hablar de ella con otros y no cavilar en ella con resentimiento.'
+          }
+        ]
+      },
+      {
+        id: 'como-vencer-la-ira-adams',
+        title: 'Cómo vencer la ira',
+        author: 'Jay Adams',
+        publisher: 'Editorial CLIR (San José, Costa Rica)',
+        year: '2014',
+        coverGradient: 'from-red-950 via-slate-900 to-amber-950',
+        coverIcon: 'Flame',
+        logosUrl: 'https://ref.ly/logosres/cmovncr?ref=Page.p+15',
+        summary:
+          'Manual fundamental sobre las respuestas pecaminosas ante el enojo: la explosión volcánica orientada a destruir al otro frente al enclaustramiento amargo de guardar rencor, exponiendo los graves estragos somáticos y físicos (colitis, úlceras, tensión crónica) que produce callarse la ira.',
+        passages: [
+          {
+            id: 'adams-vencer-ira-pasaje-1',
+            bookTitle: 'Cómo vencer la ira',
+            author: 'Jay Adams',
+            chapter: 'Capítulo 2: Formas Pecaminosas en que se Maneja el Enojo',
+            pages: 'Páginas 14–15, 18–19',
+            passageTitle: 'Explotar vs. Guardar Rencor: El Daño hacia Otros y la Autodestrucción Somática',
+            logosUrl: 'https://ref.ly/logosres/cmovncr?ref=Page.p+15',
+            excerpt:
+              'Hay otras formas pecaminosas en que las personas manejan su enojo. Algunas personas, en vez de explotar, se callan y se cierran. Su ira crece gradualmente. Guardan todo adentro, amontonando los resentimientos... La ira es un impulso fuerte cuya intención es llevarnos a destruir algo...',
+            fullText: `Hay otras formas pecaminosas en que las personas manejan su enojo. Algunas personas, en vez de explotar, se callan y se cierran. Su ira crece gradualmente. Guardan todo adentro, amontonando los resentimientos. Cada día se vuelven más amargadas, repasando cada ofensa, cada herida.
+
+Cuando la Biblia habla de controlar la ira, no está hablando de callarse, solo para guardar resentimientos como alternativa. Controlarse y guardar rencor son dos cosas muy distintas. De hecho, el guardar rencor es el otro extremo condenado por Dios.
+
+La ira es un impulso fuerte cuya intención es llevarnos a destruir algo. El problema es que Dios no nos ha dado el derecho de destruir a otros, ni tampoco nuestro propio cuerpo.
+
+Cuando explotamos, la intención es destruir a alguien o algo. Si nos tragamos nuestra cólera, el resultado (intencionalmente o no) es la destrucción de nosotros mismos. Cuando explotamos, ventilamos el enojo en una forma que no resuelve el problema que lo produjo. Al contrario, la energía descontrolada que soltamos solo tiene la meta de dañar, y por lo tanto termina creando más problemas para nosotros. Y si guardamos el rencor y los resentimientos, soltamos dentro de nosotros estas mismas energías de enojo, creando como resultado colitis, úlceras, tensiones y otros daños físicos.`,
+            biblicalReferences: [
+              'Efesios 4:26',
+              'Proverbios 14:30',
+              'Proverbios 29:11',
+              'Santiago 1:19-20'
+            ],
+            keyTakeaway:
+              'Explotar con ira busca destruir al prójimo; tragarse el enojo destruye el propio cuerpo causando colitis y úlceras. El dominio propio bíblico no es callarse con rencor, sino solucionar el problema a la luz de Dios.'
+          }
+        ]
+      },
+      {
+        id: 'consejeria-cristocentrica-macdonald-ira',
+        title: 'Consejería Bíblica Cristo-Céntrica',
+        author: 'James MacDonald y Garrett Higbee',
+        publisher: 'Editorial Bautista Independiente (Sebring, FL)',
+        year: '2018',
+        coverGradient: 'from-teal-950 via-slate-900 to-emerald-950',
+        coverIcon: 'BookOpenCheck',
+        logosUrl: 'https://ref.ly/logosres/cbcc?ref=Page.p+280',
+        summary:
+          'Tratado pastoral sobre el poder liberador del perdón y la confesión: el desmantelamiento del mito de que el tiempo cura las heridas, la trampa del veneno de la amargura, el cautiverio espiritual de retener el perdón, la transición de la crisis al proceso del perdón, y la estructura de una confesión bíblica en tres partes.',
+        passages: [
+          {
+            id: 'macdonald-higbee-perdon-pasaje-1',
+            bookTitle: 'Consejería Bíblica Cristo-Céntrica',
+            author: 'James MacDonald y Garrett Higbee',
+            chapter: 'Capítulo 25: El Poder del Perdón',
+            pages: 'Páginas 280–281, 284',
+            passageTitle: 'El Mito del Tiempo, el Veneno de la Amargura y la Transición de Crisis a Proceso',
+            logosUrl: 'https://ref.ly/logosres/cbcc?ref=Page.p+280',
+            excerpt:
+              'El tiempo no cura nada. La herida sigue allí. Es tan sensible y dolorosa como solía serlo... Negarse a perdonar es la decisión de revisar regularmente la ofensa... Retener el perdón es una manera ineficaz de castigar a otro y es destructivo para la persona que ha recibido el daño. Es como tomar el veneno de la amargura y esperar que la otra persona se muera...',
+            fullText: `El tiempo no cura nada. La herida sigue allí. Es tan sensible y dolorosa como solía serlo. Pero algún día estará en un centro comercial, caminando alguna parte, yendo a la iglesia, en algún concierto, en la calle y se tropezará con la persona y hallará que su herida sigue tan abierta y enferma como siempre. No ha sanado.
+
+Negarse a perdonar es la decisión de revisar regularmente la ofensa. Es la decisión de seguir mirándola, seguir sintiéndola, seguir aguantando la incomodidad. La verdad es que en tanto y en cuanto usted siga sin perdonar, nunca olvidará lo sucedido. Sólo cuando esté dispuesto a perdonar lo sacará, lo dejará irse, y empezará a sanar.
+
+Cuando se niega a perdonar, tal vez usted se sienta como que usted es quien tiene el poder. Puede pensar que tiene el control de alguna manera pequeña. Pero en realidad esta cautivo a lo que ha sucedido porque no está dejando que se vaya.
+
+Retener el perdón es una manera ineficaz de castigar a otro y es destructivo para la persona que ha recibido el daño. Es como tomar el veneno de la amargura y esperar que la otra persona se muera. Aunque podemos pensar que perdonar a otros no es justo para nosotros, ¡es lo correcto y saludable para nosotros!
+
+Una vez que lidiamos con la crisis del perdón, por intensa que ella pudiera ser, entonces podemos avanzar al proceso del perdón. Veamos ahora este proceso en lo que tiene que ver con la consejería. Aquí es en donde la consejería bíblica puede ser tremendamente provechosa. Las personas a veces se preguntan por qué todavía sienten oleadas de dolor e incluso momentos de amargura después de que han perdonado a alguien que les ha hecho daño. Podemos ayudarles a entender que la decisión de perdonar no es sólo una liberación inmediata de la otra persona, sino también el principio del camino a la salud espiritual y emocional.`,
+            biblicalReferences: [
+              'Hebreos 12:15',
+              'Efesios 4:32',
+              'Mateo 18:21-35'
+            ],
+            keyTakeaway:
+              'El paso del tiempo no cicatriza heridas no perdonadas; retener el perdón es beber veneno esperando el daño ajeno. La decisión inicial de perdonar es el comienzo indispensable del proceso hacia la salud espiritual.'
+          },
+          {
+            id: 'macdonald-higbee-confesion-pasaje-2',
+            bookTitle: 'Consejería Bíblica Cristo-Céntrica',
+            author: 'James MacDonald y Garrett Higbee',
+            chapter: 'Capítulos 24 y 25: El Poder de la Confesión y el Perdón',
+            pages: 'Páginas 269–270, 284',
+            passageTitle: 'Reconciliación Vertical Antes de Horizontal y las Tres Partes de la Confesión Auténtica',
+            logosUrl: 'https://ref.ly/logosres/cbcc?ref=Page.p+269',
+            excerpt:
+              'El impacto personal y los efectos poderosos de la confesión externa dependen de la profundidad y amplitud del arrepentimiento interno... Una confesión auténtica tiene tres partes: un reconocimiento del mal que se ha hecho, una petición de perdón y lugar para la respuesta...',
+            fullText: `El impacto personal y los efectos poderosos de la confesión externa dependen de la profundidad y amplitud del arrepentimiento interno. Nosotros, como consejeros, podemos presenciar los aspectos externos, pero sólo Dios tiene una vista completa de lo que pasa por dentro. El consejero bíblico guiado por el Espíritu reconoce que el Espíritu Santo es el agente de cambio en el proceso. Y es porque el proceso de confesión primero es vertical (a Dios), y luego conduce hacia la reconciliación horizontal (con otros).
+
+En el conflicto original nuestro enfoque casi siempre estará en la situación o en otra persona. No es sino cuando estamos en paz con Dios que podemos llegar a ser embajadores de Cristo, y eso, a su vez, hace posible la reconciliación horizontal.
+
+Una confesión auténtica tiene tres partes: un reconocimiento del mal que se ha hecho, una petición de perdón y lugar para la respuesta. Así es como se debe ver una confesión: “Me equivoqué cuando yo ______________; ¿me perdonas? [Silencio]”. Reconocer la deuda; pedir que se nos haga libres; y luego esperar la respuesta.`,
+            biblicalReferences: [
+              'Salmo 51:4',
+              'Proverbios 28:13',
+              '2 Corintios 5:18-20',
+              'Mateo 5:23-24'
+            ],
+            keyTakeaway:
+              'Toda confesión horizontal válida nace de estar en paz vertical con Dios mediante el Espíritu Santo; confesar bíblicamente exige reconocer la falta específica, rogar perdón y esperar en silencio la respuesta del ofendido.'
+          }
+        ]
+      },
+      {
+        id: 'teologia-consejeria-lambert-ira',
+        title: 'Teología de la Consejería Bíblica: Las Bases Doctrinales del Ministerio de la Consejería',
+        author: 'Heath Lambert',
+        publisher: 'Editorial Bautista Independiente (Sebring, FL)',
+        year: '2020',
+        coverGradient: 'from-slate-900 via-rose-950 to-slate-900',
+        coverIcon: 'ShieldAlert',
+        logosUrl: 'https://ref.ly/logosres/tcblbdmc?ref=Page.p+178',
+        summary:
+          'Doctrina bíblica del perdón interpersonal y la prohibición de la amargura: por qué el acto de perdón exige la confesión sincera del ofensor según el patrón divino, mientras que la actitud de perdón y el rechazo a la amargura son mandatos incondicionales para el creyente (Ef. 4:31).',
+        passages: [
+          {
+            id: 'lambert-ira-pasaje-1',
+            bookTitle: 'Teología de la Consejería Bíblica',
+            author: 'Heath Lambert',
+            chapter: 'Capítulo: La Doctrina del Pecado y el Perdón',
+            pages: 'Página 178',
+            passageTitle: 'Actitud de Perdón vs. Acto de Perdón: La Prohibición Divina de Alimentar Ira y Amargura',
+            logosUrl: 'https://ref.ly/logosres/tcblbdmc?ref=Page.p+178',
+            excerpt:
+              'Debemos perdonar a los demás como Dios nos ha perdonado. Una implicación de esto es que Dios perdona solo a aquellos que han buscado su perdón a través de una humilde confesión de pecado... Incluso cuando alguien no está interesado en confesar el pecado, no se nos permite amargarnos...',
+            fullText: `Debemos perdonar a los demás como Dios nos ha perdonado. Una implicación de esto —más allá de lo que vimos anteriormente— es que Dios perdona solo a aquellos que han buscado su perdón a través de una humilde confesión de pecado. Si el modelo de nuestro propio perdón es del tipo que hemos recibido de Dios, entonces esto excluye extender el perdón a alguien que no confesará la culpa o no parece interesado en buscar la reconciliación.
+
+Incluso cuando alguien no está interesado en confesar el pecado, no se nos permite amargarnos. Efesios 4:31 dice: “Quítense de vosotros toda amargura, enojo, ira, gritería y maledicencia, y toda malicia”. La falta de contrición por parte de los que han pecado contra nosotros no constituye un permiso divino para que alimentemos la ira y la amargura.
+
+Queremos que nuestros aconsejados piensen, sientan y oren por aquellos que no han confesado su pecado de la misma manera que queremos que piensen, sientan y oren por aquellos que los han perjudicado y lo han confesado. Desde este punto de vista, es útil pensar en ayudar a los aconsejados a desarrollar una actitud de perdón incluso cuando la falta de confesión del ofensor no permita que tenga lugar el acto de perdón. Por último, debemos extender el perdón cuando la persona que pecó contra nosotros confiesa su pecado. La enseñanza bíblica que examinamos anteriormente es relevante en este punto. Cuando alguien confiesa el pecado a un cristiano, éste debe perdonarle porque él ya ha sido perdonado.`,
+            biblicalReferences: [
+              'Efesios 4:31-32',
+              'Lucas 17:3-4',
+              'Marcos 11:25',
+              'Colosenses 3:13'
+            ],
+            keyTakeaway:
+              'La impenitencia del ofensor jamás autoriza la amargura; el creyente debe cultivar siempre una actitud compasiva de perdón orando por su ofensor, y extender el acto formal de perdón y reconciliación cuando éste confiese su falta.'
+          }
+        ]
+      }
+    ]
   }
 ];
+
 
 

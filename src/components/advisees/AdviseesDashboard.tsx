@@ -21,10 +21,14 @@ import { AdviseeModal } from './AdviseeModal';
 import { AdviseeDetail } from './AdviseeDetail';
 import { PastoralAlertsBanner } from './PastoralAlertsBanner';
 
-export const AdviseesDashboard: React.FC = () => {
+interface AdviseesDashboardProps {
+  sharedAdvisees?: Advisee[];
+}
+
+export const AdviseesDashboard: React.FC<AdviseesDashboardProps> = ({ sharedAdvisees }) => {
   const { user } = useAuth();
-  const [advisees, setAdvisees] = useState<Advisee[]>([]);
-  const [loading, setLoading] = useState(true);
+  const [advisees, setAdvisees] = useState<Advisee[]>(sharedAdvisees || []);
+  const [loading, setLoading] = useState(!sharedAdvisees);
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedStatus, setSelectedStatus] = useState<string>('Todos');
   
@@ -32,12 +36,26 @@ export const AdviseesDashboard: React.FC = () => {
   const [editingAdvisee, setEditingAdvisee] = useState<Advisee | null>(null);
   const [selectedAdvisee, setSelectedAdvisee] = useState<Advisee | null>(null);
 
+  // Sincronizar con advisees compartidos si se reciben de AppContent
+  useEffect(() => {
+    if (sharedAdvisees) {
+      setAdvisees(sharedAdvisees);
+      setLoading(false);
+      if (selectedAdvisee) {
+        const updated = sharedAdvisees.find(a => a.id === selectedAdvisee.id);
+        if (updated) setSelectedAdvisee(updated);
+      }
+    }
+  }, [sharedAdvisees, selectedAdvisee]);
+
   // Scroll automático al tope al abrir o cerrar ficha de aconsejado
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
   }, [selectedAdvisee]);
 
+  // Suscribirse únicamente si no se proveen aconsejados compartidos
   useEffect(() => {
+    if (sharedAdvisees) return;
     if (!user) {
       setAdvisees([]);
       setLoading(false);
@@ -62,7 +80,7 @@ export const AdviseesDashboard: React.FC = () => {
     );
 
     return () => unsubscribe();
-  }, [user]);
+  }, [user, sharedAdvisees, selectedAdvisee]);
 
   // Alertas calculadas
   const pastoralAlerts = calculatePastoralAlerts(advisees);
@@ -137,19 +155,19 @@ export const AdviseesDashboard: React.FC = () => {
   return (
     <div className="w-full px-4 sm:px-8 lg:px-12 xl:px-16 py-6 sm:py-8 animate-fade-in space-y-6 sm:space-y-8">
       
-      {/* Top Banner */}
-      <div className="glass-card rounded-2xl p-6 sm:p-8 lg:p-10 border border-white/[0.08] shadow-navy-md relative overflow-hidden bg-gradient-to-r from-slate-900/90 via-slate-900/80 to-amber-950/15">
+      {/* Top Banner - Verde Salvia & Pergamino Pastoral */}
+      <div className="bg-gradient-to-r from-[#e8ece2] via-[#f1f3ec] to-[#e4e9dd] rounded-2xl p-6 sm:p-8 lg:p-10 border border-[#d2daca] shadow-sm relative overflow-hidden">
         <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-5 relative z-10">
           <div className="space-y-2.5">
-            <div className="inline-flex items-center space-x-2 px-2.5 py-0.5 rounded-full bg-amber-500/10 border border-amber-500/25 text-amber-300 text-[10px] font-semibold uppercase tracking-wider">
-              <ShieldCheck className="w-3 h-3" />
+            <div className="inline-flex items-center space-x-2 px-2.5 py-0.5 rounded-full bg-[#e3eae0] border border-sage-300 text-sage-900 text-[10px] font-semibold uppercase tracking-wider">
+              <ShieldCheck className="w-3 h-3 text-sage-800" />
               <span>Base de Datos Privada & Confidencial</span>
             </div>
-            <h1 className="font-serif text-2xl sm:text-3xl lg:text-4xl font-bold gold-gradient-text tracking-tight leading-tight">
+            <h1 className="font-serif text-2xl sm:text-3xl lg:text-4xl font-bold text-sage-950 tracking-tight leading-tight">
               Expedientes de Consejería
             </h1>
-            <p className="text-xs text-slate-400">
-              Consejero Pastoral: <strong className="text-slate-200">{user?.displayName}</strong>
+            <p className="text-xs text-[#3b4c44]">
+              Consejero Pastoral: <strong className="text-sage-900">{user?.displayName}</strong>
             </p>
           </div>
 
@@ -158,7 +176,7 @@ export const AdviseesDashboard: React.FC = () => {
               setEditingAdvisee(null);
               setIsModalOpen(true);
             }}
-            className="gold-button px-4 py-2 text-xs font-semibold flex items-center justify-center space-x-1.5 shadow-gold-sm flex-shrink-0 self-start lg:self-auto rounded-xl"
+            className="gold-button px-4 py-2 text-xs font-semibold flex items-center justify-center space-x-1.5 shadow-sm flex-shrink-0 self-start lg:self-auto rounded-xl"
           >
             <UserPlus className="w-3.5 h-3.5" />
             <span>+ Dar de Alta Aconsejado</span>
@@ -166,22 +184,22 @@ export const AdviseesDashboard: React.FC = () => {
         </div>
 
         {/* Stats bar */}
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-6 pt-5 border-t border-white/[0.06] text-xs">
-          <div className="p-3 sm:p-3.5 rounded-xl bg-slate-900/70 border border-white/[0.05] shadow-sm">
-            <span className="text-slate-400 text-[11px] block">Total Expedientes</span>
-            <span className="font-serif text-xl sm:text-2xl font-bold text-white mt-0.5 block">{advisees.length}</span>
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-6 pt-5 border-t border-[#d2daca] text-xs">
+          <div className="p-3 sm:p-3.5 rounded-xl bg-[#fbfcfa] border border-[#d2daca] shadow-sm">
+            <span className="text-[#52645b] text-[11px] block">Total Expedientes</span>
+            <span className="font-serif text-xl sm:text-2xl font-bold text-sage-950 mt-0.5 block">{advisees.length}</span>
           </div>
-          <div className="p-3 sm:p-3.5 rounded-xl bg-slate-900/70 border border-emerald-500/20 shadow-sm">
-            <span className="text-emerald-400 text-[11px] block font-semibold">🟢 Activos</span>
-            <span className="font-serif text-xl sm:text-2xl font-bold text-emerald-300 mt-0.5 block">{activeCount}</span>
+          <div className="p-3 sm:p-3.5 rounded-xl bg-emerald-50/70 border border-emerald-300 shadow-sm">
+            <span className="text-emerald-800 text-[11px] block font-semibold">🟢 Activos</span>
+            <span className="font-serif text-xl sm:text-2xl font-bold text-emerald-800 mt-0.5 block">{activeCount}</span>
           </div>
-          <div className="p-3 sm:p-3.5 rounded-xl bg-slate-900/70 border border-amber-500/20 shadow-sm">
-            <span className="text-amber-400 text-[11px] block font-semibold">🟡 Suspendidos / Pausa</span>
-            <span className="font-serif text-xl sm:text-2xl font-bold text-amber-300 mt-0.5 block">{suspendedCount}</span>
+          <div className="p-3 sm:p-3.5 rounded-xl bg-amber-50/70 border border-amber-300 shadow-sm">
+            <span className="text-amber-800 text-[11px] block font-semibold">🟡 Suspendidos / Pausa</span>
+            <span className="font-serif text-xl sm:text-2xl font-bold text-amber-800 mt-0.5 block">{suspendedCount}</span>
           </div>
-          <div className="p-3 sm:p-3.5 rounded-xl bg-slate-900/70 border border-white/[0.05] shadow-sm">
-            <span className="text-slate-400 text-[11px] block font-semibold">⚪ Cerrados</span>
-            <span className="font-serif text-xl sm:text-2xl font-bold text-slate-300 mt-0.5 block">{closedCount}</span>
+          <div className="p-3 sm:p-3.5 rounded-xl bg-[#fbfcfa] border border-[#d2daca] shadow-sm">
+            <span className="text-[#52645b] text-[11px] block font-semibold">⚪ Cerrados</span>
+            <span className="font-serif text-xl sm:text-2xl font-bold text-[#3b4c44] mt-0.5 block">{closedCount}</span>
           </div>
         </div>
 
@@ -196,17 +214,17 @@ export const AdviseesDashboard: React.FC = () => {
       />
 
       {/* Filters and Search */}
-      <div className="glass-card rounded-2xl p-3.5 sm:p-4 border border-white/[0.07] shadow-sm space-y-3">
+      <div className="bg-[#fbfcfa] rounded-2xl p-3.5 sm:p-4 border border-[#d2daca] shadow-sm space-y-3">
         <div className="flex flex-col lg:flex-row gap-3 justify-between items-stretch lg:items-center">
           
           <div className="relative flex-1 max-w-2xl">
-            <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-slate-400" />
+            <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-[#52645b]" />
             <input
               type="text"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               placeholder="Buscar por nombre, teléfono, motivo de consulta..."
-              className="w-full pl-10 pr-3.5 py-2 bg-slate-900/80 border border-white/[0.08] rounded-xl text-slate-100 placeholder-slate-400 text-xs focus:outline-none focus:border-amber-500 transition-all shadow-inner"
+              className="w-full pl-10 pr-3.5 py-2 bg-[#edf2ea] border border-[#d2daca] rounded-xl text-sage-950 placeholder-[#718579] text-xs focus:outline-none focus:border-sage-500 transition-all shadow-inner"
             />
           </div>
 
@@ -217,8 +235,8 @@ export const AdviseesDashboard: React.FC = () => {
                 onClick={() => setSelectedStatus(st)}
                 className={`px-3 py-1.5 rounded-xl transition-all whitespace-nowrap select-none text-xs ${
                   selectedStatus === st
-                    ? 'bg-amber-600 text-white shadow-gold-sm border border-amber-500'
-                    : 'bg-slate-900/80 text-slate-400 hover:text-slate-200 border border-white/[0.06]'
+                    ? 'bg-sage-800 text-[#fbfcfa] shadow-sm border border-sage-700'
+                    : 'bg-[#edf2ea] text-[#3b4c44] hover:text-sage-950 border border-[#d2daca]'
                 }`}
               >
                 {st === 'Todos' ? 'Todos los Estados' : st}
@@ -232,18 +250,18 @@ export const AdviseesDashboard: React.FC = () => {
       {/* Advisees Cards Grid */}
       {loading ? (
         <div className="text-center py-12">
-          <div className="w-8 h-8 border-2 border-amber-500 border-t-transparent rounded-full animate-spin mx-auto mb-2.5"></div>
-          <p className="text-xs text-slate-400">Sincronizando expedientes pastorales...</p>
+          <div className="w-8 h-8 border-2 border-sage-700 border-t-transparent rounded-full animate-spin mx-auto mb-2.5"></div>
+          <p className="text-xs text-[#52645b]">Sincronizando expedientes pastorales...</p>
         </div>
       ) : filteredAdvisees.length === 0 ? (
-        <div className="glass-card rounded-2xl p-8 sm:p-10 text-center border border-white/[0.06] space-y-3 max-w-xl mx-auto">
-          <FolderLock className="w-10 h-10 text-slate-600 mx-auto" />
-          <h3 className="font-serif text-base font-bold text-slate-300">
+        <div className="bg-[#fbfcfa] rounded-2xl p-8 sm:p-10 text-center border border-[#d2daca] space-y-3 max-w-xl mx-auto shadow-sm">
+          <FolderLock className="w-10 h-10 text-[#718579] mx-auto" />
+          <h3 className="font-serif text-base font-bold text-sage-950">
             {searchQuery || selectedStatus !== 'Todos'
               ? 'No se encontraron expedientes con los filtros seleccionados'
               : 'Aún no has registrado ningún aconsejado'}
           </h3>
-          <p className="text-xs text-slate-400">
+          <p className="text-xs text-[#3b4c44]">
             {searchQuery || selectedStatus !== 'Todos'
               ? 'Prueba modificando tus términos de búsqueda o restableciendo los filtros.'
               : 'Da de alta a tu primer aconsejado para iniciar el seguimiento pastoral con citas y tareas.'}
@@ -251,7 +269,7 @@ export const AdviseesDashboard: React.FC = () => {
           {selectedStatus !== 'Todos' && (
             <button
               onClick={() => setSelectedStatus('Todos')}
-              className="px-3.5 py-1.5 rounded-lg bg-slate-800 text-amber-300 text-xs font-semibold hover:bg-slate-700 transition-all mt-2"
+              className="px-3.5 py-1.5 rounded-lg bg-[#edf2ea] text-sage-900 text-xs font-semibold hover:bg-[#e4eae0] border border-[#d2daca] transition-all mt-2"
             >
               Mostrar Todos los Expedientes
             </button>
@@ -262,7 +280,7 @@ export const AdviseesDashboard: React.FC = () => {
                 setEditingAdvisee(null);
                 setIsModalOpen(true);
               }}
-              className="gold-button px-4 py-2 text-xs font-semibold inline-flex items-center space-x-1.5 rounded-xl mt-1"
+              className="gold-button px-4 py-2 text-xs font-semibold inline-flex items-center space-x-1.5 rounded-xl mt-1 shadow-sm"
             >
               <UserPlus className="w-3.5 h-3.5" />
               <span>Dar de Alta Aconsejado</span>
@@ -277,7 +295,7 @@ export const AdviseesDashboard: React.FC = () => {
               <div
                 key={advisee.id}
                 onClick={() => setSelectedAdvisee(advisee)}
-                className="glass-card glass-card-hover rounded-2xl p-5 sm:p-6 border border-white/[0.07] flex flex-col justify-between cursor-pointer group transition-all hover:border-amber-500/30 shadow-sm"
+                className="bg-[#fbfcfa] rounded-2xl p-5 sm:p-6 border border-[#d2daca] flex flex-col justify-between cursor-pointer group transition-all hover:border-sage-500 hover:shadow-md shadow-sm"
               >
                 <div className="space-y-3.5">
                   
@@ -285,50 +303,50 @@ export const AdviseesDashboard: React.FC = () => {
                   <div className="flex items-center justify-between gap-2">
                     <span className={`text-[10px] font-semibold uppercase tracking-wider px-2.5 py-0.5 rounded-full border ${
                       advisee.status === 'Activo'
-                        ? 'bg-emerald-500/10 border-emerald-500/25 text-emerald-300'
+                        ? 'bg-emerald-50 border-emerald-300 text-emerald-800'
                         : advisee.status === 'Suspendido' || advisee.status === 'En Pausa'
-                        ? 'bg-amber-500/10 border-amber-500/25 text-amber-300'
-                        : 'bg-slate-800 border-white/[0.06] text-slate-400'
+                        ? 'bg-amber-50 border-amber-300 text-amber-800'
+                        : 'bg-[#edf2ea] border-[#d2daca] text-[#3b4c44]'
                     }`}>
                       {advisee.status}
                     </span>
-                    <span className="text-[11px] text-slate-500">
+                    <span className="text-[11px] text-[#52645b]">
                       Inicio: {advisee.startDate}
                     </span>
                   </div>
 
                   {/* Name and Basic Info */}
                   <div>
-                    <h3 className="font-serif text-base sm:text-lg font-bold text-white group-hover:text-amber-300 transition-colors break-words">
+                    <h3 className="font-serif text-base sm:text-lg font-bold text-sage-950 group-hover:text-sage-800 transition-colors break-words">
                       {advisee.fullName}
                     </h3>
-                    <p className="text-xs text-slate-400 mt-0.5">
+                    <p className="text-xs text-[#52645b] mt-0.5">
                       {advisee.age} años • {advisee.maritalStatus}
                     </p>
                   </div>
 
                   {/* Reason preview */}
-                  <p className="text-xs text-slate-300/90 line-clamp-2 leading-relaxed bg-slate-950/40 p-3 rounded-xl border border-white/[0.04] break-words">
+                  <p className="text-xs text-[#2c3d36] line-clamp-2 leading-relaxed bg-[#edf2ea] p-3 rounded-xl border border-[#d2daca]/80 break-words">
                     "{advisee.reason || 'Sin motivo especificado'}"
                   </p>
 
                   {/* Next session and Tasks alert */}
-                  <div className="pt-2.5 border-t border-white/[0.05] space-y-1.5 text-xs">
+                  <div className="pt-2.5 border-t border-[#e2e8dc] space-y-1.5 text-xs">
                     {advisee.nextSessionDate ? (
-                      <div className="flex items-center space-x-1.5 text-amber-300 text-xs font-medium">
-                        <Calendar className="w-3.5 h-3.5 flex-shrink-0" />
+                      <div className="flex items-center space-x-1.5 text-sage-900 text-xs font-medium">
+                        <Calendar className="w-3.5 h-3.5 flex-shrink-0 text-sage-800" />
                         <span className="truncate">Próxima sesión: {advisee.nextSessionDate} {advisee.nextSessionTime && `• ${advisee.nextSessionTime}`}</span>
                       </div>
                     ) : (
-                      <div className="flex items-center space-x-1.5 text-slate-500 text-xs">
+                      <div className="flex items-center space-x-1.5 text-[#718579] text-xs">
                         <Calendar className="w-3.5 h-3.5 flex-shrink-0" />
                         <span>Sin próxima cita agendada</span>
                       </div>
                     )}
 
                     {pendingTasks > 0 && (
-                      <div className="flex items-center space-x-1.5 text-slate-300 text-xs">
-                        <CheckCircle2 className="w-3.5 h-3.5 text-amber-400 flex-shrink-0" />
+                      <div className="flex items-center space-x-1.5 text-[#3b4c44] text-xs">
+                        <CheckCircle2 className="w-3.5 h-3.5 text-sage-800 flex-shrink-0" />
                         <span>{pendingTasks} {pendingTasks === 1 ? 'tarea pendiente' : 'tareas pendientes'}</span>
                       </div>
                     )}
@@ -337,7 +355,7 @@ export const AdviseesDashboard: React.FC = () => {
                 </div>
 
                 {/* Bottom Action */}
-                <div className="mt-4 pt-3 border-t border-white/[0.05] flex items-center justify-between text-xs font-medium text-amber-400/90 group-hover:text-amber-300">
+                <div className="mt-4 pt-3 border-t border-[#e2e8dc] flex items-center justify-between text-xs font-semibold text-sage-800 group-hover:text-sage-900">
                   <span>Abrir Expediente</span>
                   <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
                 </div>

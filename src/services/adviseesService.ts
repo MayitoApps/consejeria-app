@@ -1,9 +1,12 @@
 import { 
   collection, 
   doc, 
+  getDoc,
+  getDocs,
   addDoc, 
   updateDoc, 
   deleteDoc, 
+  writeBatch,
   query, 
   orderBy, 
   onSnapshot, 
@@ -211,8 +214,25 @@ export const deleteAdvisee = async (
     return;
   }
 
-  const docRef = doc(db, 'users', counselorId, 'advisees', adviseeId);
-  await deleteDoc(docRef);
+  const adviseeDocRef = doc(db, 'users', counselorId, 'advisees', adviseeId);
+  const sessionsRef = getSessionsRef(counselorId, adviseeId);
+
+  try {
+    const sessionsSnap = await getDocs(sessionsRef);
+    if (!sessionsSnap.empty) {
+      const batch = writeBatch(db);
+      sessionsSnap.forEach((sessionDoc) => {
+        batch.delete(sessionDoc.ref);
+      });
+      batch.delete(adviseeDocRef);
+      await batch.commit();
+    } else {
+      await deleteDoc(adviseeDocRef);
+    }
+  } catch (err) {
+    console.error('Error al eliminar aconsejado en Firestore:', err);
+    await deleteDoc(adviseeDocRef);
+  }
 };
 
 /**
@@ -365,12 +385,11 @@ export const addSingleAdviseeTask = async (
     return;
   }
 
-  const advisees = getLocalAdvisees(counselorId);
-  const target = advisees.find(a => a.id === adviseeId);
-  const currentTasks = target?.currentAssignedTasks || [];
+  const adviseeDocRef = doc(db, 'users', counselorId, 'advisees', adviseeId);
+  const docSnap = await getDoc(adviseeDocRef);
+  const currentTasks: AdviseeTask[] = docSnap.exists() ? (docSnap.data().currentAssignedTasks || []) : [];
   const updatedTasks = [...currentTasks, task];
 
-  const adviseeDocRef = doc(db, 'users', counselorId, 'advisees', adviseeId);
   await updateDoc(adviseeDocRef, {
     currentAssignedTasks: updatedTasks,
     updatedAt: now
@@ -397,11 +416,11 @@ export const deleteSingleAdviseeTask = async (
     return;
   }
 
-  const advisees = getLocalAdvisees(counselorId);
-  const target = advisees.find(a => a.id === adviseeId);
-  const updatedTasks = (target?.currentAssignedTasks || []).filter(t => t.id !== taskId);
-
   const adviseeDocRef = doc(db, 'users', counselorId, 'advisees', adviseeId);
+  const docSnap = await getDoc(adviseeDocRef);
+  const currentTasks: AdviseeTask[] = docSnap.exists() ? (docSnap.data().currentAssignedTasks || []) : [];
+  const updatedTasks = currentTasks.filter(t => t.id !== taskId);
+
   await updateDoc(adviseeDocRef, {
     currentAssignedTasks: updatedTasks,
     updatedAt: now

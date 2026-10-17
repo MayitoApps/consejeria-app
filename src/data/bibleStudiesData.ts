@@ -922,7 +922,197 @@ export const BIBLE_STUDIES: BibleStudy[] = [
         ]
       }
     }
+  },
+  {
+    id: 'ira-furia-rencor-resentimiento',
+    title: 'Ira, furia, rencor y resentimiento',
+    subtitle: 'Cólera Íntima (Thumos) · Ira Manifiesta (Orgë) · Consecuencias Somáticas · Amor Demostrado en el Dar · Actitud de Perdón',
+    category: 'Corazón & Relaciones',
+    tags: [
+      'Ira',
+      'Furia',
+      'Enojo',
+      'Rencor',
+      'Resentimiento',
+      'Odio',
+      'Perdón',
+      'Consejería Bíblica',
+      'Salud Emocional',
+      'Reconciliación'
+    ],
+    readTime: '22 min de estudio pastoral',
+    summary:
+      'Este estudio pastoral y exegético aborda la dinámica de la ira, la furia, el enojo, el rencor y el odio a la luz de la consejería bíblica y la hermenéutica reformada (Samuel Pérez Millos, Jay E. Adams, James MacDonald, Garrett Higbee y Heath Lambert). La Escritura enseña con claridad que la ira, en su constitución original dada por Dios, no es inherentemente pecaminosa: Dios mismo se aíra con el malvado todos los días (Sal. 7:11) y el Señor Jesucristo manifestó ira santa ante la profanación del templo y la dureza hipócrita de los corazones (Jn. 2:17, Mr. 3:5). La distinción paulina en Efesios 4:26 («Airaos, pero no pequéis») establece que la indignación legítima frente al quebrantamiento de principios santos puede ser una reacción de amor hacia la santidad de Dios. Sin embargo, el análisis exegético revela que cuando la cólera íntima (thumos) se canaliza hacia afuera como ira orientada contra el prójimo (orgë) sin causa justa o desproporcionada, por afrentas triviales o acompañada de ultrajes y frases maliciosas, se consuma un quebrantamiento directo del sexto mandamiento («no matarás», Mt. 5:21-22), evidenciando que la raíz del enojo es el odio interno hacia el hermano (1 Jn. 3:14-16, 4:8). Cuando la ofensa se acumula y permanece en el corazón antes de que se ponga el sol, se da lugar directo al diablo (Ef. 4:27). El estudio diagnostica las dos respuestas carnales pecaminosas ante la ira: la explosión volcánica para destruir al prójimo y el enclaustramiento amargo de guardar rencor, el cual somatiza el enojo desatando úlceras, colitis, tensiones musculares y daños corporales severos. La metodología pastoral establece la regla cardinal de separar siempre la relación de la cuestión que traen los aconsejados, asegurando reconciliar la relación antes de abordar el problema material; ordena reemplazar la ira cultivando el amor bíblico, el cual se aprende y demuestra dando sacrificialmente (Ro. 12:20); desmantela el mito de que el tiempo cura las heridas demostrando que la falta de perdón es un veneno autodestructivo; articula la distinción entre la actitud interior incondicional de perdón (mandato ineludible de Ef. 4:31 para arrancar la amargura aun sin contrición del ofensor) y el acto formal de otorgar perdón y reconciliación (condicional a la confesión bíblica en tres partes); y estructura un seguimiento pastoral para consolidar pautas permanentes de benignidad, misericordia y perdón mutuo en Cristo.',
+    sections: {
+      verses: [
+        {
+          reference: 'Efesios 4:26–27',
+          text:
+            '26 Airaos, pero no pequéis; no se ponga el sol sobre vuestro enojo, 27 ni deis lugar al diablo.',
+          version: 'RVR1960 / LBLA',
+          exegesis: {
+            originalTerms:
+              'En griego: "Orgizesthe kai me hamartanete; ho helios me epidueto epi to parorgismo hymon, mede didote topon to diabolo" (ὀργίζεσθε καὶ μὴ ἁμαρτάνετε· ὁ ἥλιος μὴ ἐπιδυέτω ἐπὶ τῷ παροργισμῷ ὑμῶν, μηδὲ δίδοτε τόπον τῷ διαβόλῳ). "Orgizesthe" (imperativo presente con valor permisivo/condicional: si experimentáis ira o indignación ante el mal). "Me hamartanete" (mandato negativo imperativo: no pequéis en la manifestación de vuestra emoción). "Parorgismos" (παροργισμός: irritación prolongada, enojo enconado o amargura que fermenta). "Topon to diabolo" (conceder territorio, oportunidad estratégica o cabeza de playa al diablo calumniador).',
+            historicalContext:
+              'Pablo escribe a la iglesia en Éfeso, una comunidad mixta donde creyentes de trasfondo pagano y judío debían aprender a abandonar los antiguos hábitos grecorromanos de venganza, disputas coléricas y rencores familiares para vivir en la unidad del Espíritu.',
+            theologicalPrinciple:
+              'La capacidad de sentir indignación proviene del diseño creacional de Dios y no es pecado en sí misma. El pecado surge cuando la emoción sobrepasa los límites bíblicos, no se resuelve con prontitud y se deja reposar en el corazón, convirtiendo la indignación en rencor y abriendo una puerta espiritual abierta para la intervención destructiva de Satanás.',
+            pastoralApplication:
+              'El consejero bíblico debe enseñar al aconsejado a no confundir el enojo legítimo ante una ofensa con el derecho a albergar resentimiento. Debe establecerse la disciplina espiritual de resolver los conflictos el mismo día ("antes de que el sol se ponga"), desmantelando cualquier cabeza de playa demoníaca en la mente y el hogar.'
+          }
+        },
+        {
+          reference: 'Mateo 5:21–22',
+          text:
+            '21 Oísteis que fue dicho a los antiguos: No matarás; y cualquiera que mate será culpable de juicio. 22 Pero yo os digo que cualquiera que se enoje contra su hermano, será culpable de juicio; y cualquiera que diga: Necio, a su hermano, será culpable ante el concilio; y cualquiera que le diga: Fatuo, quedará expuesto al infierno de fuego.',
+          version: 'RVR1960',
+          exegesis: {
+            originalTerms:
+              'En griego: "Pas ho orgizomenos to adelpho autou enochos estai te krisei" (πᾶς ὁ ὀργιζόμενος τῷ ἀδελφῷ αὐτοῦ ἔνοχος ἔσται τῇ κρίσει). "Orgizomenos" (participio presente del verbo ὀργίζω: aquel que habitualmente se enoja o guarda cólera contra su hermano). "Raka" (ῥακά: insulto injurioso arameo que significa cabeza hueca, despreciable o insensato). "More" (μωρέ: rebelde, villano moral o fatuo). "Geennan tou pyros" (γέενναν τοῦ πυρός: el infierno de fuego eterno, alusión al valle de Hinom).',
+            historicalContext:
+              'En el Sermón del Monte, Cristo confronta la interpretación rabínica farisaica que reducía el sexto mandamiento del Decálogo ("No matarás", Éx. 20:13) al acto material visible del homicidio. Jesús desenmascara la raíz interna del mandamiento revelando que Dios juzga las motivaciones del corazón.',
+            theologicalPrinciple:
+              'Como enseña Samuel Pérez Millos, el odio interno hacia el prójimo constituye la raíz del enojo carnal. El enojo injustificado, los ultrajes y el empleo de frases maliciosas para herir en lo vivo entran de lleno en la prohibición divina del homicidio: quien se enoja y agrede verbalmente a su hermano está dando los primeros pasos en la misma dirección y cometería el asesinato físico si se atreviera o pudiera.',
+            pastoralApplication:
+              'En consejería pastoral, confrontar con solemnidad al aconsejado que se justifica diciendo: "yo tengo mi carácter, pero nunca he matado a nadie". Debe hacérsele ver que sus palabras denigrantes, sarcasmos hirientes y explosiones de furia son homicidios espirituales delante de Dios que demandan arrepentimiento radical.'
+          }
+        },
+        {
+          reference: 'Efesios 4:31–32',
+          text:
+            '31 Quítense de vosotros toda amargura, enojo, ira, gritería y maledicencia, y toda malicia. 32 Antes sed benignos unos con otros, misericordiosos, perdonándoos unos a otros, como Dios también os perdonó a vosotros en Cristo.',
+          version: 'RVR1960',
+          exegesis: {
+            originalTerms:
+              'En griego: "Pasa pikria kai thymos kai orge kai krauge kai blasphemia artheto aph\' hymon syn pase kakia" (πᾶσα πικρία καὶ θυμὸς καὶ ὀργὴ καὶ κραυγὴ καὶ βλασφημία ἀρθήτω ἀφ\' ὑμῶν σὺν πάσῃ κακίᾳ). "Artheto" (imperativo aoristo pasivo de airo: sea arrancado, eliminado o desarraigado categóricamente). "Thymos" (θυμός: arrebato súbito de furia o cólera explosiva). "Orge" (ὀργή: indignación asentada, encono persistente orientado a la venganza). "Charizomenoi heautois kathos kai ho Theos en Christo echarisato hymin" (perdonándoos por pura gracia, con la misma medida con que Dios os perdonó en Cristo).',
+            historicalContext:
+              'Pablo presenta el patrón ético de la nueva creación. En la cultura grecorromana, la elocuencia agresiva, la calumnia política y las querellas ruidosas eran signos de poder; en el cuerpo de Cristo, son pecados que contristan al Espíritu Santo.',
+            theologicalPrinciple:
+              'La transformación bíblica opera bajo el principio de despojo y revestimiento. No es suficiente reprimir la amargura y la gritería; deben ser erradicadas de raíz y sustituidas activamente por actitudes y pautas de benignidad, afecto entrañable y perdón mutuo fundado en la cruz.',
+            pastoralApplication:
+              'Guiar al aconsejado a implementar el reemplazo bíblico: no basta con dejar de gritar o dejar de proferir insultos; debe aprender activamente a bendecir, hablar con mansedumbre y desarrollar el hábito espiritual de perdonar a los demás como Dios le perdonó a él.'
+          }
+        },
+        {
+          reference: '1 Juan 4:8, 20–21 y 1 Juan 3:14–16',
+          text:
+            '8 El que no ama, no ha conocido a Dios; porque Dios es amor... 20 Si alguno dice: Yo amo a Dios, y aborrece a su hermano, es mentiroso. Pues el que no ama a su hermano a quien ha visto, ¿cómo puede amar a Dios a quien no ha visto? 21 Y nosotros tenemos este mandamiento de él: El que ama a Dios, ame también a su hermano.\n\n14 Nosotros sabemos que hemos pasado de muerte a vida, en que amamos a los hermanos. El que no ama a su hermano, permanece en muerte. 15 Todo aquel que aborrece a su hermano es homicida; y sabéis que ningún homicida tiene vida eterna permanente en él. 16 En esto hemos conocido el amor, en que él puso su vida por nosotros; también nosotros debemos poner nuestras vidas por los hermanos.',
+          version: 'RVR1960',
+          exegesis: {
+            originalTerms:
+              'En griego: "Ho me agapon ouk egnon ton Theon, hoti ho Theos agape estin" (ὁ μὴ ἀγαπῶν οὐκ ἔγνω τὸν Θεόν, ὅτι ὁ Θεὸς ἀγάπη ἐστίν). "Ouk egnon" (aoristo indicativo: no conoció en verdad a Dios en comunión vital y regeneradora). "Ho miseon ton adelphon autou anthropoktonos estin" (ὁ μισῶν τὸν ἀδελφὸν αὐτοῦ ἀνθρωποκτόνος ἐστίν: aquel que odia a su hermano es un asesino de seres humanos en la estimación divina).',
+            historicalContext:
+              'Juan escribe para proteger a las iglesias de falsos maestros protognósticos que se jactaban de una comunión mística elevada con Dios mientras mostraban frialdad moral, divisiones y desprecio hacia los miembros humildes de la congregación.',
+            theologicalPrinciple:
+              'El amor fraternal es la prueba ineludible de la regeneración espiritual. Como sostiene Samuel Pérez Millos, el odio interno manifestado en enojo persistente e incapacidad de perdonar es incompatible con haber intimado con el Dios que es amor. Quien permanece en el rencor hacia su prójimo debe examinarse seriamente para saber si realmente ha nacido de nuevo.',
+            pastoralApplication:
+              'En consejería, el resentimiento crónico hacia un familiar o hermano debe ser tratado como una crisis espiritual de primer orden. El consejero debe llevar al aconsejado al pie de la cruz (1 Jn. 3:16) para que entienda que quien ha recibido el amor inmerecido de Cristo está llamado a amar hasta darse sacrificialmente por los demás.'
+          }
+        },
+        {
+          reference: 'Romanos 12:19–21',
+          text:
+            '19 No os venguéis vosotros mismos, amados míos, sino dejad lugar a la ira de Dios; porque escrito está: Mía es la venganza, yo pagaré, dice el Señor. 20 Así que, si tu enemigo tuviere hambre, dale de comer; si tuviere sed, dale de beber; pues haciendo esto, ascuas de fuego amontonarás sobre su cabeza. 21 No seas vencido de lo malo, sino vence con el bien el mal.',
+          version: 'RVR1960',
+          exegesis: {
+            originalTerms:
+              'En griego: "Me heautous ekdikountes, agapetoi, alla dote topon te orge" (μὴ ἑαυτοὺς ἐκδικοῦντες, ἀγαπητοί, ἀλλὰ δότε τόπον τῇ ὀργῇ). "Ekdikountes" (tomarse la justicia por mano propia). "Dote topon te orge" (hacer espacio a la ira retributiva de Dios). "Psomize auton" (alimentar en la boca, proveer sustento tierno). "Ascuas de fuego": figura idiomática que alude a despertar la vergüenza compasiva y convicción de pecado en el ofensor mediante actos de bondad inesperada.',
+            historicalContext:
+              'Pablo escribe a la iglesia en Roma, la capital del imperio, donde los cristianos enfrentaban calumnias, marginación social y abusos legales. El apóstol prescribe la conducta contracultural del reino frente a los agresores y enemigos personales.',
+            theologicalPrinciple:
+              'La retribución judicial corresponde con exclusividad a Dios. Como explica Jay E. Adams, el amor bíblico en su base no es un sentimiento etéreo, sino que se aprende y expresa dando sacrificialmente (tiempo, alimento, bendición). Al responder al agresor mediante el dar concreto, se desactiva la dinámica del odio y se triunfa sobre el mal.',
+            pastoralApplication:
+              'Instruir al aconsejado airado en el ejercicio del "dar": no esperar a "sentir ganas" de amar al ofensor, sino empezar a realizar acciones sacrificiales concretas a favor de él (orar, ayudarle materialmente, hablar con respeto). Cuando el creyente comienza a dar, los afectos del corazón se alinean y la hostilidad se disuelve.'
+          }
+        },
+        {
+          reference: 'Salmo 7:11 con Juan 2:15–17 y Marcos 3:5',
+          text:
+            'Salmo 7:11 Dios es juez justo, y Dios está airado contra el malvado todos los días.\n\nMarcos 3:5 Entonces, mirándolos alrededor con enojo, entristecido por la dureza de sus corazones, dijo al hombre: Extiende tu mano. Y él la extendió, y la mano le fue restaurada sana.\n\nJuan 2:17 Entonces se acordaron sus discípulos que está escrito: El celo de tu casa me consume.',
+          version: 'RVR1960',
+          exegesis: {
+            originalTerms:
+              'En hebreo: "Elohim shofet tsaddiq, we\'El zo\'em bechol-yom" (אֱלֹהִים שׁוֹפֵט צַדִּיק וְאֵל זֹעֵם בְּכָל־יוֹם). "Zo\'em" (indignación santa contra la maldad moral continua). En griego: "Met\' orges" (μετ\' ὀργῆς: con indignación santa ante la hipocresía en Marcos 3:5). "Synlypoumenos" (profundamente condolecido y entristecido por la obstinación de los fariseos).',
+            historicalContext:
+              'Jesús en la sinagoga confrontando la crueldad religiosa de quienes preferían defender su tradición humana sobre el día de reposo que socorrer a un hombre con una mano seca; y en el templo purificando el atrio de los gentiles de mercaderes codiciosos.',
+            theologicalPrinciple:
+              'La ira no es intrínsecamente mala: en Dios y en Jesucristo se manifiesta en su infinita perfección, motivada por la justicia, la santidad y el amor a la verdad. No es un arrebato descontrolado ni una venganza mezquina, sino un celo santo que aborrece la opresión y el pecado.',
+            pastoralApplication:
+              'Ayudar al aconsejado a distinguir entre la ira santa (dolor e indignación justa porque Dios ha sido deshonrado o el inocente pisoteado) y la ira carnal (orgullo herido porque sus propios deseos idolátricos fueron frustrados). Guiar al aconsejado a canalizar toda emoción conforme a las normas bíblicas.'
+          }
+        }
+      ],
+      introduction: {
+        number: 2,
+        title: 'Introducción',
+        paragraphs: [
+          'El enojo constituye una manifestación directa de ira contra el prójimo, mientras que dicha ira brota del odio interno alojado hacia alguien (Samuel Pérez Millos). Sin embargo, es teológicamente crucial comprender que la ira en sí misma no es inherentemente pecaminosa, como lo evidencia con claridad la cuidadosa distinción paulina entre experimentar enojo y cometer pecado: «Airaos, pero no pequéis» (Ef. 4:26). La ira es una pasión constitucional del alma que genera indignación y enojo, representando una disposición anímica que conduce inevitablemente hacia la acción.',
+          'En el idioma griego del Nuevo Testamento se distinguían con notable agudeza las dos etapas fundamentales de este proceso psíquico (Pérez Millos, Comentario Exegético a Apocalipsis): la cólera íntima instantánea que se produce en el interior del ánimo recibía el nombre de θυμός (thumos); mientras que cuando el ánimo encolerizado se manifestaba al exterior, canalizándose y orientándose de forma determinada hacia algo o hacia alguien, recibía el nombre de ὀργή (orgë). Estos términos se aplican tanto al ser humano como a Dios. En relación con el hombre, la Escritura distingue entre una expresión correcta o incorrecta de la ira; mientras que en relación con Dios, sólo puede entenderse en la infinita perfección y santidad inmaculada de Su ser.',
+          'El Nuevo Testamento presenta el odio manifestado en enojo persistente como una actitud frontalmente contraria al amor y a la gracia redentora de Dios. La distinción cardinal radica en que el enojo suscitado por principios santos quebrantados no expresa una ira pecaminosa, sino una reacción legítima nacida del amor a Dios y a Su santidad; en agudo contraste, cuando la reacción provocada por una ofensa se acumula, fermenta y permanece en el corazón, se concede lugar y territorio estratégico al diablo (Ef. 4:27), transformando lo que debió ser una reacción de amor hacia la ofensa contra Dios en un destructivo odio humano.'
+        ]
+      },
+      problemToTreat: {
+        number: 3,
+        title: 'Problema a tratar',
+        paragraphs: [
+          'El problema central que demanda intervención pastoral urgente radica en las manifestaciones pecaminosas del enojo y la furia en la vida relacional del aconsejado. El enojo se vuelve pecado flagrante cuando surge sin que exista una provocación justa: cuando es un enojo sin causa, o sin causa buena, o sin causa proporcionada al hecho acontecido; cuando se desata por suposiciones sin fundamento, o por afrentas triviales que no merecían respuesta alguna (Samuel Pérez Millos). Cuando no persigue ningún objetivo santo en perspectiva, no sólo es vano, sino sumamente dañino; pues si en alguna ocasión el cristiano llega a manifestar desagrado santo, debería ser exclusivamente para incitar al ofensor a arrepentirse e impedir que continúe pecando contra Dios.',
+          'Asimismo, el enojo traspasa los límites divinos cuando va acompañado de ultrajes, apodos despectivos y frases maliciosas calculadas para herir en lo vivo a quienes se van a resentir de ello. Jesucristo advirtió en Mateo 5:21-22 que proferir insultos como «necio» o «fatuo» hace al individuo reo de concilio y digno del fuego del infierno. Todo esto constituye un quebrantamiento directo del sexto mandamiento («no matarás»), puesto que quien se enoja y agrede de este modo a su hermano demuestra una inclinación interior que llegaría hasta el homicidio si tuviese la ocasión, la fuerza o el atrevimiento para ejecutarlo.',
+          'Siguiendo el análisis clínico de Jay Adams en «Cómo vencer la ira», las personas suelen manejar su enojo a través de dos caminos carnales igualmente destructivos: 1) La explosión volcánica: donde la persona pierde el dominio propio y arremete verbal o físicamente con la meta descontrolada de aplastar o destruir al otro, empeorando el problema original; y 2) El enclaustramiento amargo: donde la persona se calla, se cierra y guarda todo adentro, amontonando resentimientos día tras día. Cuando la Biblia manda dominar la ira, jamás enseña a callarse para acumular rencor; callarse y rumiar agravios es el otro extremo condenado por Dios.'
+        ]
+      },
+      rootProblem: {
+        number: 4,
+        title: 'Raíz del problema',
+        paragraphs: [
+          'La raíz primordial y más profunda del enojo pecaminoso es el odio interno alojado hacia alguien en las recámaras ocultas del corazón (Samuel Pérez Millos). Quien es incapaz de amar y de perdonar manifiesta de forma inequívoca que no ha intimado ni participado vitalmente en el amor de Dios (1 Jn. 4:8); mientras que aquel que verdaderamente ha conocido a Dios ama a su hermano hasta ser capaz de poner su vida por él, porque Cristo modeló ese amor sacrificial en la cruz (1 Jn. 3:16). Quien persiste en alimentar rencor y aborrecimiento hacia su semejante debe cuestionarse con seriedad si realmente ha experimentado el nuevo nacimiento (1 Jn. 3:14).',
+          'En su esencia psicológica y espiritual, la ira es un impulso impetuoso cuya intención inherente es llevarnos a destruir algo (Jay Adams). Sin embargo, Dios no nos ha otorgado jamás el derecho soberano de destruir a otros ni de destruir nuestro propio cuerpo. El enojo pecaminoso nace del deseo idolátrico de ejercer control sobre las personas y de castigarlas por no someterse a nuestras expectativas personales.',
+          'Como advierten James MacDonald y Garrett Higbee en «Consejería Bíblica Cristo-Céntrica», cuando una persona se niega a perdonar a quien la ofendió, suele experimentar una falsa ilusión de poder y control; cree equivocadamente que reteniendo el perdón mantiene una ventaja o inflige un castigo a su agresor. La trágica realidad es que se encuentra cautiva de lo que sucedió en el pasado, atada a una celda de autocompasión y rencor porque rehúsa dejar ir la ofensa.'
+        ]
+      },
+      consequences: {
+        number: 5,
+        title: 'Consecuencias del pecado tratado',
+        paragraphs: [
+          '1. La falacia de que el tiempo cura las heridas: Uno de los engaños más comunes en el aconsejado es suponer que el transcurso de los meses o los años desvanecerá el dolor y el rencor. El tiempo no cura absolutamente nada: la herida continúa presente en el corazón, tan sensible y purulenta como el primer día. Negarse a perdonar es la decisión activa de revisar regularmente la ofensa, seguir mirándola y sintiendo su aguijón; mientras la persona no esté dispuesta a perdonar, nunca podrá olvidar ni sanar (MacDonald e Higbee).',
+          '2. El veneno autodestructivo de la amargura: Retener el perdón es una manera totalmente ineficaz de castigar al ofensor y extraordinariamente dañina para el ofendido. Es exactamente equivalente a tomar un vaso de veneno de amargura y esperar tontamente que sea la otra persona quien muera (MacDonald e Higbee). En lugar de perjudicar al agresor, la amargura carcome el gozo, la devoción y la comunión espiritual de quien la guarda.',
+          '3. Destrucción somática y daños físicos severos: Cuando la cólera se reprime y se amontonan resentimientos hacia adentro, las mismas energías destructivas de la ira se descargan contra el propio organismo biológico. Jay Adams documenta que guardar rencor y cavilar en ofensas pasadas genera en el cuerpo colitis nerviosa, úlceras pépticas, dolores de cabeza crónicos, hipertensión arterial y severas contracturas y tensiones físicas. El pecado del resentimiento no se queda en el alma: enferma y devora el cuerpo.',
+          '4. Ruptura del pacto y culpabilidad de homicidio: El enojo desmedido y las palabras hirientes destruyen el tejido conyugal y familiar, levantan murallas de incomunicación y hacen al creyente culpable delante del tribunal de Cristo por quebrantar el sexto mandamiento, acarreando el distanciamiento de la presencia y bendición del Señor.'
+        ]
+      },
+      counselingApproach: {
+        number: 6,
+        title: 'Cómo tratar el problema en consejería',
+        paragraphs: [
+          'Regla de oro metodológica: Separar la relación del problema (Jay E. Adams): Los consejeros deben dividir rigurosamente la relación (del aconsejado hacia Dios y hacia su prójimo) de la cuestión o problema circunstancial que los trae a la sesión pastoral. Jamás se debe cometer el error de intentar resolver la cuestión práctica antes de haber puesto en orden la relación; la confusión de ambos planos es una de las causas más frecuentes del fracaso en la consejería. Por ejemplo, en un matrimonio en conflicto, primero se debe tratar el pecado de la separación, el orgullo y el rencor mutuo; una vez reconciliados ante Dios y entre sí, se procede a abordar las dificultades de comunicación y convivencia.',
+          'Reconocimiento, arrepentimiento vertical y horizontal (James MacDonald y Garrett Higbee): El consejero debe guiar al aconsejado a reconocer su pecado de ira y odio sin excusas. El Espíritu Santo es el agente soberano de transformación. El proceso de confesión debe ser primero vertical (hacia Dios, reconociendo que todo pecado es primordialmente una afrenta contra Su santidad, Sal. 51:4) y luego horizontal (hacia las personas ofendidas o agraviadas). Solo cuando el individuo está en paz con Dios puede operar como un verdadero embajador reconciliador de Cristo.',
+          'El amor bíblico como una acción que se demuestra y aprende dando (Jay E. Adams): El consejero debe desmitificar la concepción mundana del amor. El amor cristiano, en su raíz, no es un mero sentimiento que deba aguardarse pasivamente, sino que se expresa y se aprende dando sacrificialmente. Éste es el núcleo del amor revelado en la Escritura: cuando el aconsejado da su tiempo, sus recursos y su servicio al prójimo conforme al mandato de Romanos 12:20 («si tu enemigo tuviere hambre, dale de comer; si tuviere sed, dale de beber»), los sentimientos de amor y compasión brotan a continuación. El dar sacrificial genera una nueva atmósfera espiritual donde la ira se disuelve y la comunión florece.',
+          'Distinción doctrinal crucial de Heath Lambert: Actitud de Perdón vs. Acto de Perdón: El consejero debe instruir al aconsejado en dos facetas doctrinales complementarias: 1) La Actitud Interior de Perdón (Incondicional): Efesios 4:31 ordena desarraigar toda amargura, enojo e ira. La falta de contrición o disculpas por parte del ofensor jamás otorga permiso divino al cristiano para alimentar resentimiento; el aconsejado debe mantener en todo momento una actitud dispuesta, orando por el ofensor y deseando su bien espiritual. 2) El Acto Formal de Otorgar Perdón (Condicional a la Confesión): Siguiendo el modelo exacto del perdón divino —Dios perdona a quienes acuden en humilde confesión—, la reconciliación plena y el otorgamiento del perdón requieren que el ofensor confiese su culpa. Cuando la persona confiesa su pecado, el creyente tiene la orden imperativa de otorgar el perdón, recordando que él mismo ha sido perdonado por Dios.',
+          'Estructura de una confesión bíblica auténtica: Instruir al aconsejado en las tres partes innegociables de una confesión genuina (MacDonald e Higbee): 1) Reconocimiento específico de la culpa («Me equivoqué cuando yo hice / dije tal cosa»), 2) Petición humilde de perdón («¿Me perdonas?»), y 3) Silencio esperando la respuesta del hermano, sin añadir justificaciones ni contraacusaciones.'
+        ]
+      },
+      sanctificationFollowUp: {
+        number: 7,
+        title: 'Seguimiento del plan de santificación',
+        paragraphs: [
+          'Acompañamiento de la crisis al proceso del perdón (MacDonald e Higbee): El consejero debe clarificar al aconsejado que mientras la crisis del perdón representa la decisión voluntaria e inmediata de soltar la ofensa en obediencia a Dios, la sanidad espiritual y emocional es un proceso progresivo. Es completamente normal que en días posteriores surjan oleadas ocasionales de dolor o tentaciones de amargura al recordar el agravio; el consejero debe recordarle que esos momentos no significan que su perdón fue falso, sino que constituyen llamados a reafirmar su promesa de gracia en oración.',
+          'Desmontar los mitos comunes sobre el perdón: Desarticular dos falacias arraigadas: 1) El mito de «perdonaré cuando el otro pida disculpas», el cual paraliza la salud del creyente al hacerla depender de una persona que probablemente nunca reconocerá su error; y 2) El mito de «no puedo perdonar porque no puedo olvidar». La verdad bíblica está exactamente al revés: la persona nunca podrá olvidar ni ser libre del recuerdo doloroso mientras no tome la decisión deliberada de perdonar.',
+          'El deber solemne del perdón y la triple promesa noutética (Jay E. Adams): Enfatizar que perdonar no es una opción sujeta al estado de ánimo, sino una orden directa del Señor. Conceder perdón significa sellar una triple promesa ante Dios: 1) Prometer no volver a sacar la ofensa al hermano para restregársela en cara; 2) Prometer rehusar discutir la ofensa con terceros para desahogarse o difamarlo; y 3) Prometer expulsar la ofensa de la propia mente, negándose activamente a cavilar sobre ella con rencor o autocompasión.',
+          'Desarrollo de actitudes de buena voluntad y pautas prácticas de bendición (Ef. 4:31-32): Asegurar al creyente que por el poder del Espíritu Santo es enteramente posible vivir libre de gritería, ira y malicia. Asignarle tareas conductuales específicas: un diario de oración intercesora por sus ofensores (Mt. 5:44), la práctica de responder con palabras blandas que calmen la ira (Pr. 15:1) y el hábito de resolver los desacuerdos antes de finalizar el día.'
+        ]
+      },
+      conclusions: {
+        number: 8,
+        title: 'Conclusiones',
+        paragraphs: [
+          'La ira, en su constitución psicológica y anímica original implantada por el Creador, no es un pecado en sí misma; su naturaleza moral depende estrictamente de su motivación, su expresión y sus límites. El verdadero conflicto espiritual se suscita cuando el enojo se alimenta sin causa justa, rebasa las fronteras del día, o se reprime amargamente generando odio interno hacia el prójimo y abriendo una puerta destructiva para el enemigo.',
+          'El tratamiento transformador en la consejería bíblica demanda: 1) Separar la relación del problema, restaurando primero la paz con Dios y con el prójimo; 2) Reconocer y confesar el pecado vertical y horizontalmente mediante una confesión bíblica sincera; 3) Reemplazar la cólera por el amor cristiano activo a través de la disciplina del dar sacrificial; y 4) Mantener una actitud incondicional de perdón en el corazón mientras se extiende el perdón formal ante el arrepentimiento del hermano.',
+          'La falta de perdón perpetúa un cautiverio emocional y espiritual que intoxica el alma y somatiza la amargura en dolor físico. Por el contrario, contemplar la cruz de Cristo —donde el Hijo de Dios absorbió la justa ira divina en nuestro favor— nos capacita soberanamente para soltar toda furia, romper las cadenas del resentimiento y caminar en la gloriosa libertad de la gracia y la reconciliación bíblica.',
+          'Fuentes y Fundamentación en el Índice Didáctico: El presente estudio se fundamenta rigurosamente en las obras maestras exegéticas y pastorales de Samuel Pérez Millos (Comentario Exegético al Texto Griego de Mateo y Comentario Exegético al Texto Griego de Apocalipsis), Jay E. Adams (Manual del Consejero Cristiano y Cómo vencer la ira), James MacDonald & Garrett Higbee (Consejería Bíblica Cristo-Céntrica: «El Poder del Perdón» y «El Poder de la Confesión y el Arrepentimiento») y Heath Lambert (Teología de la Consejería Bíblica: «Doctrina de la Amargura y la Actitud de Perdón»). Consulta la Sección 9 para examinar cada obra, capítulo, páginas exactas, citas textuales y pasajes referenciados en el Índice Didáctico con sus enlaces a Logos Bible Software.'
+        ]
+      }
+    }
   }
 ];
+
 
 

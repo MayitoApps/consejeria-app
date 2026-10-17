@@ -109,27 +109,27 @@ export const GlossaryView: React.FC<GlossaryViewProps> = ({ initialTopicId, init
       {!selectedTopic && (
         <div className="space-y-6 sm:space-y-8">
           
-          {/* Header Banner Principal - Limpio y Refinado */}
-          <div className="glass-card rounded-2xl p-6 sm:p-8 lg:p-10 border border-white/[0.08] shadow-navy-md relative overflow-hidden bg-gradient-to-r from-slate-900/90 via-slate-900/80 to-amber-950/15">
+          {/* Header Banner Principal - Verde Salvia & Pergamino Pastoral */}
+          <div className="bg-gradient-to-r from-[#e8ece2] via-[#f1f3ec] to-[#e4e9dd] rounded-2xl p-6 sm:p-8 lg:p-10 border border-[#d2daca] shadow-sm relative overflow-hidden">
             <div className="max-w-3xl relative z-10 space-y-2.5">
-              <div className="inline-flex items-center space-x-2 px-2.5 py-0.5 rounded-full bg-amber-500/10 border border-amber-500/25 text-amber-300 text-[10px] font-semibold uppercase tracking-wider">
-                <Library className="w-3 h-3" />
+              <div className="inline-flex items-center space-x-2 px-2.5 py-0.5 rounded-full bg-[#e3eae0] border border-sage-300 text-sage-900 text-[10px] font-semibold uppercase tracking-wider">
+                <Library className="w-3 h-3 text-sage-800" />
                 <span>Biblioteca de Referencia Pastoral</span>
               </div>
-              <h1 className="font-serif text-2xl sm:text-3xl lg:text-4xl font-bold gold-gradient-text tracking-tight leading-tight">
+              <h1 className="font-serif text-2xl sm:text-3xl lg:text-4xl font-bold text-sage-950 tracking-tight leading-tight">
                 Índice Didáctico & Obras Maestras
               </h1>
-              <p className="text-xs sm:text-[13px] text-slate-300/90 leading-relaxed max-w-2xl pt-0.5">
+              <p className="text-xs sm:text-[13px] text-[#3b4c44] leading-relaxed max-w-2xl pt-0.5">
                 Explora los pecados originales y raíces del corazón, descubre las obras literarias de consejería bíblica más influyentes y examina los pasajes con su capítulo y página exacta.
               </p>
             </div>
           </div>
 
           <div className="flex items-center justify-between pt-1">
-            <h2 className="font-serif text-lg sm:text-xl font-bold text-white">
+            <h2 className="font-serif text-lg sm:text-xl font-bold text-sage-950">
               Selecciona un Tema o Pecado Raíz
             </h2>
-            <span className="text-[11px] text-slate-400 font-medium px-2.5 py-0.5 rounded-full bg-slate-900/80 border border-white/[0.06]">
+            <span className="text-[11px] text-[#2c3d36] font-medium px-2.5 py-0.5 rounded-full bg-[#edf2ea] border border-[#d2daca]">
               {GLOSSARY_TOPICS.length} Categorías
             </span>
           </div>
@@ -141,31 +141,31 @@ export const GlossaryView: React.FC<GlossaryViewProps> = ({ initialTopicId, init
                 <div
                   key={topic.id}
                   onClick={() => setSelectedTopic(topic)}
-                  className="glass-card glass-card-hover rounded-2xl p-5 sm:p-6 border border-white/[0.07] cursor-pointer group flex flex-col justify-between transition-all hover:border-amber-500/30 shadow-sm"
+                  className="bg-[#fbfcfa] rounded-2xl p-5 sm:p-6 border border-[#d2daca] cursor-pointer group flex flex-col justify-between transition-all hover:border-sage-500 hover:shadow-md shadow-sm"
                 >
                   <div className="space-y-3.5">
                     <div className="flex items-center justify-between">
-                      <div className="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 group-hover:scale-105 group-hover:text-amber-300 transition-all shadow-sm">
+                      <div className="w-10 h-10 rounded-xl bg-sage-100 border border-sage-200 flex items-center justify-center text-sage-800 group-hover:scale-105 group-hover:bg-sage-200 transition-all shadow-sm">
                         <Icon className="w-5 h-5" />
                       </div>
-                      <span className="text-[11px] px-2.5 py-0.5 rounded-full bg-slate-900/80 border border-white/[0.06] text-slate-300 font-medium">
+                      <span className="text-[11px] px-2.5 py-0.5 rounded-full bg-[#edf2ea] border border-[#d2daca] text-[#2c3d36] font-medium">
                         {topic.books.length} {topic.books.length === 1 ? 'Libro' : 'Libros'}
                       </span>
                     </div>
 
                     <div>
-                      <h3 className="font-serif text-base sm:text-lg font-bold text-white group-hover:text-amber-300 transition-colors break-words">
+                      <h3 className="font-serif text-base sm:text-lg font-bold text-sage-950 group-hover:text-sage-800 transition-colors break-words">
                         {topic.title}
                       </h3>
-                      <p className="text-xs text-slate-400 mt-1.5 leading-relaxed break-words">
+                      <p className="text-xs text-[#3b4c44] mt-1.5 leading-relaxed break-words">
                         {topic.shortDescription}
                       </p>
                     </div>
                   </div>
 
-                  <div className="mt-5 pt-3 border-t border-white/[0.05] flex items-center justify-between text-xs font-medium text-amber-400/90">
+                  <div className="mt-5 pt-3 border-t border-[#e2e8dc] flex items-center justify-between text-xs font-semibold text-sage-800">
                     <span>Ver Libros</span>
-                    <ChevronRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                    <ChevronRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform text-sage-800" />
                   </div>
                 </div>
               );
@@ -177,24 +177,24 @@ export const GlossaryView: React.FC<GlossaryViewProps> = ({ initialTopicId, init
       {/* NIVEL 2: LIBROS DEL TEMA SELECCIONADO */}
       {selectedTopic && !selectedBook && (
         <div className="space-y-6 sm:space-y-8">
-          <div className="flex items-center justify-between pb-3 border-b border-white/[0.06]">
+          <div className="flex items-center justify-between pb-3 border-b border-[#d2daca]">
             <button
               onClick={() => setSelectedTopic(null)}
-              className="flex items-center space-x-2 text-xs text-slate-400 hover:text-amber-400 font-medium transition-all group"
+              className="flex items-center space-x-2 text-xs text-[#3b4c44] hover:text-sage-800 font-medium transition-all group"
             >
               <ArrowLeft className="w-3.5 h-3.5 group-hover:-translate-x-1 transition-transform" />
               <span>Volver a Temas</span>
             </button>
-            <span className="text-[10px] font-semibold uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-amber-500/10 text-amber-300 border border-amber-500/20">
+            <span className="text-[10px] font-semibold uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-sage-100 text-sage-900 border border-sage-300">
               {selectedTopic.title}
             </span>
           </div>
 
           <div className="space-y-1.5">
-            <h2 className="font-serif text-2xl sm:text-3xl font-bold text-white break-words">
+            <h2 className="font-serif text-2xl sm:text-3xl font-bold text-sage-950 break-words">
               Libros sobre: {selectedTopic.title}
             </h2>
-            <p className="text-xs sm:text-[13px] text-slate-300/90 max-w-2xl">
+            <p className="text-xs sm:text-[13px] text-[#3b4c44] max-w-2xl">
               {selectedTopic.shortDescription}
             </p>
           </div>
@@ -204,19 +204,19 @@ export const GlossaryView: React.FC<GlossaryViewProps> = ({ initialTopicId, init
               <div
                 key={book.id}
                 onClick={() => setSelectedBook(book)}
-                className="glass-card glass-card-hover rounded-2xl p-4 sm:p-5 border border-white/[0.07] cursor-pointer group flex flex-col sm:flex-row gap-4 transition-all hover:border-amber-500/30 shadow-sm"
+                className="bg-[#fbfcfa] rounded-2xl p-4 sm:p-5 border border-[#d2daca] cursor-pointer group flex flex-col sm:flex-row gap-4 transition-all hover:border-sage-500 hover:shadow-md shadow-sm"
               >
                 {/* Portada */}
-                <div className={`w-full sm:w-28 h-40 rounded-xl bg-gradient-to-b ${book.coverGradient} border border-amber-500/25 p-3.5 flex flex-col justify-between shadow-md flex-shrink-0 group-hover:scale-102 transition-transform`}>
+                <div className={`w-full sm:w-28 h-40 rounded-xl bg-gradient-to-b ${book.coverGradient} border border-sage-400/25 p-3.5 flex flex-col justify-between shadow-md flex-shrink-0 group-hover:scale-102 transition-transform`}>
                   <div className="flex justify-between items-start">
-                    <Bookmark className="w-3.5 h-3.5 text-amber-400" />
-                    <span className="text-[8px] text-amber-300 uppercase tracking-widest font-bold">Biblia</span>
+                    <Bookmark className="w-3.5 h-3.5 text-sage-300" />
+                    <span className="text-[8px] text-sage-200 uppercase tracking-widest font-bold">Biblia</span>
                   </div>
                   <div>
                     <h4 className="font-serif text-xs font-bold text-white leading-tight line-clamp-3">
                       {book.title}
                     </h4>
-                    <p className="text-[9px] text-amber-300/90 mt-0.5">{book.author}</p>
+                    <p className="text-[9px] text-sage-200/90 mt-0.5">{book.author}</p>
                   </div>
                 </div>
 
@@ -224,26 +224,26 @@ export const GlossaryView: React.FC<GlossaryViewProps> = ({ initialTopicId, init
                 <div className="flex-1 flex flex-col justify-between space-y-2.5">
                   <div>
                     <div className="flex flex-wrap items-center gap-1.5 mb-1">
-                      <span className="text-xs font-semibold text-amber-400">{book.author}</span>
+                      <span className="text-xs font-semibold text-sage-800">{book.author}</span>
                       {book.year && (
-                        <span className="text-[10px] text-slate-400 bg-slate-900/80 px-1.5 py-0.5 rounded border border-white/[0.05]">
+                        <span className="text-[10px] text-[#3b4c44] bg-[#edf2ea] px-1.5 py-0.5 rounded border border-[#d2daca]">
                           {book.year}
                         </span>
                       )}
                     </div>
 
-                    <h3 className="font-serif text-base sm:text-lg font-bold text-white group-hover:text-amber-300 transition-colors leading-snug break-words">
+                    <h3 className="font-serif text-base sm:text-lg font-bold text-sage-950 group-hover:text-sage-800 transition-colors leading-snug break-words">
                       {book.title}
                     </h3>
 
-                    <p className="text-xs text-slate-400 mt-1.5 line-clamp-3 leading-relaxed break-words">
+                    <p className="text-xs text-[#3b4c44] mt-1.5 line-clamp-3 leading-relaxed break-words">
                       {book.summary}
                     </p>
                   </div>
 
-                  <div className="mt-3 pt-2.5 border-t border-white/[0.05] flex items-center justify-between text-xs font-medium text-amber-400/90">
+                  <div className="mt-3 pt-2.5 border-t border-[#e2e8dc] flex items-center justify-between text-xs font-semibold text-sage-800">
                     <span>{book.passages.length} Pasajes Clave</span>
-                    <ChevronRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                    <ChevronRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform text-sage-800" />
                   </div>
                 </div>
               </div>
@@ -257,10 +257,10 @@ export const GlossaryView: React.FC<GlossaryViewProps> = ({ initialTopicId, init
         <div className="space-y-6 sm:space-y-8 animate-fade-in">
           
           {/* Barra Superior con botón Volver y Controles de Lectura */}
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-white/[0.06]">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-[#d2daca]">
             <button
               onClick={() => setSelectedBook(null)}
-              className="flex items-center space-x-2 text-xs text-slate-400 hover:text-amber-400 font-medium transition-all group self-start sm:self-auto"
+              className="flex items-center space-x-2 text-xs text-[#3b4c44] hover:text-sage-800 font-medium transition-all group self-start sm:self-auto"
             >
               <ArrowLeft className="w-3.5 h-3.5 group-hover:-translate-x-1 transition-transform" />
               <span>Volver a Libros</span>
@@ -268,12 +268,12 @@ export const GlossaryView: React.FC<GlossaryViewProps> = ({ initialTopicId, init
 
             {/* Controles de lectura general */}
             <div className="flex items-center space-x-2">
-              <div className="flex items-center bg-slate-900/70 p-1 rounded-lg border border-white/[0.06] text-xs shadow-inner">
-                <Type className="w-3 h-3 text-slate-400 mr-1.5 ml-1" />
+              <div className="flex items-center bg-[#edf2ea] p-1 rounded-lg border border-[#d2daca] text-xs shadow-inner">
+                <Type className="w-3 h-3 text-[#52645b] mr-1.5 ml-1" />
                 <button
                   onClick={() => setFontSize('normal')}
                   className={`px-2.5 py-0.5 rounded-md text-[11px] font-semibold transition-all ${
-                    fontSize === 'normal' ? 'bg-amber-600 text-white shadow-sm' : 'text-slate-400 hover:text-slate-200'
+                    fontSize === 'normal' ? 'bg-sage-800 text-[#fbfcfa] shadow-sm' : 'text-[#3b4c44] hover:text-sage-950'
                   }`}
                 >
                   Normal
@@ -281,7 +281,7 @@ export const GlossaryView: React.FC<GlossaryViewProps> = ({ initialTopicId, init
                 <button
                   onClick={() => setFontSize('grande')}
                   className={`px-2.5 py-0.5 rounded-md text-[11px] font-semibold transition-all ${
-                    fontSize === 'grande' ? 'bg-amber-600 text-white shadow-sm' : 'text-slate-400 hover:text-slate-200'
+                    fontSize === 'grande' ? 'bg-sage-800 text-[#fbfcfa] shadow-sm' : 'text-[#3b4c44] hover:text-sage-950'
                   }`}
                 >
                   Grande
@@ -290,13 +290,13 @@ export const GlossaryView: React.FC<GlossaryViewProps> = ({ initialTopicId, init
 
               <button
                 onClick={expandAllPassages}
-                className="px-2.5 py-1 rounded-lg bg-slate-900/80 border border-white/[0.06] hover:border-white/[0.12] text-slate-300 text-[11px] font-medium"
+                className="px-2.5 py-1 rounded-lg bg-[#fbfcfa] border border-[#d2daca] hover:border-sage-400 text-[#2c3d36] text-[11px] font-medium shadow-sm transition-all"
               >
                 Expandir Todos
               </button>
               <button
                 onClick={collapseAllPassages}
-                className="px-2.5 py-1 rounded-lg bg-slate-900/80 border border-white/[0.06] hover:border-white/[0.12] text-slate-400 text-[11px] font-medium"
+                className="px-2.5 py-1 rounded-lg bg-[#fbfcfa] border border-[#d2daca] hover:border-sage-400 text-[#3b4c44] text-[11px] font-medium shadow-sm transition-all"
               >
                 Colapsar
               </button>
@@ -304,25 +304,25 @@ export const GlossaryView: React.FC<GlossaryViewProps> = ({ initialTopicId, init
           </div>
 
           {/* Tarjeta del Libro */}
-          <div className="glass-card rounded-2xl p-5 sm:p-7 border border-white/[0.08] shadow-navy-md space-y-2.5">
+          <div className="bg-[#fbfcfa] rounded-2xl p-5 sm:p-7 border border-[#d2daca] shadow-sm space-y-2.5">
             <div className="flex flex-wrap items-center gap-2">
-              <span className="px-2.5 py-0.5 rounded-full bg-amber-500/10 text-amber-300 border border-amber-500/20 text-[10px] font-semibold uppercase tracking-wider">
+              <span className="px-2.5 py-0.5 rounded-full bg-sage-100 text-sage-900 border border-sage-300 text-[10px] font-semibold uppercase tracking-wider">
                 {selectedTopic?.title}
               </span>
-              <span className="text-[11px] text-slate-400">
+              <span className="text-[11px] text-[#52645b]">
                 {selectedBook.publisher} {selectedBook.year && `• Año: ${selectedBook.year}`}
               </span>
             </div>
 
-            <h1 className="font-serif text-2xl sm:text-3xl font-bold gold-gradient-text tracking-tight leading-tight break-words">
+            <h1 className="font-serif text-2xl sm:text-3xl font-bold text-sage-950 tracking-tight leading-tight break-words">
               {selectedBook.title}
             </h1>
 
-            <p className="text-xs sm:text-[13px] text-slate-300 font-medium">
-              Autor: <strong className="text-white">{selectedBook.author}</strong>
+            <p className="text-xs sm:text-[13px] text-[#2c3d36] font-medium">
+              Autor: <strong className="text-sage-950">{selectedBook.author}</strong>
             </p>
 
-            <p className="text-xs text-slate-400 leading-relaxed italic pt-2 border-t border-white/[0.06] break-words max-w-3xl">
+            <p className="text-xs text-[#3b4c44] leading-relaxed italic pt-2 border-t border-[#e2e8dc] break-words max-w-3xl">
               "{selectedBook.summary}"
             </p>
 
@@ -332,9 +332,9 @@ export const GlossaryView: React.FC<GlossaryViewProps> = ({ initialTopicId, init
                   href={selectedBook.logosUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-xl bg-amber-500/15 hover:bg-amber-500/25 border border-amber-500/30 text-amber-300 hover:text-amber-100 text-xs font-semibold shadow-gold-sm transition-all group/booklogos"
+                  className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-xl bg-sage-50 hover:bg-sage-100 border border-sage-300 text-sage-800 hover:text-sage-900 text-xs font-semibold shadow-sm transition-all group/booklogos"
                 >
-                  <ExternalLink className="w-3.5 h-3.5 text-amber-400 group-hover/booklogos:scale-110 transition-transform" />
+                  <ExternalLink className="w-3.5 h-3.5 text-sage-700 group-hover/booklogos:scale-110 transition-transform" />
                   <span>Abrir Libro en Logos Bible Software</span>
                 </a>
               </div>
@@ -350,18 +350,18 @@ export const GlossaryView: React.FC<GlossaryViewProps> = ({ initialTopicId, init
               return (
                 <div
                   key={passage.id}
-                  className="glass-card rounded-2xl p-5 sm:p-6 border border-white/[0.07] shadow-sm space-y-4 transition-all"
+                  className="bg-[#fbfcfa] rounded-2xl p-5 sm:p-6 border border-[#d2daca] shadow-sm space-y-4 transition-all"
                 >
                   {/* Encabezado del Pasaje */}
-                  <div className="flex flex-wrap items-center justify-between gap-2.5 border-b border-white/[0.06] pb-3">
+                  <div className="flex flex-wrap items-center justify-between gap-2.5 border-b border-[#e2e8dc] pb-3">
                     <div className="flex items-center space-x-2">
-                      <span className="w-6 h-6 rounded-md bg-amber-500/10 border border-amber-500/20 text-amber-300 text-[10px] font-bold flex items-center justify-center flex-shrink-0">
+                      <span className="w-6 h-6 rounded-md bg-sage-100 border border-sage-300 text-sage-900 text-[10px] font-bold flex items-center justify-center flex-shrink-0">
                         {pIdx + 1}
                       </span>
-                      <span className="px-2.5 py-0.5 rounded-md bg-amber-500/10 text-amber-300 border border-amber-500/20 text-[10px] font-semibold">
+                      <span className="px-2.5 py-0.5 rounded-md bg-sage-100 text-sage-900 border border-sage-300 text-[10px] font-semibold">
                         {passage.chapter}
                       </span>
-                      <span className="px-2.5 py-0.5 rounded-md bg-slate-900 text-slate-300 text-[10px] font-medium border border-white/[0.06]">
+                      <span className="px-2.5 py-0.5 rounded-md bg-[#edf2ea] text-[#2c3d36] text-[10px] font-medium border border-[#d2daca]">
                         {passage.pages}
                       </span>
                     </div>
@@ -369,13 +369,13 @@ export const GlossaryView: React.FC<GlossaryViewProps> = ({ initialTopicId, init
                     <div className="flex items-center space-x-2">
                       <button
                         onClick={(e) => handleCopyPassage(passage, e)}
-                        className="px-2.5 py-1 rounded-lg text-slate-400 hover:text-amber-300 bg-slate-900 border border-white/[0.06] text-[11px] flex items-center space-x-1 transition-all"
+                        className="px-2.5 py-1 rounded-lg text-[#3b4c44] hover:text-sage-950 bg-[#edf2ea] hover:bg-[#e4eae0] border border-[#d2daca] text-[11px] flex items-center space-x-1 transition-all"
                         title="Copiar extracto"
                       >
                         {copiedPassageId === passage.id ? (
                           <>
-                            <Check className="w-3 h-3 text-emerald-400" />
-                            <span className="text-emerald-400 font-semibold">Copiado</span>
+                            <Check className="w-3 h-3 text-emerald-700" />
+                            <span className="text-emerald-800 font-semibold">Copiado</span>
                           </>
                         ) : (
                           <>
@@ -390,10 +390,10 @@ export const GlossaryView: React.FC<GlossaryViewProps> = ({ initialTopicId, init
                           href={logosTargetUrl}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="px-2.5 py-1 rounded-lg text-amber-400 hover:text-amber-200 bg-amber-500/10 hover:bg-amber-500/20 border border-amber-500/30 text-[11px] font-medium flex items-center space-x-1.5 transition-all shadow-sm group/logos"
+                          className="px-2.5 py-1 rounded-lg text-sage-800 hover:text-sage-900 bg-sage-50 hover:bg-sage-100 border border-sage-300 text-[11px] font-medium flex items-center space-x-1.5 transition-all shadow-sm group/logos"
                           title="Abrir página del libro en Logos Bible Software"
                         >
-                          <ExternalLink className="w-3 h-3 text-amber-400 group-hover/logos:scale-110 transition-transform" />
+                          <ExternalLink className="w-3 h-3 text-sage-700 group-hover/logos:scale-110 transition-transform" />
                           <span>Ver en Logos</span>
                         </a>
                       )}
@@ -402,8 +402,8 @@ export const GlossaryView: React.FC<GlossaryViewProps> = ({ initialTopicId, init
                         onClick={() => toggleExpandPassage(passage.id)}
                         className={`px-3 py-1 rounded-lg text-[11px] font-medium flex items-center space-x-1 transition-all ${
                           isFullOpen 
-                            ? 'bg-slate-800 text-slate-300 hover:bg-slate-700' 
-                            : 'bg-amber-600 text-white shadow-sm hover:bg-amber-500'
+                            ? 'bg-[#edf2ea] text-[#2c3d36] hover:bg-[#e4eae0] border border-[#d2daca]' 
+                            : 'bg-sage-800 text-[#fbfcfa] shadow-sm hover:bg-sage-700'
                         }`}
                       >
                         <span>{isFullOpen ? 'Mostrar Menos' : 'Leer Texto Completo'}</span>
@@ -413,13 +413,13 @@ export const GlossaryView: React.FC<GlossaryViewProps> = ({ initialTopicId, init
                   </div>
 
                   {/* Título del Pasaje */}
-                  <h3 className="font-serif text-base sm:text-lg font-bold text-white leading-snug break-words">
+                  <h3 className="font-serif text-base sm:text-lg font-bold text-sage-950 leading-snug break-words">
                     {passage.passageTitle}
                   </h3>
 
                   {/* Cuerpo de Lectura */}
-                  <div className="p-4 sm:p-5 rounded-xl bg-slate-950/40 border border-white/[0.04]">
-                    <div className={`font-serif ${fontSize === 'grande' ? 'text-sm sm:text-base leading-relaxed' : 'text-xs sm:text-[13px] leading-relaxed'} text-slate-200/90 whitespace-pre-line break-words ${
+                  <div className="p-4 sm:p-5 rounded-xl bg-[#edf2ea] border border-[#d2daca]/80">
+                    <div className={`font-serif ${fontSize === 'grande' ? 'text-sm sm:text-base leading-relaxed' : 'text-xs sm:text-[13px] leading-relaxed'} text-[#192722] whitespace-pre-line break-words ${
                       !isFullOpen ? 'line-clamp-3' : ''
                     }`}>
                       {passage.fullText || passage.excerpt}
@@ -427,20 +427,20 @@ export const GlossaryView: React.FC<GlossaryViewProps> = ({ initialTopicId, init
                   </div>
 
                   {/* Conclusión Pastoral Clave */}
-                  <div className="p-3.5 rounded-xl bg-amber-500/10 border border-amber-500/20 space-y-1">
-                    <div className="flex items-center space-x-1.5 text-amber-300 font-semibold text-[11px] uppercase tracking-wider">
-                      <Sparkles className="w-3.5 h-3.5 text-amber-400 flex-shrink-0" />
+                  <div className="p-3.5 rounded-xl bg-sage-100/70 border border-sage-300 space-y-1">
+                    <div className="flex items-center space-x-1.5 text-sage-900 font-semibold text-[11px] uppercase tracking-wider">
+                      <Sparkles className="w-3.5 h-3.5 text-sage-800 flex-shrink-0" />
                       <span>Conclusión Pastoral Clave</span>
                     </div>
-                    <p className="text-xs text-amber-100/90 leading-relaxed break-words">
+                    <p className="text-xs text-[#2c3d36] leading-relaxed break-words">
                       {passage.keyTakeaway}
                     </p>
                   </div>
 
                   {/* Referencias Bíblicas */}
                   {passage.biblicalReferences && passage.biblicalReferences.length > 0 && (
-                    <div className="pt-2.5 border-t border-white/[0.06] flex flex-wrap items-center gap-1.5">
-                      <span className="text-[10px] uppercase font-semibold text-slate-500 mr-1">
+                    <div className="pt-2.5 border-t border-[#e2e8dc] flex flex-wrap items-center gap-1.5">
+                      <span className="text-[10px] uppercase font-semibold text-[#52645b] mr-1">
                         Referencias Bíblicas:
                       </span>
                       {passage.biblicalReferences.map((ref, idx) => (

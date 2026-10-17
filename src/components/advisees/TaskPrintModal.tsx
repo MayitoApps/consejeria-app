@@ -86,25 +86,25 @@ export const TaskPrintModal: React.FC<TaskPrintModalProps> = ({
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 md:p-6 bg-black/85 backdrop-blur-md animate-fade-in print:p-0 print:bg-white print:static">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 md:p-6 bg-slate-900/60 backdrop-blur-sm animate-fade-in print:p-0 print:bg-white print:static">
       
       {/* Contenedor Principal */}
       <div 
-        className="relative w-full max-w-3xl max-h-[92vh] bg-[#0b0f19] border border-amber-500/30 rounded-2xl shadow-navy-lg flex flex-col overflow-hidden text-slate-100 print:max-w-none print:max-h-none print:border-none print:shadow-none print:bg-white print:text-black print:rounded-none"
+        className="relative w-full max-w-3xl max-h-[92vh] bg-[#fbfcfa] border border-[#d2daca] rounded-2xl shadow-2xl flex flex-col overflow-hidden text-sage-950 print:max-w-none print:max-h-none print:border-none print:shadow-none print:bg-white print:text-black print:rounded-none"
         onClick={(e) => e.stopPropagation()}
       >
         
         {/* Header con Acciones (Oculto en Impresión) */}
-        <div className="p-4 sm:p-5 border-b border-white/[0.08] bg-slate-900/90 flex flex-wrap items-center justify-between gap-3 print:hidden">
+        <div className="p-4 sm:p-5 border-b border-[#d2daca] bg-[#edf2ea] flex flex-wrap items-center justify-between gap-3 print:hidden">
           <div className="flex items-center space-x-2.5">
-            <div className="w-8 h-8 rounded-lg bg-emerald-500/15 border border-emerald-500/30 flex items-center justify-center text-emerald-400">
+            <div className="w-8 h-8 rounded-lg bg-sage-100 border border-sage-300 flex items-center justify-center text-sage-800">
               <Printer className="w-4 h-4" />
             </div>
             <div>
-              <h2 className="font-serif text-base sm:text-lg font-bold text-white tracking-tight">
+              <h2 className="font-serif text-base sm:text-lg font-bold text-sage-950 tracking-tight">
                 Hoja de Tareas de Santificación
               </h2>
-              <p className="text-[11px] text-slate-400">Generador de formato pastoral imprimible y para WhatsApp</p>
+              <p className="text-[11px] text-[#52645b]">Generador de formato pastoral imprimible y para WhatsApp</p>
             </div>
           </div>
 
@@ -114,8 +114,8 @@ export const TaskPrintModal: React.FC<TaskPrintModalProps> = ({
               onClick={handleCopyWhatsApp}
               className={`px-3 py-1.5 rounded-xl border text-xs font-semibold flex items-center space-x-1.5 transition-all shadow-sm ${
                 copied
-                  ? 'bg-emerald-900/60 border-emerald-500 text-emerald-200'
-                  : 'bg-emerald-600 hover:bg-emerald-500 border-emerald-500 text-white'
+                  ? 'bg-emerald-100 border-emerald-300 text-emerald-800'
+                  : 'bg-sage-800 hover:bg-sage-700 border-sage-700 text-[#fbfcfa]'
               }`}
             >
               {copied ? <Check className="w-3.5 h-3.5" /> : <Share2 className="w-3.5 h-3.5" />}
@@ -125,7 +125,7 @@ export const TaskPrintModal: React.FC<TaskPrintModalProps> = ({
             {/* Imprimir */}
             <button
               onClick={handlePrint}
-              className="px-3 py-1.5 rounded-xl bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-500 hover:to-amber-600 text-white text-xs font-semibold flex items-center space-x-1.5 transition-all shadow-gold-sm"
+              className="px-3 py-1.5 rounded-xl bg-sage-800 hover:bg-sage-700 text-[#fbfcfa] text-xs font-semibold flex items-center space-x-1.5 transition-all shadow-sm"
             >
               <Printer className="w-3.5 h-3.5" />
               <span>Imprimir / PDF</span>
@@ -134,7 +134,7 @@ export const TaskPrintModal: React.FC<TaskPrintModalProps> = ({
             {/* Cerrar */}
             <button
               onClick={onClose}
-              className="p-1.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-400 hover:text-white transition-all border border-white/[0.06]"
+              className="p-1.5 rounded-xl bg-[#edf2ea] hover:bg-[#e4eae0] text-[#3b4c44] hover:text-sage-950 transition-all border border-[#d2daca]"
             >
               <X className="w-4 h-4" />
             </button>
@@ -258,11 +258,11 @@ export const TaskPrintModal: React.FC<TaskPrintModalProps> = ({
         </div>
 
         {/* Footer del Modal en Pantalla */}
-        <div className="p-3 bg-[#070b12] border-t border-white/[0.08] flex items-center justify-between text-xs text-slate-400 print:hidden">
+        <div className="p-3 bg-stone-50 border-t border-stone-200 flex items-center justify-between text-xs text-slate-500 print:hidden">
           <span>Presiona "Imprimir" para obtener formato PDF o papel carta limpio.</span>
           <button
             onClick={onClose}
-            className="px-4 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-medium transition-all"
+            className="px-4 py-1.5 rounded-lg bg-stone-200 hover:bg-stone-300 text-slate-700 text-xs font-medium transition-all"
           >
             Cerrar
           </button>

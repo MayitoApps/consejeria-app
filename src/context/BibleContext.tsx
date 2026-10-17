@@ -1,5 +1,6 @@
-import React, { createContext, useContext, useState } from 'react';
-import { BibleReaderModal } from '../components/bible/BibleReaderModal';
+import React, { createContext, useContext, useState, Suspense, lazy } from 'react';
+
+const BibleReaderModal = lazy(() => import('../components/bible/BibleReaderModal').then(m => ({ default: m.BibleReaderModal })));
 
 interface BibleContextType {
   openBible: (reference?: string) => void;
@@ -28,11 +29,15 @@ export const BibleProvider: React.FC<{ children: React.ReactNode }> = ({ childre
   return (
     <BibleContext.Provider value={{ openBible, closeBible, isBibleOpen, currentReference }}>
       {children}
-      <BibleReaderModal 
-        isOpen={isBibleOpen}
-        onClose={closeBible}
-        initialReference={currentReference}
-      />
+      {isBibleOpen && (
+        <Suspense fallback={null}>
+          <BibleReaderModal 
+            isOpen={isBibleOpen}
+            onClose={closeBible}
+            initialReference={currentReference}
+          />
+        </Suspense>
+      )}
     </BibleContext.Provider>
   );
 };
