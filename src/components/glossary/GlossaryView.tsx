@@ -6,6 +6,7 @@ import {
   Wind, 
   HeartCrack, 
   Sparkles, 
+  HeartHandshake, 
   ArrowLeft, 
   Bookmark, 
   Library, 
@@ -70,6 +71,7 @@ export const GlossaryView: React.FC<GlossaryViewProps> = ({ initialTopicId, init
       case 'Zap': return Zap;
       case 'Wind': return Wind;
       case 'Sparkles': return Sparkles;
+      case 'HeartHandshake': return HeartHandshake;
       default: return HeartCrack;
     }
   };

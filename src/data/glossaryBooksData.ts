@@ -1381,8 +1381,296 @@ Queremos que nuestros aconsejados piensen, sientan y oren por aquellos que no ha
         ]
       }
     ]
+  },
+  {
+    id: 'ansiedad',
+    title: 'Ansiedad',
+    shortDescription:
+      'Ansiedad persistente, prioridades desordenadas vs. adoración, vagancia espiritual, la soberanía eterna de Dios frente a la preocupación, el cáncer de la falta de perdón y el seguimiento pastoral.',
+    iconName: 'HeartHandshake',
+    categoryColor: 'from-blue-700 to-indigo-900',
+    books: [
+      {
+        id: 'teologia-consejeria-lambert-ansiedad',
+        title: 'Teología de la Consejería Bíblica: Las Bases Doctrinales del Ministerio de la Consejería',
+        author: 'Heath Lambert',
+        publisher: 'Editorial Bautista Independiente (Sebring, FL)',
+        year: '2020',
+        coverGradient: 'from-blue-950 via-slate-900 to-indigo-950',
+        coverIcon: 'ShieldCheck',
+        logosUrl: 'https://ref.ly/logosres/tcblbdmc?ref=Page.p+202',
+        summary:
+          'Doctrina de la salvación aplicada a la ansiedad persistente: cómo la elección eterna y el amor soberano de Dios proporcionan recursos tangibles e inconmovibles que destruyen la raíz de la preocupación.',
+        passages: [
+          {
+            id: 'lambert-ansiedad-pasaje-1',
+            bookTitle: 'Teología de la Consejería Bíblica',
+            author: 'Heath Lambert',
+            chapter: 'Capítulo 10: La Doctrina de la Salvación y la Preocupación',
+            pages: 'Páginas 202–203',
+            passageTitle: 'El Caso de Lorie: La Invasión de la Ansiedad Persistente y los Recursos de la Salvación',
+            logosUrl: 'https://ref.ly/logosres/tcblbdmc?ref=Page.p+202',
+            excerpt:
+              'Lorie experimentaba una ansiedad constante, viviendo una vida que parecía feliz en apariencias pero que por detrás del telón sufría de ansiedad persistente... La salvación tiene que ver con nuestra relación eterna con el Dios infinito y los poderosos recursos que él proporciona...',
+            fullText: `Lorie experimentaba una ansiedad constante, viviendo una vida que parecía feliz en apariencias pero que por detrás del telón sufría de ansiedad persistente. Experimentaba ansiedad persistente en casi todas las áreas de su vida: cuando su esposo estaba fuera de la ciudad le preocupaba que le pasara algo, se sentía nerviosa por la cantidad de dinero que tenía su familia, se sentía obligada a chequear a sus hijos cuando dormían por temor a que hubieran muerto, y durante las vacaciones se sentía ansiosa pensando que no podría hacer suficiente comida para todos.
+
+Si nuestros aconsejados son cristianos o no, es algo importante. Nada es más significativo en nuestras vidas que la obra de Dios de la salvación. La salvación tiene que ver con nuestra relación eterna con el Dios infinito y los poderosos recursos que él proporciona para que existamos en esa relación. La salvación tiene que ver con todo lo relacionado con nuestras vidas. Aborda cada parte de quienes somos. Nuestra salvación impacta cada problema que enfrentamos. La doctrina de la salvación enseña que los cristianos tienen recursos genuinos y tangibles para lidiar con los problemas que enfrentamos en la consejería. Independientemente de cómo sean esos problemas, en una escala de leve a extremo, Dios quiere que tengamos su verdadero poder para enfrentar nuestras dificultades.`,
+            biblicalReferences: [
+              'Romanos 8:28-39',
+              'Efesios 1:3-6',
+              'Filipenses 4:6-7'
+            ],
+            keyTakeaway:
+              'La ansiedad suele camuflarse tras una fachada de estabilidad cotidiana; el consejero bíblico debe fundamentar al aconsejado en los recursos sobrenaturales y tangibles que la salvación en Cristo otorga para desarticular el temor.'
+          },
+          {
+            id: 'lambert-ansiedad-pasaje-2',
+            bookTitle: 'Teología de la Consejería Bíblica',
+            author: 'Heath Lambert',
+            chapter: 'Capítulo 10: La Doctrina de la Salvación y la Preocupación',
+            pages: 'Páginas 218–219',
+            passageTitle: 'La Soberanía Eterna de Dios: Por Qué la Preocupación Deja de Tener Sentido',
+            logosUrl: 'https://ref.ly/logosres/tcblbdmc?ref=Page.p+219',
+            excerpt:
+              'La preocupación se hace añicos cuando los creyentes llegan a comprender que Dios ha estado planeando su bien desde antes de hacer el mundo. La preocupación es, en realidad, una respuesta muy racional cuando estas cosas no son ciertas...',
+            fullText: `Debido a que Lorie ha venido a Cristo en fe y arrepentimiento, tiene la seguridad de que Dios tiene un amor inagotable por ella que se remonta a la eternidad pasada cuando él puso su amor electivo sobre ella. El hecho de que Lorie haya sido elegida desde antes de la fundación del mundo significa que un Dios sabio, amoroso y soberano ha decidido dedicarse a ella en la eternidad futura, asegurando que finalmente será glorificada con él en el cielo para siempre.
+
+La preocupación se hace añicos cuando los creyentes llegan a comprender que Dios ha estado planeando su bien desde antes de hacer el mundo y garantiza su bien para siempre después de que este mundo actual se renueve. La preocupación es, en realidad, una respuesta muy racional a los problemas cuando estas cosas no son ciertas para una persona, o cuando ellas no saben que son verdaderas en sus vidas. Cuando los creyentes están convencidos de estas doctrinas de la salvación, la preocupación deja de tener sentido.`,
+            biblicalReferences: [
+              'Efesios 1:4-5',
+              'Mateo 6:25-34',
+              'Romanos 8:29-30'
+            ],
+            keyTakeaway:
+              'La preocupación y el afán constituyen respuestas lógicas para quien no tiene a Dios; pero para el creyente redimido, la certeza del amor soberano y electivo del Padre pulveriza todo fundamento de la ansiedad.'
+          }
+        ]
+      },
+      {
+        id: 'la-consejeria-mack-ansiedad',
+        title: 'La Consejería: Cómo aconsejar bíblicamente',
+        author: 'Wayne A. Mack',
+        publisher: 'Grupo Nelson (Nashville, TN)',
+        year: '2009',
+        coverGradient: 'from-emerald-950 via-teal-900 to-slate-900',
+        coverIcon: 'Compass',
+        logosUrl: 'https://ref.ly/logosres/LLS:1.0.718?ref=Page.p+273',
+        summary:
+          'Metodología para interpretar los datos del aconsejado: cómo discernir entre la queja externa de "exceso de tareas" y la verdadera raíz espiritual del desorden de prioridades a la luz de Marta en Lucas 10:38–42.',
+        passages: [
+          {
+            id: 'mack-ansiedad-pasaje-1',
+            bookTitle: 'La Consejería: Cómo aconsejar bíblicamente',
+            author: 'Wayne A. Mack',
+            chapter: 'Capítulo: Interpretar los datos del aconsejado',
+            pages: 'Páginas 273–274',
+            passageTitle: 'Marta y el Espejismo del Exceso de Tareas: Confundir Sobrecarga con Prioridades Desordenadas',
+            logosUrl: 'https://ref.ly/logosres/LLS:1.0.718?ref=Page.p+273',
+            excerpt:
+              'Cuando encontramos personas que se quejan de que tienen mucho que hacer y les es imposible hacer frente a todo, podemos acordarnos de Marta en Lucas 10:38–42. Marta interpretaba su problema como exceso de tareas, pero Jesús le señaló que radicaba en una errónea selección de prioridades...',
+            fullText: `Cuando encontramos personas que se quejan de que tienen mucho que hacer y les es imposible hacer frente a todo, podemos acordarnos de Marta en Lucas 10:38–42. Marta interpretaba su problema como exceso de tareas, pero Jesús le señaló que radicaba en una errónea selección de prioridades. Tendría que haber estado adorándole en lugar de preocuparse tanto por las cosas temporales y juzgar a su hermana.
+
+El consejero debe ayudar al aconsejado a reconocer que sus prioridades están desordenadas, enfatizando que debería estar adorando a Dios en lugar de preocuparse excesivamente por asuntos temporales. El problema fundamental no es la cantidad de tareas sino la selección errónea de prioridades. Los síntomas de temor, tristeza, desgaste e inseguridad funcionan como manifestaciones interconectadas del mismo problema espiritual, donde la falta de sueño intensifica la ansiedad y la tensión no controlada bíblicamente genera insomnio.`,
+            biblicalReferences: [
+              'Lucas 10:38-42',
+              'Salmo 27:4',
+              'Mateo 6:33'
+            ],
+            keyTakeaway:
+              'El agobio y la queja recurrente de "falta de tiempo" casi siempre encubren un corazón desordenado que ha sustituido la adoración quieta a los pies de Cristo por la tiranía del activismo temporal.'
+          }
+        ]
+      },
+      {
+        id: 'consejeria-cristocentrica-forrey-newheiser-ansiedad',
+        title: 'Consejería Bíblica Cristo-Céntrica: Las Influencias Sobre el Corazón Humano',
+        author: 'Jeff Forrey y Jim Newheiser (ed. James MacDonald)',
+        publisher: 'Editorial Bautista Independiente (Sebring, FL)',
+        year: '2018',
+        coverGradient: 'from-indigo-950 via-purple-900 to-slate-900',
+        coverIcon: 'HeartHandshake',
+        logosUrl: 'https://ref.ly/logosres/cbcc?ref=Page.p+90',
+        summary:
+          'Evaluación pastoral de las influencias del corazón: el desenmascaramiento de la vagancia espiritual tras síntomas de depresión severa (caso Harry, Salmo 32) y la no determinación del ambiente social y familiar (Jeremías 17:5–8, 1 Corintios 10:13).',
+        passages: [
+          {
+            id: 'forrey-newheiser-ansiedad-pasaje-1',
+            bookTitle: 'Consejería Bíblica Cristo-Céntrica',
+            author: 'Jeff Forrey y Jim Newheiser',
+            chapter: 'Capítulo: Las Influencias Sobre el Corazón Humano',
+            pages: 'Página 90',
+            passageTitle: 'El Caso de Harry: La Vagancia Espiritual como Raíz Oculta de la Depresión y el Agotamiento',
+            logosUrl: 'https://ref.ly/logosres/cbcc?ref=Page.p+90',
+            excerpt:
+              'Harry sufría de depresión severa. Tenía poca energía y escasa motivación. A veces dormía dieciséis horas al día... Al leer juntos el Salmo 32, Harry exclamó: “¡Mi problema es que soy un pecador!” Harry identificó su pecado como el de vagancia espiritual...',
+            fullText: `Harry sufría de depresión severa. Tenía poca energía y escasa motivación. A veces dormía dieciséis horas al día, y poco tiempo atrás se había quedado dormido mientras conducía su coche. Al aconsejar a Harry, se descubrieron los problemas espirituales (pecados) que eran la fuente de su depresión. Al leer juntos el Salmo 32, Harry exclamó: “Mi problema no es que estoy enfermo o que sea alcohólico. ¡Mi problema es que soy un pecador!”
+
+Harry identificó su pecado como el de vagancia espiritual. Después de pasar muchos años diligentemente trabajando para servir a su familia y servir al Señor en su iglesia, había estado pasando sus años de jubilación viviendo la buena vida, con muchas fiestas y viajes, mientras que descuidaba su propia alma y su deber para servir al Señor. David describe en el Salmo 32:4 la manera en que el castigo de Dios lo agotó como “en sequedades de verano”.`,
+            biblicalReferences: [
+              'Salmo 32:1-5',
+              'Proverbios 19:15',
+              'Colosenses 3:23-24'
+            ],
+            keyTakeaway:
+              'La apatía anímica, la falta de energía y el letargo depresivo con frecuencia provienen de la vagancia espiritual: abandonar el cuidado del alma y el servicio a Dios para entregarse a la autocomplacencia.'
+          },
+          {
+            id: 'forrey-newheiser-ansiedad-pasaje-2',
+            bookTitle: 'Consejería Bíblica Cristo-Céntrica',
+            author: 'Jeff Forrey y Jim Newheiser',
+            chapter: 'Capítulo: Las Influencias Sobre el Corazón Humano',
+            pages: 'Páginas 98–99',
+            passageTitle: 'El Ambiente Social y la Prueba: Por Qué Ninguna Influencia Externa Puede Obligarnos a Pecar',
+            logosUrl: 'https://ref.ly/logosres/cbcc?ref=Page.p+98',
+            excerpt:
+              'Debido a que el medio ambiente social no es determinativo, ninguna influencia externa puede obligarnos a pecar. No se debe permitir que los aconsejados usen su medio ambiente social como una excusa para conducta de pecado...',
+            fullText: `No se debe ignorar las experiencias de relaciones personales de los aconsejados. Los consejeros necesitan entender cómo las experiencias de los aconsejados difieren de las suyas y cómo esas experiencias pueden influir en sus corazones. Los aconsejados necesitan ayuda para mirar de manera diferente estas relaciones personales.
+
+Debido a que el medio ambiente social no es determinativo, ninguna influencia externa puede obligarnos a pecar (1 Corintios 10:13). No se debe permitir que los aconsejados usen su medio ambiente social como una excusa para conducta de pecado. Se debe identificar la conexión entre las relaciones personales negativas y el pecado, y entre el pecado y las consecuencias negativas en la vida de la persona.
+
+Tal como cada uno de nosotros tiene un cuerpo afectado por la caída, el pecado humano también afecta grandemente nuestro medio ambiente social. En un sentido cada uno de nosotros procede de una familia disfuncional (pecadora) y crece en una sociedad enferma; algunos peor que otros. Jeremías 17:5–8 enseña que los que se apoyan demasiado en otros pecadores llegarán a ser como arbustos marchitos en el desierto, pero los que confían en Dios serán como árboles plantados junto a corrientes de agua. Florecerán incluso durante tiempos de prueba externa.`,
+            biblicalReferences: [
+              'Jeremías 17:5-8',
+              '1 Corintios 10:13',
+              'Romanos 12:2'
+            ],
+            keyTakeaway:
+              'Nadie puede escudarse en una familia rota o en un ambiente adverso para justificar su pecado; quien confía en el Señor tiene la promesa incondicional de sustento y florecimiento incluso en medio del desierto.'
+          }
+        ]
+      },
+      {
+        id: 'consejeria-cristocentrica-macdonald-higbee-perdon-ansiedad',
+        title: 'Consejería Bíblica Cristo-Céntrica: El Poder del Perdón',
+        author: 'James MacDonald y Garrett Higbee',
+        publisher: 'Editorial Bautista Independiente (Sebring, FL)',
+        year: '2018',
+        coverGradient: 'from-rose-950 via-slate-900 to-amber-950',
+        coverIcon: 'HeartCrack',
+        logosUrl: 'https://ref.ly/logosres/cbcc?ref=Page.p+280',
+        summary:
+          'El impacto devastador de retener el perdón en el corazón: desmantelamiento de la mentira del tiempo curativo, la ilusión de falso poder, el veneno de la amargura y el deber supremo de los redimidos de otorgar gracia (Mateo 18:23–35).',
+        passages: [
+          {
+            id: 'macdonald-higbee-ansiedad-pasaje-1',
+            bookTitle: 'Consejería Bíblica Cristo-Céntrica',
+            author: 'James MacDonald y Garrett Higbee',
+            chapter: 'Capítulo: El Poder del Perdón',
+            pages: 'Página 280',
+            passageTitle: 'El Mito del Tiempo Sanador y la Trampa del Falso Poder al Retener el Perdón',
+            logosUrl: 'https://ref.ly/logosres/cbcc?ref=Page.p+280',
+            excerpt:
+              'El tiempo no cura nada. La herida sigue allí. Es tan sensible y dolorosa como solía serlo... En realidad, usted no puede olvidar mientras no esté dispuesto a perdonar. Negarse a perdonar es la decisión de revisar regularmente la ofensa...',
+            fullText: `El tiempo no cura nada. La herida sigue allí. Es tan sensible y dolorosa como solía serlo. Pero algún día estará en un centro comercial, caminando alguna parte, yendo a la iglesia, en algún concierto, en la calle y se tropezará con la persona y hallará que su herida sigue tan abierta y enferma como siempre. No ha sanado.
+
+En realidad, usted no puede olvidar mientras no esté dispuesto a perdonar. Negarse a perdonar es la decisión de revisar regularmente la ofensa. Es la decisión de seguir mirándola, seguir sintiéndola, seguir aguantando la incomodidad. La verdad es que en tanto y en cuanto usted siga sin perdonar, nunca olvidará lo sucedido. Sólo cuando esté dispuesto a perdonar lo sacará, lo dejará irse, y empezará a sanar.
+
+Cuando se niega a perdonar, tal vez usted se sienta como que usted es quien tiene el poder. Puede pensar que tiene el control de alguna manera pequeña. Pero en realidad está cautivo a lo que ha sucedido porque no está dejando que se vaya. El perdón suelta la situación y permite que empiece la sanidad. Sí, una negativa a perdonar puede hacer que usted se sienta poderoso, pero es un poder falso. Retener el perdón es una manera ineficaz de castigar a otro y es destructivo para la persona que ha recibido el daño. Es como tomar el veneno de la amargura y esperar que la otra persona se muera. Aunque podemos pensar que perdonar a otros no es justo para nosotros, ¡es lo correcto y saludable para nosotros!`,
+            biblicalReferences: [
+              'Efesios 4:31-32',
+              'Hebreos 12:15',
+              'Proverbios 4:23'
+            ],
+            keyTakeaway:
+              'El tiempo no cicatriza agravios, únicamente los disfraza; rehusarse a perdonar genera una ficción de control mientras encarcela a la persona en la ofensa y envenena su propio bienestar físico y espiritual.'
+          },
+          {
+            id: 'macdonald-higbee-ansiedad-pasaje-2',
+            bookTitle: 'Consejería Bíblica Cristo-Céntrica',
+            author: 'James MacDonald y Garrett Higbee',
+            chapter: 'Capítulo: El Poder del Perdón',
+            pages: 'Página 285',
+            passageTitle: 'El Cáncer del Alma: Los Perdonados Perdonan Como Cristo los Ha Perdonado',
+            logosUrl: 'https://ref.ly/logosres/cbcc?ref=Page.p+285',
+            excerpt:
+              'Una negativa a perdonar es un cáncer en el alma. Castiga a todos en su camino; abre una brecha de destrucción en la vida de uno; y las consecuencias son enormes. Los perdonados perdonan...',
+            fullText: `Una negativa a perdonar es un cáncer en el alma. Castiga a todos en su camino; abre una brecha de destrucción en la vida de uno; y las consecuencias son enormes.
+
+Los perdonados perdonan. Perdonan a otros tal como Cristo los ha perdonado a ellos (Mateo 18:23–35).
+
+Las personas que no perdonan necesitan que se les recuerde el perdón que recibieron de su amante Padre celestial el momento de su salvación. Los que no reconocen ni aprecian el perdón que Dios les ha dado en Cristo, es improbable que les ofrezcan perdón a otros. Los que no perdonan demuestran que en realidad no entienden el perdón de Dios, o que no lo han aceptado.`,
+            biblicalReferences: [
+              'Mateo 18:23-35',
+              'Colosenses 3:13',
+              '1 Juan 4:19-21'
+            ],
+            keyTakeaway:
+              'La negativa a perdonar actúa como un tumor maligno que arruina las relaciones más cercanas; sólo quien contempla la magnitud incalculable de la gracia divina en la cruz halla el poder para cancelar las deudas ajenas.'
+          }
+        ]
+      },
+      {
+        id: 'consejeria-cristocentrica-pierre-shaw-seguimiento',
+        title: 'Consejería Bíblica Cristo-Céntrica: La Naturaleza de la Relación de Consejería Bíblica',
+        author: 'Jeremy Pierre y Mark Shaw (ed. James MacDonald)',
+        publisher: 'Editorial Bautista Independiente (Sebring, FL)',
+        year: '2018',
+        coverGradient: 'from-slate-900 via-cyan-950 to-slate-900',
+        coverIcon: 'Bookmark',
+        logosUrl: 'https://ref.ly/logosres/cbcc?ref=Page.p+242',
+        summary:
+          'Principios esenciales del seguimiento pastoral después de la consejería formal: evaluación de la perseverancia bíblica a los seis meses, intercesión continua y resguardo contra el engaño progresivo del pecado (Proverbios 28:13, Hebreos 3:12–13).',
+        passages: [
+          {
+            id: 'pierre-shaw-seguimiento-pasaje-1',
+            bookTitle: 'Consejería Bíblica Cristo-Céntrica',
+            author: 'Jeremy Pierre y Mark Shaw',
+            chapter: 'Capítulo: La Naturaleza de la Relación de Consejería Bíblica',
+            pages: 'Página 242',
+            passageTitle: 'El Seguimiento Pastoral: Monitoreo a los Seis Meses y Protección del Engaño del Pecado',
+            logosUrl: 'https://ref.ly/logosres/cbcc?ref=Page.p+242',
+            excerpt:
+              'El seguimiento después de que ha terminado la consejería formal por lo general es una buena idea, y en algunos casos es necesario. Las situaciones de crisis por lo general requieren seguimiento... Los aconsejados todavía se sienten conectados cuando se ofrece esta sesión de seguimiento...',
+            fullText: `El seguimiento después de que ha terminado la consejería formal por lo general es una buena idea, y en algunos casos es necesario. Las situaciones de crisis por lo general requieren seguimiento para monitorear la salud y seguridad de aquellos que las han atravesado. Incluso situaciones que no son crisis, no obstante, a menudo se benefician de un simple chequeo, sea en forma de una llamada telefónica o una reunión.
+
+Cuando la consejería formal ha terminado, el consejero puede programar o simplemente recomendar que los aconsejados vuelvan en seis meses para mantenerse en contacto. Los aconsejados todavía se sienten conectados cuando se ofrece esta sesión de seguimiento, y entenderán que se espera que ellos ahora continúen aplicando lo que han aprendido en el proceso de consejería, sólo que sin supervisión directa.
+
+La meta de esta reunión de seguimiento es meramente ver si el aconsejado está manteniendo la perspectiva bíblica que usted ha tratado de instilar, para ver si está desanimado o animado y ofrecer respaldo en oración. Por lo general los aconsejados quedan muy agradecidos por esta cita de seguimiento. Proverbios 28:13 recuerda que quien confiesa y se aparta alcanza misericordia, y en Hebreos 3:12–13 los líderes de la iglesia deben hablar sobre las implicaciones pastorales de proteger a la persona del engaño del pecado.`,
+            biblicalReferences: [
+              'Proverbios 28:13',
+              'Hebreos 3:12-13',
+              'Gálatas 6:1-2'
+            ],
+            keyTakeaway:
+              'El acompañamiento pastoral no termina abruptamente: un chequeo a los seis meses consolida la responsabilidad personal del aconsejado, brinda aliento espiritual y cierra la puerta al sigiloso engaño del pecado.'
+          }
+        ]
+      },
+      {
+        id: 'manual-consejero-adams-olvido-perdon',
+        title: 'Manual del Consejero Cristiano',
+        author: 'Jay E. Adams',
+        publisher: 'Editorial CLIE (Terrassa, Barcelona)',
+        year: '1984',
+        coverGradient: 'from-amber-950 via-slate-900 to-amber-900',
+        coverIcon: 'BookOpen',
+        logosUrl: 'https://ref.ly/logosres/LLS:1.0.710?ref=Page.p+78',
+        summary:
+          'Hermenéutica y teología del perdón noutético: por qué el olvido es una promesa de no rumiar la ofensa, el peligro de la autocompasión y las tres cláusulas del compromiso bíblico del perdón.',
+        passages: [
+          {
+            id: 'adams-olvido-perdon-pasaje-1',
+            bookTitle: 'Manual del Consejero Cristiano',
+            author: 'Jay E. Adams',
+            chapter: 'Capítulo: El Proceso del Perdón y la Reconciliación',
+            pages: 'Página 78',
+            passageTitle: 'El Perdón Seguido del Olvido: La Trampa de la Autocompasión y la Triple Promesa Noutética',
+            logosUrl: 'https://ref.ly/logosres/LLS:1.0.710?ref=Page.p+78',
+            excerpt:
+              'Si el perdonar no va seguido después de un tiempo del olvidar también, el consejero tiene que buscar la razón de ello. Puede hallar, por ejemplo, que el individuo ofendido ha estado pensando en la ofensa, compadeciéndose a sí mismo...',
+            fullText: `Si el perdonar no va seguido después de un tiempo del olvidar también, el consejero tiene que buscar la razón de ello. Puede hallar, por ejemplo, que el individuo ofendido ha estado pensando en la ofensa, compadeciéndose a sí mismo. Este compadecerse es decisivamente antiescriptural, y no encaja en el concepto bíblico del perdón.
+
+El perdonar significa que no se va a continuar pensando en el pecado que ha sido perdonado. El perdón es la promesa de que no se volverá a resucitar la cuestión otra vez al ofensor, a los otros o a uno mismo. El seguir pensando en ello es una violación de la promesa hecha al conceder perdón.`,
+            biblicalReferences: [
+              'Jeremías 31:34',
+              '1 Corintios 13:5',
+              'Filipenses 4:8'
+            ],
+            keyTakeaway:
+              'El olvido bíblico no es amnesia involuntaria, sino un compromiso solemne de la voluntad: quien ha perdonado promete ante Dios no resucitar el agravio al ofensor, a terceros ni en el diálogo íntimo de su mente.'
+          }
+        ]
+      }
+    ]
   }
 ];
-
-
-
